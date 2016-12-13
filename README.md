@@ -5,11 +5,13 @@ MicroFocus Identity and Access Management Group has defined a set of style and u
 ### Software prerequisites
 - node >= v6.2.2
 - npm >= v3.9.5
+- `npm install -g gulp-cli`
 
-1. `npm install -g gulp-cli`
+### Setup
+1. `npm install`
 
-## Demos
-This reference implementation is built using strictly HTML/CSS. Because this reference implementation contains no Javascript logic, the behavior of the components is not dynamic. For a fully functional reference implentation, see (github.com/jedwardhawkins/ng-mfux). 
+## Icons
+
 
 ## Contributing
 ?

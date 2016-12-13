@@ -38,9 +38,11 @@ gulp.task('icons', function(done) {
         }));
 
     async.parallel([
+        // Generate CSS and HTML demo files
         function handleGlyphs(callback) {
             iconStream.on('glyphs', function (glyphs, options) {
                 glyphs = glyphs.map(function(glyph) {
+                    // Unicode character must be converted to display correctly in HTML and CSS
                     glyph.unicode = glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase();
                     return glyph;
                 });
@@ -64,6 +66,7 @@ gulp.task('icons', function(done) {
                 ], callback);
             });
         },
+        // Output font files to fonts/ directory
         function handleFonts(callback) {
             iconStream
                 .pipe(gulp.dest(outputDirectory + 'fonts/'))
