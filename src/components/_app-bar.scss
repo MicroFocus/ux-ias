@@ -1,0 +1,71 @@
+@import '../config';
+@import '../text';
+
+$mf-app-bar-height: 48px;
+$mf-app-bar-height-large: 72px;
+
+$mf-app-bar-text-color: #ffffff;
+
+.mf-app-bar {
+  align-items: center;
+  background: $color-primary-2;
+  background: linear-gradient(to right, $color-primary-5, $color-primary-2);
+  color: $mf-app-bar-text-color;
+  display: flex;
+  flex-flow: row nowrap;
+  height: $mf-app-bar-height;
+  line-height: $mf-app-bar-height;
+  padding: 0 $body-spacing-small;
+
+  > h3 {
+    @include single-line();
+
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+  }
+
+  > .mf-fill {
+    flex-grow: 1;
+  }
+
+  > .mf-icon-button {
+    display: inline-block !important;
+    margin-left: .5em;
+    vertical-align: middle;
+  }
+
+  > .mf-menu {
+    @include single-line();
+
+    color: inherit;
+    flex-shrink: 0;
+    font-size: .85em;
+  }
+
+  button,
+  .mf-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    padding: 0;
+
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus,
+      &:hover {
+        background-color: transparent;
+        color: inherit;
+      }
+    }
+  }
+}
+
+@media (min-width: $large-display) {
+  .mf-app-bar {
+    height: $mf-app-bar-height-large;
+    line-height: $mf-app-bar-height-large;
+    padding: 0 $body-spacing-large;
+  }
+}

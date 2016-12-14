@@ -1,0 +1,29 @@
+@import '../config';
+@import '../size';
+
+$mf-icon-button-size: 24px;
+
+.mf-icon-button {
+  @include square($mf-icon-button-size);
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  min-width: initial;
+  padding: 0;
+  position: relative;
+
+  &[disabled],
+  &.mf-disabled {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  > .mf-icon {
+    @include square($mf-icon-button-size);
+
+    color: inherit;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+  }
+}

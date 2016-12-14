@@ -1,0 +1,59 @@
+@import '../config';
+@import '../text';
+
+$mf-menu-text-color: $color-gray-7;
+
+.mf-menu {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+
+  &.mf-open {
+    > .mf-menu-content {
+      display: block;
+      height: auto;
+    }
+  }
+
+  &.mf-end {
+    > .mf-menu-content {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  > .mf-menu-content {
+    display: none;
+    height: 0;
+    position: absolute;
+  }
+}
+
+.mf-menu-content {
+  background-color: $color-gray-1;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  color: $mf-menu-text-color;
+  left: 0;
+  overflow: hidden;
+  padding: $spacing;
+  right: auto;
+
+  button,
+  mf-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    display: block;
+    text-align: inherit;
+    width: 100%;
+
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus,
+      &:hover {
+        background-color: $color-gray-3;
+        color: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>MicroFocus UX - Kitchen Sink</title>
+    <link href="mfux.css" rel="stylesheet" type="text/css" />
+    <link href="mf-icons.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body > section {
+            background-color: #eef2f2;
+            padding: 5px 0;
+            margin-bottom: 24px;
+        }
+
+        section > section {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 24px;
+            max-width: 100%;
+        }
+
+        #app-bars > .mf-app-bar {
+            margin-bottom: 24px;
+        }
+
+        #menus > section {
+            min-height: 200px;
+        }
+
+        #menus .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kitchen Sink</h1>
+
+    <section id="navs">
+        <h2>Nav</h2>
+    </section>
+
+    <section id="menus">
+        <h2>Menus</h2>
+
+        <section>
+            <h3>.mf-closed</h3>
+
+            <div class="mf-menu mf-closed">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                <div class="mf-menu-content"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-open.mf-start</h3>
+
+            <div class="mf-menu mf-open">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="right">
+            <h3>.mf-open.mf-end</h3>
+
+            <div class="mf-menu mf-open mf-end">
+                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Complex Menu</h3>
+
+            <div class="mf-menu-content">
+                <div class="mf-row mf-border-bottom">
+                    <div class="mf-column mf-border-right">
+                        <div class="mf-row mf-border-bottom">
+                            <div class="mf-column">
+                                <button type="button">View My Devices</button>
+                                <button type="button">Help Me...(end-user)</button>
+                                <button type="button">Request impersonate session...(HelpDesk)</button>
+                            </div>
+                        </div>
+                        <div class="mf-row mf-border-bottom">
+                            <div class="mf-column">
+                                <button type="button">Button 4</button>
+                                <button type="button">An Interesting Link</button>
+                                <button type="button">Button 6</button>
+                                <button type="button">Button 7</button>
+                                <button type="button">Request Support</button>
+                                <button type="button">Button 9</button>
+                            </div>
+                        </div>
+                        <div class="mf-row">
+                            <div class="mf-column">
+                                <button type="button">Button 10</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mf-column mf-align-end">
+                        <button type="button">Help</button>
+                        <button type="button">Settings</button>
+                        <button type="button">Log Out</button>
+                    </div>
+                </div>
+                <div class="mf-row">
+                    <div class="mf-column">
+                        <button type="button">IDM Prototype</button>
+                        <button type="button">Add Users</button>
+                        <button type="button">Button 13</button>
+                        <button type="button">A Button That Extends Well Beyond the Column Immediately Above It</button>
+                        <button type="button">Button 15</button>
+                        <button type="button">MicroFocus Branded Sign</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="app-bars">
+        <h2>App Bars</h2>
+
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+        </div>
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+            <span class="mf-fill"></span>
+            <div class="mf-menu">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+            </div>
+        </div>
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+            <span class="mf-fill"></span>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </div>
+    </section>
+
+    <section id="buttons">
+        <h2>Buttons</h2>
+
+        <section>
+            <h3>Active</h3>
+
+            <button type="button">Button</button>
+            <div class="mf-button" tabindex="0">CSS Class</div>
+            <a class="mf-button" href="#buttons">Anchor</a>
+            <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>Disabled</h3>
+
+            <button type="button" disabled="disabled">Button</button>
+            <div class="mf-button mf-disabled" tabindex="-1">CSS Class</div>
+            <a class="mf-button mf-disabled" href="#buttons" tabindex="-1">Anchor</a>
+            <button type="button" disabled="disabled"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+        </section>
+    </section>
+
+    <section id="icon-buttons">
+        <h2>Icon Buttons</h2>
+
+        <section>
+            <h3>Icon Buttons (Active)</h3>
+
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>Icon Buttons (Disabled)</h3>
+
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </section>
+    </section>
+
+    <section id="links">
+        <h2>Links</h2>
+
+        <section>
+            <h3>Active</h3>
+
+            <a href="#links">Anchor</a>
+        </section>
+
+        <section>
+            <h3>Disabled</h3>
+
+            <a class="mf-disabled" href="#links" tabindex="-1">Anchor</a>
+        </section>
+    </section>
+
+    <section id="icons">
+        <h2>Icons</h2>
+
+        <section>
+            <h3>Small</h3>
+
+            <i class="mf-icon mf-icon-check_thick"></i>
+            <i class="mf-icon mf-icon-close_thick"></i>
+            <i class="mf-icon mf-icon-new_thick"></i>
+        </section>
+
+        <section>
+            <h3>Medium</h3>
+
+            <i class="mf-icon mf-icon-check_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-close_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-new_thick mf-medium"></i>
+        </section>
+
+        <section>
+            <h3>Large</h3>
+
+            <i class="mf-icon mf-icon-check_thick mf-large"></i>
+            <i class="mf-icon mf-icon-close_thick mf-large"></i>
+            <i class="mf-icon mf-icon-new_thick mf-large"></i>
+        </section>
+    </section>
+</body>
+</html>

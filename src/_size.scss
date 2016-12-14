@@ -1,0 +1,6 @@
+@mixin square($size) {
+  font-size: $size;
+  height: 1em;
+  line-height: 1em;
+  width: 1em;
+}

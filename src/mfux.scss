@@ -1,3 +1,19 @@
 /* Version %VERSION% */
 
-@import './components/button';
+@import 'config';
+@import 'layout';
+@import 'text';
+@import 'type';
+@import 'components/app-bar';
+@import 'components/button';
+@import 'components/icon';
+@import 'components/icon-button';
+@import 'components/link';
+@import 'components/menu';
+@import 'components/nav';
+
+body {
+  font-family: $font-family;
+  font-size: $font-base-size;
+  font-weight: normal;
+}

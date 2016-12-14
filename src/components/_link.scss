@@ -1,0 +1,49 @@
+@import '../config';
+
+$link-text-color: $color-primary-3;
+
+// DISABLED
+$link-bg-color-disabled: transparent;
+$link-text-color-disabled: $color-gray-4;
+
+// FOCUS
+$link-bg-color-focus: $color-accent-2;
+$link-border-color-focus: $color-accent-1;
+$link-text-color-focus: $link-text-color;
+
+// HOVER
+$link-bg-color-hover: $color-gray-7;
+$link-text-color-hover: $color-primary-4;
+
+a {
+  border-radius: $border-radius;
+  color: $link-text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .85em;
+  padding: 2px;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.mf-disabled {
+    background-color: $link-bg-color-disabled;
+    color: $link-text-color-disabled;
+    cursor: default;
+  }
+
+  &:not(.mf-disabled) {
+    &:focus {
+      background-color: $link-bg-color-focus;
+      border-color: $link-text-color-focus;
+      color: $link-text-color-focus;
+    }
+
+    &:hover {
+      background-color: $link-bg-color-hover;
+      color: $link-text-color-hover;
+    }
+  }
+}

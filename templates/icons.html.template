@@ -66,7 +66,7 @@
         <li>
             <i class="<%= cssClass %> <%= cssClass %>-<%= glyph.name %>"></i>
             <code>\<%= glyph.unicode.toString(16).toUpperCase() %></code>
-            <div>icon-<%= glyph.name %></div>
+            <div><%= cssClass %>-<%= glyph.name %></div>
         </li>
         <% }) %>
     </ul>

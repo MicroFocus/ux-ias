@@ -8,6 +8,10 @@
     url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
 }
 
+.<%= cssClass %> {
+    display: inline-block;
+}
+
 .<%= cssClass %>:before {
     font-family: "<%= fontName %>";
     -webkit-font-smoothing: antialiased;

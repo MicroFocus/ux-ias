@@ -13,6 +13,7 @@ var gulpWatch = require('gulp-watch');
 
 var iconFiles = './icons/*.svg';
 var iconFontName = 'mf-icons';
+var kitchenSinkFile = './kitchen-sink.html';
 var outputDirectory = './dist/';
 var sassFiles = './src/**/*.scss';
 var sassManifestFile = './src/mfux.scss';
@@ -21,6 +22,12 @@ var pkg = JSON.parse(fs.readFileSync('./package.json'));
 gulp.task('clean', function() {
     return gulp.src(outputDirectory)
         .pipe(gulpClean());
+});
+
+gulp.task('copy', function() {
+    return gulp
+        .src(kitchenSinkFile)
+        .pipe(gulp.dest(outputDirectory));
 });
 
 gulp.task('default', ['watch']);
@@ -97,9 +104,12 @@ gulp.task('watch', function() {
     gulpWatch(iconFiles, function() {
         gulp.start('icons');
     });
+    gulpWatch(kitchenSinkFile, function() {
+        gulp.start('copy');
+    })
 });
 
-gulp.task('build', ['icons', 'sass', 'sass-minified']);
+gulp.task('build', ['copy', 'icons', 'sass', 'sass-minified']);
 
 function processSass(filePattern, sassOptions) {
     sassOptions = sassOptions || {};

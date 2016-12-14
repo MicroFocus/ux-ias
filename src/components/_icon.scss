@@ -1,0 +1,21 @@
+@import '../config';
+@import '../size';
+
+$mf-icon-color: $color-gray-4;
+
+$mf-icon-size-small: 24px;
+$mf-icon-size-medium: 32px;
+$mf-icon-size-large: 40px;
+
+.mf-icon {
+  color: $mf-icon-color;
+  @include square($mf-icon-size-small);
+
+  &.mf-medium {
+    @include square($mf-icon-size-medium);
+  }
+
+  &.mf-large {
+    @include square($mf-icon-size-large);
+  }
+}

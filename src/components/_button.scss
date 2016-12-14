@@ -1,0 +1,78 @@
+@import '../config';
+@import '../text';
+
+$mf-button-bg-color: $color-gray-7;
+$mf-button-border-color: $color-gray-5;
+$mf-button-text-color: $color-gray-1;
+
+// DISABLED
+$mf-button-bg-color-disabled: $mf-button-bg-color;
+$mf-button-border-color-disabled: $color-gray-5;
+$mf-button-text-color-disabled: $mf-button-border-color-disabled;
+
+// FOCUS
+$mf-button-bg-color-focus: $color-accent-2;
+$mf-button-border-color-focus: $color-accent-1;
+$mf-button-text-color-focus: $mf-button-text-color;
+
+// HOVER
+$mf-button-bg-color-hover: $mf-button-bg-color;
+$mf-button-border-color-hover: $color-primary-4;
+$mf-button-text-color-hover: $color-primary-1;
+
+button,
+.mf-button {
+  @include disable-text-selection();
+  @include single-line();
+
+  background-color: $mf-button-bg-color;
+  border: 1px solid $mf-button-border-color;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  color: $mf-button-text-color;
+  cursor: pointer;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1em;
+  min-width: 3em;
+  padding: 0 $spacing;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[disabled],
+  &.mf-disabled {
+    background-color: $mf-button-bg-color-disabled;
+    border-color: $mf-button-border-color-disabled;
+    color: $mf-button-text-color-disabled;
+    cursor: default;
+  }
+
+  &:not([disabled]):not(.mf-disabled) {
+    &:focus {
+      background-color: $mf-button-bg-color-focus;
+      border-color: $mf-button-border-color-focus;
+      color: $mf-button-text-color-focus;
+    }
+
+    &:hover {
+      background-color: $mf-button-bg-color-hover;
+      border-color: $mf-button-border-color-hover;
+      color: $mf-button-text-color-hover;
+    }
+  }
+
+  &:not(.mf-icon-button) {
+    > .mf-icon {
+      color: inherit;
+      font-size: 1.17em;
+      margin-left: .59em;
+      vertical-align: middle;
+    }
+  }
+}
