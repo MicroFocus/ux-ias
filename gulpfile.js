@@ -5,15 +5,16 @@ var gulpAutoprefixer = require('gulp-autoprefixer');
 var gulpClean = require('gulp-clean');
 var gulpConsolidate = require('gulp-consolidate');
 var gulpIconFont = require('gulp-iconfont');
-var gulpIconFontCss = require('gulp-iconfont-css');
 var gulpRename = require('gulp-rename');
 var gulpReplace = require('gulp-replace');
 var gulpSass = require('gulp-sass');
 var gulpSourceMaps = require('gulp-sourcemaps');
+var gulpWatch = require('gulp-watch');
 
 var iconFiles = './icons/*.svg';
 var iconFontName = 'mf-icons';
 var outputDirectory = './dist/';
+var sassFiles = './src/**/*.scss';
 var sassManifestFile = './src/mfux.scss';
 var pkg = JSON.parse(fs.readFileSync('./package.json'));
 
@@ -21,6 +22,8 @@ gulp.task('clean', function() {
     return gulp.src(outputDirectory)
         .pipe(gulpClean());
 });
+
+gulp.task('default', ['watch']);
 
 gulp.task('icons', function(done) {
     var iconStream = gulp
@@ -84,6 +87,16 @@ gulp.task('sass-minified', function() {
     return processSass(sassManifestFile, { outputStyle: 'compressed', sourceMap: true })
         .pipe(gulpRename('mfux.min.css'))
         .pipe(gulp.dest(outputDirectory));
+});
+
+gulp.task('watch', function() {
+    gulpWatch(sassFiles, function() {
+        gulp.start('sass');
+        gulp.start('sass-minified');
+    });
+    gulpWatch(iconFiles, function() {
+        gulp.start('icons');
+    });
 });
 
 gulp.task('build', ['icons', 'sass', 'sass-minified']);
