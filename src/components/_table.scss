@@ -1,0 +1,64 @@
+@import '../_config';
+
+table {
+  border-collapse: collapse;
+  font-size: 1em;
+  text-align: left;
+
+  > thead {
+    border-bottom: 1px solid $color-gray-5;
+    color: $color-gray-4;
+    font-size: 12px;
+
+    .mf-icon {
+      font-size: inherit;
+    }
+  }
+
+  > tbody {
+    > tr {
+      height: 36px;
+      vertical-align: middle;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-gray-5;
+      }
+
+      &:hover {
+        background-color: $color-gray-6;
+
+        > .mf-actions {
+          > .mf-icon-button {
+            opacity: 1;
+          }
+        }
+      }
+
+      > .mf-actions {
+        > .mf-icon-button {
+          opacity: 0;
+
+          &:focus {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  td, th {
+    padding: 0 5px;
+  }
+
+  tr {
+    height: 36px;
+    vertical-align: middle;
+  }
+
+  .mf-icon,
+  .mf-icon-button {
+    color: $color-gray-4;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+}

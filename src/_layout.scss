@@ -1,20 +1,17 @@
 @import 'config';
 
-@mixin borders() {
+@mixin mf-border() {
   &.mf-border-bottom { border-bottom: 1px solid $color-gray-2; }
   &.mf-border-left { border-left: 1px solid $color-gray-2; }
   &.mf-border-right { border-right: 1px solid $color-gray-2; }
   &.mf-border-top { border-top: 1px solid $color-gray-2; }
 }
 
-@mixin alignment() {
-  &.mf-align-start { text-align: left; }
-  &.mf-align-end { text-align: right; }
-}
+.mf-align-start { text-align: left; }
+.mf-align-end { text-align: right; }
 
 .mf-row {
-  @include alignment();
-  @include borders();
+  @include mf-border();
 
   display: flex;
   flex-flow: row;
@@ -29,8 +26,7 @@
 }
 
 .mf-column {
-  @include alignment();
-  @include borders();
+  @include mf-border();
 }
 
 .mf-fill {

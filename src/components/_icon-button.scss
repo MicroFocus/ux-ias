@@ -18,8 +18,6 @@
   }
 
   > .mf-icon {
-    @include square($icon-button-size);
-
     color: inherit;
     left: -1px;
     position: absolute;
