@@ -1,0 +1,27 @@
+@import '../_config';
+
+input {
+  border: 1px solid $color-gray-5;
+  border-radius: $border-radius;
+  padding: 8px;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &:focus {
+    border-color: $color-accent-1;
+    outline: none;
+  }
+
+  &[disabled] {
+    background-color: $color-gray-6;
+    border-color: $color-gray-5;
+  }
+}
+
+.mf-input-container {
+  &:not(:last-child) {
+    margin-bottom: $spacing;
+  }
+}

@@ -35,6 +35,36 @@
 <body>
     <h1>Kitchen Sink</h1>
 
+    <section id="form-fields">
+        <h2>Form Fields</h2>
+
+        <section>
+            <h3>Default (inline)</h3>
+
+            <input type="text" placeholder="Username" name="username" autocomplete="off" />
+            <input type="password" placeholder="Password" name="password" />
+        </section>
+
+        <section>
+            <h3>Default (stacked)</h3>
+
+            <div class="mf-input-container">
+                <input type="text" placeholder="Username" name="username" autocomplete="off" />
+            </div>
+            <div class="mf-input-container">
+                <input type="password" placeholder="Password" name="password" />
+            </div>
+        </section>
+
+        <section>
+            <h3>[disabled]</h3>
+
+            <div class="mf-input-container">
+                <input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
+            </div>
+        </section>
+    </section>
+
     <section id="tables">
         <h2>Tables</h2>
 
