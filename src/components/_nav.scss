@@ -1,3 +1,113 @@
-mf-nav {
+@import '../config';
+@import '../text';
 
+$mf-nav-height: 32px;
+$mf-nav-border-height: 2px;
+
+$mf-nav-bg-color: $color-gray-6;
+$mf-nav-text-color: $color-gray-2;
+
+.mf-nav {
+  background-color: $mf-nav-bg-color;
+  color: $mf-nav-text-color;
+  display: flex;
+  flex-flow: row nowrap;
+  height: $mf-nav-height;
+  padding: 0 $body-spacing-small;
+
+  > a {
+    font-size: 1em;
+    padding: 0 10px;
+    vertical-align: top;
+  }
+
+  > a,
+  .mf-icon,
+  .mf-icon-button,
+  > .mf-menu > button,
+  > .mf-menu > .mf-button {
+    height: $mf-nav-height - $mf-nav-border-height - 1px;
+    line-height: $mf-nav-height;
+    text-align: center;
+  }
+
+  > a,
+  .mf-icon-button,
+  > .mf-menu > button,
+  > .mf-menu > .mf-button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom-width: $mf-nav-border-height;
+    border-radius: 0;
+    box-sizing: content-box;
+    color: $mf-nav-text-color;
+
+    &[disabled],
+    &.mf-disabled {
+      color: $color-gray-5;
+    }
+
+    &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
+      &:focus {
+        border-color: $color-accent-1;
+      }
+
+      &:hover {
+        background-color: $color-gray-5;
+        border-color: transparent;
+        color: $color-gray-2;
+      }
+    }
+
+    &.mf-active {
+      border-bottom-color: $color-primary-4;
+      border-left-color: $color-gray-5;
+      border-right-color: $color-gray-5;
+      color: $color-gray-1;
+    }
+  }
+
+  > a,
+  > .mf-icon-button {
+    padding: 0 5px;
+    vertical-align: middle;
+  }
+
+  > .mf-menu {
+    > button,
+    > .mf-button {
+      > .mf-icon {
+        vertical-align: top;
+      }
+    }
+
+    > .mf-icon-button {
+      padding: 0 5px;
+    }
+
+    > .mf-menu-content {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  .mf-icon {
+    border: none;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .mf-icon,
+  .mf-icon-button {
+    font-size: 20px;
+    position: static;
+  }
+}
+
+@media (min-width: $large-display) {
+  .mf-nav {
+    padding: 0 $body-spacing-large;
+  }
 }

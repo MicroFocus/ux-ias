@@ -9,7 +9,7 @@ $link-text-color-disabled: $color-gray-4;
 // FOCUS
 $link-bg-color-focus: $color-accent-2;
 $link-border-color-focus: $color-accent-1;
-$link-text-color-focus: $link-text-color;
+$link-text-color-focus: $color-gray-2;
 
 // HOVER
 $link-bg-color-hover: $color-gray-7;
@@ -25,6 +25,7 @@ a {
   text-decoration: none;
 
   &:focus {
+    color: $link-text-color-focus;
     outline: none;
   }
 
@@ -37,7 +38,7 @@ a {
   &:not(.mf-disabled) {
     &:focus {
       background-color: $link-bg-color-focus;
-      border-color: $link-text-color-focus;
+      border-color: $link-border-color-focus;
       color: $link-text-color-focus;
     }
 
@@ -46,4 +47,6 @@ a {
       color: $link-text-color-hover;
     }
   }
+
+
 }

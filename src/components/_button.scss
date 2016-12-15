@@ -28,7 +28,7 @@ button,
   background-color: $mf-button-bg-color;
   border: 1px solid $mf-button-border-color;
   border-radius: $border-radius;
-  box-sizing: border-box;
+  box-sizing: content-box;
   color: $mf-button-text-color;
   cursor: pointer;
   display: inline-block;
@@ -70,8 +70,8 @@ button,
   &:not(.mf-icon-button) {
     > .mf-icon {
       color: inherit;
-      font-size: 1.17em;
-      margin-left: .59em;
+      font-size: .87em;
+      margin-left: .5em;
       vertical-align: middle;
     }
   }

@@ -43,6 +43,7 @@ $mf-menu-text-color: $color-gray-7;
   mf-button {
     background-color: transparent;
     border: none;
+    box-sizing: border-box;
     color: inherit;
     display: block;
     text-align: inherit;

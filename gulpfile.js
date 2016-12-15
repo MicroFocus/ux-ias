@@ -30,7 +30,7 @@ gulp.task('copy', function() {
         .pipe(gulp.dest(outputDirectory));
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['build', 'watch']);
 
 gulp.task('icons', function(done) {
     var iconStream = gulp

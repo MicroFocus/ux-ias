@@ -32,3 +32,7 @@
   @include alignment();
   @include borders();
 }
+
+.mf-fill {
+  flex-grow: 1;
+}

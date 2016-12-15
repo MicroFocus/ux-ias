@@ -10,7 +10,6 @@
 
     <style>
         body > section {
-            background-color: #eef2f2;
             padding: 5px 0;
             margin-bottom: 24px;
         }
@@ -22,16 +21,14 @@
             max-width: 100%;
         }
 
-        #app-bars > .mf-app-bar {
+        .mf-app-bar,
+        .mf-nav {
             margin-bottom: 24px;
         }
 
-        #menus > section {
-            min-height: 200px;
-        }
-
-        #menus .right {
-            text-align: right;
+        #menus > section,
+        #navs {
+            min-height: 250px;
         }
     </style>
 </head>
@@ -40,6 +37,50 @@
 
     <section id="navs">
         <h2>Nav</h2>
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a class="mf-active" href="#navs">Link 1</a>
+                <a href="#navs">Link 2</a>
+            </div>
+
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a class="mf-active" href="#navs">Link 1</a>
+                <a href="#navs">Link 2</a>
+                <div class="mf-menu mf-closed">
+                    <button type="button"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                </div>
+                <span class="mf-fill"></span>
+                <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-cancel_thick"></i></button>
+                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a href="#navs">Link 1</a>
+                <a class="mf-active" href="#navs">Link 2</a>
+                <div class="mf-menu mf-closed">
+                    <button type="button" disabled="disabled"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                </div>
+                <div class="mf-menu mf-open">
+                    <button type="button"><span>Link 4</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                    <div class="mf-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+                <span class="mf-fill"></span>
+                <div class="mf-menu mf-open mf-end">
+                    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+                    <div class="mf-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+
+            </div>
     </section>
 
     <section id="menus">
@@ -58,7 +99,7 @@
             <h3>.mf-open.mf-start</h3>
 
             <div class="mf-menu mf-open">
-                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
                 <div class="mf-menu-content">
                     <button type="button">Button 1</button>
                     <button type="button">Button 2</button>
@@ -67,11 +108,24 @@
             </div>
         </section>
 
-        <section class="right">
+        <section>
+            <h3>.mf-open.mf-start</h3>
+
+            <div class="mf-menu mf-open">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <h3>.mf-open.mf-end</h3>
 
             <div class="mf-menu mf-open mf-end">
-                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-up_thick"></i></button>
                 <div class="mf-menu-content">
                     <button type="button">Button 1</button>
                     <button type="button">Button 2</button>
@@ -177,7 +231,7 @@
         <h2>Icon Buttons</h2>
 
         <section>
-            <h3>Icon Buttons (Active)</h3>
+            <h3>Default</h3>
 
             <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
             <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
@@ -185,7 +239,7 @@
         </section>
 
         <section>
-            <h3>Icon Buttons (Disabled)</h3>
+            <h3>[disabled], .mf-disabled</h3>
 
             <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-check_thick"></i></button>
             <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-close_thick"></i></button>
@@ -197,13 +251,13 @@
         <h2>Links</h2>
 
         <section>
-            <h3>Active</h3>
+            <h3>Default</h3>
 
             <a href="#links">Anchor</a>
         </section>
 
         <section>
-            <h3>Disabled</h3>
+            <h3>.mf-disabled</h3>
 
             <a class="mf-disabled" href="#links" tabindex="-1">Anchor</a>
         </section>
@@ -213,7 +267,7 @@
         <h2>Icons</h2>
 
         <section>
-            <h3>Small</h3>
+            <h3>.mf-small</h3>
 
             <i class="mf-icon mf-icon-check_thick"></i>
             <i class="mf-icon mf-icon-close_thick"></i>
@@ -221,7 +275,7 @@
         </section>
 
         <section>
-            <h3>Medium</h3>
+            <h3>.mf-medium</h3>
 
             <i class="mf-icon mf-icon-check_thick mf-medium"></i>
             <i class="mf-icon mf-icon-close_thick mf-medium"></i>
@@ -229,7 +283,7 @@
         </section>
 
         <section>
-            <h3>Large</h3>
+            <h3>.mf-large</h3>
 
             <i class="mf-icon mf-icon-check_thick mf-large"></i>
             <i class="mf-icon mf-icon-close_thick mf-large"></i>
