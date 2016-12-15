@@ -45,6 +45,12 @@ button,
     outline: none;
   }
 
+  &.mf-primary {
+    background-color: $color-primary-1;
+    border-color: $color-primary-1;
+    color: #ffffff;
+  }
+
   &[disabled],
   &.mf-disabled {
     background-color: $mf-button-bg-color-disabled;
@@ -62,7 +68,7 @@ button,
 
     &:hover {
       background-color: $mf-button-bg-color-hover;
-      border-color: $mf-button-border-color-hover;
+      border: 1px solid $mf-button-border-color-hover;
       color: $mf-button-text-color-hover;
     }
   }

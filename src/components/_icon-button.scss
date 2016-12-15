@@ -25,4 +25,9 @@
     position: absolute;
     top: -1px;
   }
+
+  &.mf-primary {
+    background-color: $color-primary-1;
+    color: #ffffff;
+  }
 }
