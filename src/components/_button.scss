@@ -68,7 +68,7 @@ button,
 
     &:hover {
       background-color: $mf-button-bg-color-hover;
-      border: 1px solid $mf-button-border-color-hover;
+      border-color: $mf-button-border-color-hover;
       color: $mf-button-text-color-hover;
     }
   }
