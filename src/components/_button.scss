@@ -3,11 +3,11 @@
 
 $mf-button-bg-color: $color-gray-7;
 $mf-button-border-color: $color-gray-5;
-$mf-button-text-color: $color-gray-1;
+$mf-button-text-color: $color-text;
 
 // DISABLED
 $mf-button-bg-color-disabled: $mf-button-bg-color;
-$mf-button-border-color-disabled: $color-gray-5;
+$mf-button-border-color-disabled: $color-text-disabled;
 $mf-button-text-color-disabled: $mf-button-border-color-disabled;
 
 // FOCUS
