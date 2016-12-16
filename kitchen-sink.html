@@ -26,7 +26,11 @@
             margin-bottom: 24px;
         }
 
-        .mf-tile {
+        .mf-grid {
+            width: 330px;
+        }
+
+        .mf-panel {
             max-width: 300px;
         }
 
@@ -34,18 +38,22 @@
         #navs {
             min-height: 310px;
         }
+
+        #mf-details > .mf-grid {
+            width: 490px;
+        }
     </style>
 </head>
 <body>
     <h1>Kitchen Sink</h1>
 
-    <section id="tiles">
-        <h2>Tiles</h2>
+    <section id="panels">
+        <h2>Panels</h2>
 
         <section>
             <h3>Default</h3>
 
-            <div class="mf-tile">
+            <div class="mf-panel mf-content-padding">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
                 Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
                 Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
@@ -55,20 +63,220 @@
         </section>
 
         <section>
-            <h3>w/ title</h3>
+            <h3>.mf-panel-header</h3>
 
-            <div class="mf-tile">
-                <div class="mf-tile-header">
+            <div class="mf-panel mf-content-padding">
+                <div class="mf-panel-header">
                     <h3>Tile Title Goes Here</h3>
                     <span class="mf-fill"></span>
                     <button>Button</button>
                 </div>
-                <div class="mf-tile-content">
+                <div class="mf-panel-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
                     Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
                     Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
                     cursus diam efficitur tristique quis et mi. Proin sit amet consequat dolor, ac vehicula quam. Nulla
                     sed justo faucibus, rutrum purus ut, cursus tellus. Sed t
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="grids">
+        <h2>Grids</h2>
+
+        <section>
+            <h3>.mf-small</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <h3>Search</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <h3>OneDrive</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <h3>Geeko</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <h3>Version One</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/box_logo.png)">
+                    </div>
+                    <h3>Box</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/clarity_115.png)">
+                    </div>
+                    <h3>Clarity</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/google_docs_300.png)">
+                    </div>
+                    <h3>Google Apps</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/gotomeeting_300.png)">
+                    </div>
+                    <h3>GoToMeeting</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-list</h3>
+
+            <div class="mf-grid mf-list">
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <h3>Search</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <h3>OneDrive</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <h3>Geeko</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <h3>Version One</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/box_logo.png)">
+                    </div>
+                    <h3>Box</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/clarity_115.png)">
+                    </div>
+                    <h3>Clarity</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/google_docs_300.png)">
+                    </div>
+                    <h3>Google Apps</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/gotomeeting_300.png)">
+                    </div>
+                    <h3>GoToMeeting</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-details.mf-stacked</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Search</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>OneDrive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Geeko</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Version One</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mf-details">
+            <h3>.mf-details</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Search</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>OneDrive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Geeko</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Version One</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
                 </div>
             </div>
         </section>

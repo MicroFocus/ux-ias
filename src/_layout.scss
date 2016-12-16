@@ -1,4 +1,5 @@
 @import 'config';
+@import 'text';
 
 @mixin mf-border() {
   &.mf-border-bottom { border-bottom: 1px solid $color-gray-2; }
@@ -9,6 +10,10 @@
 
 .mf-align-start { text-align: left; }
 .mf-align-end { text-align: right; }
+
+.mf-content-padding {
+  padding: $content-padding;
+}
 
 .mf-row {
   @include mf-border();
