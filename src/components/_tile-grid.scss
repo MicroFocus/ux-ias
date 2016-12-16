@@ -24,6 +24,7 @@ $mf-grid-tile-width-details: 240px;
   color: $color-gray-1;
   cursor: pointer;
   padding: $mf-grid-tile-padding;
+  position: relative;
 
   &:focus {
     border-color: $color-accent-1;
@@ -84,6 +85,12 @@ $mf-grid-tile-width-details: 240px;
       }
     }
 
+    > .mf-avatar {
+      flex: 0 0 $mf-grid-tile-avatar-size-small;
+      height: $mf-grid-tile-avatar-size-small;
+      width: $mf-grid-tile-avatar-size-small;
+    }
+
     > .mf-tile-content {
       flex: 1 1 1px;
       margin-left: 10px;
@@ -99,12 +106,12 @@ $mf-grid-tile-width-details: 240px;
         overflow: hidden;
       }
     }
+  }
 
-    > .mf-avatar {
-      flex: 0 0 $mf-grid-tile-avatar-size-small;
-      height: $mf-grid-tile-avatar-size-small;
-      width: $mf-grid-tile-avatar-size-small;
-    }
+  > .mf-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   h3 {
