@@ -8,8 +8,9 @@ $mf-icon-size-medium: 32px;
 $mf-icon-size-large: 40px;
 
 .mf-icon {
-  color: $mf-icon-color;
   @include square($mf-icon-size-small);
+
+  color: inherit;
 
   &.mf-medium {
     @include square($mf-icon-size-medium);
