@@ -1,0 +1,32 @@
+@import '../config';
+@import '../text';
+
+.mf-panel {
+  background-color: $color-gray-6;
+  border-radius: $border-radius;
+}
+
+.mf-tile {
+  @extend .mf-panel;
+  
+  padding: 20px;
+
+  > .mf-tile-header {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 2 * $spacing;
+
+    > h3 {
+      @include single-line();
+
+      color: $color-gray-4;
+      font-size: 15px;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+}
