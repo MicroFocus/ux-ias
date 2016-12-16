@@ -1,6 +1,8 @@
 @import '../_config';
 
-input {
+input,
+select,
+textarea {
   border: 1px solid $color-gray-5;
   border-radius: $border-radius;
   padding: 8px;
@@ -20,8 +22,34 @@ input {
   }
 }
 
+label {
+  color: $color-gray-2;
+  font-size: 12px;
+  vertical-align: middle;
+
+  &:not(:first-of-type) {
+    margin-left: $spacing;
+  }
+
+  > input,
+  > select,
+  > textarea {
+    margin-left: 5px;
+  }
+}
+
 .mf-input-container {
   &:not(:last-child) {
     margin-bottom: $spacing;
+  }
+
+  &.mf-inline {
+    display: inline-block;
+  }
+
+  > label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: $spacing;
   }
 }
