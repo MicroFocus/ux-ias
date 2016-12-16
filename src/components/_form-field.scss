@@ -1,11 +1,13 @@
 @import '../_config';
 
+$mf-input-padding: 8px;
+
 input,
 select,
 textarea {
   border: 1px solid $color-gray-5;
   border-radius: $border-radius;
-  padding: 8px;
+  padding: $mf-input-padding;
 
   &::-ms-clear {
     display: none;
@@ -45,6 +47,33 @@ label {
 
   &.mf-inline {
     display: inline-block;
+  }
+
+  &.mf-search {
+    position: relative;
+
+    > input {
+      padding: $mf-input-padding 30px;
+    }
+
+    > .mf-icon {
+      left: 5px;
+    }
+
+    > .mf-icon-button {
+      right: 5px;
+    }
+
+    > .mf-icon,
+    > .mf-icon-button {
+      font-size: 20px;
+      position: absolute;
+      top: 6px;
+
+      > .mf-icon {
+        font-size: inherit;
+      }
+    }
   }
 
   > label {
