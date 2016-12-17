@@ -13,10 +13,10 @@ var gulpWatch = require('gulp-watch');
 
 var iconFiles = './icons/*.svg';
 var iconFontName = 'mf-icons';
-var kitchenSinkFile = './kitchen-sink.html';
+var htmlFiles = './*.html';
 var outputDirectory = './dist/';
 var sassFiles = './src/**/*.scss';
-var sassManifestFile = './src/mfux.scss';
+var sassManifestFiles = [ './src/mfux.scss', './src/mfux_dark.scss' ] ;
 var pkg = JSON.parse(fs.readFileSync('./package.json'));
 
 gulp.task('clean', function() {
@@ -26,7 +26,7 @@ gulp.task('clean', function() {
 
 gulp.task('copy', function() {
     return gulp
-        .src(kitchenSinkFile)
+        .src(htmlFiles)
         .pipe(gulp.dest(outputDirectory));
 });
 
@@ -86,13 +86,13 @@ gulp.task('icons', function(done) {
 });
 
 gulp.task('sass', function() {
-    return processSass(sassManifestFile, { outputStyle: 'expanded' })
+    return processSass(sassManifestFiles, { outputStyle: 'expanded' })
         .pipe(gulp.dest(outputDirectory));
 });
 
 gulp.task('sass-minified', function() {
-    return processSass(sassManifestFile, { outputStyle: 'compressed', sourceMap: true })
-        .pipe(gulpRename('mfux.min.css'))
+    return processSass(sassManifestFiles, { outputStyle: 'compressed' })
+        .pipe(gulpRename({ suffix: '.min' }))
         .pipe(gulp.dest(outputDirectory));
 });
 
@@ -104,7 +104,7 @@ gulp.task('watch', function() {
     gulpWatch(iconFiles, function() {
         gulp.start('icons');
     });
-    gulpWatch(kitchenSinkFile, function() {
+    gulpWatch(htmlFiles, function() {
         gulp.start('copy');
     })
 });

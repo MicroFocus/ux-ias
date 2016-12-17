@@ -10,9 +10,6 @@ $color-gray-5: #dae1e1;
 $color-gray-6: #eef2f2;
 $color-gray-7: #f6f9f8;
 
-$color-text: $color-gray-1;
-$color-text-disabled: $color-gray-5;
-
 $color-primary-1: #1773bb;
 $color-primary-2: #007cd0;
 $color-primary-3: #0088ce;
@@ -22,17 +19,46 @@ $color-primary-5: #01a9e7;
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 
+// COMPONENTS
+$app-bar-bg-color-1: $color-primary-5;
+$app-bar-bg-color-2: $color-primary-2;
+$app-bar-text-color: $color-gray-7;
+
+$body-bg-color: #ffffff;
+
+$border-color: $color-gray-5;
+
+$menu-bg-color: $color-gray-1;
+$menu-text-color: $color-gray-7;
+$menu-bg-color-hover: $color-gray-3;
+$menu-border-color: $color-gray-2;
+
+$text-color: $color-gray-1;
+$text-color-disabled: $color-gray-5;
+
 // DISPLAY SIZE
 $large-display: 769px;
 
 // ICONS
 $icon-button-size: 24px;
 
+// INPUTS
+$input-bg-color: $body-bg-color;
+
 // SPACING
 $body-spacing-small: 1em;
 $body-spacing-large: 1.7em;
 $content-padding: 20px;
 $spacing: 10px;
+
+// STATES
+$disabled-bg-color: $color-gray-6;
+$disabled-border-color: $color-gray-5;
+$disabled-text-color: $color-gray-5;
+
+$focus-bg-color: $color-accent-2;
+$focus-border-color: $color-accent-1;
+$focus-text-color: $color-gray-1;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, san-serif;

@@ -1,7 +1,4 @@
-@import '../config';
 @import '../text';
-
-$mf-menu-text-color: $color-gray-7;
 
 .mf-menu {
   display: inline-block;
@@ -30,10 +27,10 @@ $mf-menu-text-color: $color-gray-7;
 }
 
 .mf-menu-content {
-  background-color: $color-gray-1;
+  background-color: $menu-bg-color;
   border-radius: $border-radius;
   box-sizing: border-box;
-  color: $mf-menu-text-color;
+  color: $menu-text-color;
   left: 0;
   overflow: hidden;
   padding: $spacing;
@@ -52,9 +49,14 @@ $mf-menu-text-color: $color-gray-7;
     &:not([disabled]):not(.mf-disabled) {
       &:focus,
       &:hover {
-        background-color: $color-gray-3;
+        background-color: $menu-bg-color-hover;
         color: inherit;
       }
     }
   }
+
+  .mf-border-bottom { border-color: $menu-border-color; }
+  .mf-border-left { border-color: $menu-border-color; }
+  .mf-border-right { border-color: $menu-border-color; }
+  .mf-border-top { border-color: $menu-border-color; }
 }

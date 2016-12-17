@@ -1,24 +1,18 @@
-@import '../config';
 @import '../text';
 
 $mf-button-bg-color: $color-gray-7;
 $mf-button-border-color: $color-gray-5;
-$mf-button-text-color: $color-text;
+$mf-button-text-color: $text-color;
 
 // DISABLED
 $mf-button-bg-color-disabled: $mf-button-bg-color;
-$mf-button-border-color-disabled: $color-text-disabled;
+$mf-button-border-color-disabled: $text-color-disabled;
 $mf-button-text-color-disabled: $mf-button-border-color-disabled;
-
-// FOCUS
-$mf-button-bg-color-focus: $color-accent-2;
-$mf-button-border-color-focus: $color-accent-1;
-$mf-button-text-color-focus: $mf-button-text-color;
 
 // HOVER
 $mf-button-bg-color-hover: $mf-button-bg-color;
-$mf-button-border-color-hover: $color-primary-4;
-$mf-button-text-color-hover: $color-primary-1;
+$mf-button-border-color-hover: $color-primary-2;
+$mf-button-text-color-hover: $color-primary-2;
 
 button,
 .mf-button {
@@ -41,14 +35,10 @@ button,
   text-decoration: none;
   vertical-align: middle;
 
-  &:focus {
-    outline: none;
-  }
-
-  &.mf-primary {
-    background-color: $color-primary-1;
-    border-color: $color-primary-1;
-    color: #ffffff;
+  &.mf-cta {
+    background-color: $color-gray-1;
+    border-color: $color-gray-1;
+    color: $color-gray-7;
   }
 
   &[disabled],
@@ -61,9 +51,7 @@ button,
 
   &:not([disabled]):not(.mf-disabled) {
     &:focus {
-      background-color: $mf-button-bg-color-focus;
-      border-color: $mf-button-border-color-focus;
-      color: $mf-button-text-color-focus;
+      @include focus-state;
     }
 
     &:hover {

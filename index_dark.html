@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>MicroFocus UX - Kitchen Sink</title>
+    <link href="mfux_dark.css" rel="stylesheet" type="text/css" />
+    <link href="mf-icons.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body > section {
+            padding: 5px 0;
+            margin-bottom: 24px;
+        }
+
+        section > section {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 24px;
+            max-width: 100%;
+        }
+
+        .mf-app-bar,
+        .mf-nav {
+            margin-bottom: 24px;
+        }
+
+        .mf-grid {
+            width: 330px;
+        }
+
+        .mf-panel {
+            max-width: 300px;
+        }
+
+        .mf-tile > .mf-actions {
+            color: #007cd0;
+        }
+
+        #menus > section,
+        #navs {
+            min-height: 310px;
+        }
+
+        #mf-details > .mf-grid {
+            width: 490px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kitchen Sink</h1>
+
+    <section id="panels">
+        <h2>Panels</h2>
+
+        <section>
+            <h3>Default</h3>
+
+            <div class="mf-panel mf-content-padding">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
+                Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
+                Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
+                cursus diam efficitur tristique quis et mi. Proin sit amet consequat dolor, ac vehicula quam. Nulla
+                sed justo faucibus, rutrum purus ut, cursus tellus. Sed t
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-panel-header</h3>
+
+            <div class="mf-panel mf-content-padding">
+                <div class="mf-panel-header">
+                    <h3>Tile Title Goes Here</h3>
+                    <span class="mf-fill"></span>
+                    <button>Button</button>
+                </div>
+                <div class="mf-panel-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
+                    Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
+                    Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
+                    cursus diam efficitur tristique quis et mi. Proin sit amet consequat dolor, ac vehicula quam. Nulla
+                    sed justo faucibus, rutrum purus ut, cursus tellus. Sed t
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="grids">
+        <h2>Grids</h2>
+
+        <section>
+            <h3>.mf-small</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <h3>Search</h3>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <h3>OneDrive</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <h3>Geeko</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <h3>Version One</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/box_logo.png)">
+                    </div>
+                    <h3>Box</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/clarity_115.png)">
+                    </div>
+                    <h3>Clarity</h3>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/google_docs_300.png)">
+                    </div>
+                    <h3>Google Apps</h3>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile mf-small" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/gotomeeting_300.png)">
+                    </div>
+                    <h3>GoToMeeting</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-list</h3>
+
+            <div class="mf-grid mf-list">
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <h3>Search</h3>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <h3>OneDrive</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <h3>Geeko</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <h3>Version One</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/box_logo.png)">
+                    </div>
+                    <h3>Box</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/clarity_115.png)">
+                    </div>
+                    <h3>Clarity</h3>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/google_docs_300.png)">
+                    </div>
+                    <h3>Google Apps</h3>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/gotomeeting_300.png)">
+                    </div>
+                    <h3>GoToMeeting</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-details.mf-stacked</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Search</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>OneDrive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Geeko</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details mf-stacked" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Version One</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mf-details">
+            <h3>.mf-details</h3>
+
+            <div class="mf-grid">
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Search</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                    <div class="mf-actions">
+                        <i class="mf-icon mf-icon-favorite_fill"></i>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>OneDrive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Geeko</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+                <div class="mf-tile mf-details" tabindex="0">
+                    <div class="mf-avatar"
+                         style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                    </div>
+                    <div class="mf-tile-content">
+                        <h3>Version One</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="form-fields">
+        <h2>Form Fields</h2>
+
+        <section>
+            <h3>Default (inline)</h3>
+
+            <input type="text" placeholder="Username" name="username" autocomplete="off" />
+            <input type="password" placeholder="Password" name="password" />
+        </section>
+
+        <section>
+            <h3>Default (inline) w/ labels</h3>
+
+            <label>
+                Username
+                <input type="text" name="username" autocomplete="off" />
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" />
+            </label>
+        </section>
+
+        <section>
+            <h3>Default (stacked)</h3>
+
+            <div class="mf-input-container">
+                <input type="text" placeholder="Username" name="username" autocomplete="off" />
+            </div>
+            <div class="mf-input-container">
+                <input type="password" placeholder="Password" name="password" />
+            </div>
+        </section>
+
+        <section>
+            <h3>Default (stacked) w/ labels</h3>
+
+            <div class="mf-input-container">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" autocomplete="off" />
+            </div>
+            <div class="mf-input-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+            </div>
+        </section>
+
+        <section>
+            <h3>[disabled]</h3>
+
+            <div class="mf-input-container">
+                <input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
+            </div>
+        </section>
+
+        <section>
+            <h3>select (inline)</h3>
+
+            <label>
+                Drop Down 1
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </label>
+            <label>
+                Drop Down 2
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </label>
+        </section>
+
+        <section>
+            <h3>select (stacked)</h3>
+
+            <div class="mf-input-container">
+                <label for="drop-down-1">Drop Down 1</label>
+                <select id="drop-down-1">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="mf-input-container">
+                <label for="drop-down-2">Drop Down 2</label>
+                <select id="drop-down-2">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <h3>Default (stacked) w/ .mf-inline</h3>
+
+            <div class="mf-input-container mf-inline">
+                <label for="username-2">Username</label>
+                <input type="text" name="username" id="username-2" autocomplete="off" />
+            </div>
+            <div class="mf-input-container mf-inline">
+                <label for="password-2">Password</label>
+                <input type="password" name="password" id="password-2" />
+            </div>
+        </section>
+
+        <section>
+            <h3>textarea</h3>
+
+            <div class="mf-input-container">
+                <label for="textarea-2">Long Text</label>
+                <textarea id="textarea-2"></textarea>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-search</h3>
+
+            <div class="mf-input-container mf-search">
+                <input type="text" placeholder="Search" />
+                <i class="mf-icon mf-icon-search_thick"></i>
+                <button class="mf-icon-button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+        </section>
+    </section>
+
+    <section id="tables">
+        <h2>Tables</h2>
+
+        <section>
+            <h3>Default</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-search_thick"></i>
+                            </button>
+                        </td>
+                        <td>Lynn Christensen</td>
+                        <td>Asst. to the UX Director</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="mf-icon-button" type="button" disabled="disabled">
+                                <i class="mf-icon mf-icon-cancel_thick"></i>
+                            </button>
+                        </td>
+                        <td>Joe Hawkins</td>
+                        <td>The Valiant</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-search_thick"></i>
+                            </button>
+                        </td>
+                        <td>Joseph White</td>
+                        <td>Destroyer of Worlds</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Sorted</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name <i class="mf-icon mf-icon-up_thick"></i></th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joe Hawkins</td>
+                        <td>The Valiant</td>
+                    </tr>
+                    <tr>
+                        <td>Joseph White</td>
+                        <td>Destroyer of Worlds</td>
+                    </tr>
+                    <tr>
+                        <td>Lynn Christensen</td>
+                        <td>Asst. to the UX Director</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>th,td.mf-align-end</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th class="mf-align-end">Owes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lynn Christensen</td>
+                        <td class="mf-align-end">$10.21</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Hawkins</td>
+                        <td class="mf-align-end">$1000.21</td>
+                    </tr>
+                    <tr>
+                        <td>Joseph White</td>
+                        <td class="mf-align-end">$100.21</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>th,td.mf-actions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th class="mf-align-end">Owes</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lynn Christensen</td>
+                        <td class="mf-align-end">$10.21</td>
+                        <td class="mf-actions">
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-search_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-close_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-new_thick"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Joe Hawkins</td>
+                        <td class="mf-align-end">$1000.21</td>
+                        <td class="mf-actions">
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-search_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-close_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-new_thick"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Joseph White</td>
+                        <td class="mf-align-end">$100.21</td>
+                        <td class="mf-actions">
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-search_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-close_thick"></i>
+                            </button>
+                            <button class="mf-icon-button" type="button">
+                                <i class="mf-icon mf-icon-new_thick"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <section id="navs">
+        <h2>Nav</h2>
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a class="mf-active" href="#navs">Link 1</a>
+                <a href="#navs">Link 2</a>
+            </div>
+
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a class="mf-active" href="#navs">Link 1</a>
+                <a href="#navs">Link 2</a>
+                <div class="mf-menu mf-closed">
+                    <button type="button"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                </div>
+                <span class="mf-fill"></span>
+                <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-cancel_thick"></i></button>
+                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+
+            <div class="mf-nav">
+                <a href="#navs"><i class="mf-icon mf-icon-search_thick"></i></a>
+                <a href="#navs">Link 1</a>
+                <a class="mf-active" href="#navs">Link 2</a>
+                <div class="mf-menu mf-closed">
+                    <button type="button" disabled="disabled"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                </div>
+                <div class="mf-menu mf-open">
+                    <button type="button"><span>Link 4</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                    <div class="mf-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+                <span class="mf-fill"></span>
+                <div class="mf-menu mf-open mf-end">
+                    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+                    <div class="mf-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="menus">
+        <h2>Menus</h2>
+
+        <section>
+            <h3>.mf-closed</h3>
+
+            <div class="mf-menu mf-closed">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+                <div class="mf-menu-content"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-open.mf-start</h3>
+
+            <div class="mf-menu mf-open">
+                <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-open.mf-start</h3>
+
+            <div class="mf-menu mf-open">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>.mf-open.mf-end</h3>
+
+            <div class="mf-menu mf-open mf-end">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                    <button type="button">Button 3</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Complex Menu</h3>
+
+            <div class="mf-menu-content">
+                <div class="mf-row mf-border-bottom">
+                    <div class="mf-column mf-border-right">
+                        <div class="mf-row mf-border-bottom">
+                            <div class="mf-column">
+                                <button type="button">View My Devices</button>
+                                <button type="button">Help Me...(end-user)</button>
+                                <button type="button">Request impersonate session...(HelpDesk)</button>
+                            </div>
+                        </div>
+                        <div class="mf-row mf-border-bottom">
+                            <div class="mf-column">
+                                <button type="button">Button 4</button>
+                                <button type="button">An Interesting Link</button>
+                                <button type="button">Button 6</button>
+                                <button type="button">Button 7</button>
+                                <button type="button">Request Support</button>
+                                <button type="button">Button 9</button>
+                            </div>
+                        </div>
+                        <div class="mf-row">
+                            <div class="mf-column">
+                                <button type="button">Button 10</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mf-column mf-align-end">
+                        <button type="button">Help</button>
+                        <button type="button">Settings</button>
+                        <button type="button">Log Out</button>
+                    </div>
+                </div>
+                <div class="mf-row">
+                    <div class="mf-column">
+                        <button type="button">IDM Prototype</button>
+                        <button type="button">Add Users</button>
+                        <button type="button">Button 13</button>
+                        <button type="button">A Button That Extends Well Beyond the Column Immediately Above It</button>
+                        <button type="button">Button 15</button>
+                        <button type="button">MicroFocus Branded Sign</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="app-bars">
+        <h2>App Bars</h2>
+
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+        </div>
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+            <span class="mf-fill"></span>
+            <div class="mf-menu">
+                <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+            </div>
+        </div>
+        <div class="mf-app-bar">
+            <h3>Title</h3>
+            <span class="mf-fill"></span>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </div>
+    </section>
+
+    <section id="buttons">
+        <h2>Buttons</h2>
+
+        <section>
+            <h3>Default</h3>
+
+            <button type="button">Button</button>
+            <div class="mf-button" tabindex="0">CSS Class</div>
+            <a class="mf-button" href="#buttons">Anchor</a>
+            <button type="button"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>[disabled], .mf-disabled</h3>
+
+            <button type="button" disabled="disabled">Button</button>
+            <div class="mf-button mf-disabled" tabindex="-1">CSS Class</div>
+            <a class="mf-button mf-disabled" href="#buttons" tabindex="-1">Anchor</a>
+            <button type="button" disabled="disabled"><span>Lynn Christensen</span><i class="mf-icon mf-icon-down_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>.mf-cta</h3>
+
+            <button type="button" class="mf-cta">Button</button>
+        </section>
+    </section>
+
+    <section id="icon-buttons">
+        <h2>Icon Buttons</h2>
+
+        <section>
+            <h3>Default</h3>
+
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>[disabled], .mf-disabled</h3>
+
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </section>
+
+        <section>
+            <h3>.mf-cta</h3>
+
+            <button class="mf-icon-button mf-cta" type="button"><i class="mf-icon mf-icon-check_thick"></i></button>
+            <button class="mf-icon-button mf-cta" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            <button class="mf-icon-button mf-cta" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
+        </section>
+    </section>
+
+    <section id="links">
+        <h2>Links</h2>
+
+        <section>
+            <h3>Default</h3>
+
+            <a href="#links">Anchor</a>
+        </section>
+
+        <section>
+            <h3>.mf-disabled</h3>
+
+            <a class="mf-disabled" href="#links" tabindex="-1">Anchor</a>
+        </section>
+    </section>
+
+    <section id="icons">
+        <h2>Icons</h2>
+
+        <section>
+            <h3>.mf-small</h3>
+
+            <i class="mf-icon mf-icon-check_thick"></i>
+            <i class="mf-icon mf-icon-close_thick"></i>
+            <i class="mf-icon mf-icon-new_thick"></i>
+        </section>
+
+        <section>
+            <h3>.mf-medium</h3>
+
+            <i class="mf-icon mf-icon-check_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-close_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-new_thick mf-medium"></i>
+        </section>
+
+        <section>
+            <h3>.mf-large</h3>
+
+            <i class="mf-icon mf-icon-check_thick mf-large"></i>
+            <i class="mf-icon mf-icon-close_thick mf-large"></i>
+            <i class="mf-icon mf-icon-new_thick mf-large"></i>
+        </section>
+    </section>
+</body>
+</html>

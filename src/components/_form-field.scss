@@ -1,12 +1,12 @@
-@import '../_config';
-
 $mf-input-padding: 8px;
 
 input,
 select,
 textarea {
+  background-color: $input-bg-color;
   border: 1px solid $color-gray-5;
   border-radius: $border-radius;
+  color: inherit;
   padding: $mf-input-padding;
 
   &::-ms-clear {
@@ -14,13 +14,11 @@ textarea {
   }
 
   &:focus {
-    border-color: $color-accent-1;
-    outline: none;
+    @include focus-state;
   }
 
   &[disabled] {
-    background-color: $color-gray-6;
-    border-color: $color-gray-5;
+    @include disabled-state;
   }
 }
 
@@ -54,6 +52,13 @@ label {
 
     > input {
       padding: $mf-input-padding 30px;
+
+      &:focus {
+        & ~ .mf-icon,
+        & ~ .mf-icon-button {
+          color: $focus-text-color;
+        }
+      }
     }
 
     > .mf-icon {
@@ -66,6 +71,7 @@ label {
 
     > .mf-icon,
     > .mf-icon-button {
+      color: inherit;
       font-size: 20px;
       position: absolute;
       top: 6px;

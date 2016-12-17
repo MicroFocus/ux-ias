@@ -1,0 +1,13 @@
+@mixin disabled-state() {
+  background-color: $disabled-bg-color;
+  border-color: $disabled-border-color;
+  color: $disabled-text-color;
+  outline: none;
+}
+
+@mixin focus-state() {
+  background-color: $focus-bg-color;
+  border-color: $focus-border-color;
+  color: $focus-text-color;
+  outline: none;
+}

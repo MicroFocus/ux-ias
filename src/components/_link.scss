@@ -1,10 +1,9 @@
-@import '../config';
 
 $link-text-color: $color-primary-3;
 
 // DISABLED
 $link-bg-color-disabled: transparent;
-$link-text-color-disabled: $color-text-disabled;
+$link-text-color-disabled: $text-color-disabled;
 
 // FOCUS
 $link-bg-color-focus: $color-accent-2;
@@ -24,11 +23,6 @@ a {
   padding: 2px;
   text-decoration: none;
 
-  &:focus {
-    color: $link-text-color-focus;
-    outline: none;
-  }
-
   &.mf-disabled {
     background-color: $link-bg-color-disabled;
     color: $link-text-color-disabled;
@@ -37,9 +31,7 @@ a {
 
   &:not(.mf-disabled) {
     &:focus {
-      background-color: $link-bg-color-focus;
-      border-color: $link-border-color-focus;
-      color: $link-text-color-focus;
+      @include focus-state;
     }
 
     &:hover {

@@ -1,4 +1,3 @@
-@import '../config';
 @import '../text';
 
 $mf-nav-height: 32px;
@@ -44,12 +43,12 @@ $mf-nav-text-color: $color-gray-2;
 
     &[disabled],
     &.mf-disabled {
-      color: $color-text-disabled;
+      color: $text-color-disabled;
     }
 
     &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
       &:focus {
-        border-color: $color-accent-1;
+        border-color: $focus-border-color;
       }
 
       &:hover {
@@ -63,7 +62,7 @@ $mf-nav-text-color: $color-gray-2;
       border-bottom-color: $color-primary-4;
       border-left-color: $color-gray-5;
       border-right-color: $color-gray-5;
-      color: $color-text;
+      color: $text-color;
     }
   }
 

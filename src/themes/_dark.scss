@@ -1,0 +1,66 @@
+// BORDERS
+$border-radius: 3px;
+
+// COLORS
+$color-gray-1: #f6f9f8;
+$color-gray-2: #eef2f2;
+$color-gray-3: #dae1e1;
+$color-gray-4: #808080;
+$color-gray-5: #626e72;
+$color-gray-6: #59656a;
+$color-gray-7: #434c50;
+$color-gray-8: #2c2c2c;
+
+$color-primary-1: #1773bb;
+$color-primary-2: #007cd0;
+$color-primary-3: #0088ce;
+$color-primary-4: #28a9e1;
+$color-primary-5: #01a9e7;
+
+$color-accent-1: #ffd92d;
+$color-accent-2: #fff6ce;
+
+// COMPONENTS
+$app-bar-bg-color-1: $color-primary-5;
+$app-bar-bg-color-2: $color-primary-2;
+$app-bar-text-color: $color-gray-1;
+
+$body-bg-color: $color-gray-8;
+
+$border-color: $color-gray-5;
+
+$menu-bg-color: $color-gray-7;
+$menu-text-color: $color-gray-1;
+$menu-bg-color-hover: $color-gray-6;
+$menu-border-color: $color-gray-6;
+
+$text-color: $color-gray-1;
+$text-color-disabled: $color-gray-4;
+
+// DISPLAY SIZE
+$large-display: 769px;
+
+// ICONS
+$icon-button-size: 24px;
+
+// INPUTS
+$input-bg-color: $color-gray-7;
+
+// SPACING
+$body-spacing-small: 1em;
+$body-spacing-large: 1.7em;
+$content-padding: 20px;
+$spacing: 10px;
+
+//STATES
+$disabled-bg-color: $color-gray-7;
+$disabled-border-color: $color-gray-7;
+$disabled-text-color: $color-gray-6;
+
+$focus-bg-color: $color-accent-2;
+$focus-border-color: $color-accent-1;
+$focus-text-color: $color-gray-7;
+
+// TYPOGRAPHY
+$font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, san-serif;
+$font-base-size: 14px;
