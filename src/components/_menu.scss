@@ -1,7 +1,7 @@
-@import '../text';
-
 .mf-menu {
+  color: inherit;
   display: inline-block;
+  font-size: inherit;
   position: relative;
   max-width: 100%;
 
@@ -31,6 +31,7 @@
   border-radius: $border-radius;
   box-sizing: border-box;
   color: $menu-text-color;
+  font-size: $menu-content-font-size;
   left: 0;
   overflow: hidden;
   padding: $spacing;

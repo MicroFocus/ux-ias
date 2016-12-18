@@ -1,38 +1,22 @@
-@import '../text';
-
-$mf-button-bg-color: $color-gray-7;
-$mf-button-border-color: $color-gray-5;
-$mf-button-text-color: $text-color;
-
-// DISABLED
-$mf-button-bg-color-disabled: $mf-button-bg-color;
-$mf-button-border-color-disabled: $text-color-disabled;
-$mf-button-text-color-disabled: $mf-button-border-color-disabled;
-
-// HOVER
-$mf-button-bg-color-hover: $mf-button-bg-color;
-$mf-button-border-color-hover: $color-primary-2;
-$mf-button-text-color-hover: $color-primary-2;
-
 button,
 .mf-button {
   @include disable-text-selection();
   @include single-line();
 
-  background-color: $mf-button-bg-color;
-  border: 1px solid $mf-button-border-color;
+  background-color: $button-bg-color;
+  border: 1px solid $button-border-color;
   border-radius: $border-radius;
   box-sizing: content-box;
-  color: $mf-button-text-color;
+  color: $button-text-color;
   cursor: pointer;
   display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  font-size: 1em;
-  min-width: 3em;
+  height: $button-height;
+  line-height: $button-height;
+  font-size: $button-font-size;
+  min-width: $button-min-width;
   padding: 0 $spacing;
   text-align: center;
-  text-decoration: none;
+  text-decoration: $button-text-transform;
   vertical-align: middle;
 
   &.mf-cta {
@@ -43,9 +27,9 @@ button,
 
   &[disabled],
   &.mf-disabled {
-    background-color: $mf-button-bg-color-disabled;
-    border-color: $mf-button-border-color-disabled;
-    color: $mf-button-text-color-disabled;
+    background-color: $button-bg-color-disabled;
+    border-color: $button-border-color-disabled;
+    color: $button-text-color-disabled;
     cursor: default;
   }
 
@@ -55,17 +39,17 @@ button,
     }
 
     &:hover {
-      background-color: $mf-button-bg-color-hover;
-      border-color: $mf-button-border-color-hover;
-      color: $mf-button-text-color-hover;
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color-hover;
     }
   }
 
   &:not(.mf-icon-button) {
     > .mf-icon {
       color: inherit;
-      font-size: .87em;
-      margin-left: .5em;
+      font-size: $button-inline-icon-size;
+      margin-left: $button-inline-icon-padding;
       vertical-align: middle;
     }
   }

@@ -1,41 +1,27 @@
-@import '../text';
-
-$mf-app-bar-height: 48px;
-$mf-app-bar-height-large: 72px;
-
 .mf-app-bar {
   align-items: center;
-  background: $app-bar-bg-color-2;
-  background: linear-gradient(to right, $app-bar-bg-color-1, $app-bar-bg-color-2);
+  background: $app-bar-bg-fallback;
+  background: $app-bar-bg;
   color: $app-bar-text-color;
   display: flex;
   flex-flow: row nowrap;
-  height: $mf-app-bar-height;
-  line-height: $mf-app-bar-height;
+  font-size: $app-bar-font-size;
+  height: $app-bar-height-small;
+  line-height: $app-bar-height-small;
   padding: 0 $body-spacing-small;
 
-  > h3 {
-    @include single-line();
-
-    font-size: 22px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 0;
-  }
-
   > .mf-icon-button {
-    display: inline-block !important;
-    margin-left: .5em;
-    vertical-align: middle;
+    margin-left: $spacing;
   }
 
   > .mf-menu {
     @include single-line();
 
-    color: inherit;
     flex-shrink: 0;
-    font-size: .85em;
+  }
+
+  .mf-icon-button {
+    font-size: $app-bar-icon-size;
   }
 
   button,
@@ -43,6 +29,7 @@ $mf-app-bar-height-large: 72px;
     background-color: transparent;
     border: none;
     color: inherit;
+    font-size: inherit;
     padding: 0;
 
     &:not([disabled]):not(.mf-disabled) {
@@ -57,8 +44,8 @@ $mf-app-bar-height-large: 72px;
 
 @media (min-width: $large-display) {
   .mf-app-bar {
-    height: $mf-app-bar-height-large;
-    line-height: $mf-app-bar-height-large;
+    height: $app-bar-height-large;
+    line-height: $app-bar-height-large;
     padding: 0 $body-spacing-large;
   }
 }

@@ -19,35 +19,30 @@ $color-primary-5: #01a9e7;
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 
-// COMPONENTS
-$app-bar-bg-color-1: $color-primary-5;
-$app-bar-bg-color-2: $color-primary-2;
-$app-bar-text-color: $color-gray-7;
+// TYPOGRAPHY
+$font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, san-serif;
+$font-size: 14px;
+$font-weight: 400;
 
-$body-bg-color: #ffffff;
-
-$border-color: $color-gray-5;
-
-$menu-bg-color: $color-gray-1;
-$menu-text-color: $color-gray-7;
-$menu-bg-color-hover: $color-gray-3;
-$menu-border-color: $color-gray-2;
+$heading-text-color: inherit;
+$heading-font-size: 22px;
+$heading-font-weight: 200;
+$heading-letter-spacing: 1px;
 
 $text-color: $color-gray-1;
 $text-color-disabled: $color-gray-5;
 
+$title-text-color: $color-gray-4;
+$title-font-size: 15px;
+$title-font-weight: normal;
+$title-text-transform: uppercase;
+
 // DISPLAY SIZE
 $large-display: 769px;
 
-// ICONS
-$icon-button-size: 24px;
-
-// INPUTS
-$input-bg-color: $body-bg-color;
-
 // SPACING
-$body-spacing-small: 1em;
-$body-spacing-large: 1.7em;
+$body-spacing-small: 10px;
+$body-spacing-large: 24px;
 $content-padding: 20px;
 $spacing: 10px;
 
@@ -60,11 +55,91 @@ $focus-bg-color: $color-accent-2;
 $focus-border-color: $color-accent-1;
 $focus-text-color: $color-gray-1;
 
-// TYPOGRAPHY
-$font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, san-serif;
-$font-base-size: 14px;
+// COMPONENTS
+$app-bar-bg-fallback: $color-primary-2;
+$app-bar-bg: gradient(to right, $color-primary-5, $color-primary-2);
+$app-bar-font-size: 12px;
+$app-bar-height-small: 48px;
+$app-bar-height-large: 72px;
+$app-bar-icon-size: 20px;
+$app-bar-text-color: $color-gray-7;
 
-$title-text-color: $color-gray-4;
-$title-font-size: 15px;
-$title-font-weight: normal;
-$title-text-transform: uppercase;
+$body-bg-color: #ffffff;
+
+$border-color: $color-gray-5;
+
+$button-bg-color: $color-gray-7;
+$button-bg-color-disabled: $button-bg-color;
+$button-bg-color-hover: $button-bg-color;
+$button-border-color: $color-gray-5;
+$button-border-color-disabled: $text-color-disabled;
+$button-border-color-hover: $color-primary-2;
+$button-border-width: 1px;
+$button-cta-bg-color: $color-gray-1;
+$button-cta-color: $color-gray-7;
+$button-font-size: $font-size;
+$button-height: 28px;
+$button-inline-icon-size: .85em;
+$button-inline-icon-padding: .5em;
+$button-min-width: 42px;
+$button-text-color: $text-color;
+$button-text-color-disabled: $button-border-color-disabled;
+$button-text-color-hover: $color-primary-2;
+$button-text-transform: none;
+
+$icon-button-size: 24px;
+
+$icon-size-small: 24px;
+$icon-size-medium: 32px;
+$icon-size-large: 40px;
+
+$input-bg-color: $body-bg-color;
+$input-border: 1px solid $color-gray-5;
+$input-inline-label-padding: 5px;
+$input-label-font-size: 12px;
+$input-label-margin: 10px 0 5px;
+$input-label-text-color: $color-gray-2;
+$input-padding: 8px;
+
+$link-text-color: $color-primary-3;
+$link-bg-color-disabled: transparent;
+$link-bg-color-focus: $color-accent-2;
+$link-bg-color-hover: $color-gray-7;
+$link-border-color-focus: $color-accent-1;
+$link-padding: .15em;
+$link-text-color-disabled: $text-color-disabled;
+$link-text-color-focus: $color-gray-2;
+$link-text-color-hover: $color-primary-4;
+
+$menu-bg-color: $color-gray-1;
+$menu-bg-color-hover: $color-gray-3;
+$menu-border-color: $color-gray-2;
+$menu-content-font-size: $font-size;
+$menu-text-color: $color-gray-7;
+
+$nav-bg-color: $color-gray-6;
+$nav-icon-size: 20px;
+$nav-icon-padding: 5px;
+$nav-item-bg-color-hover: $color-gray-5;
+$nav-item-border-bottom-color-active: $color-primary-4;
+$nav-item-border-color-active: $color-gray-5;
+$nav-item-border-color-hover: transparent;
+$nav-item-border-width: 1px;
+$nav-item-border-width-active: 2px;
+$nav-item-color-active: $text-color;
+$nav-item-color-hover: $color-gray-2;
+$nav-height: 32px;
+$nav-text-color: $color-gray-2;
+
+$panel-bg-color: $color-gray-6;
+$panel-height: $button-height + (2 * $button-border-width);
+
+$search-box-icon-padding: 5px;
+$search-box-icon-size: 20px;
+
+$table-header-border-color: $color-gray-5;
+$table-header-font-size: 12px;
+$table-icon-size: 20px;
+$table-body-border-color: $color-gray-5;
+$table-row-bg-color-hover: $color-gray-6;
+$table-row-height: 36px;

@@ -1,13 +1,11 @@
-$mf-input-padding: 8px;
-
 input,
 select,
 textarea {
   background-color: $input-bg-color;
-  border: 1px solid $color-gray-5;
+  border: $input-border;
   border-radius: $border-radius;
   color: inherit;
-  padding: $mf-input-padding;
+  padding: $input-padding;
 
   &::-ms-clear {
     display: none;
@@ -23,8 +21,8 @@ textarea {
 }
 
 label {
-  color: $color-gray-2;
-  font-size: 12px;
+  color: $input-label-text-color;
+  font-size: $input-label-font-size;
   vertical-align: middle;
 
   &:not(:first-of-type) {
@@ -34,7 +32,7 @@ label {
   > input,
   > select,
   > textarea {
-    margin-left: 5px;
+    margin-left: $input-inline-label-padding;
   }
 }
 
@@ -51,7 +49,7 @@ label {
     position: relative;
 
     > input {
-      padding: $mf-input-padding 30px;
+      padding: $input-padding ($search-box-icon-size + (2 * $search-box-icon-padding));
 
       &:focus {
         & ~ .mf-icon,
@@ -62,19 +60,20 @@ label {
     }
 
     > .mf-icon {
-      left: 5px;
+      left: $search-box-icon-padding;
     }
 
     > .mf-icon-button {
-      right: 5px;
+      right: $search-box-icon-padding;
     }
 
     > .mf-icon,
     > .mf-icon-button {
       color: inherit;
-      font-size: 20px;
+      font-size: $search-box-icon-size;
       position: absolute;
-      top: 6px;
+      top: 50%;
+      transform: translateY(-50%);
 
       > .mf-icon {
         font-size: inherit;
@@ -84,7 +83,6 @@ label {
 
   > label {
     display: block;
-    margin-bottom: 5px;
-    margin-top: $spacing;
+    margin: $input-label-margin;
   }
 }

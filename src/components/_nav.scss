@@ -1,23 +1,13 @@
-@import '../text';
-
-$mf-nav-height: 32px;
-$mf-nav-border-height: 2px;
-
-$mf-nav-bg-color: $color-gray-6;
-$mf-nav-text-color: $color-gray-2;
-
 .mf-nav {
-  background-color: $mf-nav-bg-color;
-  color: $mf-nav-text-color;
+  background-color: $nav-bg-color;
+  color: $nav-text-color;
   display: flex;
   flex-flow: row nowrap;
-  height: $mf-nav-height;
+  height: $nav-height;
   padding: 0 $body-spacing-small;
 
   > a {
-    font-size: 1em;
-    padding: 0 10px;
-    vertical-align: top;
+    padding: 0 $spacing;
   }
 
   > a,
@@ -25,8 +15,8 @@ $mf-nav-text-color: $color-gray-2;
   .mf-icon-button,
   > .mf-menu > button,
   > .mf-menu > .mf-button {
-    height: $mf-nav-height - $mf-nav-border-height - 1px;
-    line-height: $mf-nav-height;
+    height: $nav-height - $nav-item-border-width-active - $nav-item-border-width;
+    line-height: $nav-height;
     text-align: center;
   }
 
@@ -35,11 +25,11 @@ $mf-nav-text-color: $color-gray-2;
   > .mf-menu > button,
   > .mf-menu > .mf-button {
     background-color: transparent;
-    border: 1px solid transparent;
-    border-bottom-width: $mf-nav-border-height;
+    border: $nav-item-border-width solid transparent;
+    border-bottom-width: $nav-item-border-width-active;
     border-radius: 0;
     box-sizing: content-box;
-    color: $mf-nav-text-color;
+    color: $nav-text-color;
 
     &[disabled],
     &.mf-disabled {
@@ -48,28 +38,28 @@ $mf-nav-text-color: $color-gray-2;
 
     &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
       &:focus {
-        border-color: $focus-border-color;
+        @include focus-state;
       }
 
       &:hover {
-        background-color: $color-gray-5;
-        border-color: transparent;
-        color: $color-gray-2;
+        background-color: $nav-item-bg-color-hover;
+        border-color: $nav-item-border-color-hover;
+        color: $nav-item-color-hover;
       }
     }
 
     &.mf-active {
-      border-bottom-color: $color-primary-4;
-      border-left-color: $color-gray-5;
-      border-right-color: $color-gray-5;
-      color: $text-color;
+      border-bottom-color: $nav-item-border-bottom-color-active;
+      border-left-color: $nav-item-border-color-active;
+      border-right-color: $nav-item-border-color-active;
+      color: $nav-item-color-active;
     }
   }
 
-  > a,
-  > .mf-icon-button {
-    padding: 0 5px;
-    vertical-align: middle;
+  > .mf-icon-button,
+  > .mf-menu > .mf-icon-button {
+    font-size: $nav-icon-size;
+    padding: 0 $nav-icon-padding;
   }
 
   > .mf-menu {
@@ -80,28 +70,10 @@ $mf-nav-text-color: $color-gray-2;
       }
     }
 
-    > .mf-icon-button {
-      padding: 0 5px;
-    }
-
     > .mf-menu-content {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
-  }
-
-  .mf-icon {
-    border: none;
-
-    &:hover {
-      background-color: transparent;
-    }
-  }
-
-  .mf-icon,
-  .mf-icon-button {
-    font-size: 20px;
-    position: static;
   }
 }
 

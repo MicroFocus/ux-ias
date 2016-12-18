@@ -1,8 +1,21 @@
+.mf-heading {
+  @include single-line();
+
+  color: $heading-text-color;
+  font-size: $heading-font-size;
+  font-weight: $heading-font-weight;
+  letter-spacing: $heading-letter-spacing;
+  margin: 0;
+  padding: 0;
+}
+
 .mf-title {
   @include single-line();
 
   color: $title-text-color;
   font-size: $title-font-size;
   font-weight: $title-font-weight;
+  margin: 0;
+  padding: 0;
   text-transform: $title-text-transform;
 }

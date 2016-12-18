@@ -1,29 +1,28 @@
 table {
   border-collapse: collapse;
-  font-size: 1em;
   text-align: left;
 
   > thead {
-    border-bottom: 1px solid $color-gray-5;
+    border-bottom: 1px solid $table-header-border-color;
     color: $color-gray-4;
-    font-size: 12px;
+    font-size: $table-header-font-size;
 
     .mf-icon {
       font-size: inherit;
+      vertical-align: middle;
     }
   }
 
   > tbody {
     > tr {
-      height: 36px;
       vertical-align: middle;
 
       &:not(:last-child) {
-        border-bottom: 1px solid $color-gray-5;
+        border-bottom: 1px solid $table-body-border-color;
       }
 
       &:hover {
-        background-color: $color-gray-6;
+        background-color: $table-row-bg-color-hover;
 
         > .mf-actions {
           > .mf-icon-button {
@@ -45,17 +44,16 @@ table {
   }
 
   td, th {
-    padding: 0 5px;
+    padding: 0 $spacing;
   }
 
   tr {
-    height: 36px;
+    height: $table-row-height;
     vertical-align: middle;
   }
 
   .mf-icon,
   .mf-icon-button {
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: $table-icon-size;
   }
 }

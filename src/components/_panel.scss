@@ -1,19 +1,14 @@
 @import '../text';
 
 .mf-panel {
-  background-color: $color-gray-6;
+  background-color: $panel-bg-color;
   border-radius: $border-radius;
 }
 
 .mf-panel-header {
   display: flex;
   flex-flow: row nowrap;
-  height: 30px;
-  line-height: 30px;
-  margin-bottom: 2 * $spacing;
-
-  > .mf-title {
-    padding: 0;
-    margin: 0;
-  }
+  height: $panel-height;
+  line-height: $panel-height;
+  margin-bottom: $content-padding;
 }
