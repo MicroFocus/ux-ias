@@ -26,6 +26,10 @@
             margin-bottom: 24px;
         }
 
+        .mf-list {
+            width: 300px;
+        }
+
         .mf-panel {
             max-width: 300px;
         }
@@ -70,6 +74,171 @@
 </head>
 <body>
 <h1>Kitchen Sink</h1>
+
+<section id="lists">
+    <h2>Lists</h2>
+
+    <section>
+        <h3>Default</h3>
+
+        <ul class="mf-list">
+            <li tabindex="1"><span>Lynn Christensen</span></li>
+            <li tabindex="1"><span>Joe Hawkins</span></li>
+            <li tabindex="1"><span>Joseph White</span></li>
+            <li tabindex="1"><span>James Albright</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>w/ primary .mf-icon</h3>
+
+        <ul class="mf-list">
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-favorite_fill"></i>
+                <span>Lynn Christensen</span>
+            </li>
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-favorite_outline_thin"></i>
+                <span>Joe Hawkins</span>
+            </li>
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-favorite_outline_thin"></i>
+                <span>Joseph White</span>
+            </li>
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-favorite_fill"></i>
+                <span>James Albright</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>w/ .mf-avatar</h3>
+
+        <ul class="mf-list">
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                </div>
+                <span>Search</span>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                </div>
+                <span>OneDrive</span>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                </div>
+                <span>Geeko</span>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                </div>
+                <span>Version One</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>w/ secondary .mf-icon</h3>
+
+        <ul class="mf-list">
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                </div>
+                <span>Lynn Christensen</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                </div>
+                <span>Joe Hawkins</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                </div>
+                <span>Joseph White</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1">
+                <div class="mf-avatar"
+                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                </div>
+                <span>James Albright</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>.mf-offset</h3>
+
+        <ul class="mf-list">
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>Lynn Christensen</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1" class="mf-offset">
+                <span>Joe Hawkins</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>Joseph White</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="1">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>James Albright</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Nested in .mf-menu</h3>
+
+        <div class="mf-menu mf-open">
+            <div class="mf-menu-content">
+                <ul class="mf-list">
+                    <li tabindex="1">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                        </div>
+                        <span>Search</span>
+                    </li>
+                    <li tabindex="1">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                        </div>
+                        <span>OneDrive</span>
+                    </li>
+                    <li tabindex="1">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                        </div>
+                        <span>Geeko</span>
+                    </li>
+                    <li tabindex="1">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                        </div>
+                        <span>Version One</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
 
 <section id="panels">
     <h2>Panels</h2>
@@ -297,9 +466,9 @@
     </section>
 
     <section class="list-tiny">
-        <h3>.mf-list</h3>
+        <h3>.mf-grid.mf-stacked</h3>
 
-        <div class="mf-grid mf-list">
+        <div class="mf-grid mf-stacked">
             <div class="mf-tile mf-tiny" tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
@@ -385,9 +554,9 @@
     </section>
 
     <section class="list-small">
-        <h3>.mf-list</h3>
+        <h3>.mf-grid.mf-stacked</h3>
 
-        <div class="mf-grid mf-list">
+        <div class="mf-grid mf-stacked">
             <div class="mf-tile mf-small" tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
@@ -477,9 +646,9 @@
     </section>
 
     <section class="list-medium">
-        <h3>.mf-list</h3>
+        <h3>.mf-grid.mf-stacked</h3>
 
-        <div class="mf-grid mf-list">
+        <div class="mf-grid mf-stacked">
             <div class="mf-tile mf-medium" tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
@@ -569,9 +738,9 @@
     </section>
 
     <section class="list-large">
-        <h3>.mf-list</h3>
+        <h3>.mf-grid.mf-stacked</h3>
 
-        <div class="mf-grid mf-list">
+        <div class="mf-grid mf-stacked">
             <div class="mf-tile mf-large" tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">

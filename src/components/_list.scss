@@ -1,0 +1,51 @@
+.mf-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li,
+  > .mf-list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    height: $list-item-height;
+    line-height: $list-item-height;
+    padding: $spacing;
+
+    &:focus {
+      @include focus-state;
+    }
+
+    &:hover {
+      background-color: $list-item-bg-color-hover;
+      color: inherit;
+    }
+
+    &.mf-offset {
+      padding-left: (2 * $spacing) + $list-item-avatar-size;
+    }
+
+    > span {
+      @include single-line;
+
+      display: inline-block;
+      flex: 1 1;
+    }
+
+    > .mf-avatar {
+      flex: 0 0 $list-item-avatar-size;
+      height: $list-item-avatar-size;
+      width: $list-item-avatar-size;
+    }
+
+    > .mf-icon {
+      font-size: $list-item-avatar-size;
+    }
+
+    > .mf-icon,
+    > .mf-avatar {
+      &:first-child {
+        margin-right: $spacing;
+      }
+    }
+  }
+}
