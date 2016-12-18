@@ -1,0 +1,132 @@
+.mf-tile {
+  @extend .mf-panel;
+
+  border: $tile-border-width solid transparent;
+  color: $tile-text-color;
+  cursor: pointer;
+  font-size: $tile-font-size;
+  position: relative;
+
+  // STATES
+  &:focus {
+    @include focus-state;
+  }
+
+  &:hover {
+    background-color: $tile-bg-color;
+    border-color: $tile-border-color;
+    color: $tile-text-color;
+  }
+
+  // SIZES
+  &.mf-tiny {
+    height: $tile-height-tiny;
+    max-width: $tile-width-tiny;
+    width: $tile-width-tiny;
+
+    > .mf-avatar {
+      height: $tile-avatar-size-tiny;
+      width: $tile-avatar-size-tiny;
+    }
+
+    > .mf-tile-content {
+      display: none;
+    }
+  }
+
+  &.mf-small {
+    display: flex;
+    flex-flow: row nowrap;
+    height: $tile-height-small;
+    width: $tile-width-small;
+
+    > .mf-avatar {
+      height: $tile-avatar-size-small;
+      width: $tile-avatar-size-small;
+    }
+
+    > .mf-tile-content {
+      margin: $tile-padding $tile-padding $tile-padding 0;
+
+      > :not(h3) {
+        display: none;
+      }
+
+      > h3 {
+        font-size: $tile-title-font-size-small;
+        line-height: $tile-avatar-size-small;
+      }
+    }
+  }
+
+  &.mf-medium {
+    display: flex;
+    flex-flow: row nowrap;
+    height: $tile-height-medium;
+    width: $tile-width-medium;
+
+    > .mf-avatar {
+      flex: 0 0 $tile-avatar-size-medium;
+      height: $tile-avatar-size-medium;
+      width: $tile-avatar-size-medium;
+    }
+
+    > .mf-tile-content {
+      margin: $tile-padding $tile-padding $tile-padding 0;
+      height: $tile-avatar-size-medium;
+      overflow: hidden;
+
+      > h3 {
+        font-size: $tile-title-font-size-medium;
+        margin-bottom: $tile-title-margin-bottom-medium;
+      }
+    }
+  }
+
+  &.mf-large {
+    display: flex;
+    flex-flow: column nowrap;
+    height: $tile-height-large;
+    max-width: $tile-width-large;
+    text-align: center;
+    width: $tile-width-large;
+
+    > .mf-avatar {
+      flex: 0 0 $tile-avatar-size-large;
+      height: $tile-avatar-size-large;
+      margin: $tile-padding auto;
+      width: $tile-avatar-size-large;
+    }
+
+    > .mf-tile-content {
+      margin: 0 $tile-padding $tile-padding $tile-padding;
+      overflow: hidden;
+
+      > h3 {
+        font-size: $tile-title-font-size-large;
+        margin-bottom: $tile-title-margin-bottom-large;
+      }
+    }
+  }
+
+  > .mf-avatar {
+    background: no-repeat center center;
+    background-size: contain;
+    border-radius: $border-radius;
+    margin: $tile-padding;
+  }
+
+  > .mf-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  > .mf-tile-content {
+    > h3,
+    > p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
