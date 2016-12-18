@@ -45,6 +45,27 @@ table {
 
   td, th {
     padding: 0 $spacing;
+
+    > a {
+      padding: 0;
+
+      &:not(.mf-disabled) {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    > a,
+    > .mf-icon {
+      vertical-align: middle;
+    }
+
+    > .mf-icon {
+      &:first-child {
+        margin-right: $table-icon-margin;
+      }
+    }
   }
 
   tr {
