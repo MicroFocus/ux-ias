@@ -1,0 +1,8 @@
+.mf-title {
+  @include single-line();
+
+  color: $title-text-color;
+  font-size: $title-font-size;
+  font-weight: $title-font-weight;
+  text-transform: $title-text-transform;
+}
