@@ -1,6 +1,3 @@
-
-@import 'text';
-
 @mixin mf-border($color) {
   &.mf-border-bottom { border-bottom: 1px solid $color; }
   &.mf-border-left { border-left: 1px solid $color; }

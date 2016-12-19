@@ -61,7 +61,8 @@
   }
 
   .mf-list {
-    > li {
+    > li,
+    > .mf-list-item {
       &:hover {
         background-color: $menu-bg-color-hover;
       }

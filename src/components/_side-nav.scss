@@ -1,0 +1,59 @@
+.mf-side-nav {
+  background-color: $side-nav-scrim-bg-color;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  > .mf-side-nav-content {
+    background-color: $side-nav-bg-color;
+    box-sizing: border-box;
+    color: $side-nav-text-color;
+    height: 100%;
+    max-width: $side-nav-max-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: $side-nav-padding;
+    width: $side-nav-width;
+  }
+
+  button,
+  .mf-button {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    text-align: inherit;
+    width: 100%;
+
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus,
+      &:hover {
+        background-color: $side-nav-bg-color-hover;
+        color: inherit;
+      }
+    }
+  }
+
+  .mf-list {
+    > li,
+    > .mf-list-item {
+      &:hover {
+        background-color: $side-nav-bg-color-hover;
+        color: inherit;
+      }
+    }
+  }
+
+  .mf-side-nav-header,
+  .mf-side-nav-footer {
+    @include single-line;
+
+    color: $side-nav-header-text-color;
+    font-size: $side-nav-header-font-size;
+    font-weight: $side-nav-header-font-weight;
+    text-transform: $side-nav-header-text-transform;
+  }
+}

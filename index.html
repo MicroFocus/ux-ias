@@ -26,7 +26,7 @@
             margin-bottom: 24px;
         }
 
-        .mf-list {
+        #lists .mf-list {
             width: 300px;
         }
 
@@ -49,7 +49,7 @@
         }
 
         .mf-dialog .mf-dialog-container {
-            max-width: 300px;
+            width: 300px;
         }
 
         .mf-dialog p {
@@ -89,10 +89,194 @@
         #grids .grid-large {
             width: 350px;
         }
+
+        #side-navs > section {
+            height: 300px;
+            margin-bottom: 24px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
 <h1>Kitchen Sink</h1>
+
+<section id="side-navs">
+    <h2>Side Navs</h2>
+
+    <section>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-side-nav">
+            <div class="mf-side-nav-content">
+                <button type="button">View My Devices</button>
+                <button type="button">Help Me...(end-user)</button>
+                <button type="button">Request impersonate session...(HelpDesk)</button>
+                <button type="button">Button 4</button>
+                <button type="button">An Interesting Link</button>
+                <button type="button">Button 6</button>
+                <button type="button">Button 7</button>
+                <button type="button">IDM Prototype</button>
+                <button type="button">Add Users</button>
+                <button type="button">Button 13</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-side-nav">
+            <div class="mf-side-nav-content">
+                <h3 class="mf-side-nav-header">First Section</h3>
+                <button type="button">View My Devices</button>
+                <button type="button">Help Me...(end-user)</button>
+                <button type="button">Request impersonate session...(HelpDesk)</button>
+
+                <h3 class="mf-side-nav-header">Second Section</h3>
+                <button type="button">Button 4</button>
+                <button type="button">An Interesting Link</button>
+                <button type="button">Button 6</button>
+                <button type="button">Button 7</button>
+                <button type="button">Request Support</button>
+                <button type="button">Button 9</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-side-nav">
+            <div class="mf-side-nav-content">
+                <ul class="mf-list">
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                        </div>
+                        <span>Search</span>
+                    </li>
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                        </div>
+                        <span>OneDrive</span>
+                    </li>
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                        </div>
+                        <span>Geeko</span>
+                    </li>
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                        </div>
+                        <span>Version One</span>
+                    </li>
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                        </div>
+                        <span>Search</span>
+                    </li>
+                    <li tabindex="0">
+                        <div class="mf-avatar"
+                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                        </div>
+                        <span>OneDrive</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
 
 <section id="dialogs">
     <h2>.mf-dialog</h2>

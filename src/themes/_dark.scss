@@ -156,6 +156,18 @@ $panel-height: $button-height + (2 * $button-border-width);
 $search-box-icon-padding: 5px;
 $search-box-icon-size: 20px;
 
+$side-nav-bg-color: $menu-bg-color;
+$side-nav-bg-color-hover: $menu-bg-color-hover;
+$side-nav-header-text-color: $menu-header-text-color;
+$side-nav-header-font-size: $menu-header-font-size;
+$side-nav-header-font-weight: $menu-header-font-weight;
+$side-nav-header-text-transform: $menu-header-text-transform;
+$side-nav-max-width: 85%;
+$side-nav-padding: $spacing;
+$side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
+$side-nav-text-color: $menu-text-color;
+$side-nav-width: 240px;
+
 $table-header-border-color: $color-gray-5;
 $table-header-font-size: 12px;
 $table-icon-margin: 5px;
