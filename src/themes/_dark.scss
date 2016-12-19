@@ -92,31 +92,6 @@ $dialog-bg-color: $color-gray-7;
 $dialog-padding: 20px;
 $dialog-scrim-color: rgba(0, 0, 0, .50);
 
-$tile-bg-color: $color-gray-7;
-$tile-border-color: $color-primary-4;
-$tile-border-width: 1px;
-$tile-font-size: 12px;
-$tile-margin: 5px;
-$tile-padding: 10px;
-$tile-text-color: $color-gray-1;
-$tile-height-large: 195px;
-$tile-height-medium: 72px;
-$tile-height-small: 72px;
-$tile-height-tiny: 72px;
-$tile-width-large: 160px;
-$tile-width-medium: 240px;
-$tile-width-small: 240px;
-$tile-width-tiny: 72px;
-$tile-avatar-size-large: 100px;
-$tile-avatar-size-medium: $tile-height-medium - (2 * ($tile-padding + $tile-border-width));
-$tile-avatar-size-small: $tile-height-small - (2 * ($tile-padding + $tile-border-width));
-$tile-avatar-size-tiny: $tile-height-tiny - (2 * ($tile-padding + $tile-border-width));
-$tile-title-font-size-large: 15px;
-$tile-title-font-size-medium: 15px;
-$tile-title-font-size-small: 20px;
-$tile-title-margin-bottom-large: 5px;
-$tile-title-margin-bottom-medium: 5px;
-
 $icon-button-size: 24px;
 
 $icon-size-small: 24px;
@@ -145,10 +120,16 @@ $list-item-bg-color-hover: $color-gray-7;
 $list-item-height: 26px;
 $list-item-avatar-size: 26px;
 
+$list-header-text-color: #b8b8b8;
+$list-header-font-size: 12px;
+$list-header-margin: $spacing 0;
+$list-header-text-transform: uppercase;
+
 $menu-bg-color: $color-gray-7;
 $menu-bg-color-hover: $color-gray-6;
 $menu-border-color: $color-gray-6;
 $menu-content-font-size: $font-size;
+$menu-header-text-color: #b8b8b8;
 $menu-text-color: $color-gray-1;
 
 $nav-bg-color: $color-gray-6;
@@ -178,3 +159,28 @@ $table-icon-size: 20px;
 $table-body-border-color: $color-gray-5;
 $table-row-bg-color-hover: $color-gray-7;
 $table-row-height: 36px;
+
+$tile-bg-color: $color-gray-7;
+$tile-border-color: $color-primary-4;
+$tile-border-width: 1px;
+$tile-font-size: 12px;
+$tile-margin: 5px;
+$tile-padding: 10px;
+$tile-text-color: $color-gray-1;
+$tile-height-large: 195px;
+$tile-height-medium: 72px;
+$tile-height-small: 72px;
+$tile-height-tiny: 72px;
+$tile-width-large: 160px;
+$tile-width-medium: 240px;
+$tile-width-small: 240px;
+$tile-width-tiny: 72px;
+$tile-avatar-size-large: 100px;
+$tile-avatar-size-medium: $tile-height-medium - (2 * ($tile-padding + $tile-border-width));
+$tile-avatar-size-small: $tile-height-small - (2 * ($tile-padding + $tile-border-width));
+$tile-avatar-size-tiny: $tile-height-tiny - (2 * ($tile-padding + $tile-border-width));
+$tile-title-font-size-large: 15px;
+$tile-title-font-size-medium: 15px;
+$tile-title-font-size-small: 20px;
+$tile-title-margin-bottom-large: 5px;
+$tile-title-margin-bottom-medium: 5px;

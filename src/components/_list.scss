@@ -49,3 +49,11 @@
     }
   }
 }
+
+.mf-list-header {
+  color: $list-header-text-color;
+  font-size: $list-header-font-size;
+  margin: $list-header-margin;
+  padding: 0;
+  text-transform: $list-header-text-transform;
+}

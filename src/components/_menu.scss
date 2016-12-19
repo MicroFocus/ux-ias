@@ -38,7 +38,7 @@
   right: auto;
 
   button,
-  mf-button {
+  .mf-button {
     background-color: transparent;
     border: none;
     box-sizing: border-box;
@@ -54,6 +54,10 @@
         color: inherit;
       }
     }
+  }
+
+  .mf-list-header {
+    color: $menu-header-text-color;
   }
 
   .mf-list {

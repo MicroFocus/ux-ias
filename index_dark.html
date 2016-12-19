@@ -379,38 +379,30 @@
     </section>
 
     <section>
-        <h3>Nested in .mf-menu</h3>
+        <h3>w/ .mf-list-header</h3>
 
-        <div class="mf-menu mf-open">
-            <div class="mf-menu-content">
-                <ul class="mf-list">
-                    <li tabindex="0">
-                        <div class="mf-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
-                        </div>
-                        <span>Search</span>
-                    </li>
-                    <li tabindex="0">
-                        <div class="mf-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
-                        </div>
-                        <span>OneDrive</span>
-                    </li>
-                    <li tabindex="0">
-                        <div class="mf-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
-                        </div>
-                        <span>Geeko</span>
-                    </li>
-                    <li tabindex="0">
-                        <div class="mf-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
-                        </div>
-                        <span>Version One</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <h3 class="mf-list-header">List Header</h3>
+        <ul class="mf-list">
+            <li tabindex="0">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>Lynn Christensen</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="0" class="mf-offset">
+                <span>Joe Hawkins</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="0">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>Joseph White</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+            <li tabindex="0">
+                <i class="mf-icon mf-icon-check_thick"></i>
+                <span>James Albright</span>
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </li>
+        </ul>
     </section>
 </section>
 
@@ -1428,6 +1420,51 @@
                     <button type="button">A Button That Extends Well Beyond the Column Immediately Above It</button>
                     <button type="button">Button 15</button>
                     <button type="button">MicroFocus Branded Sign</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>w/ .mf-list</h3>
+
+        <div class="mf-menu-content">
+            <div class="mf-row mf-border-bottom">
+                <div class="mf-column">
+                    <h3 class="mf-list-header">First List</h3>
+                    <ul class="mf-list">
+                        <li tabindex="0">
+                            <div class="mf-avatar"
+                                 style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                            </div>
+                            <span>Search</span>
+                        </li>
+                        <li tabindex="0">
+                            <div class="mf-avatar"
+                                 style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                            </div>
+                            <span>OneDrive</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mf-row">
+                <div class="mf-column">
+                    <h3 class="mf-list-header">Second List</h3>
+                    <ul class="mf-list">
+                        <li tabindex="0">
+                            <div class="mf-avatar"
+                                 style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                            </div>
+                            <span>Geeko</span>
+                        </li>
+                        <li tabindex="0">
+                            <div class="mf-avatar"
+                                 style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                            </div>
+                            <span>Version One</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
