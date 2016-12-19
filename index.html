@@ -38,6 +38,25 @@
             color: #007cd0;
         }
 
+        #dialogs > section {
+            display: block;
+            height: 300px;
+            position: relative;
+        }
+
+        #dialogs .mf-dialog {
+            position: absolute;
+        }
+
+        .mf-dialog .mf-dialog-container {
+            max-width: 300px;
+        }
+
+        .mf-dialog p {
+            margin: 0;
+            padding: 0;
+        }
+
         #menus > section,
         #navs {
             min-height: 310px;
@@ -75,6 +94,161 @@
 <body>
 <h1>Kitchen Sink</h1>
 
+<section id="dialogs">
+    <h2>.mf-dialog</h2>
+
+    <section>
+        <h3>Simple</h3>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-dialog">
+            <div class="mf-dialog-container">
+                <!--<div class="mf-dialog-title">Dialog title</div>-->
+                <div class="mf-dialog-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
+                        Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
+                        Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
+                    </p>
+                </div>
+                <button class="mf-icon-button mf-dialog-cancel-button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>w/ .mf-dialog-title</h3>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-dialog">
+            <div class="mf-dialog-container">
+                <div class="mf-dialog-title">Dialog title</div>
+                <div class="mf-dialog-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
+                        Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
+                        Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
+                    </p>
+                </div>
+                <button class="mf-icon-button mf-dialog-cancel-button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>w/ .mf-actions</h3>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Lynn Christensen</a>
+                </td>
+                <td>Asst. to the UX Director</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joe Hawkins</a>
+                </td>
+                <td>The Valiant</td>
+            </tr>
+            <tr>
+                <td>
+                    <i class="mf-icon mf-icon-favorite_fill"></i>
+                    <a href="#tables" tabindex="-1">Joseph White</a>
+                </td>
+                <td>Destroyer of Worlds</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="mf-dialog">
+            <div class="mf-dialog-container">
+                <div class="mf-dialog-title">Dialog title</div>
+                <div class="mf-dialog-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
+                        Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
+                        Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
+                    </p>
+                </div>
+                <div class="mf-actions">
+                    <button>Cancel</button>
+                    <button>OK</button>
+                </div>
+                <button class="mf-icon-button mf-dialog-cancel-button"><i class="mf-icon mf-icon-close_thick"></i></button>
+            </div>
+        </div>
+    </section>
+</section>
+
 <section id="lists">
     <h2>Lists</h2>
 
@@ -82,10 +256,10 @@
         <h3>Default</h3>
 
         <ul class="mf-list">
-            <li tabindex="1"><span>Lynn Christensen</span></li>
-            <li tabindex="1"><span>Joe Hawkins</span></li>
-            <li tabindex="1"><span>Joseph White</span></li>
-            <li tabindex="1"><span>James Albright</span></li>
+            <li tabindex="0"><span>Lynn Christensen</span></li>
+            <li tabindex="0"><span>Joe Hawkins</span></li>
+            <li tabindex="0"><span>Joseph White</span></li>
+            <li tabindex="0"><span>James Albright</span></li>
         </ul>
     </section>
 
@@ -93,19 +267,19 @@
         <h3>w/ primary .mf-icon</h3>
 
         <ul class="mf-list">
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-favorite_fill"></i>
                 <span>Lynn Christensen</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-favorite_outline_thin"></i>
                 <span>Joe Hawkins</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-favorite_outline_thin"></i>
                 <span>Joseph White</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-favorite_fill"></i>
                 <span>James Albright</span>
             </li>
@@ -116,25 +290,25 @@
         <h3>w/ .mf-avatar</h3>
 
         <ul class="mf-list">
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
                 </div>
                 <span>Search</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
                 </div>
                 <span>OneDrive</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
                 </div>
                 <span>Geeko</span>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
                 </div>
@@ -147,28 +321,28 @@
         <h3>w/ secondary .mf-icon</h3>
 
         <ul class="mf-list">
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
                 </div>
                 <span>Lynn Christensen</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
                 </div>
                 <span>Joe Hawkins</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
                 </div>
                 <span>Joseph White</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <div class="mf-avatar"
                      style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
                 </div>
@@ -182,21 +356,21 @@
         <h3>.mf-offset</h3>
 
         <ul class="mf-list">
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-check_thick"></i>
                 <span>Lynn Christensen</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1" class="mf-offset">
+            <li tabindex="0" class="mf-offset">
                 <span>Joe Hawkins</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-check_thick"></i>
                 <span>Joseph White</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
             </li>
-            <li tabindex="1">
+            <li tabindex="0">
                 <i class="mf-icon mf-icon-check_thick"></i>
                 <span>James Albright</span>
                 <i class="mf-icon mf-icon-search_thick"></i>
@@ -210,25 +384,25 @@
         <div class="mf-menu mf-open">
             <div class="mf-menu-content">
                 <ul class="mf-list">
-                    <li tabindex="1">
+                    <li tabindex="0">
                         <div class="mf-avatar"
                              style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
                         </div>
                         <span>Search</span>
                     </li>
-                    <li tabindex="1">
+                    <li tabindex="0">
                         <div class="mf-avatar"
                              style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
                         </div>
                         <span>OneDrive</span>
                     </li>
-                    <li tabindex="1">
+                    <li tabindex="0">
                         <div class="mf-avatar"
                              style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
                         </div>
                         <span>Geeko</span>
                     </li>
-                    <li tabindex="1">
+                    <li tabindex="0">
                         <div class="mf-avatar"
                              style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
                         </div>
