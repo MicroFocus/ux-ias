@@ -68,6 +68,20 @@
     }
   }
 
+  .mf-menu-header,
+  .mf-menu-footer {
+    @include single-line;
+
+    color: $menu-header-text-color;
+    font-size: $menu-header-font-size;
+    font-weight: $menu-header-font-weight;
+    text-transform: $menu-header-text-transform;
+  }
+
+  .mf-menu-footer {
+    text-align: center;
+  }
+
   .mf-border-bottom { border-color: $menu-border-color; }
   .mf-border-left { border-color: $menu-border-color; }
   .mf-border-right { border-color: $menu-border-color; }
