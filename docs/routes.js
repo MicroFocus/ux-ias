@@ -3,7 +3,7 @@ angular.module('app')
         $urlRouterProvider.otherwise('/component/app-bar');
 
         $stateProvider
-            .state('app', { url: '/', abstract: true, templateUrl: 'layout.html' })
+            .state('app', { url: '/', abstract: true, controller: 'AppController as app', templateUrl: 'layout.html' })
             .state('app.dashboard', { url: '', component: 'dashboardComponent' })
             .state('app.kitchenSink', { url: 'kitchen-sink', templateUrl: 'src/kitchen-sink.template.html' })
 
