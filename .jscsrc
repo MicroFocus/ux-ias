@@ -30,7 +30,6 @@
   "disallowTrailingWhitespace": true,
   "disallowYodaConditions": true,
   "maximumLineLength": 120,
-  "requireAlignedObjectValues": "skipWithFunction",
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
   "requireCapitalizedConstructors": true,

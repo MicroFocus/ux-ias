@@ -1,6 +1,7 @@
 angular.module('app').controller('AppController', AppController);
 
-function AppController($document) {
+function AppController($document, config) {
+    this.projectName = config.projectName;
     this.$document = $document;
     this.themeLink = this.$document[0].getElementById('theme-link');
 }

@@ -1,10 +1,10 @@
 angular.module('app')
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/component/app-bar');
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('app', { url: '/', abstract: true, controller: 'AppController as app', templateUrl: 'layout.html' })
-            .state('app.dashboard', { url: '', component: 'dashboardComponent' })
+            .state('app', { url: '/', abstract: true, controller: 'AppController as app', templateUrl: '_layout.html' })
+            .state('app.project', { url: '', component: 'projectComponent' })
             .state('app.kitchenSink', { url: 'kitchen-sink', templateUrl: 'src/kitchen-sink.template.html' })
 
             .state('app.component', { url: 'component/', abstract: true, templateUrl: 'src/component.template.html' })
