@@ -2,5 +2,5 @@ function IconButtonComponent() {}
 
 angular.module('app').component('iconButtonComponent', {
 	controller: IconButtonComponent,
-	templateUrl: 'src/icon-button.component.html'
+	templateUrl: 'src/components/icon-button.component.html'
 });

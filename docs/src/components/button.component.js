@@ -2,5 +2,5 @@ function ButtonComponent() {}
 
 angular.module('app').component('buttonComponent', {
 	controller: ButtonComponent,
-	templateUrl: 'src/button.component.html'
+	templateUrl: 'src/components/button.component.html'
 });

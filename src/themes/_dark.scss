@@ -58,7 +58,7 @@ $focus-text-color: $color-gray-7;
 
 // COMPONENTS
 $app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: gradient(to right, $color-primary-5, $color-primary-2);
+$app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
 $app-bar-font-size: 12px;
 $app-bar-height-small: 48px;
 $app-bar-height-large: 72px;

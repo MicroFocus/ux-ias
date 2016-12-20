@@ -2,5 +2,5 @@ function AppBarComponent() {}
 
 angular.module('app').component('appBarComponent', {
 	controller: AppBarComponent,
-	templateUrl: 'src/app-bar.component.html'
+	templateUrl: 'src/components/app-bar.component.html'
 });

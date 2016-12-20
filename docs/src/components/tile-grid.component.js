@@ -2,5 +2,5 @@ function TileGridComponent() {}
 
 angular.module('app').component('tileGridComponent', {
 	controller: TileGridComponent,
-	templateUrl: 'src/tile-grid.component.html'
+	templateUrl: 'src/components/tile-grid.component.html'
 });
