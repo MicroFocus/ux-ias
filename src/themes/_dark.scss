@@ -179,24 +179,37 @@ $table-row-height: 36px;
 $tile-bg-color: $color-gray-7;
 $tile-border-color: $color-primary-4;
 $tile-border-width: 1px;
-$tile-font-size: 12px;
+$tile-description-font-size: 12px;
+$tile-description-line-height: 15px;
 $tile-margin: 5px;
 $tile-padding: 10px;
 $tile-text-color: $color-gray-1;
-$tile-height-large: 195px;
-$tile-height-medium: 72px;
-$tile-height-small: 72px;
-$tile-height-tiny: 72px;
-$tile-width-large: 160px;
-$tile-width-medium: 240px;
-$tile-width-small: 240px;
-$tile-width-tiny: 72px;
-$tile-avatar-size-large: 100px;
-$tile-avatar-size-medium: $tile-height-medium - (2 * ($tile-padding + $tile-border-width));
-$tile-avatar-size-small: $tile-height-small - (2 * ($tile-padding + $tile-border-width));
-$tile-avatar-size-tiny: $tile-height-tiny - (2 * ($tile-padding + $tile-border-width));
 $tile-title-font-size-large: 15px;
 $tile-title-font-size-medium: 15px;
 $tile-title-font-size-small: 20px;
 $tile-title-margin-bottom-large: 5px;
 $tile-title-margin-bottom-medium: 5px;
+
+$tile-avatar-size-large: 100px;
+$tile-height-large:
+        $tile-avatar-size-large +
+        (3 * ($tile-description-line-height + $tile-padding)) +
+        (2 * $tile-border-width) +
+        $tile-title-font-size-large +
+        $tile-title-margin-bottom-large;
+$tile-height-medium:
+        (2 * ($tile-description-line-height + $tile-padding + $tile-border-width)) +
+        $tile-title-font-size-medium +
+        $tile-title-margin-bottom-medium;
+$tile-height-small: $tile-height-medium;
+$tile-height-tiny: $tile-height-medium;
+$tile-avatar-size-medium:
+        (2 * $tile-description-line-height) +
+        $tile-title-font-size-medium +
+        $tile-title-margin-bottom-medium;
+$tile-avatar-size-small: $tile-height-small - (2 * ($tile-padding + $tile-border-width));
+$tile-avatar-size-tiny: $tile-height-tiny - (2 * ($tile-padding + $tile-border-width));
+$tile-width-large: 160px;
+$tile-width-medium: 240px;
+$tile-width-small: 240px;
+$tile-width-tiny: $tile-height-small;

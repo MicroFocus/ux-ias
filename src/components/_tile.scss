@@ -4,7 +4,8 @@
   border: $tile-border-width solid transparent;
   color: $tile-text-color;
   cursor: pointer;
-  font-size: $tile-font-size;
+  font-size: $tile-description-font-size;
+  line-height: $tile-description-line-height;
   position: relative;
 
   // STATES
@@ -90,6 +91,7 @@
 
       > h3 {
         font-size: $tile-title-font-size-medium;
+        line-height: 1em;
         margin-bottom: $tile-title-margin-bottom-medium;
       }
     }
@@ -124,6 +126,7 @@
 
       > h3 {
         font-size: $tile-title-font-size-large;
+        line-height: 1em;
         margin-bottom: $tile-title-margin-bottom-large;
       }
     }

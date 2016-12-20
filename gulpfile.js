@@ -123,6 +123,7 @@ gulp.task('icons', function(done) {
 
 gulp.task('sass', function() {
     return processSass(sassManifestFiles, { outputStyle: 'expanded' })
+        .pipe(gulpConnect.reload())
         .pipe(gulp.dest(outputDirectory));
 });
 
