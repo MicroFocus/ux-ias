@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body > [ui-view] {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+}
+
+body > [ui-view] > main {
+    flex: 1 0;
+}
+
+body > [ui-view] > main > [ui-view] {
+    display: flex;
+    flex: 1 0;
+    height: 100%;
+    flex-flow: row nowrap;
+    position: relative;
+}
+
+#kitchen-sink section {
+    margin-bottom: 24px;
+}
+
+#kitchen-sink section > section {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+#kitchen-sink h2 {
+    text-transform: uppercase;
+}
+
+#kitchen-sink > #app-bars .mf-app-bar,
+#kitchen-sink > #navs .mf-nav {
+    margin-bottom: 24px;
+}
+
+#kitchen-sink > #dialogs > section {
+    height: 300px;
+    position: relative;
+}
+
+#kitchen-sink > #dialogs .mf-dialog {
+    position: absolute;
+}
+
+#kitchen-sink > #dialogs .mf-dialog-container {
+    width: 300px;
+}
+
+#kitchen-sink > #dialogs p {
+    margin: 0;
+    padding: 0;
+}
+
+#kitchen-sink > #grids .grid-tiny {
+    width: 240px;
+}
+
+#kitchen-sink > #grids .grid-small {
+    width: 500px;
+}
+
+#kitchen-sink > #grids .list-small {
+    width: 300px;
+}
+
+#kitchen-sink > #grids .grid-medium {
+    width: 500px;
+}
+
+#kitchen-sink > #grids .list-medium {
+    width: 300px;
+}
+
+#kitchen-sink > #grids .grid-large {
+    width: 350px;
+}
+
+#kitchen-sink > #grids > section,
+#kitchen-sink > #icon-buttons > section,
+#kitchen-sink > #links > section,
+#kitchen-sink > #lists > section,
+#kitchen-sink > #menus > section,
+#kitchen-sink > #panels > section {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#kitchen-sink > #lists .mf-list,
+#kitchen-sink > #panels .mf-panel {
+    width: 300px;
+}
+
+#kitchen-sink > #menus > section,
+#kitchen-sink > #navs {
+    min-height: 310px;
+}
+
+#kitchen-sink > #side-navs > section {
+    height: 300px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+#kitchen-sink > #tiles .mf-tile {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+#kitchen-sink > #tiles .mf-tile > .mf-actions {
+    color: #007cd0;
+}
+
+#kitchen-sink > #tiles .mf-tile:not(:last-child) {
+    margin-bottom: 5px;
+}

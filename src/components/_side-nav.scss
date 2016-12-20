@@ -6,6 +6,17 @@
   right: 0;
   top: 0;
 
+  &.mf-locked {
+    background-color: transparent;
+    position: relative;
+    height: 100%;
+    width: $side-nav-width;
+
+    > .mf-side-nav-content {
+      max-width: initial;
+    }
+  }
+
   > .mf-side-nav-content {
     background-color: $side-nav-bg-color;
     box-sizing: border-box;

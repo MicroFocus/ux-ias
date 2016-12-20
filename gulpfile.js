@@ -4,33 +4,69 @@ var gulp = require('gulp');
 var gulpAutoprefixer = require('gulp-autoprefixer');
 var gulpClean = require('gulp-clean');
 var gulpConsolidate = require('gulp-consolidate');
+var gulpConnect = require('gulp-connect');
 var gulpIconFont = require('gulp-iconfont');
+var gulpJscs = require('gulp-jscs');
 var gulpRename = require('gulp-rename');
 var gulpReplace = require('gulp-replace');
 var gulpSass = require('gulp-sass');
 var gulpSourceMaps = require('gulp-sourcemaps');
 var gulpWatch = require('gulp-watch');
 
+var docsDirectory = './docs/';
+var docsFiles = './docs/**/*';
+var docsJs = './docs/**/*.js';
 var iconFiles = './icons/*.svg';
 var iconFontName = 'mf-icons';
-var htmlFiles = './*.html';
 var outputDirectory = './dist/';
 var sassFiles = './src/**/*.scss';
 var sassManifestFiles = [ './src/mfux.scss', './src/mfux_dark.scss' ] ;
 var pkg = JSON.parse(fs.readFileSync('./package.json'));
+
+
+gulp.task('build-docs', ['jscs', 'copy-vendor', 'copy-docs']);
+
+gulp.task('build-src', ['icons', 'sass', 'sass-minified']);
 
 gulp.task('clean', function() {
     return gulp.src(outputDirectory)
         .pipe(gulpClean());
 });
 
-gulp.task('copy', function() {
-    return gulp
-        .src(htmlFiles)
-        .pipe(gulp.dest(outputDirectory));
+gulp.task('connect', function() {
+    gulpConnect.server({
+        livereload: true,
+        port: 8080,
+        root: outputDirectory
+    });
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('copy-docs', function() {
+    return gulp
+        .src(docsDirectory + '**/*')
+        .pipe(gulpConnect.reload())
+        .pipe(gulp.dest(outputDirectory + 'docs/'));
+});
+
+gulp.task('copy-vendor', function() {
+    return gulp
+        .src([
+            'node_modules/angular/angular.js',
+            'node_modules/angular-ui-router/release/angular-ui-router.js'
+        ])
+        .pipe(gulp.dest(outputDirectory + 'docs/vendor/'));
+});
+
+gulp.task('jscs', function() {
+    return gulp
+        .src(docsJs)
+        .pipe(gulpJscs())
+        .pipe(gulpJscs.reporter());
+});
+
+gulp.task('default', ['build-src', 'watch-src']);
+
+gulp.task('docs', ['build-src', 'build-docs', 'connect', 'watch-docs']);
 
 gulp.task('icons', function(done) {
     var iconStream = gulp
@@ -96,7 +132,7 @@ gulp.task('sass-minified', function() {
         .pipe(gulp.dest(outputDirectory));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch-docs', function() {
     gulpWatch(sassFiles, function() {
         gulp.start('sass');
         gulp.start('sass-minified');
@@ -104,12 +140,23 @@ gulp.task('watch', function() {
     gulpWatch(iconFiles, function() {
         gulp.start('icons');
     });
-    gulpWatch(htmlFiles, function() {
-        gulp.start('copy');
-    })
+    gulpWatch(docsJs, function() {
+        gulp.start('jscs');
+    });
+    gulpWatch(docsFiles, function() {
+        gulp.start('copy-docs');
+    });
 });
 
-gulp.task('build', ['copy', 'icons', 'sass', 'sass-minified']);
+gulp.task('watch-src', function() {
+    gulpWatch(sassFiles, function() {
+        gulp.start('sass');
+        gulp.start('sass-minified');
+    });
+    gulpWatch(iconFiles, function() {
+        gulp.start('icons');
+    });
+});
 
 function processSass(filePattern, sassOptions) {
     sassOptions = sassOptions || {};
