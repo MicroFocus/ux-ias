@@ -59,6 +59,7 @@ $focus-text-color: $color-gray-7;
 // COMPONENTS
 $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
+$app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
 $app-bar-font-size: 12px;
 $app-bar-height-small: 48px;
 $app-bar-height-large: 72px;
@@ -92,6 +93,7 @@ $dialog-bg-color: $color-gray-7;
 $dialog-padding: 20px;
 $dialog-scrim-color: rgba(0, 0, 0, .50);
 
+$icon-button-border-width: 1px;
 $icon-button-size: 24px;
 
 $icon-size-small: 24px;

@@ -22,3 +22,12 @@
     }
   }
 }
+
+[dir="rtl"] {
+  .mf-grid {
+    > .mf-tile {
+      margin-left: $tile-margin;
+      margin-right: initial;
+    }
+  }
+}

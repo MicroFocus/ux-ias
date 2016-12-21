@@ -154,3 +154,24 @@
     }
   }
 }
+
+[dir="rtl"] {
+  .mf-tile {
+    &.mf-small {
+      > .mf-tile-content {
+        margin: $tile-padding 0 $tile-padding $tile-padding;
+      }
+    }
+
+    &.mf-medium {
+      > .mf-tile-content {
+        margin: $tile-padding 0 $tile-padding $tile-padding;
+      }
+    }
+
+    > .mf-actions {
+      left: 0;
+      right: initial;
+    }
+  }
+}

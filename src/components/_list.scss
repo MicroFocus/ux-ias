@@ -58,3 +58,23 @@
   padding: 0;
   text-transform: $list-header-text-transform;
 }
+
+[dir="rtl"] {
+  .mf-list {
+    > li,
+    > .mf-list-item {
+      &.mf-offset {
+        padding-left: $spacing;
+        padding-right: (2 * $spacing) + $list-item-avatar-size;
+      }
+
+      > .mf-icon,
+      > .mf-avatar {
+        &:first-child {
+          margin-left: $spacing;
+          margin-right: initial;
+        }
+      }
+    }
+  }
+}

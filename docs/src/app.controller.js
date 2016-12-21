@@ -5,7 +5,13 @@ function AppController($document, $state, config) {
     this.$document = $document;
     this.$state = $state;
     this.themeLink = this.$document[0].getElementById('theme-link');
+    this.displayDirection = 'ltr';
 }
+
+AppController.prototype.toggleDisplayDirection = function() {
+    this.displayDirection = this.displayDirection === 'ltr' ? 'rtl' : 'ltr';
+    this.$document[0].body.dir = this.displayDirection;
+};
 
 AppController.prototype.goToComponentsView = function($event) {
     $event.preventDefault();

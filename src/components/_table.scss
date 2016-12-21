@@ -78,3 +78,18 @@ table {
     font-size: $table-icon-size;
   }
 }
+
+[dir="rtl"] {
+  table {
+    text-align: right;
+
+    td, th {
+      > .mf-icon {
+        &:first-child {
+          margin-left: $table-icon-margin;
+          margin-right: initial;
+        }
+      }
+    }
+  }
+}

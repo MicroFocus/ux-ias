@@ -54,3 +54,16 @@ button,
     }
   }
 }
+
+[dir="rtl"] {
+  button,
+  .mf-button {
+
+    &:not(.mf-icon-button) {
+      > .mf-icon {
+        margin-left: initial;
+        margin-right: $button-inline-icon-padding;
+      }
+    }
+  }
+}

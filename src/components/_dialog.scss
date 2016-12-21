@@ -38,11 +38,16 @@
   }
 }
 
-@media (min-width: $large-display) {
+[dir="rtl"] {
   .mf-dialog {
-    > .mf-dialog-container {
+    .mf-dialog-container {
+      @extend .mf-panel;
 
       > .mf-dialog-cancel-button {
+        position: absolute;
+        left: $dialog-padding;
+        right: auto;
+        top: $dialog-padding;
       }
     }
   }

@@ -89,3 +89,34 @@ label {
     margin: $input-label-margin;
   }
 }
+
+[dir="rtl"] {
+  label {
+    &:not(:first-of-type) {
+      margin-left: initial;
+      margin-right: $spacing;
+    }
+
+    > input,
+    > select,
+    > textarea {
+      margin-left: initial;
+      margin-right: $input-inline-label-padding;
+    }
+  }
+
+  .mf-input-container {
+
+    &.mf-search {
+      > .mf-icon {
+        left: initial;
+        right: $search-box-icon-padding;
+      }
+
+      > .mf-icon-button {
+        left: $search-box-icon-padding;
+        right: initial;
+      }
+    }
+  }
+}

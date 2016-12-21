@@ -132,3 +132,13 @@ body > [ui-view] > main > [ui-view] > [ui-view] {
 #kitchen-sink > #tiles .mf-tile:not(:last-child) {
     margin-bottom: 5px;
 }
+
+[dir="rtl"] #kitchen-sink > #grids > section,
+[dir="rtl"] #kitchen-sink > #icon-buttons > section,
+[dir="rtl"] #kitchen-sink > #links > section,
+[dir="rtl"] #kitchen-sink > #lists > section,
+[dir="rtl"] #kitchen-sink > #menus > section,
+[dir="rtl"] #kitchen-sink > #panels > section {
+    margin-left: 10px;
+    margin-right: initial;
+}

@@ -54,6 +54,23 @@
   }
 }
 
+[dir="rtl"] {
+  .mf-app-bar {
+    background: $app-bar-bg-rtl;
+    padding: 0 0 0 $body-spacing-small ;
+
+    > .mf-heading {
+      margin-left: initial;
+      margin-right: $body-spacing-small;
+    }
+
+    > .mf-icon-button {
+      margin-left: initial;
+      margin-right: $spacing;
+    }
+  }
+}
+
 @media (min-width: $large-display) {
   .mf-app-bar {
     height: $app-bar-height-large;
@@ -66,6 +83,17 @@
 
     > .mf-heading {
       margin-left: $body-spacing-large;
+    }
+  }
+
+  [dir="rtl"] {
+    .mf-app-bar {
+      padding: 0 0 0 $body-spacing-large;
+
+      > .mf-heading {
+        margin-left: initial;
+        margin-right: $body-spacing-large;
+      }
     }
   }
 }
