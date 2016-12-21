@@ -139,9 +139,11 @@ $menu-text-color: $color-gray-1;
 $nav-bg-color: $color-gray-6;
 $nav-icon-size: 20px;
 $nav-icon-padding: 5px;
+$nav-item-bg-color-disabled: transparent;
 $nav-item-bg-color-hover: $color-gray-5;
 $nav-item-border-bottom-color-active: $color-primary-4;
 $nav-item-border-color-active: $color-gray-5;
+$nav-item-border-color-disabled: transparent;
 $nav-item-border-color-hover: transparent;
 $nav-item-border-width: 1px;
 $nav-item-border-width-active: 2px;
@@ -149,12 +151,17 @@ $nav-item-color-active: $text-color;
 $nav-item-color-hover: $color-gray-2;
 $nav-height: 32px;
 $nav-text-color: $color-gray-2;
+$nav-item-bg-color-focus: $nav-item-bg-color-hover;
+$nav-item-border-color-focus: transparent;
+$nav-item-border-bottom-color-focus: $nav-item-border-bottom-color-active;
+$nav-item-text-color-focus: inherit;
 
 $panel-bg-color: $color-gray-6;
 $panel-height: $button-height + (2 * $button-border-width);
 
 $search-box-icon-padding: 5px;
 $search-box-icon-size: 20px;
+$search-box-max-width: 300px;
 
 $side-nav-bg-color: $menu-bg-color;
 $side-nav-bg-color-hover: $menu-bg-color-hover;
@@ -165,7 +172,7 @@ $side-nav-header-text-transform: $menu-header-text-transform;
 $side-nav-max-width: 85%;
 $side-nav-padding: $spacing;
 $side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
-$side-nav-text-color: $menu-text-color;
+$side-nav-text-color: inherit;
 $side-nav-width: 240px;
 
 $table-header-border-color: $color-gray-5;

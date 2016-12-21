@@ -46,10 +46,13 @@ label {
   }
 
   &.mf-search {
+    max-width: $search-box-max-width;
     position: relative;
 
     > input {
+      box-sizing: border-box;
       padding: $input-padding ($search-box-icon-size + (2 * $search-box-icon-padding));
+      width: 100%;
 
       &:focus {
         & ~ .mf-icon,

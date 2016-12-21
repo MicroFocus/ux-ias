@@ -33,12 +33,16 @@
 
     &[disabled],
     &.mf-disabled {
+      background-color: $nav-item-bg-color-disabled;
+      border-color: $nav-item-border-color-disabled;
       color: $text-color-disabled;
     }
 
     &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
       &:focus {
-        @include focus-state;
+        background-color: $nav-item-bg-color-focus;
+        border-color: $nav-item-border-color-focus;
+        color: $nav-item-text-color-focus;
       }
 
       &:hover {
@@ -46,13 +50,13 @@
         border-color: $nav-item-border-color-hover;
         color: $nav-item-color-hover;
       }
-    }
 
-    &.mf-active {
-      border-bottom-color: $nav-item-border-bottom-color-active;
-      border-left-color: $nav-item-border-color-active;
-      border-right-color: $nav-item-border-color-active;
-      color: $nav-item-color-active;
+      &.mf-active {
+        border-bottom-color: $nav-item-border-bottom-color-active;
+        border-left-color: $nav-item-border-color-active;
+        border-right-color: $nav-item-border-color-active;
+        color: $nav-item-color-active;
+      }
     }
   }
 

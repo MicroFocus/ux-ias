@@ -14,14 +14,24 @@ body > [ui-view] {
 
 body > [ui-view] > main {
     flex: 1 0;
+    overflow: hidden;
 }
 
 body > [ui-view] > main > [ui-view] {
     display: flex;
     flex: 1 0;
-    height: 100%;
     flex-flow: row nowrap;
+    height: 100%;
     position: relative;
+    overflow: hidden;
+}
+
+body > [ui-view] > main > [ui-view] > [ui-view] {
+    overflow: auto;
+}
+
+#kitchen-sink {
+    overflow: auto;
 }
 
 #kitchen-sink section {
