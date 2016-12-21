@@ -8,7 +8,19 @@
   font-size: $app-bar-font-size;
   height: $app-bar-height-small;
   line-height: $app-bar-height-small;
-  padding: 0 $body-spacing-small;
+  padding: 0 $body-spacing-small 0 0;
+
+  > .mf-avatar {
+    background: no-repeat center center;
+    background-size: contain;
+    border-radius: 0;
+    flex: 0 0 $app-bar-height-small;
+    height: 100%;
+  }
+
+  > .mf-heading {
+    margin-left: $body-spacing-small;
+  }
 
   > .mf-icon-button {
     margin-left: $spacing;
@@ -46,6 +58,14 @@
   .mf-app-bar {
     height: $app-bar-height-large;
     line-height: $app-bar-height-large;
-    padding: 0 $body-spacing-large;
+    padding: 0 $body-spacing-large 0 0;
+
+    > .mf-avatar {
+      flex-basis: $app-bar-height-large;
+    }
+
+    > .mf-heading {
+      margin-left: $body-spacing-large;
+    }
   }
 }
