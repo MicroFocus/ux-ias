@@ -6,16 +6,12 @@
                 title="Toggle display direction"
                 ng-click="app.toggleDisplayDirection()"
                 ng-switch="app.displayDirection">
-            <i class="mf-icon mf-icon-back_left_thick"
-               ng-if="app.usingDefaultTheme()"
-               ng-switch-when="ltr"></i>
-            <i class="mf-icon mf-icon-forward_right_thick"
-               ng-if="app.usingDefaultTheme()"
-               ng-switch-when="rtl"></i>
+            <i class="mf-icon mf-icon-back_left_thick" ng-switch-when="ltr"></i>
+            <i class="mf-icon mf-icon-forward_right_thick" ng-switch-when="rtl"></i>
         </button>
         <button class="mf-icon-button" ng-click="app.toggleTheme()" title="Toggle theme">
-            <i class="mf-icon mf-icon-favorite_outline_thin" ng-if="app.usingDefaultTheme()"></i>
-            <i class="mf-icon mf-icon-favorite_fill" ng-if="!app.usingDefaultTheme()"></i>
+            <i class="mf-icon mf-icon-favorite_outline_thin" ng-if="app.isDefaultTheme()"></i>
+            <i class="mf-icon mf-icon-favorite_fill" ng-if="!app.isDefaultTheme()"></i>
         </button>
     </div>
     <div class="mf-nav">
@@ -27,7 +23,7 @@
         <a href="../mf-icons.html" target="_blank" class="mf-button">Icons</a>
     </div>
 </header>
+
 <main>
     <div ui-view></div>
 </main>
-

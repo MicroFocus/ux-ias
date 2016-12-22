@@ -11,7 +11,6 @@
   "disallowPaddingNewlinesInBlocks": null,
   "disallowQuotedKeysInObjects": true,
   "disallowSpaceAfterKeywords": [ "for", "while", "do", "switch" ],
-  "disallowSpaceAfterLineComment": true,
   "disallowSpaceAfterObjectKeys": null,
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforeBinaryOperators": null,

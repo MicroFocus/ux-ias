@@ -3,7 +3,12 @@ angular.module('app')
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('app', { url: '/', abstract: true, controller: 'AppController as app', templateUrl: '_layout.html' })
+            .state('app', {
+                url: '/?dir&theme',
+                abstract: true,
+                controller: 'AppController as app',
+                templateUrl: '_layout.html'
+            })
             .state('app.project', { url: '', component: 'projectComponent' })
             .state('app.kitchenSink', { url: 'kitchen-sink', templateUrl: 'src/kitchen-sink.template.html' })
 
