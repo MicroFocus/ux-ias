@@ -29,7 +29,7 @@ button,
   &.mf-disabled {
     background-color: $button-bg-color-disabled;
     border-color: $button-border-color-disabled;
-    color: $button-text-color-disabled;
+    opacity: $disabled-opacity;
     cursor: default;
   }
 

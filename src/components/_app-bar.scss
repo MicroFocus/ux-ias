@@ -1,4 +1,4 @@
-.mf-app-bar {
+.mf-app-bar.mf-app-bar {
   align-items: center;
   background: $app-bar-bg-fallback;
   background: $app-bar-bg;
@@ -19,7 +19,7 @@
   }
 
   > .mf-heading {
-    margin-left: $body-spacing-small;
+    margin-left: $body-spacing-large;
   }
 
   > .mf-icon-button {

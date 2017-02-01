@@ -2,9 +2,11 @@
 $border-radius: 3px;
 
 // COLORS
+$color-black: #000;
+
 $color-gray-1: #434c50;
 $color-gray-2: #59656a;
-$color-gray-3: #626e72;
+$color-gray-3: #6a6f71;
 $color-gray-4: #808080;
 $color-gray-5: #dae1e1;
 $color-gray-6: #eef2f2;
@@ -12,15 +14,17 @@ $color-gray-7: #f6f9f8;
 
 $color-primary-1: #1773bb;
 $color-primary-2: #007cd0;
-$color-primary-3: #0088ce;
+$color-primary-3: #0090da;
 $color-primary-4: #28a9e1;
 $color-primary-5: #01a9e7;
 
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 
+$disabled-opacity: .5;
+
 // TYPOGRAPHY
-$font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, san-serif;
+$font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
 $font-size: 14px;
 $font-weight: 400;
 
@@ -41,9 +45,11 @@ $title-text-transform: uppercase;
 $large-display: 769px;
 
 // SPACING
+$body-spacing-xsmall: 5px;
 $body-spacing-small: 10px;
-$body-spacing-large: 24px;
-$content-padding: 20px;
+$body-spacing-medium: 15px;
+$body-spacing-large: 25px;
+$content-padding: 25px;
 $spacing: 10px;
 
 // STATES
@@ -60,7 +66,7 @@ $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
 $app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
 $app-bar-font-size: 12px;
-$app-bar-height-small: 48px;
+$app-bar-height-small: 50px;
 $app-bar-height-large: 72px;
 $app-bar-icon-size: 20px;
 $app-bar-text-color: $color-gray-7;
@@ -174,7 +180,7 @@ $side-nav-max-width: 85%;
 $side-nav-padding: $spacing;
 $side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
 $side-nav-text-color: inherit;
-$side-nav-width: 240px;
+$side-nav-width: 220px;
 
 $table-header-border-color: $color-gray-5;
 $table-header-font-size: 12px;

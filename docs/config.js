@@ -1,6 +1,6 @@
 angular.module('app')
     .constant('config', {
         companyName: 'MicroFocus',
-        projectName: 'MicroFocus UX',
+        projectName: 'Access and Identity UX Guidelines',
         teamName: 'MicroFocus Identity and Access Management Group'
     });

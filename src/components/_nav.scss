@@ -35,7 +35,7 @@
     &.mf-disabled {
       background-color: $nav-item-bg-color-disabled;
       border-color: $nav-item-border-color-disabled;
-      color: $text-color-disabled;
+      opacity: $disabled-opacity;
     }
 
     &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
