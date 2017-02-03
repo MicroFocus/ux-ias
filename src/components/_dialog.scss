@@ -8,9 +8,10 @@
   width: 100%;
 
   .mf-dialog-container {
-    @extend .mf-panel;
+    @extend .mf-border-1;
 
-    left: 0;
+    background: #fff;
+	left: 0;
     margin: 0 auto;
     max-height: 100%;
     max-width: 100%;
@@ -26,10 +27,19 @@
 
     > .mf-dialog-cancel-button {
       position: absolute;
-      right: $dialog-padding;
-      top: $dialog-padding;
+      right: $body-spacing-medium;
+      top: $body-spacing-medium;
     }
-
+	  
+	> .mf-dialog-label {
+	  color: $dialog-label-color;
+	  font-size: $font-size;
+	  margin-bottom: $spacing;
+	  padding-right: $content-padding;
+	  text-transform: $title-text-transform;
+	  white-space: nowrap;
+	}  
+	  
     > .mf-dialog-title {
       @extend .mf-heading;
 
@@ -41,13 +51,13 @@
 [dir="rtl"] {
   .mf-dialog {
     .mf-dialog-container {
-      @extend .mf-panel;
+//      @extend .mf-panel;
 
       > .mf-dialog-cancel-button {
         position: absolute;
-        left: $dialog-padding;
+        left: $body-spacing-medium;
         right: auto;
-        top: $dialog-padding;
+        top: $body-spacing-medium;
       }
     }
   }

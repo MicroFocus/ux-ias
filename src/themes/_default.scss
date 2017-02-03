@@ -1,5 +1,6 @@
 // BORDERS
 $border-radius: 3px;
+$border-radius-small: 2px;
 
 // COLORS
 $color-black: #000;
@@ -23,10 +24,19 @@ $color-accent-2: #fff6ce;
 
 $disabled-opacity: .5;
 
+// Font size variants
+$font-size-xsmall:	11px;
+$font-size-small:	13px;
+$font-size-base:	15px;
+$font-size-medium:	18px;
+$font-size-large:	21px;
+$font-size-xlarge:	24px;
+
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue', Helvetica, Arial, san-serif;
 $font-size: 14px;
 $font-weight: 400;
+$font-weight-medium: 500;
 
 $heading-text-color: inherit;
 $heading-font-size: 22px;
@@ -34,10 +44,10 @@ $heading-font-weight: 200;
 $heading-letter-spacing: 1px;
 
 $text-color: $color-gray-1;
-$text-color-disabled: $color-gray-5;
+$text-color-disabled: $disabled-opacity;
 
 $title-text-color: $color-gray-4;
-$title-font-size: 15px;
+$title-font-size: $font-size-base;
 $title-font-weight: normal;
 $title-text-transform: uppercase;
 
@@ -65,9 +75,9 @@ $focus-text-color: $color-gray-1;
 $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
 $app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
-$app-bar-font-size: 12px;
-$app-bar-height-small: 50px;
-$app-bar-height-large: 72px;
+$app-bar-font-size: $font-size-small;
+$app-bar-height-small: 45px;
+$app-bar-height-large: 100px;
 $app-bar-icon-size: 20px;
 $app-bar-text-color: $color-gray-7;
 
@@ -77,7 +87,7 @@ $border-color: $color-gray-5;
 
 $button-bg-color: $color-gray-7;
 $button-bg-color-disabled: $button-bg-color;
-$button-bg-color-hover: $button-bg-color;
+$button-bg-color-hover: $color-gray-6;
 $button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
 $button-border-color-hover: $color-primary-2;
@@ -86,8 +96,8 @@ $button-cta-bg-color: $color-gray-1;
 $button-cta-color: $color-gray-7;
 $button-font-size: $font-size;
 $button-height: 28px;
-$button-inline-icon-size: .85em;
-$button-inline-icon-padding: .5em;
+$button-inline-icon-size: $font-size-small;
+$button-inline-icon-padding: $body-spacing-xsmall;
 $button-min-width: 42px;
 $button-text-color: $text-color;
 $button-text-color-disabled: $button-border-color-disabled;
@@ -95,6 +105,7 @@ $button-text-color-hover: $color-primary-2;
 $button-text-transform: none;
 
 $dialog-bg-color: white;
+$dialog-label-color: $color-gray-4;
 $dialog-padding: 20px;
 $dialog-scrim-color: rgba(0, 0, 0, .50);
 
@@ -155,9 +166,9 @@ $nav-item-border-color-hover: transparent;
 $nav-item-border-width: 1px;
 $nav-item-border-width-active: 2px;
 $nav-item-color-active: $text-color;
-$nav-item-color-hover: $color-gray-2;
+$nav-item-color-hover: $color-gray-1;
 $nav-height: 32px;
-$nav-text-color: $color-gray-2;
+$nav-text-color: $color-gray-1;
 $nav-item-bg-color-focus: $nav-item-bg-color-hover;
 $nav-item-border-color-focus: transparent;
 $nav-item-border-bottom-color-focus: $nav-item-border-bottom-color-active;

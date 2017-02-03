@@ -1,4 +1,4 @@
-.mf-app-bar.mf-app-bar {
+.mf-app-bar {
   align-items: center;
   background: $app-bar-bg-fallback;
   background: $app-bar-bg;
@@ -6,20 +6,21 @@
   display: flex;
   flex-flow: row nowrap;
   font-size: $app-bar-font-size;
-  height: $app-bar-height-small;
-  line-height: $app-bar-height-small;
+  max-height: $app-bar-height-large;
+  min-height: $app-bar-height-small;
   padding: 0 $body-spacing-small 0 0;
 
   > .mf-avatar {
-    background: no-repeat center center;
-    background-size: contain;
     border-radius: 0;
-    flex: 0 0 $app-bar-height-small;
-    height: 100%;
+    max-height: 100%;
+	  > img {
+		  max-height: 100%;
+		  display: block;
+	  }
   }
 
   > .mf-heading {
-    margin-left: $body-spacing-large;
+    margin: 0 $body-spacing-small;
   }
 
   > .mf-icon-button {
@@ -73,16 +74,10 @@
 
 @media (min-width: $large-display) {
   .mf-app-bar {
-    height: $app-bar-height-large;
-    line-height: $app-bar-height-large;
     padding: 0 $body-spacing-large 0 0;
 
-    > .mf-avatar {
-      flex-basis: $app-bar-height-large;
-    }
-
     > .mf-heading {
-      margin-left: $body-spacing-large;
+      margin: 0 $body-spacing-large;
     }
   }
 

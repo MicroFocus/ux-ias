@@ -1,36 +1,3 @@
-@mixin mf-border() {
-  &.mf-border-bottom {
-    border-bottom: 1px solid;
-    border-color: inherit;
-  }
-  &.mf-border-top {
-    border-top: 1px solid;
-    border-color: inherit;
-  }
-}
-
-@mixin mf-border-ltr() {
-  &.mf-border-start {
-    border-left: 1px solid;
-    border-color: inherit;
-  }
-  &.mf-border-end {
-    border-right: 1px solid;
-    border-color: inherit;
-  }
-}
-
-@mixin mf-border-rtl() {
-  &.mf-border-start {
-    border-right: 1px solid;
-    border-color: inherit;
-  }
-  &.mf-border-end {
-    border-left: 1px solid;
-    border-color: inherit;
-  }
-}
-
 .mf-content-padding {
   padding: $content-padding;
 }
