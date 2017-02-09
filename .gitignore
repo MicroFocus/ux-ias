@@ -41,3 +41,6 @@ dist
 # WebStorm
 .idea/workspace.xml
 .idea/dictionaries
+
+
+src/**/*.css

@@ -35,7 +35,7 @@
     &.mf-disabled {
       background-color: $nav-item-bg-color-disabled;
       border-color: $nav-item-border-color-disabled;
-      color: $text-color-disabled;
+      opacity: $disabled-opacity;
     }
 
     &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
@@ -56,6 +56,7 @@
         border-left-color: $nav-item-border-color-active;
         border-right-color: $nav-item-border-color-active;
         color: $nav-item-color-active;
+		font-weight: $font-weight-medium;
       }
     }
   }
