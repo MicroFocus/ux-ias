@@ -4,8 +4,11 @@ textarea {
   background-color: $input-bg-color;
   border: $input-border;
   border-radius: $border-radius;
-  color: inherit;
+  color: $color-gray-1;
+  font-size: $font-size;
   padding: $input-padding;
+  margin: 0;
+  margin-right: 5px;
 
   &::-ms-clear {
     display: none;
@@ -38,7 +41,7 @@ label {
 
 .mf-input-container {
   &:not(:last-child) {
-    margin-bottom: $spacing;
+    margin-bottom: $body-spacing-medium;
   }
 
   &.mf-inline {

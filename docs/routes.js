@@ -26,6 +26,7 @@ angular.module('app')
             .state('app.component.nav', { url: 'nav', component: 'navComponent' })
             .state('app.component.panel', { url: 'panel', component: 'panelComponent' })
             .state('app.component.sideNav', { url: 'side-nav', component: 'sideNavComponent' })
+            .state('app.component.tab', { url: 'tab', component: 'tabComponent' })
             .state('app.component.table', { url: 'table', component: 'tableComponent' })
             .state('app.component.tile', { url: 'tile', component: 'tileComponent' })
             .state('app.component.tileGrid', { url: 'tile-grid', component: 'tileGridComponent' });

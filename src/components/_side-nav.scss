@@ -8,6 +8,7 @@
 
   &.mf-locked {
     background-color: transparent;
+	display: flex;
     position: relative;
     height: 100%;
     width: $side-nav-width;

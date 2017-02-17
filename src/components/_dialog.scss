@@ -27,8 +27,8 @@
 
     > .mf-dialog-cancel-button {
       position: absolute;
-      right: $body-spacing-medium;
-      top: $body-spacing-medium;
+      right: $body-spacing-small;
+      top: $body-spacing-small;
     }
 	  
 	> .mf-dialog-label {
@@ -45,6 +45,14 @@
 
       margin-bottom: $dialog-padding;
     }
+	  
+	  p {
+		color: $dialog-content-color;
+	  }
+	  
+	  .mf-icon {
+		color: $dialog-content-color;
+	  }
   }
 }
 
@@ -55,9 +63,9 @@
 
       > .mf-dialog-cancel-button {
         position: absolute;
-        left: $body-spacing-medium;
+        left: $body-spacing-small;
         right: auto;
-        top: $body-spacing-medium;
+        top: $body-spacing-small;
       }
     }
   }

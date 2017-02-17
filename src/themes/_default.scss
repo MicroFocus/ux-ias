@@ -3,24 +3,27 @@ $border-radius: 3px;
 $border-radius-small: 2px;
 
 // COLORS
-$color-black: #000;
+$color-black-1: #000;
+$color-black-2: #1f1f1f;
 
 $color-gray-1: #434c50;
-$color-gray-2: #59656a;
+$color-gray-2: #575b5d;
 $color-gray-3: #6a6f71;
 $color-gray-4: #808080;
 $color-gray-5: #dae1e1;
 $color-gray-6: #eef2f2;
 $color-gray-7: #f6f9f8;
 
-$color-primary-1: #1773bb;
+$color-primary-1: #0061bd;
 $color-primary-2: #007cd0;
 $color-primary-3: #0090da;
-$color-primary-4: #28a9e1;
-$color-primary-5: #01a9e7;
+$color-primary-4: #01a9e7;
+$color-primary-5: #29ceff;
 
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
+$color-accent-3: #f17e12;
+$color-accent-4: #e50000;
 
 $disabled-opacity: .5;
 
@@ -67,14 +70,14 @@ $disabled-bg-color: $color-gray-6;
 $disabled-border-color: $color-gray-5;
 $disabled-text-color: $color-gray-5;
 
-$focus-bg-color: $color-accent-2;
-$focus-border-color: $color-accent-1;
+$focus-bg-color: $color-gray-7;
+$focus-border-color: $color-primary-2;
 $focus-text-color: $color-gray-1;
 
 // COMPONENTS
 $app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
-$app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
+$app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
+$app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
 $app-bar-font-size: $font-size-small;
 $app-bar-height-small: 45px;
 $app-bar-height-large: 100px;
@@ -87,7 +90,7 @@ $border-color: $color-gray-5;
 
 $button-bg-color: $color-gray-7;
 $button-bg-color-disabled: $button-bg-color;
-$button-bg-color-hover: $color-gray-6;
+$button-bg-color-hover: $color-gray-7;
 $button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
 $button-border-color-hover: $color-primary-2;
@@ -107,34 +110,37 @@ $button-text-transform: none;
 $dialog-bg-color: white;
 $dialog-label-color: $color-gray-4;
 $dialog-padding: 20px;
-$dialog-scrim-color: rgba(0, 0, 0, .50);
+$dialog-scrim-color: rgba(128, 128, 128, .7);
+$dialog-content-color: $color-black-2;
 
 $icon-button-border-width: 1px;
-$icon-button-size: 24px;
+$icon-button-color: $color-gray-4;
+$icon-button-size: 25px;
+$icon-button-size-large: 28px;
 
-$icon-size-small: 24px;
-$icon-size-medium: 32px;
-$icon-size-large: 40px;
+$icon-size-small: 25px;
+$icon-size-medium: 50px;
+$icon-size-large: 75px;
 
 $input-bg-color: $body-bg-color;
 $input-border: 1px solid $color-gray-5;
 $input-inline-label-padding: 5px;
 $input-label-font-size: 12px;
 $input-label-margin: 10px 0 5px;
-$input-label-text-color: $color-gray-2;
+$input-label-text-color: $color-gray-4;
 $input-padding: 8px;
 
 $link-text-color: $color-primary-3;
 $link-bg-color-disabled: transparent;
 $link-bg-color-focus: $color-accent-2;
-$link-bg-color-hover: $color-gray-7;
+$link-bg-color-hover: $color-gray-6;
 $link-border-color-focus: $color-accent-1;
 $link-padding: .15em;
 $link-text-color-disabled: $text-color-disabled;
 $link-text-color-focus: $color-gray-2;
-$link-text-color-hover: $color-primary-4;
+$link-text-color-hover: $color-primary-1;
 
-$list-item-bg-color-hover: $color-gray-7;
+$list-item-bg-color-hover: $color-gray-6;
 $list-item-height: 26px;
 $list-item-avatar-size: 26px;
 
@@ -182,13 +188,13 @@ $search-box-icon-size: 20px;
 $search-box-max-width: 300px;
 
 $side-nav-bg-color: $body-bg-color;
-$side-nav-bg-color-hover: $button-bg-color-hover;
+$side-nav-bg-color-hover: $color-gray-6;
 $side-nav-header-text-color: $list-header-text-color;
 $side-nav-header-font-size: $list-header-font-size;
 $side-nav-header-font-weight: $list-header-font-weight;
 $side-nav-header-text-transform: $list-header-text-transform;
 $side-nav-max-width: 85%;
-$side-nav-padding: $spacing;
+$side-nav-padding: $body-spacing-medium;
 $side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
 $side-nav-text-color: inherit;
 $side-nav-width: 220px;
