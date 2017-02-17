@@ -4,12 +4,13 @@
   "description": "MicroFocus Identity and Access Management Group style and user-experience guidelines",
   "main": "index.js",
   "engines": {
-    "node": ">=6.2.2",
-    "npm": ">=3.9.5"
+    "node": ">=6.2",
+    "npm": ">=3.9"
   },
   "engineStrict": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preversion": "gulp clean",
+    "version": "gulp build:production && git add -A dist"
   },
   "repository": {
     "type": "git",
@@ -20,11 +21,10 @@
     "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
     "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
   ],
-  "license": "SEE LICENSE IN license.txt",
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/jedwardhawkins/mfux/issues"
   },
-  "homepage": "https://github.com/jedwardhawkins/mfux#readme",
   "devDependencies": {
     "angular": "1.6.0",
     "angular-ui-router": "1.0.0-beta.3",
@@ -32,15 +32,13 @@
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.1",
     "gulp-clean": "0.3.2",
+    "gulp-clean-css": "3.0.2",
     "gulp-connect": "5.0.0",
     "gulp-consolidate": "0.2.0",
-    "gulp-iconfont": "8.0.1",
     "gulp-jscs": "4.0.0",
     "gulp-rename": "1.2.2",
-    "gulp-replace": "0.5.4",
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
-    "gulp-watch": "4.3.11",
-    "lodash": "4.17.2"
+    "gulp-watch": "4.3.11"
   }
 }

@@ -1,5 +1,0 @@
-/*
- * MicroFocus Identity and Access Management UX (mfux)
- *
- * Copyright (c) MicroFocus
- */

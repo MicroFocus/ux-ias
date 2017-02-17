@@ -36,11 +36,9 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-dist
+dist/docs
 
 # WebStorm
-.idea/workspace.xml
-.idea/dictionaries
-
+.idea
 
 src/**/*.css
