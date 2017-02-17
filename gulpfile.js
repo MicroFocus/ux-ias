@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var gulpAutoprefixer = require('gulp-autoprefixer');
 var gulpClean = require('gulp-clean');
 var gulpCleanCss = require('gulp-clean-css');
-var gulpConnect = require('gulp-connect');
 var gulpRename = require('gulp-rename');
 var gulpSass = require('gulp-sass');
 var gulpSourcemaps = require('gulp-sourcemaps');
@@ -24,7 +23,7 @@ gulp.task('clean', function() {
         .pipe(gulpClean());
 });
 
-gulp.task('default', [ 'sass:development', 'watch:sass', 'serve' ]);
+gulp.task('default', [ 'sass:development', 'watch:sass' ]);
 
 gulp.task('sass:development', function() {
     return gulp
@@ -33,7 +32,6 @@ gulp.task('sass:development', function() {
         .pipe(gulpSass({ outputStyle: 'expanded' }).on('error', gulpSass.logError))
         .pipe(gulpAutoprefixer({ browsers: [ 'last 2 versions' ] }))
         .pipe(gulpSourcemaps.write())
-        .pipe(gulpConnect.reload())
         .pipe(gulp.dest(config.directories.output));
 });
 
@@ -48,14 +46,6 @@ gulp.task('sass:production', function() {
         .pipe(gulpRename({ extname: '.min.css' }))
         .pipe(gulpSourcemaps.write('./'))
         .pipe(gulp.dest(config.directories.output));
-});
-
-gulp.task('serve', function() {
-    gulpConnect.server({
-        livereload: true,
-        port: 8080,
-        root: config.directories.output
-    });
 });
 
 gulp.task('watch:sass', function() {

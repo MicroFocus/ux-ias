@@ -26,19 +26,19 @@
     "url": "https://github.com/jedwardhawkins/mfux/issues"
   },
   "devDependencies": {
+    "@types/angular": "1.5.8",
+    "@types/angular-ui-router": "1.1.36",
+    "@types/node": "6.0.45",
     "angular": "1.6.0",
     "angular-ui-router": "1.0.0-beta.3",
-    "async": "2.1.4",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.1",
     "gulp-clean": "0.3.2",
     "gulp-clean-css": "3.0.2",
-    "gulp-connect": "5.0.0",
-    "gulp-consolidate": "0.2.0",
-    "gulp-jscs": "4.0.0",
     "gulp-rename": "1.2.2",
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
-    "gulp-watch": "4.3.11"
+    "gulp-watch": "4.3.11",
+    "ng-gulp": "git@github.com:jedwardhawkins/ng-gulp#v0.1.2"
   }
 }
