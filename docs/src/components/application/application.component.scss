@@ -1,0 +1,16 @@
+application {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 100%;
+
+  > main {
+    height: 100%;
+    overflow: hidden;
+
+    > [ui-view] {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
