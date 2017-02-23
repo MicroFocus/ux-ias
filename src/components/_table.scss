@@ -6,7 +6,12 @@ table {
     border-bottom: 1px solid $table-header-border-color;
     color: $color-gray-4;
     font-size: $table-header-font-size;
-
+	  
+	  th { 
+		font-weight: normal;
+		  padding: $body-spacing-xsmall $spacing;
+	  	}
+	  
     .mf-icon {
       font-size: inherit;
       vertical-align: middle;
