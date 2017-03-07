@@ -1,17 +1,17 @@
 <header>
     <div class="mf-app-bar">
-        <h3 class="mf-heading" ng-bind="app.projectName"></h3>
+        <h3 class="mf-heading" ng-bind="$ctrl.projectName"></h3>
         <span class="mf-fill"></span>
         <button class="mf-icon-button"
                 title="Toggle display direction"
-                ng-click="app.toggleDisplayDirection()"
-                ng-switch="app.displayDirection">
+                ng-click="$ctrl.toggleDisplayDirection()"
+                ng-switch="$ctrl.displayDirection">
             <i class="mf-icon mf-icon-back_left_thick" ng-switch-when="ltr"></i>
             <i class="mf-icon mf-icon-forward_right_thick" ng-switch-when="rtl"></i>
         </button>
-        <button class="mf-icon-button" ng-click="app.toggleTheme()" title="Toggle theme">
-            <i class="mf-icon mf-icon-favorite_outline_thin" ng-if="app.isDefaultTheme()"></i>
-            <i class="mf-icon mf-icon-favorite_fill" ng-if="!app.isDefaultTheme()"></i>
+        <button class="mf-icon-button" ng-click="$ctrl.toggleTheme()" title="Toggle theme">
+            <i class="mf-icon mf-icon-favorite_outline_thin" ng-if="$ctrl.isDefaultTheme()"></i>
+            <i class="mf-icon mf-icon-favorite_fill" ng-if="!$ctrl.isDefaultTheme()"></i>
         </button>
     </div>
     <div class="mf-nav">

@@ -36,7 +36,38 @@
   .mf-icon-button {
     font-size: $app-bar-icon-size;
   }
+	
+  .mf-menu {
+	button,
+	.mf-button {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font-size: inherit;
+	padding: 0 5px;
 
+		&:not([disabled]):not(.mf-disabled) {
+		  &:focus,
+		  &:hover {
+			background-color: rgba(67,76,80,.6);
+			color: inherit;
+		  }
+		}
+	}
+  }
+
+	.mf-icon-button	{
+		
+		&:not([disabled]):not(.mf-disabled) {
+		  &:focus,
+		  &:hover {
+			background-color: rgba(67,76,80,.6);
+			color: inherit;
+		  }
+		}
+
+	}
+	
   button,
   .mf-button {
     background-color: transparent;

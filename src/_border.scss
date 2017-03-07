@@ -13,6 +13,12 @@
   border-radius: $border-radius;
 }
 
+.mf-border-tabs {
+  border: 1px solid $color-gray-5;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
 @mixin mf-border() {
   &.mf-border-bottom {
     border-bottom: 1px solid;
