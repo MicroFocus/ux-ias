@@ -52,8 +52,9 @@
 
         <section>
             <h3>.mf-cta</h3>
-
             <button type="button" class="mf-cta">Button</button>
+            <h3>.mf-cta-disabled</h3>
+			<button type="button" class="mf-cta-disabled">Button</button>
         </section>
     </section>
 
@@ -348,25 +349,25 @@
         <section>
             <h3>.mf-small</h3>
 
-            <i class="mf-icon mf-icon-check_thick"></i>
-            <i class="mf-icon mf-icon-close_thick"></i>
-            <i class="mf-icon mf-icon-new_thick"></i>
+            <i class="mf-icon mf-icon-m_081_resource_thick"></i>
+            <i class="mf-icon mf-icon-m_078_phone_thick"></i>
+            <i class="mf-icon mf-icon-favorite_outline_thin"></i>
         </section>
 
         <section>
             <h3>.mf-medium</h3>
 
-            <i class="mf-icon mf-icon-check_thick mf-medium"></i>
-            <i class="mf-icon mf-icon-close_thick mf-medium"></i>
-            <i class="mf-icon mf-icon-new_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-m_081_resource_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-m_078_phone_thick mf-medium"></i>
+            <i class="mf-icon mf-icon-favorite_outline_thin mf-medium"></i>
         </section>
 
         <section>
             <h3>.mf-large</h3>
 
-            <i class="mf-icon mf-icon-check_thick mf-large"></i>
-            <i class="mf-icon mf-icon-close_thick mf-large"></i>
-            <i class="mf-icon mf-icon-new_thick mf-large"></i>
+            <i class="mf-icon mf-icon-m_081_resource_thick mf-large"></i>
+            <i class="mf-icon mf-icon-m_078_phone_thick mf-large"></i>
+            <i class="mf-icon mf-icon-favorite_outline_thin mf-large"></i>
         </section>
     </section>
 
@@ -600,7 +601,7 @@
             <h3>.mf-open.mf-start</h3>
 
             <div class="mf-menu mf-open">
-                <button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
                 <div class="mf-menu-content">
                     <button type="button">Button 1</button>
                     <button type="button">Button 2</button>
@@ -613,7 +614,7 @@
             <h3>.mf-open.mf-end</h3>
 
             <div class="mf-menu mf-open mf-end">
-                <button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
                 <div class="mf-menu-content">
                     <button type="button">Button 1</button>
                     <button type="button">Button 2</button>
@@ -756,7 +757,7 @@
                 <button type="button" disabled="disabled"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
             </div>
             <div class="mf-menu mf-open">
-                <button type="button"><span>Link 4</span><i class="mf-icon mf-icon-up_thick"></i></button>
+                <button type="button"><span>Link 4</span><i class="mf-icon mf-icon-down_thick"></i></button>
                 <div class="mf-menu-content">
                     <button type="button">Button 1</button>
                     <button type="button">Button 2</button>
@@ -986,6 +987,47 @@
                     </ul>
                 </div>
             </div>
+        </section>
+    </section>
+
+    <section id="tabs">
+        <h2>Tabs</h2>
+        <section>
+	        <h3>Default</h3>
+			<div class="mf-tabset">
+				<div class="mf-tab mf-selected">Tab 1</div>
+				<div class="mf-tab">Tab 2</div>
+				<div class="mf-tab">Tab 3</div>
+				<div class="mf-tab mf-disabled">Tab 4</div>
+				<div class="mf-tab-base"></div>
+			</div>
+			<div class="text">This is sample content text for the selected tab.</div>
+        </section>
+        <section>
+	        <h3>Tabs with text link</h3>
+			<div class="mf-tabset">
+				<div class="mf-tab">Tab 1</div>
+				<div class="mf-tab mf-selected">Tab 2</div>
+				<div class="mf-tab">Tab 3</div>
+				<div class="mf-tab mf-disabled">Tab 4</div>
+				<div class="mf-tab-base"></div>
+				<div class="mf-fill"></div>
+				<a href="#">Action link</a>
+			</div>
+			<div class="text">This is sample content text for the selected tab.</div>
+        </section>
+        <section>
+	        <h3>Tabs with action buttons</h3>
+			<div class="mf-tabset">
+				<div class="mf-tab">Tab 1</div>
+				<div class="mf-tab">Tab 2</div>
+				<div class="mf-tab mf-selected ">Tab 3</div>
+				<div class="mf-tab mf-disabled">Tab 4</div>
+				<div class="mf-fill"></div>
+				<button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-m_020_favorite_outline_thin"></i></button>
+				<div class="mf-tab-base"></div>
+			</div>
+			<div class="text">This is sample content text for the selected tab.</div>
         </section>
     </section>
 

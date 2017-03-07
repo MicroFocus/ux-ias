@@ -3,7 +3,8 @@ $border-radius: 3px;
 $border-radius-small: 2px;
 
 // COLORS
-$color-black: #000;
+$color-black-1: #000;
+$color-black-2: #1f1f1f;
 
 $color-gray-1: #f6f9f8;
 $color-gray-2: #eef2f2;
@@ -22,6 +23,8 @@ $color-primary-5: #01a9e7;
 
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
+$color-accent-3: #f17e12;
+$color-accent-4: #dc233f;
 
 $disabled-opacity: .3;
 
@@ -108,10 +111,13 @@ $button-text-transform: none;
 $dialog-bg-color: $color-gray-7;
 $dialog-label-color: $color-gray-4;
 $dialog-padding: 20px;
-$dialog-scrim-color: rgba(0, 0, 0, .50);
+$dialog-scrim-color: rgba(106, 111, 113, .8);
+$dialog-content-color: $color-gray-8;
 
 $icon-button-border-width: 1px;
-$icon-button-size: 24px;
+$icon-button-color: $color-gray-4;
+$icon-button-size: 25px;
+$icon-button-size-large: 28px;
 
 $icon-size-small: 24px;
 $icon-size-medium: 32px;

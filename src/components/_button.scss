@@ -22,7 +22,14 @@ button,
   &.mf-cta {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
-    color: $color-gray-7;
+    color: $color-gray-7;	
+  }
+  &.mf-cta-disabled {
+    background-color: $color-gray-1;
+    border-color: $color-gray-1;
+    color: $color-gray-7;	
+	opacity: $disabled-opacity;
+	cursor: default;
   }
 
   &[disabled],
@@ -33,7 +40,7 @@ button,
     cursor: default;
   }
 
-  &:not([disabled]):not(.mf-disabled) {
+  &:not([disabled]):not(.mf-disabled):not(.mf-cta-disabled) {
     &:focus {
       @include focus-state;
     }
@@ -61,7 +68,7 @@ button,
 
     &:not(.mf-icon-button) {
       > .mf-icon {
-        margin-left: initial;
+        margin-left: 0;
         margin-right: $button-inline-icon-padding;
       }
     }
