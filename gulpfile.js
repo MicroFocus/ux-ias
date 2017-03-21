@@ -12,10 +12,13 @@ var config = {
         output: 'dist'
     },
     files: {
-        sassManifest: [ 'src/mfux.scss', 'src/mfux-dark.scss' ],
+        sassManifest: [ 'src/mfux.scss', 'src/mfux_dark.scss' ],
         srcSass: 'src/**/*.scss'
     }
 };
+
+gulp.task('build:development', ['sass:development']);
+gulp.task('build:production', ['sass:production']);
 
 gulp.task('clean', function() {
     return gulp
