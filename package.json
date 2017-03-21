@@ -39,6 +39,6 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
-    "ng-gulp": "git@github.com:jedwardhawkins/ng-gulp#v0.6.2"
+    "ng-gulp": "jedwardhawkins/ng-gulp#v0.6.2"
   }
 }
