@@ -29,6 +29,7 @@ import TileGridComponent from './components/docs/tile-grid/tile-grid.component';
 
 
 module('app', [
+    'ng-prism',
     'ui.router'
 ])
     .config(routes)
