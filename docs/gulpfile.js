@@ -16,6 +16,7 @@ ngGulp(gulp, {
 		'ng-prism': 'window["ng-prism"]'
     },
     files: {
+		indexProduction: 'src/index.production.html',
         sassManifest: [
             'src/app.scss',
             'src/app_dark.scss'
@@ -24,13 +25,15 @@ ngGulp(gulp, {
             path.resolve(cwd, '../node_modules/angular/angular.js'),
             path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
 			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
-			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
+			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*'),
+			'!' + path.resolve(cwd, '../node_modules/mf-icons/dist/mf-icons.min.css')
         ],
         vendorProduction: [
             path.resolve(cwd, '../node_modules/angular/angular.js'),
             path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
 			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
-			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
+			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*'),
+			'!' + path.resolve(cwd, '../node_modules/mf-icons/dist/mf-icons.min.css')
 		],
         vendorTest: [
             path.resolve(cwd, '../node_modules/angular/angular.js'),
