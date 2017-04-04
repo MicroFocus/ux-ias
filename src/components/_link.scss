@@ -7,6 +7,14 @@ a {
   padding: $link-padding;
   text-decoration: none;
 
+  &.link-left-margin {
+    margin-left: 5px;
+  }
+
+  &.mf-obscure {
+    color: #808080;
+  }
+
   &.mf-disabled {
     background-color: $link-bg-color-disabled;
     color: $link-text-color-disabled;
@@ -23,6 +31,8 @@ a {
       color: $link-text-color-hover;
     }
   }
+}
 
-
+.mf-tile a:hover {
+  background-color: $body-bg-color;
 }
