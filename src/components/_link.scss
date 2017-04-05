@@ -4,15 +4,18 @@ a {
   cursor: pointer;
   display: inline-block;
   font-size: inherit;
-  padding: $link-padding;
   text-decoration: none;
 
-  &.link-left-margin {
-    margin-left: 5px;
+  &.mf-link-no-highlight {
+    color: $link-text-color-no-highlight;
   }
 
-  &.mf-obscure {
-    color: #808080;
+  &.mf-link-standalone {
+    line-height: $link-standalone-line-height;
+
+    & + a {
+      margin-left: $link-spacing;
+    }
   }
 
   &.mf-disabled {
@@ -33,6 +36,28 @@ a {
   }
 }
 
+.mf-link-margin {
+  margin-left: $link-spacing;
+}
+
+.mf-tabset a {
+  height: $link-standalone-line-height;
+  line-height: $link-standalone-line-height;
+  margin-top: $tabset-link-top-margin;
+}
+
 .mf-tile a:hover {
   background-color: $body-bg-color;
+}
+
+[dir="rtl"] {
+  a.mf-link-standalone + a {
+    margin-left: 0;
+    margin-right: $link-spacing;
+  }
+
+  .mf-link-margin {
+    margin-left: 0;
+    margin-right: $link-spacing;
+  }
 }

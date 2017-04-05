@@ -3,48 +3,62 @@
 <h3>Purpose</h3>
 <p>Navigation</p>
 
-<section>
-	<h3>Assorted Link Examples</h3>
+<h3>Use</h3>
+<p>
+	Use to redirect to another page or view. Can be styled as a button or other component.
+</p>
 
+<section>
+	<h3>within text</h3>
 	<div repeat-as-code="inner">
-		<p>
-			De-emphasized <a href="#" class="mf-obscure" style="padding-top:0; padding-bottom:0;">link here</a> to avoid attracting attention.
-		</p>
-		<p>
-			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-			Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-			eos qui <a href="#" style="padding-top:0; padding-bottom:0;">ratione voluptatem</a> sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.
-		</p>
-		<p>
-			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam<a href="#" style="padding-top:0; padding-bottom:0;" class="link-left-margin">More</a>
-		</p>
-		<p>
-			<a href="#">New York</a>
-			<a href="#" class="link-left-margin">Chicago</a>
-		</p>
-		<p>
-			<div><a href="#">New York</a></div>
-		<div><a href="#">Chicago</a></div>
-		</p>
-		<div class="mf-tile mf-medium" tabindex="0">
-			<div class="mf-avatar" style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
-			</div>
-			<div class="mf-tile-content">
-				<h3>Search</h3>
-				<a>Click here!</a>
-			</div>
-			<div class="mf-actions">
-				<i class="mf-icon mf-icon-favorite_fill"></i>
-			</div>
+		<p><a href="#">Link</a></p>
+		<br>
+		<a class="mf-disabled" tabindex="-1">Disabled Link</a>
+	</div>
+</section>
+
+<section>
+	<h3>standalone</h3>
+	<div repeat-as-code="inner">
+		<a href="#" class="mf-link-standalone">New York</a>
+		<a href="#" class="mf-link-standalone">Chicago</a>
+		<br><br>
+		<div><a href="#" class="mf-link-standalone">New York</a></div>
+		<div><a href="#" class="mf-link-standalone">Chicago</a></div>
+	</div>
+</section>
+
+<section>
+	<h3>.mf-link-no-highlight</h3>
+	<a href="#" class="mf-link-no-highlight" repeat-as-code>De-emphasized</a>
+</section>
+
+<section>
+	<h3>.mf-link-margin</h3>
+	<p repeat-as-code>Short blurb…<a href="#" class="mf-link-margin">More</a></p>
+</section>
+
+<section>
+	<h3>Supported Uses</h3>
+	<p repeat-as-code="inner">
+		<a class="mf-button" href="#/component/button">Anchor</a>
+	</p>
+	<div class="mf-tile mf-medium" tabindex="0" repeat-as-code>
+		<div class="mf-avatar" style="background-color:#eff491;"></div>
+		<div class="mf-tile-content">
+			<h3>Search</h3>
+			<a href="#/component/tile">Click here!</a>
 		</div>
-		<div class="mf-tabset">
-			<div class="mf-tab mf-selected">Rainy Days</div>
-			<div class="mf-tab">Sunny Days</div>
-			<div class="mf-tab-base"></div>
-			<div class="mf-fill"></div>
-			<a href="#" style="height:1.15em;">Buy the App!</a>
-		</div>
+	</div>
+	<div class="mf-tabset" repeat-as-code>
+		<div class="mf-tab mf-selected">Rainy Days</div>
+		<div class="mf-tab">Sunny Days</div>
+		<div class="mf-tab-base"></div><div class="mf-fill"></div>
+		<a href="#/component/tab">Buy the App!</a>
+	</div>
+	<div class="mf-nav" repeat-as-code>
+		<button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-search_thick"></i></button>
+		<a class="mf-active" href="#/component/nav">Link 1</a>
+		<a href="#/component/nav">Link 2</a>
 	</div>
 </section>
