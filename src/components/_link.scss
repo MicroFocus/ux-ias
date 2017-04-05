@@ -18,21 +18,13 @@ a {
     }
   }
 
-  &.mf-disabled {
-    background-color: $link-bg-color-disabled;
-    color: $link-text-color-disabled;
-    cursor: default;
+  &:focus {
+    @include focus-state;
   }
 
-  &:not(.mf-disabled) {
-    &:focus {
-      @include focus-state;
-    }
-
-    &:hover {
-      background-color: $link-bg-color-hover;
-      color: $link-text-color-hover;
-    }
+  &:hover {
+    background-color: $link-bg-color-hover;
+    color: $link-text-color-hover;
   }
 }
 
