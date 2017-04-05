@@ -12,7 +12,8 @@ ngGulp(gulp, {
         outputVendor: path.resolve(cwd, '../dist/docs/vendor')
     },
     externals: {
-        'angular-ui-router': 'window["angular-ui-router"]'
+        'angular-ui-router': 'window["angular-ui-router"]',
+		'ng-prism': 'window["ng-prism"]'
     },
     files: {
         sassManifest: [
@@ -22,10 +23,19 @@ ngGulp(gulp, {
         vendorDevelopment: [
             path.resolve(cwd, '../node_modules/angular/angular.js'),
             path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-            path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
+			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
+			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
         ],
         vendorProduction: [
-            // TODO: add production dependencies to vendor bundle
+            path.resolve(cwd, '../node_modules/angular/angular.js'),
+            path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
+			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
+			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
+		],
+        vendorTest: [
+            path.resolve(cwd, '../node_modules/angular/angular.js'),
+            path.resolve(cwd, '../node_modules/angular-mocks/angular-mocks.js'),
+            path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js')
         ]
     }
 });

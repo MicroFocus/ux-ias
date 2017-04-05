@@ -1,26 +1,36 @@
 <h2>Button</h2>
 
 <section>
-	<button type="button">Button</button>
-	<div class="mf-button" tabindex="0">CSS Class</div>
-	<a class="mf-button" href="#buttons">Anchor</a>
-	<button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
-	
-<ul>
-    <li>Example 1: button node</li>
-    <li>Example 2: div, .mf-button</li>
-    <li>Example 3: anchor, .mf-button</li>
-    <li>Example 4: Add text span and mf-icon to any button type</li>
-</ul>
-	
+	<div repeat-as-code="inner">
+		<button type="button">Button</button>
+		<div class="mf-button" tabindex="0">CSS Class</div>
+		<a class="mf-button" href="#buttons">Anchor</a>
+		<button type="button">
+			<span>Jonathan Smithsonian</span>
+			<i class="mf-icon mf-icon-down_thick"></i>
+		</button>
+	</div>
+
+	<ul>
+		<li>Example 1: button node</li>
+		<li>Example 2: div, .mf-button</li>
+		<li>Example 3: anchor, .mf-button</li>
+		<li>Example 4: Add text span and mf-icon to any button type</li>
+	</ul>
+
 </section>
 
 <section>
-	<h3>Diabled Button</h3>
-	<button type="button" disabled="disabled">Button</button>
-	<div class="mf-button mf-disabled" tabindex="-1">CSS Class</div>
-	<a class="mf-button mf-disabled" href="#buttons" tabindex="-1">Anchor</a>
-	<button type="button" disabled="disabled"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
+	<h3>Disabled Button</h3>
+	<div repeat-as-code="inner">
+		<button type="button" disabled="disabled">Button</button>
+		<div class="mf-button mf-disabled" tabindex="-1">CSS Class</div>
+		<a class="mf-button mf-disabled" href="#buttons" tabindex="-1">Anchor</a>
+		<button type="button" disabled="disabled">
+			<span>Jonathan Smithsonian</span>
+			<i class="mf-icon mf-icon-down_thick"></i>
+		</button>
+	</div>
 	<ul>
 		<li>[disabled], .mf-disabled</li>
 	</ul>
@@ -28,8 +38,10 @@
 
 <section>
 	<h3>Special Button</h3>
-	<button type="button" class="mf-cta">Button</button>
-	<button type="button" class="mf-cta-disabled">Button</button>
+	<div repeat-as-code="inner">
+		<button type="button" class="mf-cta">Button</button>
+		<button type="button" class="mf-cta-disabled">Button</button>
+	</div>
 
 	<ul>
 		<li>Special button is used to emphasize an action within the context of a page</li>
@@ -47,22 +59,22 @@
 
 <h3>.mf-button.mf-cta</h3>
 <ul>
-    <li>Usage scenario</li>
-    <li>Limitations</li>
+	<li>Usage scenario</li>
+	<li>Limitations</li>
 </ul>
 
 <h3>Icons</h3>
 <p>Nesting icons in buttons (not .mf-icon-button) should be used sparingly. Use of icons in buttons should be
-the exception. They should not be used on the left of text in a button. They can be used on the right side
-of text in a button to display state. If an icon is used alone you should use .mf-icon-button instead.</p>
+	the exception. They should not be used on the left of text in a button. They can be used on the right side
+	of text in a button to display state. If an icon is used alone you should use .mf-icon-button instead.</p>
 
 <h3>Tab support</h3>
 
 <h3>Nestable components</h3>
 <ul>
-    <li>.mf-icon-button</li>
-    <li>.mf-icon</li>
-    <li>a</li>
+	<li>.mf-icon-button</li>
+	<li>.mf-icon</li>
+	<li>a</li>
 </ul>
 
 <h3>Nesting buttons in other components</h3>
@@ -75,17 +87,17 @@ of text in a button to display state. If an icon is used alone you should use .m
 
 <h3>States</h3>
 <ul>
-    <li>hover</li>
-    <li>focus</li>
-    <li>disabled</li>
+	<li>hover</li>
+	<li>focus</li>
+	<li>disabled</li>
 </ul>
 
 <h3>Colors</h3>
 
 <h3>Dimensions</h3>
 <ul>
-    <li>min width</li>
-    <li>max width</li>
+	<li>min width</li>
+	<li>max width</li>
 </ul>
 
 <h3>Grouping</h3>
