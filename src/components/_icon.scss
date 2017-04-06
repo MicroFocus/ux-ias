@@ -1,4 +1,4 @@
-.mf-icon {
+.mf-icon, .svg-icon {
   @include square($icon-size-small);
 
   color: inherit;
@@ -10,4 +10,8 @@
   &.mf-large {
     @include square($icon-size-large);
   }
+}
+
+.svg-icon {
+  display: inline-block;
 }

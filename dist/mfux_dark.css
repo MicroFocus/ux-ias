@@ -536,26 +536,30 @@ label > textarea {
   right: initial;
 }
 
-.mf-icon {
-  font-size: 24px;
+.mf-icon, .svg-icon {
+  font-size: 25px;
   height: 1em;
   line-height: 1em;
   width: 1em;
   color: inherit;
 }
 
-.mf-icon.mf-medium {
-  font-size: 32px;
+.mf-icon.mf-medium, .svg-icon.mf-medium {
+  font-size: 50px;
   height: 1em;
   line-height: 1em;
   width: 1em;
 }
 
-.mf-icon.mf-large {
-  font-size: 40px;
+.mf-icon.mf-large, .svg-icon.mf-large {
+  font-size: 75px;
   height: 1em;
   line-height: 1em;
   width: 1em;
+}
+
+.svg-icon {
+  display: inline-block;
 }
 
 .mf-icon-button {

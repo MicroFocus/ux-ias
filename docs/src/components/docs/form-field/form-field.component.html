@@ -1,135 +1,147 @@
 <h2>Form Field</h2>
 
-    <section id="form-fields">
+<section id="form-fields">
 
-        <section>
-            <h3>input</h3>
-            
-            <input type="text" name="username" autocomplete="off" />
-        </section>
-        <section>
-            <h3>input with placeholder</h3>
+	<section>
+		<h3>input</h3>
 
-            <input type="text" placeholder="Username" name="username" autocomplete="off" />
-            <input type="password" placeholder="Password" name="password" />
-        </section>
+		<input type="text" name="username" autocomplete="off" repeat-as-code/>
+	</section>
+	<section>
+		<h3>input with placeholder</h3>
 
-        <section>
-            <h3>label and input</h3>
+		<div repeat-as-code="inner">
+			<input type="text" placeholder="Username" name="username" autocomplete="off"/>
+			<input type="password" placeholder="Password" name="password"/>
+		</div>
+	</section>
 
-            <label>
-                Username
-                <input type="text" name="username" autocomplete="off" />
-            </label>
-            <label>
-                Password
-                <input type="password" name="password" />
-            </label>
-        </section>
+	<section>
+		<h3>label and input</h3>
 
-        <section>
-            <h3>.mf-input-container w/ input</h3>
+		<div repeat-as-code="inner">
+			<label>
+				Username <input type="text" name="username" autocomplete="off"/>
+			</label>
+			<label>
+				Password <input type="password" name="password"/>
+			</label>
+		</div>
+	</section>
 
-            <div class="mf-input-container">
-                <input type="text" placeholder="Username" name="username" autocomplete="off" />
-            </div>
-            <div class="mf-input-container">
-                <input type="password" placeholder="Password" name="password" />
-            </div>
-        </section>
+	<section>
+		<h3>.mf-input-container w/ input</h3>
 
-        <section>
-            <h3>.mf-input-container w/ label</h3>
+		<div repeat-as-code="inner">
+			<div class="mf-input-container">
+				<input type="text" placeholder="Username" name="username" autocomplete="off"/>
+			</div>
+			<div class="mf-input-container">
+				<input type="password" placeholder="Password" name="password"/>
+			</div>
+		</div>
+	</section>
 
-            <div class="mf-input-container">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" autocomplete="off" />
-            </div>
-            <div class="mf-input-container">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-            </div>
-        </section>
+	<section>
+		<h3>.mf-input-container w/ label</h3>
 
-        <section>
-            <h3>[disabled]</h3>
+		<div repeat-as-code="inner">
+			<div class="mf-input-container">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" autocomplete="off"/>
+			</div>
+			<div class="mf-input-container">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password"/>
+			</div>
+		</div>
+	</section>
 
-            <div class="mf-input-container">
-                <input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
-            </div>
-        </section>
+	<section>
+		<h3>[disabled]</h3>
 
-        <section>
-            <h3>label > select</h3>
+		<div class="mf-input-container" repeat-as-code>
+			<input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
+		</div>
+	</section>
 
-            <label>
-                Drop Down 1
-                <select>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </label>
-            <label>
-                Drop Down 2
-                <select>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </label>
-        </section>
+	<section>
+		<h3>label > select</h3>
 
-        <section>
-            <h3>.mf-input-container > select w/ label</h3>
+		<div repeat-as-code="inner">
+			<label>
+				Drop Down 1
+				<select>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</label>
+			<label>
+				Drop Down 2
+				<select>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</label>
+		</div>
+	</section>
 
-            <div class="mf-input-container">
-                <label for="drop-down-1">Drop Down 1</label>
-                <select id="drop-down-1">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <div class="mf-input-container">
-                <label for="drop-down-2">Drop Down 2</label>
-                <select id="drop-down-2">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-        </section>
+	<section>
+		<h3>.mf-input-container > select w/ label</h3>
 
-        <section>
-            <h3>.mf-input-container.mf-inline</h3>
+		<div repeat-as-code="inner">
+			<div class="mf-input-container">
+				<label for="drop-down-1">Drop Down 1</label>
+				<select id="drop-down-1">
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+			<div class="mf-input-container">
+				<label for="drop-down-2">Drop Down 2</label>
+				<select id="drop-down-2">
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+		</div>
+	</section>
 
-            <div class="mf-input-container mf-inline">
-                <label for="username-2">Username</label>
-                <input type="text" name="username" id="username-2" autocomplete="off" />
-            </div>
-            <div class="mf-input-container mf-inline">
-                <label for="password-2">Password</label>
-                <input type="password" name="password" id="password-2" />
-            </div>
-        </section>
+	<section>
+		<h3>.mf-input-container.mf-inline</h3>
 
-        <section>
-            <h3>mf-input-container > textarea</h3>
+		<div repeat-as-code="inner">
+			<div class="mf-input-container mf-inline">
+				<label for="username-2">Username</label>
+				<input type="text" name="username" id="username-2" autocomplete="off"/>
+			</div>
+			<div class="mf-input-container mf-inline">
+				<label for="password-2">Password</label>
+				<input type="password" name="password" id="password-2"/>
+			</div>
+		</div>
+	</section>
 
-            <div class="mf-input-container">
-                <label for="textarea-2">Long Text</label>
-                <textarea id="textarea-2"></textarea>
-            </div>
-        </section>
+	<section>
+		<h3>mf-input-container > textarea</h3>
 
-        <section>
-            <h3>.mf-input-container.mf-search</h3>
+		<div class="mf-input-container" repeat-as-code>
+			<label for="textarea-2">Long Text</label>
+			<textarea id="textarea-2"></textarea>
+		</div>
+	</section>
 
-            <div class="mf-input-container mf-search">
-                <input type="text" placeholder="Search" />
-                <i class="mf-icon mf-icon-search_thick"></i>
-                <button class="mf-icon-button"><i class="mf-icon mf-icon-close_thick"></i></button>
-            </div>
-        </section>
-    </section>
+	<section>
+		<h3>.mf-input-container.mf-search</h3>
+
+		<div class="mf-input-container mf-search" repeat-as-code>
+			<input type="text" placeholder="Search"/>
+			<i class="mf-icon mf-icon-search_thick"></i>
+			<button class="mf-icon-button"><i class="mf-icon mf-icon-close_thick"></i></button>
+		</div>
+	</section>
+</section>
