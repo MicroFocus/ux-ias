@@ -131,15 +131,10 @@ $input-label-margin: 10px 0 5px;
 $input-label-text-color: $color-gray-2;
 $input-padding: 8px;
 
-$link-bg-color-disabled: transparent;
-$link-bg-color-focus: $color-accent-2;
 $link-bg-color-hover: $color-gray-7;
-$link-border-color-focus: $color-accent-1;
+$link-padding: 0.15em;
 $link-spacing: 0.5em;
-$link-standalone-line-height: 1.45em;
 $link-text-color: $color-primary-3;
-$link-text-color-disabled: $text-color-disabled;
-$link-text-color-focus: $color-gray-2;
 $link-text-color-hover: $color-primary-4;
 $link-text-color-no-highlight: $color-gray-4;
 
@@ -210,6 +205,7 @@ $table-body-border-color: $color-gray-5;
 $table-row-bg-color-hover: $color-gray-7;
 $table-row-height: 36px;
 
+$tabset-link-height: 16px;
 $tabset-link-top-margin: 4px;
 
 $tile-bg-color: $color-gray-7;
