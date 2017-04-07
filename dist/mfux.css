@@ -624,9 +624,6 @@ label > textarea {
 a {
   border-radius: 3px;
   color: #0090da;
-  cursor: pointer;
-  display: inline-block;
-  font-size: inherit;
   padding: 0.15em;
   text-decoration: none;
 }
@@ -653,16 +650,12 @@ a:hover {
 
 p a, span a {
   padding: 0;
-  margin-left: initial;
+  margin: 0;
 }
 
 [dir="rtl"] a + a, [dir="rtl"] a.mf-link-margin {
   margin-left: initial;
   margin-right: 0.5em;
-}
-
-[dir="rtl"] p a, [dir="rtl"] span a {
-  margin-right: initial;
 }
 
 .mf-list {
@@ -866,10 +859,7 @@ p a, span a {
 
 .mf-nav > a {
   padding: 0 10px;
-}
-
-.mf-nav > a + a {
-  margin-left: initial;
+  margin: 0;
 }
 
 .mf-nav > a,
@@ -949,10 +939,6 @@ p a, span a {
 .mf-nav > .mf-menu > .mf-menu-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-[dir="rtl"] .mf-nav > a + a {
-  margin-right: initial;
 }
 
 @media (min-width: 769px) {
@@ -1060,11 +1046,6 @@ p a, span a {
   padding-right: 15px;
   position: relative;
   height: 28px;
-}
-
-.mf-tabset > a {
-  height: 16px;
-  margin-top: 4px;
 }
 
 .mf-tab-base {

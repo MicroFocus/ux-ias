@@ -3,36 +3,42 @@
 <h3>Purpose</h3>
 <p>Navigation</p>
 
-<h3>Use</h3>
-<p>
-    Use to redirect to another page or view. Can be styled as a button or other component.
-</p>
-
 <section>
+    <h3>Default Usage</h3>
+
     <div repeat-as-code="inner">
         <a href="#">New York</a>
         <a href="#">Chicago</a>
-        <br><br>
+    </div>
+</section>
+
+<section>
+    <h3>Usage (block)</h3>
+
+    <div repeat-as-code="inner">
         <div><a href="#">New York</a></div>
         <div><a href="#">Chicago</a></div>
     </div>
 </section>
 
 <section>
-    <h3>Inline</h3>
+    <h3>In text</h3>
+
     <div repeat-as-code="inner">
-        <p>text <a href="#">Link</a> text</p>
-        <span>text <a href="#">Link</a> text</span>
+        <p>This is a <a href="#">link</a> in the middle of a paragraph</p>
+        <span>This is a <a href="#">link</a> in the middle of a span</span>
     </div>
 </section>
 
 <section>
     <h3>.mf-link-margin</h3>
+
     <p repeat-as-code>Short blurb…<a href="#" class="mf-link-margin">More</a></p>
 </section>
 
 <section>
     <h3>.mf-link-no-highlight</h3>
+
     <a href="#" class="mf-link-no-highlight" repeat-as-code>De-emphasized</a>
 </section>
 
