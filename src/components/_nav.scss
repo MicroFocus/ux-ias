@@ -80,6 +80,12 @@
       border-top-right-radius: 0;
     }
   }
+
+
+  > span {
+    line-height: $nav-height;
+    padding: 0 $spacing;
+  }
 }
 
 @media (min-width: $large-display) {

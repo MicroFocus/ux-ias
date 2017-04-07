@@ -1,8 +1,7 @@
-@import '../../node_modules/ng-prism/dist/ng-prism';
 @import './components/application/application.component';
 @import './components/components/components.component';
-@import './components/kitchen-sink/kitchen-sink.component';
-@import './components/docs/docs';
+@import 'components/kitchen-sink/kitchen-sink.component';
+@import 'components/docs/docs';
 
 body, html {
     height: 100%;

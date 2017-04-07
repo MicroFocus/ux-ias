@@ -41,7 +41,7 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
-    "ng-gulp": "jedwardhawkins/ng-gulp#v0.6.2",
-    "ng-prism": "joswhite/ng-prism#v1.2.0"
+    "ng-gulp": "jedwardhawkins/ng-gulp#v0.7.2",
+    "ng-prism": "joswhite/ng-prism#v1.2.2"
   }
 }

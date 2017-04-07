@@ -536,7 +536,7 @@ label > textarea {
   right: initial;
 }
 
-.mf-icon {
+.mf-icon, .svg-icon {
   font-size: 25px;
   height: 1em;
   line-height: 1em;
@@ -544,18 +544,22 @@ label > textarea {
   color: inherit;
 }
 
-.mf-icon.mf-medium {
+.mf-icon.mf-medium, .svg-icon.mf-medium {
   font-size: 50px;
   height: 1em;
   line-height: 1em;
   width: 1em;
 }
 
-.mf-icon.mf-large {
+.mf-icon.mf-large, .svg-icon.mf-large {
   font-size: 75px;
   height: 1em;
   line-height: 1em;
   width: 1em;
+}
+
+.svg-icon {
+  display: inline-block;
 }
 
 .mf-icon-button {
@@ -917,6 +921,11 @@ a:not(.mf-disabled):hover {
 .mf-nav > .mf-menu > .mf-menu-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.mf-nav > span {
+  line-height: 32px;
+  padding: 0 10px;
 }
 
 @media (min-width: 769px) {
