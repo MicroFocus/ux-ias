@@ -13,7 +13,7 @@
 }
 
 .mf-tab-base {
-  border-bottom:  1px solid $color-gray-3;
+  border-bottom: 1px solid $color-gray-3;
   position: absolute;
   top: 29px;
   left: 0;
@@ -22,8 +22,9 @@
 
 .mf-tab {
   &:first-child {
-	margin-left: 10px;
+    margin-left: 10px;
   }
+
   @extend .mf-border-tabs;
   background-color: $color-gray-7;
   color: $text-color;
@@ -31,7 +32,7 @@
   min-width: 60px;
   padding: $body-spacing-xsmall $body-spacing-small;
   text-align: center;
-	
+
   &:not([disabled]):not(.mf-disabled):not(.mf-cta-disabled):not(.mf-selected) {
     &:focus {
       @include focus-state;
@@ -41,7 +42,7 @@
       background-color: $button-bg-color-hover;
       border-color: $button-border-color-hover;
       color: $button-text-color-hover;
-	  cursor: pointer;
+      cursor: pointer;
     }
   }
 
@@ -50,17 +51,17 @@
     opacity: $disabled-opacity;
     cursor: default;
   }
-  
+
   &.mf-selected {
-	color: $color-gray-1;
+    color: $color-gray-1;
     cursor: default;
-	font-size: $font-size-base;
-	font-weight: $font-weight-medium;
-	background-color: white;
-	border-color: $color-gray-4;
-	border-bottom:  4px solid white;
-	z-index: 100;
-  }	
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    background-color: white;
+    border-color: $color-gray-4;
+    border-bottom: 4px solid white;
+    z-index: 100;
+  }
 }
 
 
