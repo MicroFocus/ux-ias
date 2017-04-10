@@ -862,6 +862,22 @@ p a, span a {
   margin: 0;
 }
 
+.mf-nav > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 32px;
+  padding: 0 10px;
+}
+
+.mf-nav > a,
+.mf-nav > .mf-icon,
+.mf-nav > .mf-icon-button,
+.mf-nav > .mf-menu {
+  -ms-flex: none;
+      flex: none;
+}
+
 .mf-nav > a,
 .mf-nav .mf-icon,
 .mf-nav .mf-icon-button,
