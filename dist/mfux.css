@@ -862,6 +862,22 @@ p a, span a {
   margin: 0;
 }
 
+.mf-nav > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 32px;
+  padding: 0 10px;
+}
+
+.mf-nav > a,
+.mf-nav > .mf-icon,
+.mf-nav > .mf-icon-button,
+.mf-nav > .mf-menu {
+  -ms-flex: none;
+      flex: none;
+}
+
 .mf-nav > a,
 .mf-nav .mf-icon,
 .mf-nav .mf-icon-button,
@@ -939,11 +955,6 @@ p a, span a {
 .mf-nav > .mf-menu > .mf-menu-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-.mf-nav > span {
-  line-height: 32px;
-  padding: 0 10px;
 }
 
 @media (min-width: 769px) {

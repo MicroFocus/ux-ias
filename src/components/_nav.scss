@@ -11,6 +11,20 @@
     margin: 0;
   }
 
+  > span {
+    @include single-line;
+
+    line-height: $nav-height;
+    padding: 0 $spacing;
+  }
+
+  > a,
+  > .mf-icon,
+  > .mf-icon-button,
+  > .mf-menu {
+    flex: none;
+  }
+
   > a,
   .mf-icon,
   .mf-icon-button,
@@ -80,11 +94,6 @@
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
-  }
-
-  > span {
-    line-height: $nav-height;
-    padding: 0 $spacing;
   }
 }
 
