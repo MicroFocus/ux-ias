@@ -62,6 +62,10 @@ button,
   }
 }
 
+a.mf-button {
+  margin-left: initial;
+}
+
 [dir="rtl"] {
   button,
   .mf-button {
@@ -72,5 +76,9 @@ button,
         margin-right: $button-inline-icon-padding;
       }
     }
+  }
+
+  a.mf-button {
+    margin-right: initial;
   }
 }

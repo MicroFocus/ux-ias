@@ -343,10 +343,18 @@ button:not(.mf-icon-button) > .mf-icon,
   vertical-align: middle;
 }
 
+a.mf-button {
+  margin-left: initial;
+}
+
 [dir="rtl"] button:not(.mf-icon-button) > .mf-icon,
 [dir="rtl"] .mf-button:not(.mf-icon-button) > .mf-icon {
   margin-left: 0;
   margin-right: 5px;
+}
+
+[dir="rtl"] a.mf-button {
+  margin-right: initial;
 }
 
 .mf-dialog {
@@ -616,29 +624,38 @@ label > textarea {
 a {
   border-radius: 3px;
   color: #0090da;
-  cursor: pointer;
-  display: inline-block;
-  font-size: inherit;
   padding: 0.15em;
   text-decoration: none;
 }
 
-a.mf-disabled {
-  background-color: transparent;
-  color: 0.5;
-  cursor: default;
+a + a, a.mf-link-margin {
+  margin-left: 0.5em;
 }
 
-a:not(.mf-disabled):focus {
+a.mf-link-no-highlight {
+  color: #808080;
+}
+
+a:focus {
   background-color: #f6f9f8;
   border-color: #007cd0;
   color: #434c50;
   outline: none;
 }
 
-a:not(.mf-disabled):hover {
+a:hover {
   background-color: #eef2f2;
   color: #0061bd;
+}
+
+p a, span a {
+  padding: 0;
+  margin: 0;
+}
+
+[dir="rtl"] a + a, [dir="rtl"] a.mf-link-margin {
+  margin-left: initial;
+  margin-right: 0.5em;
 }
 
 .mf-list {
@@ -842,6 +859,7 @@ a:not(.mf-disabled):hover {
 
 .mf-nav > a {
   padding: 0 10px;
+  margin: 0;
 }
 
 .mf-nav > a,
@@ -1332,6 +1350,10 @@ table .mf-icon-button {
 .mf-tile > .mf-tile-content > p {
   margin: 0;
   padding: 0;
+}
+
+.mf-tile a:hover {
+  background-color: #ffffff;
 }
 
 [dir="rtl"] .mf-tile.mf-small > .mf-tile-content {

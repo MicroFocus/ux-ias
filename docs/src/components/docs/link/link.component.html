@@ -1,17 +1,65 @@
-<section id="links">
-    <h2>Links</h2>
-    <h3>Purpose</h3>
-    <p>Navigation</p>
+<h2>Links</h2>
 
-    <section>
-        <h3>Default</h3>
+<h3>Purpose</h3>
+<p>Navigation</p>
 
-        <a href="#links">Anchor</a>
-    </section>
+<section>
+    <h3>Default Usage</h3>
 
-    <section>
-        <h3>.mf-disabled</h3>
-
-        <a class="mf-disabled" href="#links" tabindex="-1">Anchor</a>
-    </section>
+    <div repeat-as-code="inner">
+        <a href="#">New York</a>
+        <a href="#">Chicago</a>
+    </div>
 </section>
+
+<section>
+    <h3>Usage (block)</h3>
+
+    <div repeat-as-code="inner">
+        <div><a href="#">New York</a></div>
+        <div><a href="#">Chicago</a></div>
+    </div>
+</section>
+
+<section>
+    <h3>In text</h3>
+
+    <div repeat-as-code="inner">
+        <p>This is a <a href="#">link</a> in the middle of a paragraph</p>
+        <span>This is a <a href="#">link</a> in the middle of a span</span>
+    </div>
+</section>
+
+<section>
+    <h3>.mf-link-margin</h3>
+
+    <p repeat-as-code>Short blurb…<a href="#" class="mf-link-margin">More</a></p>
+</section>
+
+<section>
+    <h3>.mf-link-no-highlight</h3>
+
+    <a href="#" class="mf-link-no-highlight" repeat-as-code>De-emphasized</a>
+</section>
+
+<!--<section>
+	<h3>Supported Uses </h3>
+	<a class="mf-button" href="#/component/button" repeat-as-code>Button</a>
+	<div class="mf-tile mf-medium" tabindex="0" repeat-as-code>
+		<div class="mf-avatar" style="background-color:#eff491;"></div>
+		<div class="mf-tile-content">
+			<h3>Search</h3>
+			<p><a href="#/component/tile">On a tile</a></p>
+		</div>
+	</div>
+	<div class="mf-tabset" repeat-as-code>
+		<div class="mf-tab mf-selected">Rainy Days</div>
+		<div class="mf-tab">Sunny Days</div>
+		<div class="mf-tab-base"></div><div class="mf-fill"></div>
+		<a href="#/component/tab">In a tabset</a>
+	</div>
+	<div class="mf-nav" repeat-as-code>
+		<a class="mf-active" href="#/component/nav">Nav Link 1</a>
+		<a href="#/component/nav">Nav Link 2</a>
+	</div>
+</section>-->

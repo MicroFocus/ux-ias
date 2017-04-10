@@ -131,15 +131,12 @@ $input-label-margin: 10px 0 5px;
 $input-label-text-color: $color-gray-2;
 $input-padding: 8px;
 
-$link-text-color: $color-primary-3;
-$link-bg-color-disabled: transparent;
-$link-bg-color-focus: $color-accent-2;
 $link-bg-color-hover: $color-gray-7;
-$link-border-color-focus: $color-accent-1;
-$link-padding: .15em;
-$link-text-color-disabled: $text-color-disabled;
-$link-text-color-focus: $color-gray-2;
+$link-padding: 0.15em;
+$link-spacing: 0.5em;
+$link-text-color: $color-primary-3;
 $link-text-color-hover: $color-primary-4;
+$link-text-color-no-highlight: $color-gray-4;
 
 $list-item-bg-color-hover: $color-gray-7;
 $list-item-height: 26px;

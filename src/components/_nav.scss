@@ -8,6 +8,7 @@
 
   > a {
     padding: 0 $spacing;
+    margin: 0;
   }
 
   > a,
@@ -80,7 +81,6 @@
       border-top-right-radius: 0;
     }
   }
-
 
   > span {
     line-height: $nav-height;

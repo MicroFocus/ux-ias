@@ -153,6 +153,10 @@
       padding: 0;
     }
   }
+
+  a:hover {
+    background-color: $body-bg-color;
+  }
 }
 
 [dir="rtl"] {

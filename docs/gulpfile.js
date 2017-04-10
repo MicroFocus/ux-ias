@@ -20,11 +20,11 @@ ngGulp(gulp, {
         outputVendor: path.resolve(__dirname, '../dist/docs/vendor')
     },
     externals: {
-        'angular-ui-router': 'window["angular-ui-router"]'
+        'angular-ui-router': 'window["angular-ui-router"]',
+        'ng-prism': 'window["ng-prism"]'
     },
     files: {
         indexProduction: 'src/index.production.html',
-        sassManifest: 'src/app.scss',
         vendorDevelopment: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
             path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
