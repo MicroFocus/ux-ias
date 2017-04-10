@@ -48,7 +48,7 @@
 
   &[disabled],
   &.mf-disabled {
-    opacity: $disabled-opacity;
+    color: grey;
     cursor: default;
   }
 
