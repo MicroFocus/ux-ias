@@ -49,7 +49,7 @@
 		&:not([disabled]):not(.mf-disabled) {
 		  &:focus,
 		  &:hover {
-			background-color: rgba(67,76,80,.6);
+			background-color: $app-bar-action-color;
 			color: inherit;
 		  }
 		}
@@ -61,7 +61,7 @@
 		&:not([disabled]):not(.mf-disabled) {
 		  &:focus,
 		  &:hover {
-			background-color: rgba(67,76,80,.6);
+			background-color: $app-bar-action-color;
 			color: inherit;
 		  }
 		}

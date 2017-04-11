@@ -11,28 +11,28 @@ $color-gray-2: #eef2f2;
 $color-gray-3: #dae1e1;
 $color-gray-4: #808080;
 $color-gray-5: #6a6f71;
-$color-gray-6: #59656a;
+$color-gray-6: #575b5d;
 $color-gray-7: #434c50;
 $color-gray-8: #2c2c2c;
 
-$color-primary-1: #1773bb;
+$color-primary-1: #0061bd;
 $color-primary-2: #007cd0;
-$color-primary-3: #0088ce;
-$color-primary-4: #28a9e1;
-$color-primary-5: #01a9e7;
+$color-primary-3: #0090da;
+$color-primary-4: #01a9e7;
+$color-primary-5: #29ceff;
 
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 $color-accent-3: #f17e12;
-$color-accent-4: #dc233f;
+$color-accent-4: #e50000;
 
 // Font size variants
-$font-size-xsmall:	11px;
-$font-size-small:	13px;
-$font-size-base:	15px;
-$font-size-medium:	18px;
-$font-size-large:	21px;
-$font-size-xlarge:	24px;
+$font-size-xsmall: 11px;
+$font-size-small: 13px;
+$font-size-base: 15px;
+$font-size-medium: 18px;
+$font-size-large: 21px;
+$font-size-xlarge: 24px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -74,11 +74,12 @@ $focus-border-color: $color-accent-1;
 $focus-text-color: $color-gray-7;
 
 // COMPONENTS
+$app-bar-action-color: rgba(67,76,80,.3);
 $app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
-$app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
-$app-bar-font-size: 12px;
-$app-bar-height-small: 50px;
+$app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
+$app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
+$app-bar-font-size: $font-size-small;
+$app-bar-height-small: 45px;
 $app-bar-height-large: 100px;
 $app-bar-icon-size: 20px;
 $app-bar-text-color: $color-gray-1;

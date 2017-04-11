@@ -26,12 +26,12 @@ $color-accent-3: #f17e12;
 $color-accent-4: #e50000;
 
 // Font size variants
-$font-size-xsmall:	11px;
-$font-size-small:	13px;
-$font-size-base:	15px;
-$font-size-medium:	18px;
-$font-size-large:	21px;
-$font-size-xlarge:	24px;
+$font-size-xsmall: 11px;
+$font-size-small: 13px;
+$font-size-base: 15px;
+$font-size-medium: 18px;
+$font-size-large: 21px;
+$font-size-xlarge: 24px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -73,6 +73,7 @@ $focus-border-color: $color-primary-2;
 $focus-text-color: $color-gray-1;
 
 // COMPONENTS
+$app-bar-action-color: rgba(67,76,80,.3);
 $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
 $app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
