@@ -295,6 +295,13 @@ button,
   vertical-align: middle;
 }
 
+button.mf-menu-toggle > .mf-icon,
+.mf-button.mf-menu-toggle > .mf-icon {
+  color: inherit;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
 button.mf-cta,
 .mf-button.mf-cta {
   background-color: #434c50;
@@ -336,9 +343,6 @@ button:not([disabled]):not(.mf-disabled):not(.mf-cta-disabled):hover,
 
 button:not(.mf-icon-button) > .mf-icon,
 .mf-button:not(.mf-icon-button) > .mf-icon {
-  color: inherit;
-  font-size: 13px;
-  margin-left: 5px;
   vertical-align: middle;
 }
 

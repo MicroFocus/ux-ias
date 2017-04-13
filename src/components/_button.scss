@@ -19,6 +19,14 @@ button,
   text-decoration: $button-text-transform;
   vertical-align: middle;
 
+  &.mf-menu-toggle {
+    > .mf-icon {
+      color: inherit;
+      font-size: $button-inline-icon-size;
+      margin-left: $button-inline-icon-padding;
+    }
+  }
+
   &.mf-cta {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
@@ -53,10 +61,8 @@ button,
 
   &:not(.mf-icon-button) {
     > .mf-icon {
-      color: inherit;
-      font-size: $button-inline-icon-size;
-      margin-left: $button-inline-icon-padding;
       vertical-align: middle;
+      //transform: translateY(-5.38%);
     }
   }
 }
