@@ -35,8 +35,7 @@ button,
   &.mf-cta-disabled {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
-    color: $color-gray-7;	
-	opacity: $disabled-opacity;
+    color: $button-text-color-disabled;
 	cursor: default;
   }
 
@@ -44,7 +43,7 @@ button,
   &.mf-disabled {
     background-color: $button-bg-color-disabled;
     border-color: $button-border-color-disabled;
-    opacity: $disabled-opacity;
+    color: $button-text-color-disabled;
     cursor: default;
   }
 

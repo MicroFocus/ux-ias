@@ -313,8 +313,7 @@ button.mf-cta-disabled,
 .mf-button.mf-cta-disabled {
   background-color: #434c50;
   border-color: #434c50;
-  color: #f6f9f8;
-  opacity: 0.5;
+  color: #dae1e1;
   cursor: default;
 }
 
@@ -322,8 +321,8 @@ button[disabled], button.mf-disabled,
 .mf-button[disabled],
 .mf-button.mf-disabled {
   background-color: #f6f9f8;
-  border-color: 0.5;
-  opacity: 0.5;
+  border-color: #dae1e1;
+  color: #dae1e1;
   cursor: default;
 }
 
@@ -913,7 +912,7 @@ p a, span a {
 .mf-nav > .mf-menu > .mf-button.mf-disabled {
   background-color: transparent;
   border-color: transparent;
-  opacity: 0.5;
+  color: #dae1e1;
 }
 
 .mf-nav > a:not([disabled]):not(.mf-disabled):not(.mf-icon):focus,
@@ -1104,7 +1103,7 @@ p a, span a {
 }
 
 .mf-tab[disabled], .mf-tab.mf-disabled {
-  opacity: 0.5;
+  color: grey;
   cursor: default;
 }
 
