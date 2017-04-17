@@ -15,6 +15,14 @@ button,
   text-decoration: $button-text-transform;
   vertical-align: middle;
 
+  &.mf-menu-toggle {
+    > .mf-icon {
+      color: inherit;
+      font-size: $button-inline-icon-size;
+      margin-left: $button-inline-icon-padding;
+    }
+  }
+
   &.mf-cta {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
