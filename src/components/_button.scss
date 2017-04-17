@@ -1,20 +1,16 @@
 button,
 .mf-button {
-  @include disable-text-selection();
-  @include single-line();
+  @include disable-text-selection;
+  @include single-line;
 
   background-color: $button-bg-color;
-  border: 1px solid $button-border-color;
+  border: $button-border-width solid $button-border-color;
   border-radius: $border-radius;
-  box-sizing: content-box;
   color: $button-text-color;
   cursor: pointer;
   display: inline-block;
-  height: $button-height;
-  line-height: $button-height;
   font-size: $button-font-size;
-  min-width: $button-min-width;
-  padding: 0 $spacing;
+  padding: $button-padding;
   text-align: center;
   text-decoration: $button-text-transform;
   vertical-align: middle;
@@ -22,13 +18,13 @@ button,
   &.mf-cta {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
-    color: $color-gray-7;	
+    color: $color-gray-7;
   }
   &.mf-cta-disabled {
     background-color: $color-gray-1;
     border-color: $color-gray-1;
     color: $button-text-color-disabled;
-	cursor: default;
+    cursor: default;
   }
 
   &[disabled],
@@ -51,10 +47,28 @@ button,
     }
   }
 
+  &.mf-icon-button {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+
+    &:hover {
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color-hover;
+    }
+
+    .mf-icon, .svg-icon {
+      display: block;
+    }
+  }
+
   &:not(.mf-icon-button) {
-    > .mf-icon {
+    min-width: $button-min-width;
+
+    > .mf-icon, .svg-icon {
       color: inherit;
-      font-size: $button-inline-icon-size;
+      font-size: inherit;
       margin-left: $button-inline-icon-padding;
       vertical-align: middle;
     }
@@ -71,7 +85,7 @@ a.mf-button {
 
     &:not(.mf-icon-button) {
       > .mf-icon {
-        margin-left: 0;
+        margin-left: initial;
         margin-right: $button-inline-icon-padding;
       }
     }

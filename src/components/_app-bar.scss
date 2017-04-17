@@ -36,38 +36,38 @@
   .mf-icon-button {
     font-size: $app-bar-icon-size;
   }
-	
-  .mf-menu {
-	button,
-	.mf-button {
-	background-color: transparent;
-	border: none;
-	color: inherit;
-	font-size: inherit;
-	padding: 0 5px;
 
-		&:not([disabled]):not(.mf-disabled) {
-		  &:focus,
-		  &:hover {
-			background-color: $app-bar-action-color;
-			color: inherit;
-		  }
-		}
-	}
+  .mf-menu {
+    button,
+    .mf-button {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      font-size: inherit;
+      padding: 0 5px;
+
+      &:not([disabled]):not(.mf-disabled) {
+        &:focus,
+        &:hover {
+          background-color: $app-bar-action-color;
+          color: inherit;
+        }
+      }
+    }
   }
 
-	.mf-icon-button	{
-		
-		&:not([disabled]):not(.mf-disabled) {
-		  &:focus,
-		  &:hover {
-			background-color: $app-bar-action-color;
-			color: inherit;
-		  }
-		}
+  .mf-icon-button {
 
-	}
-	
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus,
+      &:hover {
+        background-color: $app-bar-action-color;
+        color: inherit;
+      }
+    }
+
+  }
+
   button,
   .mf-button {
     background-color: transparent;
@@ -89,7 +89,7 @@
 [dir="rtl"] {
   .mf-app-bar {
     background: $app-bar-bg-rtl;
-    padding: 0 0 0 $body-spacing-small ;
+    padding: 0 0 0 $body-spacing-small;
 
     > .mf-heading {
       margin-left: initial;
