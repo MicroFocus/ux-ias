@@ -287,7 +287,7 @@ button,
   display: inline-block;
   height: 28px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 15px;
   min-width: 42px;
   padding: 0 10px;
   text-align: center;
@@ -395,7 +395,7 @@ a.mf-button {
 
 .mf-dialog .mf-dialog-container > .mf-dialog-label {
   color: #808080;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
   padding-right: 25px;
   text-transform: uppercase;
@@ -428,10 +428,11 @@ textarea {
   border: 1px solid #6a6f71;
   border-radius: 3px;
   color: #f6f9f8;
-  font-size: 14px;
+  font-size: 15px;
   padding: 8px;
   margin: 0;
   margin-right: 5px;
+  margin-top: 3px;
 }
 
 input::-ms-clear,
@@ -460,8 +461,9 @@ textarea[disabled] {
 
 label {
   color: #eef2f2;
-  font-size: 12px;
+  font-size: 13px;
   vertical-align: middle;
+  padding-right: 5px;
 }
 
 label:not(:first-of-type) {
@@ -511,7 +513,7 @@ label > textarea {
   color: inherit;
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
 }
 
@@ -545,6 +547,82 @@ label > textarea {
 [dir="rtl"] .mf-input-container.mf-search > .mf-icon-button {
   left: 5px;
   right: initial;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+span.required {
+  color: #dc233f;
+  font-size: 18px;
+  padding-left: 1px;
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.input-required-missing input {
+  border-color: #dc233f;
+}
+
+.invalid-message {
+  color: #dc233f;
+  display: none;
+  padding-top: 5px;
+}
+
+.form-message {
+  color: #f6f9f8;
+  margin-bottom: 5px;
+}
+
+.form-message > span:before {
+  color: #dc233f;
+  content: "\e92c";
+  font: 25px mf-icons;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.input-invalid i:after, .input-invalid-message i:after {
+  color: #dc233f;
+  content: "\e92c";
+  font: 25px mf-icons;
+  padding-right: 5px;
+  padding-left: 3px;
+  position: relative;
+  top: 6px;
+}
+
+.input-invalid input, .input-invalid-message input {
+  border-color: #dc233f;
+}
+
+.input-invalid .invalid-message, .input-invalid-message .invalid-message {
+  display: block;
+}
+
+img.wait-icon {
+  display: none;
+}
+
+.input-validate.valid i:after {
+  color: #37c26a;
+  content: "\e923";
+  font: 25px mf-icons;
+  padding-right: 5px;
+  padding-left: 3px;
+  position: relative;
+  top: 6px;
+}
+
+.input-validate.validating img.wait-icon {
+  display: inline-block;
+  padding-left: 3px;
+  position: relative;
+  top: 6px;
 }
 
 .mf-icon, .svg-icon {
@@ -590,7 +668,7 @@ label > textarea {
 }
 
 .mf-icon-button > .mf-icon {
-  color: inherit;
+  color: #808080;
   font-size: inherit;
   height: 100%;
   line-height: 1em;
@@ -598,8 +676,17 @@ label > textarea {
   width: 100%;
 }
 
+.mf-icon-button > .mf-icon:hover {
+  color: #007cd0;
+  border-color: #6a6f71 !important;
+}
+
 .mf-icon-button.mf-cta {
   background-color: #f6f9f8;
+  color: #434c50;
+}
+
+.mf-icon-button.mf-cta .mf-icon {
   color: #434c50;
 }
 
@@ -616,7 +703,7 @@ label > textarea {
 }
 
 .mf-icon-button-text > .mf-icon {
-  color: inherit;
+  color: #808080;
   font-size: inherit;
   height: 100%;
   line-height: 1em;
@@ -781,7 +868,7 @@ p a, span a {
   border-radius: 3px;
   box-sizing: border-box;
   color: #f6f9f8;
-  font-size: 14px;
+  font-size: 15px;
   left: 0;
   overflow: hidden;
   padding: 10px;
@@ -1222,7 +1309,8 @@ table .mf-icon-button {
 
 .mf-tile:hover {
   background-color: #434c50;
-  border-color: #28a9e1;
+  border-color: #007cd0;
+  color: #007cd0;
   color: #f6f9f8;
 }
 
@@ -1421,6 +1509,11 @@ body {
   background-color: #2c2c2c;
   color: #f6f9f8;
   font-family: "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+  line-height: 18px;
 }

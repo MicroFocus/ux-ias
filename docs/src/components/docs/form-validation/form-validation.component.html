@@ -1,0 +1,116 @@
+<h2>Form Validation</h2>
+
+<p>Input field validation should only happen once the user has interacted with the field in some way. Do not display a form with input fields already displayed in an error mode before the user has interacted with it.
+We also need to decide if we want to show an error for required fields after the user has interacted with them by clicking or tabbing through them, but hasn’t entered any data yet.</p>
+
+<section id="form-validation" style="margin-bottom: 100px;">
+	<section>
+		<h3>Required input field</h3>
+		<p>The required field element should be applied to all required input fields. This element is meant to be used in regular or complex forms that have three or more input fields. Not all forms will need to use the require field notification. For example, a sign in page often includes a form with username and password input fields. These inputs are understood to be required to sign in, but usually don't include a required mark.</p>
+		<div>
+			<label>Label stacked</label><span class="required">*</span>
+			<div><input type="text" name="" /></div>
+		</div>
+		<div class="margintop15">
+			<label>Label inline</label><span class="required">*</span><input type="text" name="" />
+		</div>
+		<div class="margintop15">
+			<input type="text" name="" placeholder="Input label placeholder*"/>
+		</div>
+		<ul>
+			<li>Red asterisk on right side of label</li>
+			<li>A "required" note is not required at the bottom of the form since the require asterisk is widely used and understood</li>
+			<li>Color: #e50000 ($color-accent-4)</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Input focus</h3>
+		<label>Label stacked</label>
+		<div>
+			<div><input class="input-focus" type="text" name="username" autocomplete="off"/></div>
+		</div>
+		<ul>
+			<li>On focus, only the border color changes</li>
+			<li>Color: #01a9e7 ($color-primary-4)</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Form message with icon</h3>
+		<p>This message element is specifically for use within forms.</p>
+		<div class="form-message"><span></span>App connector needs more information.</div>
+		<div class="form-message"><span></span>More information needed before submitting.</div>
+		<ul>
+			<li>The default position is to display message at the top of the form.</li>
+			<li>Message text can vary to match context</li>
+			<li>Message Color: #6a6f71 ($color-gray-3)</li>
+			<li>Icon Color: #e50000 ($color-accent-4)</li>
+		</ul>
+		<div class="docs-example">
+			<div class="docs-example-title">Form message example</div>
+			<div class="docs-example-desc">The form message can be used to reference an object that needs information or attention. The referenced object uses only the icon, without a label.</div>
+			<img src="images/warning_icon1.png" alt="">
+		</div>
+		<div class="docs-example">
+			<div class="docs-example-title">Form message example</div>
+			<div class="docs-example-desc">The form message can be used to reference a section in an accordian control that's missing information (rather than on a specific input field). Again, the warning icon does not necessarily need to be presented with a label since the form message clearly defines the icon.</div>
+			<img src="images/warning_icon2.png" alt="">
+		</div>
+	</section>
+	<section>
+		<h3>Missing data in a required field</h3>
+		<div class="input-required-missing">
+			<label>Label stacked</label><span class="required">*</span>
+			<div><input type="text" name="" /></div>
+		</div>
+		<ul>
+			<li>Border color: #e50000 ($color-accent-4)</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Invalid data in a field</h3>
+		<div class="input-invalid">
+			<label>Label stacked</label><i></i>
+			<div><input type="text" name="" value="data entered by user" /></div>
+		</div>
+		<div class="input-invalid margintop10">
+			<label>Label inline</label><i></i><input type="text" name="" value="data entered by user" />
+		</div>
+		<ul>
+			<li>Warning icon is displayed on left side of label</li>
+			<li>Border color: #e50000 ($color-accent-4)</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Invalid data in a field with message</h3>
+		<div class="input-invalid-message">
+			<label>Email</label><i></i>
+			<div><input type="text" name="" value="smithsonian.gmail.com" /></div>
+			<div class="invalid-message">Enter a valid email</div>
+		</div>
+		<ul>
+			<li>Warning icon is displayed on left side of label</li>
+			<li>Border color: #e50000 ($color-accent-4)</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Validating data asynchronously</h3>
+		<div class="input-validate validating">
+			<label>Last name</label><img class="wait-icon" src="images/waiting_25.gif" alt="">
+			<div><input type="text" name="" value="Smithsonian" /></div>
+		</div>
+		<ul>
+			<li>Wait icon (animated) is displayed on right side of label</li>
+			<li>Animated icon is displayed while validating data</li>
+			<li>If data is invalid, the input field changes to the "Invalid data" or "Invalid data w/ message" style (above).</li>
+		</ul>
+		<div class="input-validate valid">
+			<label>Last name</label><i></i>
+			<div><input type="text" name="" value="Smithsonian" /></div>
+		</div>
+		<ul>
+			<li>If data is valid, the animated icon disappears and the input field keeps the default look. The valid checkmark icon displays for 4 seconds, then fades away.
+			</li>
+		</ul>
+
+	</section>
+</section>

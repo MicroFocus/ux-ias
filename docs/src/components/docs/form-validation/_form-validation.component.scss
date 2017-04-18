@@ -1,0 +1,18 @@
+form-validation-documentation {
+	input {min-width: 250px;}
+	.input-focus {
+		border-color: #01a9e7 !important;	
+	}
+	.docs-example {
+		border: 1px solid #dae1e1;
+		border-radius: 3px;
+		margin-bottom: 10px;
+		padding: 15px;
+	
+		& .docs-example-title, .docs-example-desc {
+			color: #808080;
+			margin-bottom: 10px;
+		}
+	}
+
+}

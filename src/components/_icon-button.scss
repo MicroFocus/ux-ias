@@ -13,7 +13,7 @@
   }
 
   > .mf-icon {
-    color: inherit;
+    color: $color-gray-4;
 	font-size: inherit;
     height: 100%;
     line-height: 1em;
@@ -21,9 +21,18 @@
     width: 100%;
   }
 
+  > .mf-icon:hover {
+	color: $button-text-color-hover;
+	border-color: $button-border-color !important;
+  }
+
   &.mf-cta {
     background-color: $button-cta-bg-color;
     color: $button-cta-color;
+  
+  	& .mf-icon {
+	    color: $button-cta-color;
+	}
   }
 }
 
@@ -41,7 +50,7 @@
   }
 
   > .mf-icon {
-    color: inherit;
+    color: $color-gray-4;
 	font-size: inherit;
     height: 100%;
     line-height: 1em;
