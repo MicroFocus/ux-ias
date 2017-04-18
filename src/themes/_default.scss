@@ -27,8 +27,6 @@ $color-accent-3: #f17e12;
 $color-accent-4: #e50000;
 $color-accent-5: #37c26a;
 
-$disabled-opacity: .5;
-
 // Font size variants
 $font-size-xsmall:	11px;
 $font-size-small:	13px;
@@ -49,7 +47,7 @@ $heading-font-weight: 200;
 $heading-letter-spacing: 1px;
 
 $text-color: $color-gray-1;
-$text-color-disabled: $disabled-opacity;
+$text-color-disabled: $color-gray-5;
 
 $title-text-color: $color-gray-4;
 $title-font-size: $font-size-base;
