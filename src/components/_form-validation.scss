@@ -1,30 +1,30 @@
 @mixin required-state-missing() {
   border-color: $color-accent-4;
 }
-
 @mixin warning-message-icon() {
 	color: $color-accent-4;
 	content: "\e92c";
 	font: 25px mf-icons;
-	padding-right: 3px;
-	vertical-align: middle;
+	padding-right: 5px;
 }
 @mixin validate-icon() {
-	color: $color-gray-4;
-	content: "\e92c";
+	color: $color-accent-5;
+	content: "\e923";
 	font: 25px mf-icons;
-	padding-right: 3px;
-	vertical-align: middle;
+	padding-right: 5px;
 }
-
 
 label {
-	padding-bottom: 4px;
+	display: inline-block;
+	margin-bottom: 3px;
 }
-label span.required {
+span.required {
 	color: $color-accent-4;
 	font-size: $font-size-medium;
-	padding-left: 3px;
+	padding-left: 1px;
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
 }
 
 .input-required-missing {
@@ -39,18 +39,21 @@ label span.required {
 }
 
 .form-message {
-	color: $color-gray-3;
-	font-size: 16px;
+	color: $color-gray-1;
+	margin-bottom: 5px;
 }
 .form-message 
 >	span:before {
 		@include warning-message-icon;
-		vertical-align: text-bottom;
+		vertical-align: middle;
 }
 
 .input-invalid, .input-invalid-message {
-	&:before {
+	& i:after {
 		@include warning-message-icon;
+		padding-left: 3px;
+		position: relative;
+		top: 6px;
 	}
 
 	& input {
@@ -62,12 +65,19 @@ label span.required {
 	}	
 }
 
+img.wait-icon {display: none;}
+
 .input-validate {
-	&:after {
+	&.valid i:after {
 		@include validate-icon;
+		padding-left: 3px;
+		position: relative;
+		top: 6px;
 	}
-
-	& input {
-		@include required-state-missing;
+	&.validating img.wait-icon {
+		display: inline-block;
+		padding-left: 3px;
+		position: relative;
+		top: 6px;
 	}
-
+}
