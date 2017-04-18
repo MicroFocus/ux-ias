@@ -46,9 +46,7 @@ button,
     }
 
     &:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: $button-text-color-hover;
+      @include hover-state;
     }
   }
 

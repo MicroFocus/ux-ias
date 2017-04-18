@@ -1,0 +1,73 @@
+@mixin required-state-missing() {
+  border-color: $color-accent-4;
+}
+
+@mixin warning-message-icon() {
+	color: $color-accent-4;
+	content: "\e92c";
+	font: 25px mf-icons;
+	padding-right: 3px;
+	vertical-align: middle;
+}
+@mixin validate-icon() {
+	color: $color-gray-4;
+	content: "\e92c";
+	font: 25px mf-icons;
+	padding-right: 3px;
+	vertical-align: middle;
+}
+
+
+label {
+	padding-bottom: 4px;
+}
+label span.required {
+	color: $color-accent-4;
+	font-size: $font-size-medium;
+	padding-left: 3px;
+}
+
+.input-required-missing {
+	& input {
+		@include required-state-missing;
+	}
+}
+.invalid-message {
+	color: $color-accent-4;
+	display: none;
+	padding-top: 5px;
+}
+
+.form-message {
+	color: $color-gray-3;
+	font-size: 16px;
+}
+.form-message 
+>	span:before {
+		@include warning-message-icon;
+		vertical-align: text-bottom;
+}
+
+.input-invalid, .input-invalid-message {
+	&:before {
+		@include warning-message-icon;
+	}
+
+	& input {
+		@include required-state-missing;
+	}
+	
+	& .invalid-message {
+		display: block;
+	}	
+}
+
+.input-validate {
+	&:after {
+		@include validate-icon;
+	}
+
+	& input {
+		@include required-state-missing;
+	}
+

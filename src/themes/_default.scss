@@ -3,6 +3,7 @@ $border-radius: 3px;
 $border-radius-small: 2px;
 
 // COLORS
+$color-white-1: #fff;
 $color-black-1: #000;
 $color-black-2: #1f1f1f;
 
@@ -37,7 +38,7 @@ $font-size-xlarge:	24px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-size: 14px;
+$font-size: $font-size-base;
 $font-weight: 400;
 $font-weight-medium: 500;
 
@@ -70,8 +71,8 @@ $disabled-bg-color: $color-gray-6;
 $disabled-border-color: $color-gray-5;
 $disabled-text-color: $color-gray-5;
 
-$focus-bg-color: $color-gray-7;
-$focus-border-color: $color-primary-2;
+$focus-bg-color: $color-white-1;
+$focus-border-color: $color-primary-4;
 $focus-text-color: $color-gray-1;
 
 // COMPONENTS
@@ -84,7 +85,7 @@ $app-bar-height-large: 100px;
 $app-bar-icon-size: 20px;
 $app-bar-text-color: $color-gray-7;
 
-$body-bg-color: #ffffff;
+$body-bg-color: $color-white-1;
 
 $border-color: $color-gray-5;
 
@@ -93,7 +94,7 @@ $button-bg-color-disabled: $button-bg-color;
 $button-bg-color-hover: $color-gray-7;
 $button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
-$button-border-color-hover: $color-primary-2;
+$button-border-color-hover: $color-primary-4;
 $button-border-width: 1px;
 $button-cta-bg-color: $color-gray-1;
 $button-cta-color: $color-gray-7;
@@ -125,7 +126,7 @@ $icon-size-large: 75px;
 $input-bg-color: $body-bg-color;
 $input-border: 1px solid $color-gray-5;
 $input-inline-label-padding: 5px;
-$input-label-font-size: 12px;
+$input-label-font-size: $font-size-small;
 $input-label-margin: 10px 0 5px;
 $input-label-text-color: $color-gray-4;
 $input-padding: 8px;

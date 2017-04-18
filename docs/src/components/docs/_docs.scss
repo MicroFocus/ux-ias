@@ -4,3 +4,12 @@
 @import 'panel/panel.component';
 @import 'side-nav/side-nav.component';
 @import 'tile/tile.component';
+@import 'form-validation/form-validation.component';
+
+li {
+	line-height: 22px;
+}
+
+.language-markup {
+	background: #575b5d !important;
+}
