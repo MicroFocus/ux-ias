@@ -77,11 +77,17 @@ $app-bar-action-color: rgba(67,76,80,.3);
 $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
 $app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
+$app-bar-button-padding: 5px;
+$app-bar-button-spacing: $spacing;
 $app-bar-font-size: $font-size-small;
 $app-bar-height-small: 45px;
 $app-bar-height-large: 100px;
 $app-bar-icon-size: 20px;
+$app-bar-padding: $body-spacing-medium;
+$app-bar-padding-large: $body-spacing-large;
 $app-bar-text-color: $color-gray-7;
+$app-bar-text-spacing: $body-spacing-large;
+$app-bar-text-button-spacing: $spacing;
 
 $body-bg-color: #ffffff;
 
@@ -89,7 +95,7 @@ $border-color: $color-gray-5;
 
 $button-bg-color: $color-gray-7;
 $button-bg-color-disabled: $button-bg-color;
-$button-bg-color-hover: $color-gray-7;
+$button-bg-color-hover: $button-bg-color;
 $button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
 $button-border-color-hover: $color-primary-2;
@@ -97,9 +103,8 @@ $button-border-width: 1px;
 $button-cta-bg-color: $color-gray-1;
 $button-cta-color: $color-gray-7;
 $button-font-size: $font-size;
-$button-height: 28px;
-$button-inline-icon-size: $font-size-small;
-$button-inline-icon-padding: $body-spacing-xsmall;
+$button-inline-icon-size: .8em;
+$button-inline-icon-padding: .5em;
 $button-min-width: 42px;
 $button-padding: .45em .75em;
 $button-text-color: $text-color;
@@ -178,7 +183,7 @@ $nav-item-border-bottom-color-focus: $nav-item-border-bottom-color-active;
 $nav-item-text-color-focus: inherit;
 
 $panel-bg-color: $color-gray-6;
-$panel-height: $button-height + (2 * $button-border-width);
+$panel-height: 31px;
 
 $search-box-icon-padding: 5px;
 $search-box-icon-size: 20px;
