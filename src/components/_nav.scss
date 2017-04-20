@@ -3,102 +3,125 @@
   color: $nav-text-color;
   display: flex;
   flex-flow: row nowrap;
-  height: $nav-height;
-  padding: 0 $body-spacing-small;
+  min-height: $nav-height;
+  padding: 0 $nav-content-padding;
 
-  > a {
-    padding: 0 $spacing;
-    margin: 0;
-  }
-
-  > span {
-    @include single-line;
-
-    line-height: $nav-height;
-    padding: 0 $spacing;
-  }
-
+  // Fixed size nav items
   > a,
-  > .mf-icon,
-  > .mf-icon-button,
+  > button,
+  > .mf-button,
   > .mf-menu {
     flex: none;
   }
 
+  // All nav items
   > a,
-  .mf-icon,
-  .mf-icon-button,
+  > button,
+  > .mf-button,
   > .mf-menu > button,
-  > .mf-menu > .mf-button {
-    height: $nav-height - $nav-item-border-width-active - $nav-item-border-width;
-    line-height: $nav-height;
-    text-align: center;
+  > .mf-menu > .mf-button,
+  > span:not(.mf-fill) {
+    color: inherit;
+    padding: 0 $nav-item-padding;
   }
 
+  // Hoverable nav items
   > a,
-  .mf-icon-button,
+  > button,
+  > .mf-button,
   > .mf-menu > button,
   > .mf-menu > .mf-button {
     background-color: transparent;
-    border: $nav-item-border-width solid transparent;
-    border-bottom-width: $nav-item-border-width-active;
+    border-color: transparent;
+    border-style: solid;
     border-radius: 0;
-    box-sizing: content-box;
-    color: $nav-text-color;
+    border-width: $nav-item-border-vertical-width $nav-item-border-horizontal-width;
 
     &[disabled],
     &.mf-disabled {
-      background-color: $nav-item-bg-color-disabled;
-      border-color: $nav-item-border-color-disabled;
+      background-color: transparent;
+      border-color: transparent;
       color: $text-color-disabled;
     }
 
-    &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
-      &:focus {
-        background-color: $nav-item-bg-color-focus;
-        border-color: $nav-item-border-color-focus;
-        color: $nav-item-text-color-focus;
-      }
-
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus:not(.mf-active),
       &:hover {
         background-color: $nav-item-bg-color-hover;
         border-color: $nav-item-border-color-hover;
         color: $nav-item-color-hover;
       }
+    }
+  }
 
+  // Active-capable nav items
+  > a {
+    height: $nav-item-height;
+    line-height: $nav-item-height;
+    margin: 0;
+
+    > .mf-icon,
+    > .svg-icon {
+      font-size: $nav-icon-size;
+      /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
+      margin-bottom: $nav-icon-margin;
+      vertical-align: middle;
+    }
+
+    &:not([disabled]):not(.mf-disabled) {
       &.mf-active {
         border-bottom-color: $nav-item-border-bottom-color-active;
-        border-left-color: $nav-item-border-color-active;
-        border-right-color: $nav-item-border-color-active;
+        border-left-color: $nav-item-border-side-color-active;
+        border-right-color: $nav-item-border-side-color-active;
         color: $nav-item-color-active;
-		font-weight: $font-weight-medium;
+        font-weight: $font-weight-medium;
       }
     }
+  }
+
+  // Non-hoverable, non-active-capable nav items
+  > span:not(.mf-fill) {
+    margin: $nav-text-vertical-margin 0;
+    max-width: $nav-text-max-width;
+
+    > a {
+      padding: $link-padding;
+
+      &:hover {
+        background-color: $nav-link-color-hover;
+      }
+    }
+  }
+
+  // Hoverable, non-active-capable nav items
+  > button,
+  > .mf-button {
+    box-sizing: content-box;
   }
 
   > .mf-icon-button,
   > .mf-menu > .mf-icon-button {
-    font-size: $nav-icon-size;
-    padding: 0 $nav-icon-padding;
+    > .mf-icon,
+    > .svg-icon {
+      font-size: $nav-icon-size;
+    }
   }
 
   > .mf-menu {
-    > button,
-    > .mf-button {
-      > .mf-icon {
-        vertical-align: top;
-      }
-    }
-
     > .mf-menu-content {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+    }
+
+    > button,
+    > .mf-button {
+      height: 100%;
     }
   }
 }
 
 @media (min-width: $large-display) {
   .mf-nav {
-    padding: 0 $body-spacing-large;
+    padding: 0 $nav-content-padding-large;
   }
 }

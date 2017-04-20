@@ -1,66 +1,104 @@
 <h2>Nav Component</h2>
 
-<div class="mf-nav" repeat-as-code>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-search_thick"></i></button>
-    <a class="mf-active" href="#navs">Link 1</a>
-    <a href="#navs">Link 2</a>
-</div>
+<h2>Nav</h2>
 
-<div class="mf-nav" repeat-as-code>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-hamburger_menu_thick"></i></button>
-    <span>Sign in to use available applications.
-        This is more message text to see how this will wrap within the subhead area.
-        This is more message text to see how this will wrap within the subhead area.</span>
-</div>
-<ul>
-    <li>No options, meant to give direction.</li>
-</ul>
-
-
-<div class="mf-nav" repeat-as-code>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-hamburger_menu_thick"></i></button>
-    <span title="Self Registration">Self Registration</span>
-    <a href="#navs"><i class="mf-icon mf-icon-number_1"></i></a>
-    <a href="#navs"><i class="mf-icon mf-icon-number_2"></i></a>
-    <a class="mf-active" href="#navs"><i class="mf-icon mf-icon-number_3"></i></a>
-    <a href="#navs"><i class="mf-icon mf-icon-number_4"></i></a>
-</div>
-
-<div class="mf-nav" repeat-as-code>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-search_thick"></i></button>
-    <a class="mf-active" href="#navs">Link 1</a>
-    <a href="#navs">Link 2</a>
-    <div class="mf-menu mf-closed">
-        <button type="button"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+<section>
+    <div class="mf-nav" repeat-as-code>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
     </div>
-    <span class="mf-fill"></span>
-    <button class="mf-icon-button" type="button" disabled="disabled"><i class="mf-icon mf-icon-cancel_thick"></i></button>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-close_thick"></i></button>
-</div>
+</section>
 
-<div class="mf-nav  has-menus" repeat-as-code>
-    <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-search_thick"></i></button>
-    <a href="#navs">Link 1</a>
-    <a class="mf-active" href="#navs">Link 2</a>
-    <div class="mf-menu mf-closed">
-        <button type="button" disabled="disabled"><span>Link 3</span><i class="mf-icon mf-icon-down_thick"></i></button>
+<section>
+    <h4>.mf-active</h4>
+
+    <div class="mf-nav" repeat-as-code>
+        <a href="#">Link 1</a>
+        <a href="#" class="mf-active">Link 2</a>
+        <a href="#">Link 3</a>
     </div>
-    <div class="mf-menu mf-open">
-        <button type="button" class="mf-menu-toggle"><span>Link 4</span><i class="mf-icon mf-icon-down_thick"></i></button>
-        <div class="mf-menu-content">
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
-        </div>
-    </div>
-    <span class="mf-fill"></span>
-    <div class="mf-menu mf-open mf-end">
-        <button class="mf-icon-button" type="button"><i class="mf-icon mf-icon-new_thick"></i></button>
-        <div class="mf-menu-content">
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
+</section>
+
+<section>
+    <h4>Complex</h4>
+
+    <div class="mf-nav">
+        <button class="mf-icon-button">
+            <i class="mf-icon mf-icon-search_thick"></i>
+        </button>
+        <a href="#" class="mf-active">
+            <i class="mf-icon mf-icon-home_thick"></i>
+        </a>
+        <a href="#">Link 1</a>
+
+        <span class="mf-fill"></span>
+
+        <div class="mf-menu mf-closed">
+            <button type="button" class="mf-menu-toggle">
+                Menu<i class="mf-icon mf-icon-down_thick"></i>
+            </button>
         </div>
     </div>
 
-</div>
+    <div class="section-with-menus" repeat-as-code>
+        <div class="mf-nav">
+            <button class="mf-icon-button">
+                <i class="mf-icon mf-icon-search_thick"></i>
+            </button>
+            <a href="#" class="mf-active">
+                <i class="mf-icon mf-icon-home_thick"></i>
+            </a>
+            <a href="#">Link 1</a>
+
+            <span class="mf-fill"></span>
+
+            <div class="mf-menu mf-open">
+                <button type="button" class="mf-menu-toggle">
+                    Menu<i class="mf-icon mf-icon-down_thick"></i>
+                </button>
+                <div class="mf-menu-content">
+                    <button type="button">Button 1</button>
+                    <button type="button">Button 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h4>Disabled</h4>
+
+    <div class="mf-nav" repeat-as-code>
+        <button class="mf-icon-button" disabled="disabled">
+            <i class="mf-icon mf-icon-search_thick"></i>
+        </button>
+        <a href="#">Link 1</a>
+        <a class="mf-disabled">Link 2</a>
+        <a disabled="disabled">Link 3</a>
+    </div>
+</section>
+
+<section>
+    <h4>Text</h4>
+    <div class="mf-nav" repeat-as-code>
+        <a href="#" class="mf-active">Link 1</a>
+        <span>Text</span>
+        <span class="mf-fill"></span>
+        <span><a href="#">Hyperlink</a></span>
+    </div>
+</section>
+
+<section>
+    <h4>Header (non-navigation)</h4>
+    <div class="mf-nav" repeat-as-code>
+        <button class="mf-icon-button">
+            <i class="mf-icon mf-icon-hamburger_menu_thick"></i>
+        </button>
+        <span>Sign in to use available applications. This text wraps if necessary.</span>
+        <span class="mf-fill"></span>
+        <button class="mf-icon-button">
+            <i class="mf-icon mf-icon-search_thick"></i>
+        </button>
+    </div>
+</section>
+
