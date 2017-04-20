@@ -17,6 +17,14 @@
 	padding-right: 5px;
 	vertical-align: middle;
 }
+@mixin info-hint-icon() {
+	color: $color-primary-3;
+	content: "\e930";
+	font: 22px mf-icons;
+	line-height: $font-size-large;
+	padding-right: 5px;
+	vertical-align: middle;
+}
 
 label {
 	display: inline-block;
@@ -49,6 +57,11 @@ span.required {
 >	span:before {
 		@include warning-message-icon;
 		vertical-align: middle;
+}
+
+i.info-icon:after {
+		@include info-hint-icon;
+		padding-left: 3px;
 }
 
 .input-invalid, .input-invalid-message {
