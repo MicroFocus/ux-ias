@@ -4,19 +4,30 @@
 @mixin warning-message-icon() {
 	color: $color-accent-4;
 	content: "\e92c";
-	font: 25px mf-icons;
+	font: 22px mf-icons;
+	line-height: $font-size-large;
 	padding-right: 5px;
+	vertical-align: middle;
 }
 @mixin validate-icon() {
 	color: $color-accent-5;
 	content: "\e923";
-	font: 25px mf-icons;
+	font: 22px mf-icons;
+	line-height: $font-size-large;
 	padding-right: 5px;
+	vertical-align: middle;
+}
+@mixin info-hint-icon() {
+	color: $color-primary-3;
+	content: "\e930";
+	font: 22px mf-icons;
+	line-height: $font-size-large;
+	padding-right: 5px;
+	vertical-align: middle;
 }
 
 label {
 	display: inline-block;
-	margin-bottom: 3px;
 }
 span.required {
 	color: $color-accent-4;
@@ -35,7 +46,7 @@ span.required {
 .invalid-message {
 	color: $color-accent-4;
 	display: none;
-	padding-top: 5px;
+	padding-top: 3px;
 }
 
 .form-message {
@@ -48,12 +59,15 @@ span.required {
 		vertical-align: middle;
 }
 
+i.info-icon:after {
+		@include info-hint-icon;
+		padding-left: 3px;
+}
+
 .input-invalid, .input-invalid-message {
 	& i:after {
 		@include warning-message-icon;
 		padding-left: 3px;
-		position: relative;
-		top: 6px;
 	}
 
 	& input {
@@ -71,13 +85,11 @@ img.wait-icon {display: none;}
 	&.valid i:after {
 		@include validate-icon;
 		padding-left: 3px;
-		position: relative;
-		top: 6px;
 	}
 	&.validating img.wait-icon {
 		display: inline-block;
 		padding-left: 3px;
-		position: relative;
-		top: 6px;
+		vertical-align: middle;
+		height: 20px;
 	}
 }
