@@ -3,6 +3,7 @@ $border-radius: 3px;
 $border-radius-small: 2px;
 
 // COLORS
+$color-white-1: #fff;
 $color-black-1: #000;
 $color-black-2: #1f1f1f;
 
@@ -25,6 +26,7 @@ $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 $color-accent-3: #f17e12;
 $color-accent-4: #e50000;
+$color-accent-5: #37c26a;
 
 // Font size variants
 $font-size-xsmall: 11px;
@@ -36,7 +38,7 @@ $font-size-xlarge: 24px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-size: 14px;
+$font-size: $font-size-base;
 $font-weight: 400;
 $font-weight-medium: 500;
 
@@ -131,7 +133,7 @@ $icon-size-large: 75px;
 $input-bg-color: $color-gray-7;
 $input-border: 1px solid $color-gray-5;
 $input-inline-label-padding: 5px;
-$input-label-font-size: 12px;
+$input-label-font-size: $font-size-small;
 $input-label-margin: 10px 0 5px;
 $input-label-text-color: $color-gray-2;
 $input-padding: 8px;
