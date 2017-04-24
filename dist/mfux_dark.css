@@ -337,32 +337,6 @@ button.mf-cta[disabled], button.mf-cta.mf-disabled,
   color: #808080;
 }
 
-button.mf-icon-button,
-.mf-button.mf-icon-button {
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0;
-}
-
-button.mf-icon-button:hover,
-.mf-button.mf-icon-button:hover {
-  background-color: #434c50;
-  border-color: #007cd0;
-  color: #007cd0;
-}
-
-button.mf-icon-button .mf-icon, button.mf-icon-button .svg-icon,
-.mf-button.mf-icon-button .mf-icon,
-.mf-button.mf-icon-button .svg-icon {
-  display: block;
-}
-
-button.mf-icon-button.mf-cta,
-.mf-button.mf-icon-button.mf-cta {
-  background-color: #f6f9f8;
-  color: #434c50;
-}
-
 button:not(.mf-icon-button),
 .mf-button:not(.mf-icon-button) {
   min-width: 42px;
@@ -371,15 +345,13 @@ button:not(.mf-icon-button),
 button:not(.mf-icon-button) > .mf-icon, button:not(.mf-icon-button) .svg-icon,
 .mf-button:not(.mf-icon-button) > .mf-icon,
 .mf-button:not(.mf-icon-button) .svg-icon {
-  color: inherit;
-  font-size: inherit;
   vertical-align: middle;
 }
 
 button.mf-menu-toggle > .mf-icon, button.mf-menu-toggle .svg-icon,
 .mf-button.mf-menu-toggle > .mf-icon,
 .mf-button.mf-menu-toggle .svg-icon {
-  font-size: 0.8em;
+  font-size: inherit;
   margin-left: 0.5em;
 }
 
@@ -707,64 +679,48 @@ img.wait-icon {
   display: inline-block;
 }
 
-.mf-icon-button {
-  font-size: 25px;
-  height: 1em;
-  line-height: 1em;
-  width: 1em;
+button.mf-icon-button,
+.mf-button.mf-icon-button {
   background-color: transparent;
-  border: 1px solid transparent;
-  min-width: initial;
+  border-color: transparent;
   padding: 0;
 }
 
-.mf-icon-button[disabled], .mf-icon-button.mf-disabled {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.mf-icon-button > .mf-icon {
-  color: #808080;
-  font-size: inherit;
-  height: 100%;
-  line-height: 1em;
-  vertical-align: top;
-  width: 100%;
-}
-
-.mf-icon-button > .mf-icon:hover {
+button.mf-icon-button:not([disabled]):not(.mf-disabled):focus, button.mf-icon-button:not([disabled]):not(.mf-disabled):hover,
+.mf-button.mf-icon-button:not([disabled]):not(.mf-disabled):focus,
+.mf-button.mf-icon-button:not([disabled]):not(.mf-disabled):hover {
+  background-color: #434c50;
+  border-color: #6a6f71;
   color: #007cd0;
-  border-color: #6a6f71 !important;
 }
 
-.mf-icon-button.mf-cta {
+button.mf-icon-button.mf-cta,
+.mf-button.mf-icon-button.mf-cta {
   background-color: #f6f9f8;
   color: #434c50;
 }
 
-.mf-icon-button.mf-cta .mf-icon {
-  color: #434c50;
+button.mf-icon-button .mf-icon, button.mf-icon-button .svg-icon,
+.mf-button.mf-icon-button .mf-icon,
+.mf-button.mf-icon-button .svg-icon {
+  display: block;
 }
 
-.mf-icon-button-text {
-  background-color: transparent;
-  border: 1px solid transparent;
-  min-width: initial;
-  padding: 0;
+button.mf-icon-text-button,
+.mf-button.mf-icon-text-button {
+  padding: 0.2em 0.75em;
 }
 
-.mf-icon-button-text[disabled], .mf-icon-button-text.mf-disabled {
-  background-color: transparent;
-  border-color: transparent;
+button.mf-icon-text-button > span,
+.mf-button.mf-icon-text-button > span {
+  vertical-align: middle;
 }
 
-.mf-icon-button-text > .mf-icon {
-  color: #808080;
-  font-size: inherit;
-  height: 100%;
-  line-height: 1em;
-  vertical-align: top;
-  width: 100%;
+button.mf-icon-text-button > .mf-icon, button.mf-icon-text-button .svg-icon,
+.mf-button.mf-icon-text-button > .mf-icon,
+.mf-button.mf-icon-text-button .svg-icon {
+  font-size: 25px;
+  margin-right: 0.5em;
 }
 
 a {

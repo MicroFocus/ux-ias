@@ -105,10 +105,11 @@ $button-border-width: 1px;
 $button-cta-bg-color: $color-gray-1;
 $button-cta-color: $color-gray-7;
 $button-font-size: $font-size;
-$button-inline-icon-size: .8em;
+$button-inline-icon-size: 25px;
 $button-inline-icon-padding: .5em;
 $button-min-width: 42px;
 $button-padding: .45em .75em;
+$button-padding-with-icon: .2em .75em;
 $button-text-color: $text-color;
 $button-text-color-disabled: $button-border-color-disabled;
 $button-text-color-hover: $color-primary-2;
@@ -128,6 +129,7 @@ $icon-button-size-large: 28px;
 $icon-size-small: 25px;
 $icon-size-medium: 50px;
 $icon-size-large: 75px;
+
 
 $input-bg-color: $body-bg-color;
 $input-border: 1px solid $color-gray-5;
