@@ -4,57 +4,62 @@
 @import 'components/docs/docs';
 
 body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body > [ui-view] {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 p {
-	max-width: 700px;
+  max-width: 700px;
 }
 
-.margintop5 {margin-top: 5px;}
-.margintop10 {margin-top: 10px;}
-.margintop15 {margin-top: 15px;}
-.margintop20 {margin-top: 20px;}
-.margintop30 {margin-top: 30px;}
+section {
+  margin-bottom: 24px;
+  width: 100%;
+}
 
 .color-div {
-	border: 1px solid #dae1e1;
-	width: 450px;
-	height: 100px;
-	border-radius: 3px;
-	padding: 10px;
-	margin-top: 10px;
+  border: 1px solid #dae1e1;
+  width: 450px;
+  height: 100px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .color-chip {
-	background-color: white;
-	border: 1px solid #eef2f2;
-	height: 50px;
-	width: 80px;
-	border-radius: 3px;
-	padding: 5px;
-	padding-top: 40px;
-	float: left;
-	margin-right: 25px;
-	text-align: center;
+  background-color: white;
+  border: 1px solid #eef2f2;
+  height: 50px;
+  width: 80px;
+  border-radius: 3px;
+  padding: 5px;
+  padding-top: 40px;
+  float: left;
+  margin-right: 25px;
+  text-align: center;
 }
 
 .color-chip-name {
-	color: #434c50;
-	font-size: 18px;
-	margin-top: 5px;
+  color: #434c50;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
 .color-chip-description {
-	color: #808080;
-	font-size: 14px;
-	margin-top: 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-top: 5px;
 }
+
+
+/*
+pre {
+  display:none;
+}*/

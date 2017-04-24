@@ -6,81 +6,63 @@
   display: flex;
   flex-flow: row nowrap;
   font-size: $app-bar-font-size;
-  max-height: $app-bar-height-large;
   min-height: $app-bar-height-small;
-  padding: 0 $body-spacing-small 0 0;
+  padding-right: $app-bar-padding;
+  overflow: hidden;
 
   > .mf-avatar {
     border-radius: 0;
 
     > img {
-      max-height: $app-bar-height-large;
       display: block;
+      max-height: $app-bar-height-small;
     }
   }
 
   > .mf-heading {
-    margin: 0 $body-spacing-small;
+    /* Add height and line-height for align-items bug in IE11 */
+    height: $app-bar-height-small;
+    line-height: $app-bar-height-small;
+    margin-left: $app-bar-padding;
   }
 
-  > .mf-icon-button {
-    margin-left: $spacing;
+  > span:not(.mf-fill) {
+    @include single-line;
+    flex-shrink: 10;
+    margin-left: $app-bar-text-spacing;
+
+    &:not(:last-child) {
+      margin-right: $app-bar-text-button-spacing;
+    }
   }
 
-  > .mf-menu {
-    @include single-line();
-
-    flex-shrink: 0;
-  }
-
-  .mf-icon-button {
-    font-size: $app-bar-icon-size;
-  }
-	
-  .mf-menu {
-	button,
-	.mf-button {
-	background-color: transparent;
-	border: none;
-	color: inherit;
-	font-size: inherit;
-	padding: 0 5px;
-
-		&:not([disabled]):not(.mf-disabled) {
-		  &:focus,
-		  &:hover {
-			background-color: rgba(67,76,80,.6);
-			color: inherit;
-		  }
-		}
-	}
-  }
-
-	.mf-icon-button	{
-		
-		&:not([disabled]):not(.mf-disabled) {
-		  &:focus,
-		  &:hover {
-			background-color: rgba(67,76,80,.6);
-			color: inherit;
-		  }
-		}
-
-	}
-	
-  button,
-  .mf-button {
+  > button, .mf-button {
     background-color: transparent;
     border: none;
     color: inherit;
+    flex-shrink: 0;
     font-size: inherit;
-    padding: 0;
+    margin-left: $app-bar-button-spacing;
+
+    &.mf-icon-button {
+      padding: $app-bar-button-padding;
+
+      > .mf-icon, .svg-icon {
+        font-size: $app-bar-icon-size;
+      }
+    }
 
     &:not([disabled]):not(.mf-disabled) {
       &:focus,
       &:hover {
-        background-color: transparent;
+        background-color: $app-bar-action-color;
         color: inherit;
+      }
+    }
+
+    &:not(.mf-icon-button) {
+      > .mf-icon, .svg-icon {
+        background-color: transparent;
       }
     }
   }
@@ -89,36 +71,54 @@
 [dir="rtl"] {
   .mf-app-bar {
     background: $app-bar-bg-rtl;
-    padding: 0 0 0 $body-spacing-small ;
+    padding-left: $app-bar-padding;
+    padding-right: 0;
 
     > .mf-heading {
-      margin-left: initial;
-      margin-right: $body-spacing-small;
+      margin-left: 0;
+      margin-right: $app-bar-padding;
     }
 
-    > .mf-icon-button {
-      margin-left: initial;
-      margin-right: $spacing;
+    > button, .mf-button {
+      margin-left: 0;
+      margin-right: $app-bar-button-spacing;
+    }
+
+    > span:not(.mf-fill) {
+      @include single-line;
+      margin-left: 0;
+      margin-right: $app-bar-text-spacing;
+
+      &:not(:last-child) {
+        margin-left: $app-bar-text-button-spacing;
+      }
     }
   }
 }
 
 @media (min-width: $large-display) {
   .mf-app-bar {
-    padding: 0 $body-spacing-large 0 0;
+    padding-right: $app-bar-padding-large;
+
+    > .mf-avatar {
+      > img {
+        max-height: $app-bar-height-large;
+      }
+    }
 
     > .mf-heading {
-      margin: 0 $body-spacing-large;
+      margin-left: $app-bar-padding-large;
     }
   }
 
   [dir="rtl"] {
     .mf-app-bar {
-      padding: 0 0 0 $body-spacing-large;
+      padding-left: $app-bar-padding-large;
+      padding-right: 0;
 
       > .mf-heading {
-        margin-left: initial;
-        margin-right: $body-spacing-large;
+        margin-left: 0;
+        margin-right: $app-bar-padding-large;
       }
     }
   }

@@ -1,5 +1,5 @@
 .mf-heading {
-  @include single-line();
+  @include single-line;
 
   color: $heading-text-color;
   font-size: $heading-font-size;
@@ -10,7 +10,7 @@
 }
 
 .mf-title {
-  @include single-line();
+  @include single-line;
 
   color: $title-text-color;
   font-size: $title-font-size;

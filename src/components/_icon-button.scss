@@ -1,61 +1,39 @@
-.mf-icon-button {
-  @include square($icon-button-size);
-
-  background-color: transparent;
-  border: $icon-button-border-width solid transparent;
-  min-width: initial;
-  padding: 0;
-
-  &[disabled],
-  &.mf-disabled {
+button,
+.mf-button {
+  &.mf-icon-button {
     background-color: transparent;
     border-color: transparent;
+    padding: 0;
+
+    &:not([disabled]):not(.mf-disabled) {
+      &:focus,
+      &:hover {
+        background-color: $button-bg-color-hover;
+        border-color: $button-border-color;
+        color: $button-text-color-hover;
+      }
+    }
+
+    &.mf-cta {
+      background-color: $button-cta-bg-color;
+      color: $button-cta-color;
+    }
+
+    .mf-icon, .svg-icon {
+      display: block;
+    }
   }
 
-  > .mf-icon {
-    color: $color-gray-4;
-	font-size: inherit;
-    height: 100%;
-    line-height: 1em;
-    vertical-align: top;
-    width: 100%;
+  &.mf-icon-text-button {
+    padding: $button-padding-with-icon;
+
+    > span {
+      vertical-align: middle;
+    }
+
+    > .mf-icon, .svg-icon {
+      font-size: $button-inline-icon-size;
+      margin-right: $button-inline-icon-padding;
+    }
   }
-
-  > .mf-icon:hover {
-	color: $button-text-color-hover;
-	border-color: $button-border-color !important;
-  }
-
-  &.mf-cta {
-    background-color: $button-cta-bg-color;
-    color: $button-cta-color;
-  
-  	& .mf-icon {
-	    color: $button-cta-color;
-	}
-  }
-}
-
-.mf-icon-button-text {
-
-  background-color: transparent;
-  border: $icon-button-border-width solid transparent;
-  min-width: initial;
-  padding: 0;
-
-  &[disabled],
-  &.mf-disabled {
-    background-color: transparent;
-    border-color: transparent;
-  }
-
-  > .mf-icon {
-    color: $color-gray-4;
-	font-size: inherit;
-    height: 100%;
-    line-height: 1em;
-    vertical-align: top;
-    width: 100%;
-  }
-
 }
