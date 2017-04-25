@@ -14,8 +14,7 @@
   }
 
   &:hover {
-    background-color: $tile-bg-color;
-    border-color: $tile-border-color;
+    @include hover-state;
     color: $tile-text-color;
   }
 

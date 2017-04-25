@@ -29,9 +29,7 @@ button,
     }
 
     &:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: $button-text-color-hover;
+      @include hover-state;
     }
   }
 
@@ -48,40 +46,17 @@ button,
     }
   }
 
-  &.mf-icon-button {
-    background-color: transparent;
-    border-color: transparent;
-    padding: 0;
-
-    &:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: $button-text-color-hover;
-    }
-
-    .mf-icon, .svg-icon {
-      display: block;
-    }
-
-    &.mf-cta {
-      background-color: $button-cta-bg-color;
-      color: $button-cta-color;
-    }
-  }
-
   &:not(.mf-icon-button) {
     min-width: $button-min-width;
 
     > .mf-icon, .svg-icon {
-      color: inherit;
-      font-size: inherit;
       vertical-align: middle;
     }
   }
 
   &.mf-menu-toggle {
     > .mf-icon, .svg-icon {
-      font-size: $button-inline-icon-size;
+      font-size: inherit;
       margin-left: $button-inline-icon-padding;
     }
   }

@@ -3,6 +3,7 @@ $border-radius: 3px;
 $border-radius-small: 2px;
 
 // COLORS
+$color-white-1: #fff;
 $color-black-1: #000;
 $color-black-2: #1f1f1f;
 
@@ -24,6 +25,7 @@ $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 $color-accent-3: #f17e12;
 $color-accent-4: #e50000;
+$color-accent-5: #37c26a;
 
 // Font size variants
 $font-size-xsmall: 11px;
@@ -35,7 +37,7 @@ $font-size-xlarge: 24px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-size: 14px;
+$font-size: $font-size-base;
 $font-weight: 400;
 $font-weight-medium: 500;
 
@@ -68,8 +70,8 @@ $disabled-bg-color: $color-gray-6;
 $disabled-border-color: $color-gray-5;
 $disabled-text-color: $color-gray-5;
 
-$focus-bg-color: $color-gray-7;
-$focus-border-color: $color-primary-2;
+$focus-bg-color: $color-white-1;
+$focus-border-color: $color-primary-4;
 $focus-text-color: $color-gray-1;
 
 // COMPONENTS
@@ -89,7 +91,7 @@ $app-bar-text-color: $color-gray-7;
 $app-bar-text-spacing: $body-spacing-large;
 $app-bar-text-button-spacing: $spacing;
 
-$body-bg-color: #ffffff;
+$body-bg-color: $color-white-1;
 
 $border-color: $color-gray-5;
 
@@ -98,15 +100,16 @@ $button-bg-color-disabled: $button-bg-color;
 $button-bg-color-hover: $button-bg-color;
 $button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
-$button-border-color-hover: $color-primary-2;
+$button-border-color-hover: $color-primary-4;
 $button-border-width: 1px;
 $button-cta-bg-color: $color-gray-1;
 $button-cta-color: $color-gray-7;
 $button-font-size: $font-size;
-$button-inline-icon-size: 1em;
+$button-inline-icon-size: 25px;
 $button-inline-icon-padding: .5em;
 $button-min-width: 42px;
 $button-padding: .45em .75em;
+$button-padding-with-icon: .2em .75em;
 $button-text-color: $text-color;
 $button-text-color-disabled: $button-border-color-disabled;
 $button-text-color-hover: $color-primary-2;
@@ -130,8 +133,8 @@ $icon-size-large: 75px;
 $input-bg-color: $body-bg-color;
 $input-border: 1px solid $color-gray-5;
 $input-inline-label-padding: 5px;
-$input-label-font-size: 12px;
-$input-label-margin: 10px 0 5px;
+$input-label-font-size: $font-size-small;
+$input-label-margin: 10px 0 3px;
 $input-label-text-color: $color-gray-4;
 $input-padding: 8px;
 

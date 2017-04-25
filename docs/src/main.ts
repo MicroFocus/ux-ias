@@ -13,6 +13,7 @@ import ButtonComponent from './components/docs/button/button.component';
 import ColorsComponent from './components/docs/colors/colors.component';
 import DialogComponent from './components/docs/dialog/dialog.component';
 import FormFieldComponent from './components/docs/form-field/form-field.component';
+import FormValidationComponent from './components/docs/form-validation/form-validation.component';
 import IconComponent from './components/docs/icon/icon.component';
 import IconButtonComponent from './components/docs/icon-button/icon-button.component';
 import IconButtonTextComponent from './components/docs/icon-button-text/icon-button-text.component';
@@ -45,6 +46,7 @@ module('app', [
     .component('colorsDocumentation', ColorsComponent)
     .component('dialogDocumentation', DialogComponent)
     .component('formFieldDocumentation', FormFieldComponent)
+    .component('formValidationDocumentation', FormValidationComponent)
     .component('iconDocumentation', IconComponent)
     .component('iconButtonDocumentation', IconButtonComponent)
     .component('iconButtonTextDocumentation', IconButtonTextComponent)
