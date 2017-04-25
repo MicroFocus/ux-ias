@@ -731,7 +731,7 @@ button.mf-icon-text-button > .mf-icon, button.mf-icon-text-button .svg-icon,
 .mf-button.mf-icon-text-button > .mf-icon,
 .mf-button.mf-icon-text-button .svg-icon {
   font-size: 25px;
-  margin-right: 0.5em;
+  margin-right: 0.25em;
 }
 
 a {
