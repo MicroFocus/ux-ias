@@ -195,7 +195,8 @@
   margin-right: 10px;
 }
 
-.mf-app-bar > button, .mf-app-bar .mf-button {
+.mf-app-bar > button,
+.mf-app-bar > .mf-button {
   background-color: transparent;
   border: none;
   color: inherit;
@@ -205,20 +206,29 @@
   margin-left: 10px;
 }
 
-.mf-app-bar > button.mf-icon-button, .mf-app-bar .mf-button.mf-icon-button {
+.mf-app-bar > button.mf-icon-button,
+.mf-app-bar > .mf-button.mf-icon-button {
   padding: 5px;
 }
 
-.mf-app-bar > button.mf-icon-button > .mf-icon, .mf-app-bar > button.mf-icon-button .svg-icon, .mf-app-bar .mf-button.mf-icon-button > .mf-icon, .mf-app-bar .mf-button.mf-icon-button .svg-icon {
+.mf-app-bar > button.mf-icon-button > .mf-icon,
+.mf-app-bar > button.mf-icon-button > .svg-icon,
+.mf-app-bar > .mf-button.mf-icon-button > .mf-icon,
+.mf-app-bar > .mf-button.mf-icon-button > .svg-icon {
   font-size: 20px;
 }
 
-.mf-app-bar > button:not([disabled]):not(.mf-disabled):focus, .mf-app-bar > button:not([disabled]):not(.mf-disabled):hover, .mf-app-bar .mf-button:not([disabled]):not(.mf-disabled):focus, .mf-app-bar .mf-button:not([disabled]):not(.mf-disabled):hover {
+.mf-app-bar > button:not([disabled]):not(.mf-disabled):focus, .mf-app-bar > button:not([disabled]):not(.mf-disabled):hover,
+.mf-app-bar > .mf-button:not([disabled]):not(.mf-disabled):focus,
+.mf-app-bar > .mf-button:not([disabled]):not(.mf-disabled):hover {
   background-color: rgba(67, 76, 80, 0.3);
   color: inherit;
 }
 
-.mf-app-bar > button:not(.mf-icon-button) > .mf-icon, .mf-app-bar > button:not(.mf-icon-button) .svg-icon, .mf-app-bar .mf-button:not(.mf-icon-button) > .mf-icon, .mf-app-bar .mf-button:not(.mf-icon-button) .svg-icon {
+.mf-app-bar > button:not(.mf-icon-button) > .mf-icon,
+.mf-app-bar > button:not(.mf-icon-button) > .svg-icon,
+.mf-app-bar > .mf-button:not(.mf-icon-button) > .mf-icon,
+.mf-app-bar > .mf-button:not(.mf-icon-button) > .svg-icon {
   background-color: transparent;
 }
 
@@ -233,7 +243,8 @@
   margin-right: 15px;
 }
 
-[dir="rtl"] .mf-app-bar > button, [dir="rtl"] .mf-app-bar .mf-button {
+[dir="rtl"] .mf-app-bar > button,
+[dir="rtl"] .mf-app-bar > .mf-button {
   margin-left: 0;
   margin-right: 10px;
 }
@@ -720,7 +731,7 @@ button.mf-icon-text-button > .mf-icon, button.mf-icon-text-button .svg-icon,
 .mf-button.mf-icon-text-button > .mf-icon,
 .mf-button.mf-icon-text-button .svg-icon {
   font-size: 25px;
-  margin-right: 0.5em;
+  margin-right: 0.25em;
 }
 
 a {
@@ -955,56 +966,45 @@ p a, span a {
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 32px;
-  padding: 0 10px;
-}
-
-.mf-nav > a {
-  padding: 0 10px;
-  margin: 0;
-}
-
-.mf-nav > span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 32px;
-  padding: 0 10px;
+  min-height: 32px;
+  padding: 0 15px;
 }
 
 .mf-nav > a,
-.mf-nav > .mf-icon,
-.mf-nav > .mf-icon-button,
+.mf-nav > button,
+.mf-nav > .mf-button,
 .mf-nav > .mf-menu {
   -ms-flex: none;
       flex: none;
 }
 
 .mf-nav > a,
-.mf-nav .mf-icon,
-.mf-nav .mf-icon-button,
+.mf-nav > button,
+.mf-nav > .mf-button,
 .mf-nav > .mf-menu > button,
-.mf-nav > .mf-menu > .mf-button {
-  height: 29px;
-  line-height: 32px;
-  text-align: center;
+.mf-nav > .mf-menu > .mf-button,
+.mf-nav > span:not(.mf-fill) {
+  color: inherit;
+  padding: 0 10px;
 }
 
 .mf-nav > a,
-.mf-nav .mf-icon-button,
+.mf-nav > button,
+.mf-nav > .mf-button,
 .mf-nav > .mf-menu > button,
 .mf-nav > .mf-menu > .mf-button {
   background-color: transparent;
-  border: 1px solid transparent;
-  border-bottom-width: 2px;
+  border-color: transparent;
+  border-style: solid;
   border-radius: 0;
-  box-sizing: content-box;
-  color: #eef2f2;
+  border-width: 2px 1px;
 }
 
 .mf-nav > a[disabled], .mf-nav > a.mf-disabled,
-.mf-nav .mf-icon-button[disabled],
-.mf-nav .mf-icon-button.mf-disabled,
+.mf-nav > button[disabled],
+.mf-nav > button.mf-disabled,
+.mf-nav > .mf-button[disabled],
+.mf-nav > .mf-button.mf-disabled,
 .mf-nav > .mf-menu > button[disabled],
 .mf-nav > .mf-menu > button.mf-disabled,
 .mf-nav > .mf-menu > .mf-button[disabled],
@@ -1014,28 +1014,35 @@ p a, span a {
   color: #808080;
 }
 
-.mf-nav > a:not([disabled]):not(.mf-disabled):not(.mf-icon):focus,
-.mf-nav .mf-icon-button:not([disabled]):not(.mf-disabled):not(.mf-icon):focus,
-.mf-nav > .mf-menu > button:not([disabled]):not(.mf-disabled):not(.mf-icon):focus,
-.mf-nav > .mf-menu > .mf-button:not([disabled]):not(.mf-disabled):not(.mf-icon):focus {
-  background-color: #6a6f71;
-  border-color: transparent;
-  color: inherit;
-}
-
-.mf-nav > a:not([disabled]):not(.mf-disabled):not(.mf-icon):hover,
-.mf-nav .mf-icon-button:not([disabled]):not(.mf-disabled):not(.mf-icon):hover,
-.mf-nav > .mf-menu > button:not([disabled]):not(.mf-disabled):not(.mf-icon):hover,
-.mf-nav > .mf-menu > .mf-button:not([disabled]):not(.mf-disabled):not(.mf-icon):hover {
+.mf-nav > a:not([disabled]):not(.mf-disabled):focus:not(.mf-active), .mf-nav > a:not([disabled]):not(.mf-disabled):hover,
+.mf-nav > button:not([disabled]):not(.mf-disabled):focus:not(.mf-active),
+.mf-nav > button:not([disabled]):not(.mf-disabled):hover,
+.mf-nav > .mf-button:not([disabled]):not(.mf-disabled):focus:not(.mf-active),
+.mf-nav > .mf-button:not([disabled]):not(.mf-disabled):hover,
+.mf-nav > .mf-menu > button:not([disabled]):not(.mf-disabled):focus:not(.mf-active),
+.mf-nav > .mf-menu > button:not([disabled]):not(.mf-disabled):hover,
+.mf-nav > .mf-menu > .mf-button:not([disabled]):not(.mf-disabled):focus:not(.mf-active),
+.mf-nav > .mf-menu > .mf-button:not([disabled]):not(.mf-disabled):hover {
   background-color: #6a6f71;
   border-color: transparent;
   color: #eef2f2;
 }
 
-.mf-nav > a:not([disabled]):not(.mf-disabled):not(.mf-icon).mf-active,
-.mf-nav .mf-icon-button:not([disabled]):not(.mf-disabled):not(.mf-icon).mf-active,
-.mf-nav > .mf-menu > button:not([disabled]):not(.mf-disabled):not(.mf-icon).mf-active,
-.mf-nav > .mf-menu > .mf-button:not([disabled]):not(.mf-disabled):not(.mf-icon).mf-active {
+.mf-nav > a {
+  height: 28px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.mf-nav > a > .mf-icon,
+.mf-nav > a > .svg-icon {
+  font-size: 20px;
+  /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+.mf-nav > a:not([disabled]):not(.mf-disabled).mf-active {
   border-bottom-color: #01a9e7;
   border-left-color: #6a6f71;
   border-right-color: #6a6f71;
@@ -1043,20 +1050,39 @@ p a, span a {
   font-weight: 500;
 }
 
-.mf-nav > .mf-icon-button,
-.mf-nav > .mf-menu > .mf-icon-button {
-  font-size: 20px;
-  padding: 0 5px;
+.mf-nav > span:not(.mf-fill) {
+  margin: 7.5px 0;
+  max-width: 700px;
 }
 
-.mf-nav > .mf-menu > button > .mf-icon,
-.mf-nav > .mf-menu > .mf-button > .mf-icon {
-  vertical-align: top;
+.mf-nav > span:not(.mf-fill) > a {
+  padding: 0.15em;
+}
+
+.mf-nav > span:not(.mf-fill) > a:hover {
+  background-color: #434c50;
+}
+
+.mf-nav > button,
+.mf-nav > .mf-button {
+  box-sizing: content-box;
+}
+
+.mf-nav > .mf-icon-button > .mf-icon,
+.mf-nav > .mf-icon-button > .svg-icon,
+.mf-nav > .mf-menu > .mf-icon-button > .mf-icon,
+.mf-nav > .mf-menu > .mf-icon-button > .svg-icon {
+  font-size: 20px;
 }
 
 .mf-nav > .mf-menu > .mf-menu-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.mf-nav > .mf-menu > button,
+.mf-nav > .mf-menu > .mf-button {
+  height: 100%;
 }
 
 @media (min-width: 769px) {

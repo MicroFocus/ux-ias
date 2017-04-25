@@ -36,7 +36,8 @@
     }
   }
 
-  > button, .mf-button {
+  > button,
+  > .mf-button {
     background-color: transparent;
     border: none;
     color: inherit;
@@ -47,7 +48,8 @@
     &.mf-icon-button {
       padding: $app-bar-button-padding;
 
-      > .mf-icon, .svg-icon {
+      > .mf-icon,
+      > .svg-icon {
         font-size: $app-bar-icon-size;
       }
     }
@@ -61,7 +63,8 @@
     }
 
     &:not(.mf-icon-button) {
-      > .mf-icon, .svg-icon {
+      > .mf-icon,
+      > .svg-icon {
         background-color: transparent;
       }
     }
@@ -79,7 +82,8 @@
       margin-right: $app-bar-padding;
     }
 
-    > button, .mf-button {
+    > button,
+    > .mf-button {
       margin-left: 0;
       margin-right: $app-bar-button-spacing;
     }
