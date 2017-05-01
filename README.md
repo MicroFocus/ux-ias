@@ -19,8 +19,25 @@ mf-icons is required. To install mf-icons:
 mf-icons requires that mf-icons/dist/fonts be located in the same directory as mf-icons/dist/mf-icons.css
 
 ## Development
-1. `npm install -g gulp-cli`
-1. `npm install`
+
+1. Clone the mfux repository. Get the appropriate url from the BitBucket server since it is specific to you. You can find it by clicking on the "Clone" action in the left toolbar of this project. Use that url in the command below: 
+
+`git clone https://YourUsername@secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mfux.git`
+
+2. Install the build tools. The mfux project uses gulp.js, which can be installed as follows:
+
+`npm install -g gulp-cli`
+
+3. Install the [BitBucket server certificate](https://wiki.provo.microfocus.com:8443/download/attachments/32741329/secmgmtgit.provo.novell.com.pem.txt), if you have not done so already. Download it, then run the command below. More information can be found on the [company wiki](https://wiki.provo.microfocus.com:8443/display/ENG/Bitbucket+Server+-+Getting+Started). 
+
+`git config --global http."https://secmgmtgit.provo.novell.com:8443/".sslCAInfo path/to/cert.pem`
+
+4. Install the project dependencies:
+
+```
+cd mfux
+npm install
+```
 
 ### Development Environment
 To build the code for development, run
