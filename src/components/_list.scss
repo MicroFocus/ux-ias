@@ -6,6 +6,7 @@
   > li,
   > .mf-list-item {
 	border-radius: $border-radius-small;
+    box-sizing: content-box;
     display: flex;
     flex-flow: row nowrap;
     height: $list-item-height;

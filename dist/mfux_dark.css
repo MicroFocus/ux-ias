@@ -754,11 +754,13 @@ a:focus {
   border-color: #ffd92d;
   color: #434c50;
   outline: none;
+  text-decoration: none;
 }
 
 a:hover {
   background-color: #434c50;
   color: #01a9e7;
+  text-decoration: none;
 }
 
 p a, span a {
@@ -780,6 +782,7 @@ p a, span a {
 .mf-list > li,
 .mf-list > .mf-list-item {
   border-radius: 2px;
+  box-sizing: content-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
@@ -1029,7 +1032,6 @@ p a, span a {
 }
 
 .mf-nav > a {
-  height: 28px;
   line-height: 28px;
   margin: 0;
 }
@@ -1051,6 +1053,7 @@ p a, span a {
 }
 
 .mf-nav > span:not(.mf-fill) {
+  line-height: normal;
   margin: 7.5px 0;
   max-width: 700px;
 }
