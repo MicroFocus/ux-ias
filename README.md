@@ -1,30 +1,30 @@
-# MicroFocus UX
+# MicroFocus UX-IAS
 MicroFocus Identity and Access Management Group has defined a set of style and user experience (UX) guidelines for browser-based web applications. This guide serves as both a formal specification and reference implentation of these UX guidelines.
 
 ## Usage
 ### Installation
-1. `<link href="dist/mfux.css" rel="stylesheet">`
+1. `<link href="dist/ux-ias.css" rel="stylesheet">`
  
 After the initial setup, copy code/examples from the [docs app](#DocsApp) into your project.
  
 ### Icons
-mf-icons is required. To install mf-icons:
-1. `git clone https://JHawkins@secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mf-icons.git`
-2. `cd mf-icons/`
+ias-icons is required. To install ias-icons:
+1. `git clone https://JHawkins@secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git`
+2. `cd ias-icons/`
 3. `npm link`
 4. `cd [YOUR_APP_DIRECTORY]`
-5. `npm link mf-icons`
-6. Add `<link href="node_modules/mf-icons/dist/mf-icons.css" rel="stylesheet">` to index.html
+5. `npm link ias-icons`
+6. Add `<link href="node_modules/ias-icons/dist/ias-icons.css" rel="stylesheet">` to index.html
 
-mf-icons requires that mf-icons/dist/fonts be located in the same directory as mf-icons/dist/mf-icons.css
+ias-icons requires that ias-icons/dist/fonts be located in the same directory as ias-icons/dist/ias-icons.css
 
 ## Development
 
-1. Clone the mfux repository. Get the appropriate url from the BitBucket server since it is specific to you. You can find it by clicking on the "Clone" action in the left toolbar of this project. Use that url in the command below: 
+1. Clone the ux-ias repository. Get the appropriate url from the BitBucket server since it is specific to you. You can find it by clicking on the "Clone" action in the left toolbar of this project. Use that url in the command below: 
 
-`git clone https://YourUsername@secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mfux.git`
+`git clone https://YourUsername@secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ux-ias.git`
 
-2. Install the build tools. The mfux project uses gulp.js, which can be installed as follows:
+2. Install the build tools. The ux-ias project uses gulp.js, which can be installed as follows:
 
 `npm install -g gulp-cli`
 
@@ -35,7 +35,7 @@ mf-icons requires that mf-icons/dist/fonts be located in the same directory as m
 4. Install the project dependencies:
 
 ```
-cd mfux
+cd ux-ias
 npm install
 ```
 

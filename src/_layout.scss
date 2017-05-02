@@ -1,15 +1,15 @@
-.mf-content-padding {
+.ias-content-padding {
   padding: $content-padding;
 }
 
-.mf-column,
-.mf-row {
+.ias-column,
+.ias-row {
   border-color: inherit;
 }
 
 
-.mf-row {
-  @include mf-border();
+.ias-row {
+  @include ias-border();
 
   display: flex;
   flex-flow: row;
@@ -18,41 +18,41 @@
     flex: none;
   }
 
-  > .mf-column {
+  > .ias-column {
     flex: 1 1;
   }
 }
 
-.mf-column {
-  @include mf-border();
+.ias-column {
+  @include ias-border();
 }
 
-.mf-fill {
+.ias-fill {
   flex-grow: 1;
 }
 
 [dir="ltr"] {
-  .mf-align-start { text-align: left; }
-  .mf-align-end { text-align: right; }
+  .ias-align-start { text-align: left; }
+  .ias-align-end { text-align: right; }
 
-  .mf-row {
-    @include mf-border-ltr();
+  .ias-row {
+    @include ias-border-ltr();
   }
 
-  .mf-column {
-    @include mf-border-ltr();
+  .ias-column {
+    @include ias-border-ltr();
   }
 }
 
 [dir="rtl"] {
-  .mf-align-start { text-align: right; }
-  .mf-align-end { text-align: left; }
+  .ias-align-start { text-align: right; }
+  .ias-align-end { text-align: left; }
 
-  .mf-row {
-    @include mf-border-rtl();
+  .ias-row {
+    @include ias-border-rtl();
   }
 
-  .mf-column {
-    @include mf-border-rtl();
+  .ias-column {
+    @include ias-border-rtl();
   }
 }

@@ -1,4 +1,4 @@
-.mf-side-nav {
+.ias-side-nav {
   background-color: $side-nav-scrim-bg-color;
   bottom: 0;
   left: 0;
@@ -6,19 +6,19 @@
   right: 0;
   top: 0;
 
-  &.mf-locked {
+  &.ias-locked {
     background-color: transparent;
 	display: flex;
     position: relative;
     height: 100%;
     width: $side-nav-width;
 
-    > .mf-side-nav-content {
+    > .ias-side-nav-content {
       max-width: initial;
     }
   }
 
-  > .mf-side-nav-content {
+  > .ias-side-nav-content {
     background-color: $side-nav-bg-color;
     box-sizing: border-box;
     color: $side-nav-text-color;
@@ -31,7 +31,7 @@
   }
 
   button,
-  .mf-button {
+  .ias-button {
     background-color: transparent;
     border: none;
     box-sizing: border-box;
@@ -40,7 +40,7 @@
     text-align: inherit;
     width: 100%;
 
-    &:not([disabled]):not(.mf-disabled) {
+    &:not([disabled]):not(.ias-disabled) {
       &:focus,
       &:hover {
         background-color: $side-nav-bg-color-hover;
@@ -49,9 +49,9 @@
     }
   }
 
-  .mf-list {
+  .ias-list {
     > li,
-    > .mf-list-item {
+    > .ias-list-item {
       &:hover {
         background-color: $side-nav-bg-color-hover;
         color: inherit;
@@ -59,8 +59,8 @@
     }
   }
 
-  .mf-side-nav-header,
-  .mf-side-nav-footer {
+  .ias-side-nav-header,
+  .ias-side-nav-footer {
     @include single-line;
 
     color: $side-nav-header-text-color;

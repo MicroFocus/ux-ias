@@ -28,18 +28,18 @@ ngGulp(gulp, {
         vendorDevelopment: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
             path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-            path.resolve(__dirname, '../node_modules/mf-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
-            exclude(path.resolve(__dirname, '../node_modules/mf-icons/dist/mf-icons.min.css'))
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
         ],
         vendorProduction: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
             path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-            path.resolve(__dirname, '../node_modules/mf-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
-            exclude(path.resolve(__dirname, '../node_modules/mf-icons/dist/mf-icons.min.css'))
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
         ],
         vendorTest: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),

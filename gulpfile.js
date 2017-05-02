@@ -12,7 +12,7 @@ var config = {
         output: 'dist'
     },
     files: {
-        sassManifest: [ 'src/mfux.scss', 'src/mfux_dark.scss' ],
+        sassManifest: [ 'src/ux-ias.scss', 'src/ux-ias_dark.scss' ],
         srcSass: 'src/**/*.scss'
     }
 };

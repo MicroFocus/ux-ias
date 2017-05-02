@@ -1,8 +1,8 @@
-.mf-grid {
+.ias-grid {
   display: flex;
   flex-flow: row wrap;
 
-  > .mf-tile {
+  > .ias-tile {
     flex-grow: 0;
     flex-shrink: 0;
     margin-right: $tile-margin;
@@ -10,10 +10,10 @@
     vertical-align: top;
   }
 
-  &.mf-stacked {
+  &.ias-stacked {
     display: block;
 
-    > .mf-tile {
+    > .ias-tile {
       width: auto;
 
       &:not(:last-child) {
@@ -24,8 +24,8 @@
 }
 
 [dir="rtl"] {
-  .mf-grid {
-    > .mf-tile {
+  .ias-grid {
+    > .ias-tile {
       margin-left: $tile-margin;
       margin-right: initial;
     }

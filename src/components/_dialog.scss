@@ -1,4 +1,4 @@
-.mf-dialog {
+.ias-dialog {
   background-color: $dialog-scrim-color;
   bottom: 0;
   left: 0;
@@ -7,8 +7,8 @@
   top: 0;
   width: 100%;
 
-  .mf-dialog-container {
-    @extend .mf-border-1;
+  .ias-dialog-container {
+    @extend .ias-border-1;
 
     background: #fff;
 	left: 0;
@@ -21,17 +21,17 @@
     top: 50%;
     transform: translateY(-50%);
 
-    > .mf-actions {
+    > .ias-actions {
       margin-top: $dialog-padding;
     }
 
-    > .mf-dialog-cancel-button {
+    > .ias-dialog-cancel-button {
       position: absolute;
       right: $body-spacing-small;
       top: $body-spacing-small;
     }
 
-	> .mf-dialog-label {
+	> .ias-dialog-label {
 	  color: $dialog-label-color;
 	  font-size: $font-size;
 	  margin-bottom: $spacing;
@@ -40,8 +40,8 @@
 	  white-space: nowrap;
 	}
 
-    > .mf-dialog-title {
-      @extend .mf-heading;
+    > .ias-dialog-title {
+      @extend .ias-heading;
 
       margin-bottom: $dialog-padding;
     }
@@ -50,18 +50,18 @@
       color: $dialog-content-color;
     }
 
-    .mf-icon {
+    .ias-icon {
       color: $dialog-content-color;
     }
   }
 }
 
 [dir="rtl"] {
-  .mf-dialog {
-    .mf-dialog-container {
-//      @extend .mf-panel;
+  .ias-dialog {
+    .ias-dialog-container {
+//      @extend .ias-panel;
 
-      > .mf-dialog-cancel-button {
+      > .ias-dialog-cancel-button {
         position: absolute;
         left: $body-spacing-small;
         right: auto;

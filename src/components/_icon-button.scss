@@ -1,11 +1,11 @@
 button,
-.mf-button {
-  &.mf-icon-button {
+.ias-button {
+  &.ias-icon-button {
     background-color: transparent;
     border-color: transparent;
     padding: 0;
 
-    &:not([disabled]):not(.mf-disabled) {
+    &:not([disabled]):not(.ias-disabled) {
       &:focus,
       &:hover {
         background-color: $button-bg-color-hover;
@@ -14,24 +14,24 @@ button,
       }
     }
 
-    &.mf-cta {
+    &.ias-cta {
       background-color: $button-cta-bg-color;
       color: $button-cta-color;
     }
 
-    .mf-icon, .svg-icon {
+    .ias-icon, .svg-icon {
       display: block;
     }
   }
 
-  &.mf-icon-text-button {
+  &.ias-icon-text-button {
     padding: $button-padding-with-icon;
 
     > span {
       vertical-align: middle;
     }
 
-    > .mf-icon, .svg-icon {
+    > .ias-icon, .svg-icon {
       font-size: $button-inline-icon-size;
       margin-right: $button-inline-icon-padding-with-icon;
     }

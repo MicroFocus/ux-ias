@@ -1,4 +1,4 @@
-.mf-heading {
+.ias-heading {
   @include single-line;
 
   color: $heading-text-color;
@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.mf-title {
+.ias-title {
   @include single-line;
 
   color: $title-text-color;
