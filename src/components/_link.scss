@@ -14,11 +14,13 @@ a {
 
   &:focus {
     @include focus-state;
+    text-decoration: none;
   }
 
   &:hover {
     background-color: $link-bg-color-hover;
     color: $link-text-color-hover;
+    text-decoration: none;
   }
 }
 
