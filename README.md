@@ -1,5 +1,5 @@
-# MicroFocus UX-IAS
-MicroFocus Identity and Access Management Group has defined a set of style and user experience (UX) guidelines for browser-based web applications. This guide serves as both a formal specification and reference implentation of these UX guidelines.
+# Micro Focus UX-IAS
+Micro Focus Identity and Access Management Group has defined a set of style and user experience (UX) guidelines for browser-based web applications. This guide serves as both a formal specification and reference implentation of these UX guidelines.
 
 ## Usage
 ### Installation

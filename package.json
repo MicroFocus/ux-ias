@@ -1,7 +1,7 @@
 {
   "name": "ux-ias",
   "version": "0.0.1",
-  "description": "MicroFocus Identity and Access Management Group style and user-experience guidelines",
+  "description": "Micro Focus Identity and Access Management Group style and user-experience guidelines",
   "main": "index.js",
   "engines": {
     "node": ">=6.2",
