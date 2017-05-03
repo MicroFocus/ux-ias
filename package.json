@@ -1,7 +1,7 @@
 {
-  "name": "mfux",
+  "name": "ux-ias",
   "version": "0.0.1",
-  "description": "MicroFocus Identity and Access Management Group style and user-experience guidelines",
+  "description": "Micro Focus Identity and Access Management Group style and user-experience guidelines",
   "main": "index.js",
   "engines": {
     "node": ">=6.2",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jedwardhawkins/mfux.git"
+    "url": "git+https://github.com/jedwardhawkins/ux-ias.git"
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "contributors": [
@@ -23,7 +23,7 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/jedwardhawkins/mfux/issues"
+    "url": "https://github.com/jedwardhawkins/ux-ias/issues"
   },
   "devDependencies": {
     "@types/angular": "1.5.8",
@@ -41,7 +41,7 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
-    "mf-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/mf-icons.git#v0.1.1",
+    "ias-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git#v0.1.1",
     "ng-gulp": "jedwardhawkins/ng-gulp#v0.7.2",
     "ng-prism": "joswhite/ng-prism#v1.2.2"
   }

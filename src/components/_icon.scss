@@ -1,13 +1,13 @@
-.mf-icon, .svg-icon {
+.ias-icon, .svg-icon {
   @include square($icon-size-small);
 
   color: inherit;
 
-  &.mf-medium {
+  &.ias-medium {
     @include square($icon-size-medium);
   }
 
-  &.mf-large {
+  &.ias-large {
     @include square($icon-size-large);
   }
 }

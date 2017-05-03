@@ -1,4 +1,4 @@
-.mf-app-bar {
+.ias-app-bar {
   align-items: center;
   background: $app-bar-bg-fallback;
   background: $app-bar-bg;
@@ -10,7 +10,7 @@
   padding-right: $app-bar-padding;
   overflow: hidden;
 
-  > .mf-avatar {
+  > .ias-avatar {
     border-radius: 0;
 
     > img {
@@ -19,14 +19,14 @@
     }
   }
 
-  > .mf-heading {
+  > .ias-heading {
     /* Add height and line-height for align-items bug in IE11 */
     height: $app-bar-height-small;
     line-height: $app-bar-height-small;
     margin-left: $app-bar-padding;
   }
 
-  > span:not(.mf-fill) {
+  > span:not(.ias-fill) {
     @include single-line;
     flex-shrink: 10;
     margin-left: $app-bar-text-spacing;
@@ -37,7 +37,7 @@
   }
 
   > button,
-  > .mf-button {
+  > .ias-button {
     background-color: transparent;
     border: none;
     color: inherit;
@@ -45,16 +45,16 @@
     font-size: inherit;
     margin-left: $app-bar-button-spacing;
 
-    &.mf-icon-button {
+    &.ias-icon-button {
       padding: $app-bar-button-padding;
 
-      > .mf-icon,
+      > .ias-icon,
       > .svg-icon {
         font-size: $app-bar-icon-size;
       }
     }
 
-    &:not([disabled]):not(.mf-disabled) {
+    &:not([disabled]):not(.ias-disabled) {
       &:focus,
       &:hover {
         background-color: $app-bar-action-color;
@@ -62,8 +62,8 @@
       }
     }
 
-    &:not(.mf-icon-button) {
-      > .mf-icon,
+    &:not(.ias-icon-button) {
+      > .ias-icon,
       > .svg-icon {
         background-color: transparent;
       }
@@ -72,23 +72,23 @@
 }
 
 [dir="rtl"] {
-  .mf-app-bar {
+  .ias-app-bar {
     background: $app-bar-bg-rtl;
     padding-left: $app-bar-padding;
     padding-right: 0;
 
-    > .mf-heading {
+    > .ias-heading {
       margin-left: 0;
       margin-right: $app-bar-padding;
     }
 
     > button,
-    > .mf-button {
+    > .ias-button {
       margin-left: 0;
       margin-right: $app-bar-button-spacing;
     }
 
-    > span:not(.mf-fill) {
+    > span:not(.ias-fill) {
       @include single-line;
       margin-left: 0;
       margin-right: $app-bar-text-spacing;
@@ -101,26 +101,26 @@
 }
 
 @media (min-width: $large-display) {
-  .mf-app-bar {
+  .ias-app-bar {
     padding-right: $app-bar-padding-large;
 
-    > .mf-avatar {
+    > .ias-avatar {
       > img {
         max-height: $app-bar-height-large;
       }
     }
 
-    > .mf-heading {
+    > .ias-heading {
       margin-left: $app-bar-padding-large;
     }
   }
 
   [dir="rtl"] {
-    .mf-app-bar {
+    .ias-app-bar {
       padding-left: $app-bar-padding-large;
       padding-right: 0;
 
-      > .mf-heading {
+      > .ias-heading {
         margin-left: 0;
         margin-right: $app-bar-padding-large;
       }

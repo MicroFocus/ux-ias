@@ -4,11 +4,11 @@ a {
   padding: $link-padding;
   text-decoration: none;
 
-  + a, &.mf-link-margin {
+  + a, &.ias-link-margin {
     margin-left: $link-spacing;
   }
 
-  &.mf-link-no-highlight {
+  &.ias-link-no-highlight {
     color: $link-text-color-no-highlight;
   }
 
@@ -33,7 +33,7 @@ p, span {
 
 [dir="rtl"] {
   a {
-    + a, &.mf-link-margin {
+    + a, &.ias-link-margin {
       margin-left: initial;
       margin-right: $link-spacing;
     }

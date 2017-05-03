@@ -1,26 +1,26 @@
 <header>
-    <div class="mf-app-bar">
-        <h3 class="mf-heading" ng-bind="$ctrl.projectName"></h3>
-        <span class="mf-fill"></span>
-        <button class="mf-icon-button"
+    <div class="ias-app-bar">
+        <h3 class="ias-heading" ng-bind="$ctrl.projectName"></h3>
+        <span class="ias-fill"></span>
+        <button class="ias-icon-button"
                 title="Toggle display direction"
                 ng-click="$ctrl.toggleDisplayDirection()"
                 ng-switch="$ctrl.displayDirection">
-            <i class="mf-icon mf-icon-back_left_thick" ng-switch-when="ltr"></i>
-            <i class="mf-icon mf-icon-forward_right_thick" ng-switch-when="rtl"></i>
+            <i class="ias-icon ias-icon-back_left_thick" ng-switch-when="ltr"></i>
+            <i class="ias-icon ias-icon-forward_right_thick" ng-switch-when="rtl"></i>
         </button>
-        <button class="mf-icon-button" ng-click="$ctrl.toggleTheme()" title="Toggle theme">
-            <i class="mf-icon mf-icon-favorite_outline_thin" ng-if="$ctrl.isDefaultTheme()"></i>
-            <i class="mf-icon mf-icon-favorite_fill" ng-if="!$ctrl.isDefaultTheme()"></i>
+        <button class="ias-icon-button" ng-click="$ctrl.toggleTheme()" title="Toggle theme">
+            <i class="ias-icon ias-icon-favorite_outline_thin" ng-if="$ctrl.isDefaultTheme()"></i>
+            <i class="ias-icon ias-icon-favorite_fill" ng-if="!$ctrl.isDefaultTheme()"></i>
         </button>
     </div>
-    <div class="mf-nav">
-        <a ui-sref="app.project" ui-sref-active="mf-active">Project</a>
-        <a ui-sref="app.component" ui-sref-active="mf-active" ng-click="$ctrl.goToComponentsView($event)">Components</a>
-        <a ui-sref="app.kitchenSink" ui-sref-active="mf-active">Kitchen Sink</a>
-        <a ui-sref="app.layout" ui-sref-active="mf-active" class="mf-disabled" title="Coming soon">Layout</a>
-        <a ui-sref="app.themes" ui-sref-active="mf-active" class="mf-disabled" title="Coming soon">Themes</a>
-        <a href="../mf-icons.html" target="_blank" class="mf-button">Icons</a>
+    <div class="ias-nav">
+        <a ui-sref="app.project" ui-sref-active="ias-active">Project</a>
+        <a ui-sref="app.component" ui-sref-active="ias-active" ng-click="$ctrl.goToComponentsView($event)">Components</a>
+        <a ui-sref="app.kitchenSink" ui-sref-active="ias-active">Kitchen Sink</a>
+        <a ui-sref="app.layout" ui-sref-active="ias-active" class="ias-disabled" title="Coming soon">Layout</a>
+        <a ui-sref="app.themes" ui-sref-active="ias-active" class="ias-disabled" title="Coming soon">Themes</a>
+        <a href="../ias-icons.html" target="_blank" class="ias-button">Icons</a>
     </div>
 </header>
 

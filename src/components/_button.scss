@@ -1,5 +1,5 @@
 button,
-.mf-button {
+.ias-button {
   @include disable-text-selection;
   @include single-line;
 
@@ -16,14 +16,14 @@ button,
   vertical-align: middle;
 
   &[disabled],
-  &.mf-disabled {
+  &.ias-disabled {
     background-color: $button-bg-color-disabled;
     border-color: $button-border-color-disabled;
     color: $button-text-color-disabled;
     cursor: default;
   }
 
-  &:not([disabled]):not(.mf-disabled) {
+  &:not([disabled]):not(.ias-disabled) {
     &:focus {
       @include focus-state;
     }
@@ -33,29 +33,29 @@ button,
     }
   }
 
-  &.mf-cta {
+  &.ias-cta {
     background-color: $button-cta-bg-color;
     border-color: $button-cta-bg-color;
     color: $button-cta-color;
 
     &[disabled],
-    &.mf-disabled {
+    &.ias-disabled {
       background-color: $button-cta-bg-color;
       border-color: $button-cta-bg-color;
       color: $button-text-color-disabled;
     }
   }
 
-  &:not(.mf-icon-button) {
+  &:not(.ias-icon-button) {
     min-width: $button-min-width;
 
-    > .mf-icon, .svg-icon {
+    > .ias-icon, .svg-icon {
       vertical-align: middle;
     }
   }
 
-  &.mf-menu-toggle {
-    > .mf-icon, .svg-icon {
+  &.ias-menu-toggle {
+    > .ias-icon, .svg-icon {
       font-size: inherit;
       margin-left: $button-inline-icon-padding;
     }
@@ -68,23 +68,23 @@ button::-moz-focus-inner {
   border: 0 none !important;
 }
 
-a.mf-button {
+a.ias-button {
   margin-left: 0;
 }
 
 [dir="rtl"] {
   button,
-  .mf-button {
+  .ias-button {
 
-    &.mf-menu-toggle {
-      > .mf-icon, .svg-icon {
+    &.ias-menu-toggle {
+      > .ias-icon, .svg-icon {
         margin-left: 0;
         margin-right: $button-inline-icon-padding;
       }
     }
   }
 
-  a.mf-button {
+  a.ias-button {
     margin-right: 0;
   }
 }

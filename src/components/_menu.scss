@@ -1,32 +1,32 @@
-.mf-menu {
+.ias-menu {
   color: inherit;
   display: inline-block;
   font-size: inherit;
   position: relative;
   max-width: 100%;
 
-  &.mf-open {
-    > .mf-menu-content {
+  &.ias-open {
+    > .ias-menu-content {
       display: block;
       height: auto;
     }
   }
 
-  &.mf-end {
-    > .mf-menu-content {
+  &.ias-end {
+    > .ias-menu-content {
       left: auto;
       right: 0;
     }
   }
 
-  > .mf-menu-content {
+  > .ias-menu-content {
     display: none;
     height: 0;
     position: absolute;
   }
 }
 
-.mf-menu-content {
+.ias-menu-content {
   background-color: $menu-bg-color;
   border-color: $menu-border-color;
   border-radius: $border-radius;
@@ -39,7 +39,7 @@
   right: auto;
 
   button,
-  .mf-button {
+  .ias-button {
     background-color: transparent;
     border: none;
 	border-radius: $border-radius-small;
@@ -49,7 +49,7 @@
     text-align: inherit;
     width: 100%;
 
-    &:not([disabled]):not(.mf-disabled) {
+    &:not([disabled]):not(.ias-disabled) {
       &:focus,
       &:hover {
         background-color: $menu-bg-color-hover;
@@ -58,21 +58,21 @@
     }
   }
 
-  .mf-list-header {
+  .ias-list-header {
     color: $menu-header-text-color;
   }
 
-  .mf-list {
+  .ias-list {
     > li,
-    > .mf-list-item {
+    > .ias-list-item {
       &:hover {
         background-color: $menu-bg-color-hover;
       }
     }
   }
 
-  .mf-menu-header,
-  .mf-menu-footer {
+  .ias-menu-header,
+  .ias-menu-footer {
     @include single-line;
 
     color: $menu-header-text-color;
@@ -81,26 +81,26 @@
     text-transform: $menu-header-text-transform;
   }
 
-  .mf-menu-footer {
+  .ias-menu-footer {
     text-align: center;
   }
 }
 
 [dir="rtl"] {
-  .mf-menu {
-    &.mf-end {
-      > .mf-menu-content {
+  .ias-menu {
+    &.ias-end {
+      > .ias-menu-content {
         left: 0;
         right: auto;
       }
     }
   }
 
-  .mf-menu-content {
+  .ias-menu-content {
     left: auto;
     right: 0;
 
-    .mf-border-start { border-color: $menu-border-color; }
-    .mf-border-end { border-color: $menu-border-color; }
+    .ias-border-start { border-color: $menu-border-color; }
+    .ias-border-end { border-color: $menu-border-color; }
   }
 }

@@ -4,7 +4,7 @@
 @mixin warning-message-icon() {
 	color: $color-accent-4;
 	content: "\e92c";
-	font: 22px mf-icons;
+	font: 22px ias-icons;
 	line-height: $font-size-large;
 	padding-right: 5px;
 	vertical-align: middle;
@@ -12,7 +12,7 @@
 @mixin validate-icon() {
 	color: $color-accent-5;
 	content: "\e923";
-	font: 22px mf-icons;
+	font: 22px ias-icons;
 	line-height: $font-size-large;
 	padding-right: 5px;
 	vertical-align: middle;
@@ -20,7 +20,7 @@
 @mixin info-hint-icon() {
 	color: $color-primary-3;
 	content: "\e930";
-	font: 22px mf-icons;
+	font: 22px ias-icons;
 	line-height: $font-size-large;
 	padding-right: 5px;
 	vertical-align: middle;

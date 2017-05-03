@@ -1,10 +1,10 @@
-.mf-list {
+.ias-list {
   list-style: none;
   margin: 0;
   padding: 0;
 
   > li,
-  > .mf-list-item {
+  > .ias-list-item {
 	border-radius: $border-radius-small;
     box-sizing: content-box;
     display: flex;
@@ -22,7 +22,7 @@
       color: inherit;
     }
 
-    &.mf-offset {
+    &.ias-offset {
       padding-left: (2 * $spacing) + $list-item-avatar-size;
     }
 
@@ -33,18 +33,18 @@
       flex: 1 1;
     }
 
-    > .mf-avatar {
+    > .ias-avatar {
       flex: 0 0 $list-item-avatar-size;
       height: $list-item-avatar-size;
       width: $list-item-avatar-size;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       font-size: $list-item-avatar-size;
     }
 
-    > .mf-icon,
-    > .mf-avatar {
+    > .ias-icon,
+    > .ias-avatar {
       &:first-child {
         margin-right: $spacing;
       }
@@ -52,7 +52,7 @@
   }
 }
 
-.mf-list-header {
+.ias-list-header {
   color: $list-header-text-color;
   font-size: $list-header-font-size;
   font-weight: $list-header-font-weight;
@@ -62,16 +62,16 @@
 }
 
 [dir="rtl"] {
-  .mf-list {
+  .ias-list {
     > li,
-    > .mf-list-item {
-      &.mf-offset {
+    > .ias-list-item {
+      &.ias-offset {
         padding-left: $spacing;
         padding-right: (2 * $spacing) + $list-item-avatar-size;
       }
 
-      > .mf-icon,
-      > .mf-avatar {
+      > .ias-icon,
+      > .ias-avatar {
         &:first-child {
           margin-left: $spacing;
           margin-right: initial;

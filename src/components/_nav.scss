@@ -1,4 +1,4 @@
-.mf-nav {
+.ias-nav {
   background-color: $nav-bg-color;
   color: $nav-text-color;
   display: flex;
@@ -9,18 +9,18 @@
   // Fixed size nav items
   > a,
   > button,
-  > .mf-button,
-  > .mf-menu {
+  > .ias-button,
+  > .ias-menu {
     flex: none;
   }
 
   // All nav items
   > a,
   > button,
-  > .mf-button,
-  > .mf-menu > button,
-  > .mf-menu > .mf-button,
-  > span:not(.mf-fill) {
+  > .ias-button,
+  > .ias-menu > button,
+  > .ias-menu > .ias-button,
+  > span:not(.ias-fill) {
     color: inherit;
     padding: 0 $nav-item-padding;
   }
@@ -28,9 +28,9 @@
   // Hoverable nav items
   > a,
   > button,
-  > .mf-button,
-  > .mf-menu > button,
-  > .mf-menu > .mf-button {
+  > .ias-button,
+  > .ias-menu > button,
+  > .ias-menu > .ias-button {
     background-color: transparent;
     border-color: transparent;
     border-style: solid;
@@ -38,14 +38,14 @@
     border-width: $nav-item-border-vertical-width $nav-item-border-horizontal-width;
 
     &[disabled],
-    &.mf-disabled {
+    &.ias-disabled {
       background-color: transparent;
       border-color: transparent;
       color: $text-color-disabled;
     }
 
-    &:not([disabled]):not(.mf-disabled) {
-      &:focus:not(.mf-active),
+    &:not([disabled]):not(.ias-disabled) {
+      &:focus:not(.ias-active),
       &:hover {
         background-color: $nav-item-bg-color-hover;
         border-color: $nav-item-border-color-hover;
@@ -59,7 +59,7 @@
     line-height: $nav-item-height;
     margin: 0;
 
-    > .mf-icon,
+    > .ias-icon,
     > .svg-icon {
       font-size: $nav-icon-size;
       /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
@@ -67,8 +67,8 @@
       vertical-align: middle;
     }
 
-    &:not([disabled]):not(.mf-disabled) {
-      &.mf-active {
+    &:not([disabled]):not(.ias-disabled) {
+      &.ias-active {
         border-bottom-color: $nav-item-border-bottom-color-active;
         border-left-color: $nav-item-border-side-color-active;
         border-right-color: $nav-item-border-side-color-active;
@@ -79,7 +79,7 @@
   }
 
   // Non-hoverable, non-active-capable nav items
-  > span:not(.mf-fill) {
+  > span:not(.ias-fill) {
     line-height: normal;
     margin: $nav-text-vertical-margin 0;
     max-width: $nav-text-max-width;
@@ -95,33 +95,33 @@
 
   // Hoverable, non-active-capable nav items
   > button,
-  > .mf-button {
+  > .ias-button {
     box-sizing: content-box;
   }
 
-  > .mf-icon-button,
-  > .mf-menu > .mf-icon-button {
-    > .mf-icon,
+  > .ias-icon-button,
+  > .ias-menu > .ias-icon-button {
+    > .ias-icon,
     > .svg-icon {
       font-size: $nav-icon-size;
     }
   }
 
-  > .mf-menu {
-    > .mf-menu-content {
+  > .ias-menu {
+    > .ias-menu-content {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
 
     > button,
-    > .mf-button {
+    > .ias-button {
       height: 100%;
     }
   }
 }
 
 @media (min-width: $large-display) {
-  .mf-nav {
+  .ias-nav {
     padding: 0 $nav-content-padding-large;
   }
 }

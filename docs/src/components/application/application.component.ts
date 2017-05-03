@@ -41,10 +41,10 @@ export default class ApplicationComponent {
 
     setTheme(theme): void {
         if (theme) {
-            this.theme = 'mfux' + '_' + theme;
+            this.theme = 'ux-ias' + '_' + theme;
         }
         else {
-            this.theme = 'mfux';
+            this.theme = 'ux-ias';
         }
 
         this.themeLink.href = this.themeLink.href.replace(/(\/)([^\/]+)(\.css$)/, '$1' + this.theme + '$3');
@@ -66,7 +66,7 @@ export default class ApplicationComponent {
     };
 
     isDefaultTheme(): boolean {
-        return this.theme === 'mfux';
+        return this.theme === 'ux-ias';
     };
 
 }
