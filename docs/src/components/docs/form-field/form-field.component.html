@@ -5,12 +5,12 @@
 	<section>
 		<h3>input</h3>
 
-		<input type="text" name="username" autocomplete="off" repeat-as-code/>
+		<input type="text" name="username" autocomplete="off" toggle-repeat-code/>
 	</section>
 	<section>
 		<h3>input with placeholder</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<input type="text" placeholder="Username" name="username" autocomplete="off"/>
 			<input type="password" placeholder="Password" name="password"/>
 		</div>
@@ -19,7 +19,7 @@
 	<section>
 		<h3>label and input</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<label>
 				Username <input type="text" name="username" autocomplete="off"/>
 			</label>
@@ -32,7 +32,7 @@
 	<section>
 		<h3>.ias-input-container w/ input</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<input type="text" placeholder="Username" name="username" autocomplete="off"/>
 			</div>
@@ -45,7 +45,7 @@
 	<section>
 		<h3>.ias-input-container w/ label</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<label for="username">Username</label>
 				<input type="text" name="username" id="username" autocomplete="off"/>
@@ -60,7 +60,7 @@
 	<section>
 		<h3>[disabled]</h3>
 
-		<div class="ias-input-container" repeat-as-code>
+		<div class="ias-input-container" toggle-repeat-code>
 			<input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
 		</div>
 	</section>
@@ -68,7 +68,7 @@
 	<section>
 		<h3>label > select</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<label>
 				Drop Down 1
 				<select>
@@ -91,7 +91,7 @@
 	<section>
 		<h3>.ias-input-container > select w/ label</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<label for="drop-down-1">Drop Down 1</label>
 				<select id="drop-down-1">
@@ -114,7 +114,7 @@
 	<section>
 		<h3>.ias-input-container.ias-inline</h3>
 
-		<div repeat-as-code="inner">
+		<div toggle-repeat-code="inner">
 			<div class="ias-input-container ias-inline">
 				<label for="username-2">Username</label>
 				<input type="text" name="username" id="username-2" autocomplete="off"/>
@@ -129,7 +129,7 @@
 	<section>
 		<h3>ias-input-container > textarea</h3>
 
-		<div class="ias-input-container" repeat-as-code>
+		<div class="ias-input-container" toggle-repeat-code>
 			<label for="textarea-2">Long Text</label>
 			<textarea id="textarea-2"></textarea>
 		</div>
@@ -138,7 +138,7 @@
 	<section>
 		<h3>.ias-input-container.ias-search</h3>
 
-		<div class="ias-input-container ias-search" repeat-as-code>
+		<div class="ias-input-container ias-search" toggle-repeat-code>
 			<input type="text" placeholder="Search"/>
 			<i class="ias-icon ias-icon-search_thick"></i>
 			<button class="ias-icon-button"><i class="ias-icon ias-icon-close_thick"></i></button>
