@@ -138,7 +138,7 @@
   padding: 0;
 }
 
-.ias-title {
+.ias-panel-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -263,7 +263,7 @@
 
 @media (min-width: 769px) {
   .ias-app-bar {
-    padding-right: 25px;
+    padding-right: 15px;
   }
   .ias-app-bar > .ias-avatar > img {
     max-height: 100px;
@@ -1092,6 +1092,22 @@ p a, span a {
   .ias-nav {
     padding: 0 25px;
   }
+}
+
+.ias-page-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.ias-page-instructions {
+  color: #808080;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 15px 0;
 }
 
 .ias-panel, .ias-tile {

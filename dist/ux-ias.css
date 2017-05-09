@@ -138,7 +138,7 @@
   padding: 0;
 }
 
-.ias-title {
+.ias-panel-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -162,7 +162,7 @@
       flex-flow: row nowrap;
   font-size: 13px;
   min-height: 45px;
-  padding-right: 15px;
+  padding-right: 10px;
   overflow: hidden;
 }
 
@@ -179,7 +179,7 @@
   /* Add height and line-height for align-items bug in IE11 */
   height: 45px;
   line-height: 45px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .ias-app-bar > span:not(.ias-fill) {
@@ -234,13 +234,13 @@
 
 [dir="rtl"] .ias-app-bar {
   background: linear-gradient(to left, #01a9e7, #007cd0);
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 0;
 }
 
 [dir="rtl"] .ias-app-bar > .ias-heading, [dir="rtl"] .ias-dialog .ias-dialog-container.ias-app-bar > .ias-dialog-title, .ias-dialog [dir="rtl"] .ias-dialog-container.ias-app-bar > .ias-dialog-title {
   margin-left: 0;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 [dir="rtl"] .ias-app-bar > button,
@@ -263,7 +263,7 @@
 
 @media (min-width: 769px) {
   .ias-app-bar {
-    padding-right: 25px;
+    padding-right: 10px;
   }
   .ias-app-bar > .ias-avatar > img {
     max-height: 100px;
@@ -1092,6 +1092,22 @@ p a, span a {
   .ias-nav {
     padding: 0 25px;
   }
+}
+
+.ias-page-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.ias-page-instructions {
+  color: #808080;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 15px 0;
 }
 
 .ias-panel, .ias-tile {
