@@ -131,7 +131,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   color: inherit;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 200;
   letter-spacing: 1px;
   margin: 0;
@@ -969,7 +969,7 @@ p a, span a {
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  min-height: 32px;
+  min-height: 34px;
   padding: 0 15px;
 }
 
@@ -1032,7 +1032,7 @@ p a, span a {
 }
 
 .ias-nav > a {
-  line-height: 28px;
+  line-height: 30px;
   margin: 0;
 }
 
@@ -1054,7 +1054,7 @@ p a, span a {
 
 .ias-nav > span:not(.ias-fill) {
   line-height: normal;
-  margin: 7.5px 0;
+  margin: 8.5px 0;
   max-width: 700px;
 }
 
@@ -1417,7 +1417,7 @@ table .ias-icon-button {
 }
 
 .ias-tile.ias-small > .ias-tile-content > h3 {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 50px;
 }
 
@@ -1568,6 +1568,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
+  line-height: normal;
 }
 
 p {
