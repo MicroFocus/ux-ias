@@ -1,4 +1,4 @@
-import { module, bootstrap } from 'angular';
+import {module, bootstrap, ILocationProvider} from 'angular';
 // Config
 import config from './config/config';
 import routes from './config/routes';
@@ -59,6 +59,15 @@ module('app', [
     .component('tabDocumentation', TabComponent)
     .component('tableDocumentation', TableComponent)
     .component('tileDocumentation', TileComponent)
-    .component('tileGridDocumentation', TileGridComponent);
+    .component('tileGridDocumentation', TileGridComponent)
+
+    .config(['$locationProvider',
+        ($locationProvider: ILocationProvider) => {
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: false
+            });
+        }
+    ]);
 
 bootstrap(document, [ 'app' ]);
