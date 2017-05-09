@@ -1,3 +1,4 @@
+var connectHistoryApiFallback = require('connect-history-api-fallback');
 var gulp = require('gulp');
 var ngGulp = require('ng-gulp');
 var path = require('path');
@@ -8,6 +9,9 @@ function exclude(path) {
 
 ngGulp(gulp, {
     devServer: {
+        middleware: function(connect, opt) {
+            return [ connectHistoryApiFallback() ]
+        },
         root: [
             path.resolve(__dirname, '../dist'),
             path.resolve(__dirname, '../dist/docs')
