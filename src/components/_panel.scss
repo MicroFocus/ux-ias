@@ -1,6 +1,8 @@
 .ias-panel {
   background-color: $panel-bg-color;
   border-radius: $border-radius;
+  box-sizing: content-box;
+  padding: $content-padding;
 
   > .ias-panel-header {
     align-items: center;

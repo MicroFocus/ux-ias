@@ -1113,6 +1113,8 @@ p a, span a {
 .ias-panel, .ias-tile {
   background-color: #575b5d;
   border-radius: 3px;
+  box-sizing: content-box;
+  padding: 25px;
 }
 
 .ias-panel > .ias-panel-header, .ias-tile > .ias-panel-header {
