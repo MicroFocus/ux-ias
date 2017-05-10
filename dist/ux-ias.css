@@ -1115,13 +1115,13 @@ p a, span a {
   border-radius: 3px;
 }
 
-.ias-panel-header {
+.ias-panel > .ias-panel-header, .ias-tile > .ias-panel-header {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 31px;
-  line-height: 31px;
   margin-bottom: 25px;
 }
 
