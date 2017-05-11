@@ -5,13 +5,8 @@ application {
   width: 100%;
 
   > main {
-	flex: 1 1;
-    height: 100%;
-    overflow: hidden;
-
-    > [ui-view] {
-      height: 100%;
-      overflow: hidden;
-    }
+    flex-grow: 1;
+    overflow: auto;
+    position: relative;
   }
 }
