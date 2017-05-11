@@ -1113,16 +1113,27 @@ p a, span a {
 .ias-panel, .ias-tile {
   background-color: #eef2f2;
   border-radius: 3px;
+  box-sizing: content-box;
+  padding: 25px;
 }
 
-.ias-panel-header {
+.ias-panel > .ias-panel-header, .ias-tile > .ias-panel-header {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 31px;
-  line-height: 31px;
   margin-bottom: 25px;
+}
+
+.ias-panel a, .ias-tile a {
+  padding: 0;
+  margin: 0;
+}
+
+.ias-panel a:hover, .ias-tile a:hover {
+  background-color: #fff;
 }
 
 .ias-side-nav {

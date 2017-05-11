@@ -1,12 +1,22 @@
 .ias-panel {
   background-color: $panel-bg-color;
   border-radius: $border-radius;
-}
+  box-sizing: content-box;
+  padding: $content-padding;
 
-.ias-panel-header {
-  display: flex;
-  flex-flow: row nowrap;
-  height: $panel-height;
-  line-height: $panel-height;
-  margin-bottom: $content-padding;
+  > .ias-panel-header {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: $content-padding;
+  }
+
+  a {
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      background-color: $body-bg-color;
+    }
+  }
 }
