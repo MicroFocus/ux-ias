@@ -1,6 +1,54 @@
 side-nav-documentation {
+  .side-nav-demo {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .12);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 300px;
+    position: relative;
+  }
+
+  .ias-side-nav {
+    position: absolute;
+
+    &.ias-open {
+      &:not(.ias-locked) {
+        z-index: 100;
+      }
+    }
+
+    &.ias-locked {
+      flex: none;
+    }
+  }
+
+  demo-content {
+    overflow: hidden;
+  }
+
   section {
     position: relative;
     margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $medium-display) {
+  side-nav-documentation {
+    .ias-side-nav {
+      display: none;
+      height: auto;
+      opacity: 0;
+      position: absolute;
+      width: auto;
+
+      &.ias-open {
+        &:not(.ias-locked) {
+          z-index: 100;
+        }
+      }
+
+      > .ias-side-nav-content {
+        max-width: 85%;
+      }
+    }
   }
 }
