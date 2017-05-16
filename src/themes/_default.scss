@@ -58,7 +58,7 @@ $title-font-weight: normal;
 $title-text-transform: uppercase;
 
 // DISPLAY SIZE
-$large-display: 769px;
+$medium-display: 768px;
 
 // SPACING
 $body-spacing-xsmall: 5px;
@@ -196,11 +196,12 @@ $side-nav-header-text-color: $list-header-text-color;
 $side-nav-header-font-size: $list-header-font-size;
 $side-nav-header-font-weight: $list-header-font-weight;
 $side-nav-header-text-transform: $list-header-text-transform;
+$side-nav-item-height: 30px;
 $side-nav-max-width: 85%;
-$side-nav-padding: $body-spacing-medium;
-$side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
+$side-nav-padding: $spacing;
+$side-nav-scrim-color: rgba(128, 128, 128, .7);
 $side-nav-text-color: inherit;
-$side-nav-width: 220px;
+$side-nav-width: 240px;
 
 $table-header-border-color: $color-gray-5;
 $table-header-font-size: 12px;

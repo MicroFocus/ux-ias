@@ -10,3 +10,9 @@ application {
     position: relative;
   }
 }
+
+@media (min-width: $medium-display) {
+  .ias-nav #componentsSideNavToggle {
+    display: none;
+  }
+}

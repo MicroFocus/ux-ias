@@ -11,6 +11,7 @@ import ProjectComponent from './components/project/project.component';
 import AppBarComponent from './components/docs/app-bar/app-bar.component';
 import ButtonComponent from './components/docs/button/button.component';
 import ColorsComponent from './components/docs/colors/colors.component';
+import DemoContentComponent from './components/components/demo-content.component';
 import DialogComponent from './components/docs/dialog/dialog.component';
 import FormFieldComponent from './components/docs/form-field/form-field.component';
 import FormValidationComponent from './components/docs/form-validation/form-validation.component';
@@ -23,10 +24,13 @@ import MenuComponent from './components/docs/menu/menu.component';
 import NavComponent from './components/docs/nav/nav.component';
 import PanelComponent from './components/docs/panel/panel.component';
 import SideNavComponent from './components/docs/side-nav/side-nav.component';
+import SideNavUIComponent from './components/components/side-nav/side-nav.component';
 import TabComponent from './components/docs/tab/tab.component';
 import TableComponent from './components/docs/table/table.component';
 import TileComponent from './components/docs/tile/tile.component';
 import TileGridComponent from './components/docs/tile-grid/tile-grid.component';
+import {ToggleDirective} from './components/components/toggle/toggle.directive';
+import ToggleService from './components/components/toggle/toggle.service';
 
 
 module('app', [
@@ -44,9 +48,11 @@ module('app', [
     .component('appBarDocumentation', AppBarComponent)
     .component('buttonDocumentation', ButtonComponent)
     .component('colorsDocumentation', ColorsComponent)
+    .component('demoContent', DemoContentComponent)
     .component('dialogDocumentation', DialogComponent)
     .component('formFieldDocumentation', FormFieldComponent)
     .component('formValidationDocumentation', FormValidationComponent)
+    .component('iasSideNav', SideNavUIComponent)
     .component('iconDocumentation', IconComponent)
     .component('iconButtonDocumentation', IconButtonComponent)
     .component('iconButtonTextDocumentation', IconButtonTextComponent)
@@ -61,11 +67,28 @@ module('app', [
     .component('tileDocumentation', TileComponent)
     .component('tileGridDocumentation', TileGridComponent)
 
+    .directive('iasToggle', ToggleDirective)
+
     .config(['$locationProvider',
         ($locationProvider: ILocationProvider) => {
             $locationProvider.html5Mode({
                 enabled: true,
                 requireBase: false
+            });
+        }
+    ])
+
+    .service('IasToggleService', ToggleService)
+
+    .run(['$transitions', 'IasToggleService',
+        ($transitions: {onStart: (Object, Function) => void},   // No definition in @types/angular-ui-router#v1.1.36
+         toggleService: ToggleService) => {
+            $transitions.onStart({
+                to: 'app.component.**',
+                from: 'app.component.**'
+            }, function() {
+                toggleService.hideComponent('componentSideNav');
+                document.getElementsByClassName('components-body')[0].scrollTop = 0;
             });
         }
     ]);

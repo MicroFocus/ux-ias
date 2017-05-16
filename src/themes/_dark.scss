@@ -59,7 +59,7 @@ $title-font-weight: normal;
 $title-text-transform: uppercase;
 
 // DISPLAY SIZE
-$large-display: 769px;
+$medium-display: 768px;
 
 // SPACING
 $body-spacing-xsmall: 5px;
@@ -197,11 +197,12 @@ $side-nav-header-text-color: $menu-header-text-color;
 $side-nav-header-font-size: $menu-header-font-size;
 $side-nav-header-font-weight: $menu-header-font-weight;
 $side-nav-header-text-transform: $menu-header-text-transform;
+$side-nav-item-height: 30px;
 $side-nav-max-width: 85%;
 $side-nav-padding: $spacing;
-$side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
+$side-nav-scrim-color: rgba(0, 0, 0, .50);
 $side-nav-text-color: inherit;
-$side-nav-width: 220px;
+$side-nav-width: 240px;
 
 $table-header-border-color: $color-gray-5;
 $table-header-font-size: 12px;

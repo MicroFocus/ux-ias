@@ -1,3 +1,30 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slidein-rtl {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
 .ias-border-1, .ias-dialog .ias-dialog-container {
   border: 1px solid #6a6f71;
   border-radius: 3px;
@@ -261,7 +288,7 @@
   margin-left: 10px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .ias-app-bar {
     padding-right: 15px;
   }
@@ -1088,7 +1115,7 @@ p a, span a {
   height: 100%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .ias-nav {
     padding: 0 25px;
   }
@@ -1137,65 +1164,66 @@ p a, span a {
 }
 
 .ias-side-nav {
-  background-color: rgba(0, 0, 0, 0.5);
   bottom: 0;
+  display: none;
   left: 0;
-  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
   right: 0;
   top: 0;
 }
 
+.ias-side-nav.ias-open, .ias-side-nav.ias-locked {
+  display: block;
+  opacity: 1;
+}
+
+.ias-side-nav.ias-open:not(.ias-locked) {
+  animation: fadein 500ms;
+  z-index: 1000;
+}
+
+.ias-side-nav.ias-open:not(.ias-locked) > .ias-scrim {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ias-side-nav.ias-open:not(.ias-locked) > .ias-side-nav-content {
+  animation: 500ms slidein;
+  animation-direction: normal;
+}
+
 .ias-side-nav.ias-locked {
-  background-color: transparent;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
   height: 100%;
-  width: 220px;
+  position: relative;
+  width: 240px;
 }
 
 .ias-side-nav.ias-locked > .ias-side-nav-content {
-  max-width: initial;
+  max-width: none;
+}
+
+.ias-side-nav > .ias-scrim {
+  background-color: transparent;
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .ias-side-nav > .ias-side-nav-content {
   background-color: #434c50;
-  box-sizing: border-box;
   color: inherit;
   height: 100%;
   max-width: 85%;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 10px;
-  width: 220px;
+  position: relative;
+  width: 240px;
 }
 
-.ias-side-nav button,
-.ias-side-nav .ias-button {
-  background-color: transparent;
-  border: none;
-  box-sizing: border-box;
-  color: inherit;
-  display: block;
-  text-align: inherit;
-  width: 100%;
-}
-
-.ias-side-nav button:not([disabled]):not(.ias-disabled):focus, .ias-side-nav button:not([disabled]):not(.ias-disabled):hover,
-.ias-side-nav .ias-button:not([disabled]):not(.ias-disabled):focus,
-.ias-side-nav .ias-button:not([disabled]):not(.ias-disabled):hover {
-  background-color: #575b5d;
-  color: inherit;
-}
-
-.ias-side-nav .ias-list > li:hover,
-.ias-side-nav .ias-list > .ias-list-item:hover {
-  background-color: #575b5d;
-  color: inherit;
-}
-
-.ias-side-nav .ias-side-nav-header,
-.ias-side-nav .ias-side-nav-footer {
+.ias-side-nav > .ias-side-nav-content > .ias-side-nav-header,
+.ias-side-nav > .ias-side-nav-content > .ias-side-nav-footer {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1203,6 +1231,68 @@ p a, span a {
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.ias-side-nav > .ias-side-nav-content > .ias-side-nav-body {
+  padding: 10px;
+}
+
+.ias-side-nav a {
+  margin: 0;
+}
+
+.ias-side-nav a,
+.ias-side-nav button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  color: inherit;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 0 10px;
+  text-align: inherit;
+  width: 100%;
+}
+
+.ias-side-nav a:focus:not([disabled]), .ias-side-nav a:hover:not([disabled]), .ias-side-nav a.ias-active,
+.ias-side-nav button:focus:not([disabled]),
+.ias-side-nav button:hover:not([disabled]),
+.ias-side-nav button.ias-active {
+  background-color: #575b5d;
+  color: inherit;
+}
+
+[dir="rtl"] .ias-side-nav.ias-open:not(.ias-locked) > .ias-side-nav-content {
+  animation: 500ms slidein-rtl;
+}
+
+[dir="rtl"] .ias-side-nav a {
+  margin: 0;
+}
+
+[dir="rtl"] .ias-side-nav a,
+[dir="rtl"] .ias-side-nav .ias-button {
+  padding: 0 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .ias-side-nav {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    width: 240px;
+  }
+  .ias-side-nav.ias-open:not(.ias-locked) {
+    z-index: auto;
+  }
+  .ias-side-nav > .ias-side-nav-content {
+    max-width: none;
+  }
 }
 
 .ias-tabset {

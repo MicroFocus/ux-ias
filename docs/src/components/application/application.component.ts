@@ -33,6 +33,10 @@ export default class ApplicationComponent {
         this.$state.go('app.component.appBar');
     };
 
+    isComponentsView(): boolean {
+        return /^app.component/.test(this.$state.current.name);
+    }
+
     setDisplayDirection(direction): void {
         this.displayDirection = direction || 'ltr';
 
