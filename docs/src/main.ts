@@ -88,7 +88,7 @@ module('app', [
                 from: 'app.component.**'
             }, function() {
                 toggleService.hideComponent('componentSideNav');
-                // TODO: scroll up to top of new components page since the browser doesn't do this automatically
+                document.getElementsByClassName('components-body')[0].scrollTop = 0;
             });
         }
     ]);
