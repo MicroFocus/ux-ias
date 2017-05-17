@@ -8,8 +8,6 @@ side-nav-documentation {
   }
 
   .ias-side-nav {
-    position: absolute;
-
     &.ias-open {
       &:not(.ias-locked) {
         z-index: 100;
@@ -37,7 +35,6 @@ side-nav-documentation {
       display: none;
       height: auto;
       opacity: 0;
-      position: absolute;
       width: auto;
 
       &.ias-open {
