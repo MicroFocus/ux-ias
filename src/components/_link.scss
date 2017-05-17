@@ -1,6 +1,7 @@
 a {
   border-radius: $border-radius;
   color: $link-text-color;
+  display: inline-block;
   padding: $link-padding;
   text-decoration: none;
 
@@ -21,10 +22,11 @@ a {
   }
 }
 
-p, span {
+p, span, td, th {
   a {
-    padding: 0;
+    display: inline;
     margin: 0;
+    padding: 0;
   }
 }
 
