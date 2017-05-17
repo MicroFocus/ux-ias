@@ -40,7 +40,8 @@ table {
         > .ias-icon-button {
           opacity: 0;
 
-          &:focus {
+          &:focus,
+          &:hover {
             opacity: 1;
           }
         }
@@ -55,9 +56,7 @@ table {
       padding: 0;
 
       &:not(.ias-disabled) {
-        &:hover {
-          background-color: transparent;
-        }
+        @include focus-hover-background(transparent);
       }
     }
 

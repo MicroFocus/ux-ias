@@ -85,11 +85,8 @@
     max-width: $nav-text-max-width;
 
     > a {
+      @include focus-hover-background($nav-link-color-hover);
       padding: $link-padding;
-
-      &:hover {
-        background-color: $nav-link-color-hover;
-      }
     }
   }
 

@@ -25,11 +25,16 @@ button,
 
   &:not([disabled]):not(.ias-disabled) {
     &:focus {
-      @include focus-state;
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color;
+      outline: none;
     }
 
     &:hover {
-      @include hover-state;
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color-hover;
     }
   }
 

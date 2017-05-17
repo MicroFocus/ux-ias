@@ -13,13 +13,11 @@
     line-height: $list-item-height;
     padding: $spacing;
 
-    &:focus {
-      @include focus-state;
-    }
-
+    &:focus,
     &:hover {
       background-color: $list-item-bg-color-hover;
       color: inherit;
+      outline: none;
     }
 
     &.ias-offset {

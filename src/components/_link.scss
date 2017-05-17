@@ -12,15 +12,12 @@ a {
     color: $link-text-color-no-highlight;
   }
 
-  &:focus {
-    @include focus-state;
-    text-decoration: none;
-  }
-
+  &:focus,
   &:hover {
     background-color: $link-bg-color-hover;
     color: $link-text-color-hover;
     text-decoration: none;
+    outline: none;
   }
 }
 
