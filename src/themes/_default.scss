@@ -88,7 +88,7 @@ $app-bar-button-spacing: $spacing;
 $app-bar-font-size: $font-size-small;
 $app-bar-height-small: 45px;
 $app-bar-height-large: 100px;
-$app-bar-icon-size: 20px;
+$app-bar-icon-size: 25px;
 $app-bar-padding: $body-spacing-small;
 $app-bar-padding-large: $body-spacing-large;
 $app-bar-text-color: $color-gray-7;
@@ -128,7 +128,7 @@ $icon-size-small: 25px;
 $icon-size-medium: 50px;
 $icon-size-large: 75px;
 
-$input-bg-color: $body-bg-color;
+$input-bg-color: inherit;
 $input-border: 1px solid $color-gray-5;
 $input-inline-label-padding: 5px;
 $input-label-font-size: $font-size-small;
@@ -144,8 +144,8 @@ $link-text-color-hover: $color-primary-1;
 $link-text-color-no-highlight: $color-gray-4;
 
 $list-item-bg-color-hover: $color-gray-6;
-$list-item-height: 26px;
-$list-item-avatar-size: 26px;
+$list-item-height: 25px;
+$list-item-avatar-size: 25px;
 
 $list-header-text-color: $color-gray-4;
 $list-header-font-size: 12px;
@@ -168,7 +168,7 @@ $nav-content-padding: $body-spacing-medium;
 $nav-content-padding-large: $body-spacing-large;
 $nav-height: 34px;
 $nav-icon-margin: 2px;
-$nav-icon-size: 20px;
+$nav-icon-size: 25px;
 $nav-item-bg-color-hover: $color-gray-5;
 $nav-item-border-bottom-color-active: $color-primary-4;
 $nav-item-border-color-hover: transparent;
@@ -188,7 +188,7 @@ $nav-text-vertical-margin: ($nav-height - $nav-text-element-height) / 2;
 $panel-bg-color: $color-gray-6;
 
 $search-box-icon-padding: 5px;
-$search-box-icon-size: 20px;
+$search-box-icon-size: 25px;
 $search-box-max-width: 300px;
 
 $side-nav-bg-color: $body-bg-color;
