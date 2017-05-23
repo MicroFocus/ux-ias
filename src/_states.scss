@@ -12,8 +12,9 @@
   outline: none;
 }
 
-@mixin hover-state() {
-  background-color: $button-bg-color-hover;
-  border-color: $button-border-color-hover;
-  color: $button-text-color-hover;
+@mixin focus-hover-background($background-color) {
+  &:focus,
+  &:hover {
+    background-color: $background-color;
+  }
 }

@@ -1,6 +1,7 @@
 a {
   border-radius: $border-radius;
   color: $link-text-color;
+  display: inline-block;
   padding: $link-padding;
   text-decoration: none;
 
@@ -12,22 +13,20 @@ a {
     color: $link-text-color-no-highlight;
   }
 
-  &:focus {
-    @include focus-state;
-    text-decoration: none;
-  }
-
+  &:focus,
   &:hover {
     background-color: $link-bg-color-hover;
     color: $link-text-color-hover;
     text-decoration: none;
+    outline: none;
   }
 }
 
-p, span {
+p, span, td, th {
   a {
-    padding: 0;
+    display: inline;
     margin: 0;
+    padding: 0;
   }
 }
 

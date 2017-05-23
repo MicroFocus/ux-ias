@@ -34,15 +34,13 @@
   text-align: center;
 
   &:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected) {
-    &:focus {
-      @include focus-state;
-    }
-
+    &:focus,
     &:hover {
       background-color: $button-bg-color-hover;
       border-color: $button-border-color-hover;
       color: $button-text-color-hover;
       cursor: pointer;
+      outline: none;
     }
   }
 

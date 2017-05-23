@@ -12,11 +12,9 @@
   }
 
   a {
-    padding: 0;
+    @include focus-hover-background($body-bg-color);
+    display: inline;
     margin: 0;
-
-    &:hover {
-      background-color: $body-bg-color;
-    }
+    padding: 0;
   }
 }

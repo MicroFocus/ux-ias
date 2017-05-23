@@ -9,13 +9,12 @@
   position: relative;
 
   // STATES
-  &:focus {
-    @include focus-state;
-  }
-
+  &:focus,
   &:hover {
-    @include hover-state;
+    background-color: $button-bg-color-hover;
+    border-color: $button-border-color-hover;
     color: $tile-text-color;
+    outline: none;
   }
 
   // SIZES
@@ -153,9 +152,10 @@
     }
   }
 
-  a:hover {
-    background-color: $body-bg-color;
+  a {
+    @include focus-hover-background($body-bg-color);
   }
+
 }
 
 [dir="rtl"] {

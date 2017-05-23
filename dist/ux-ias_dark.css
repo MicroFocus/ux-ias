@@ -189,7 +189,7 @@
       flex-flow: row nowrap;
   font-size: 13px;
   min-height: 45px;
-  padding-right: 15px;
+  padding-right: 10px;
   overflow: hidden;
 }
 
@@ -206,7 +206,7 @@
   /* Add height and line-height for align-items bug in IE11 */
   height: 45px;
   line-height: 45px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .ias-app-bar > span:not(.ias-fill) {
@@ -242,7 +242,7 @@
 .ias-app-bar > button.ias-icon-button > .svg-icon,
 .ias-app-bar > .ias-button.ias-icon-button > .ias-icon,
 .ias-app-bar > .ias-button.ias-icon-button > .svg-icon {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .ias-app-bar > button:not([disabled]):not(.ias-disabled):focus, .ias-app-bar > button:not([disabled]):not(.ias-disabled):hover,
@@ -261,13 +261,13 @@
 
 [dir="rtl"] .ias-app-bar {
   background: linear-gradient(to left, #01a9e7, #007cd0);
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 0;
 }
 
 [dir="rtl"] .ias-app-bar > .ias-heading, [dir="rtl"] .ias-dialog .ias-dialog-container.ias-app-bar > .ias-dialog-title, .ias-dialog [dir="rtl"] .ias-dialog-container.ias-app-bar > .ias-dialog-title {
   margin-left: 0;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 [dir="rtl"] .ias-app-bar > button,
@@ -290,7 +290,7 @@
 
 @media (min-width: 768px) {
   .ias-app-bar {
-    padding-right: 15px;
+    padding-right: 10px;
   }
   .ias-app-bar > .ias-avatar > img {
     max-height: 100px;
@@ -347,7 +347,7 @@ button[disabled], button.ias-disabled,
 
 button:not([disabled]):not(.ias-disabled):focus,
 .ias-button:not([disabled]):not(.ias-disabled):focus {
-  background-color: #2c2c2c;
+  background-color: #434c50;
   border-color: #01a9e7;
   color: #f6f9f8;
   outline: none;
@@ -478,7 +478,7 @@ a.ias-button {
 input,
 select,
 textarea {
-  background-color: #2c2c2c;
+  background-color: inherit;
   border: 1px solid #6a6f71;
   border-radius: 3px;
   color: #f6f9f8;
@@ -546,7 +546,7 @@ label > textarea {
 
 .ias-input-container.ias-search > input {
   box-sizing: border-box;
-  padding: 8px 30px;
+  padding: 8px 35px;
   width: 100%;
 }
 
@@ -566,7 +566,7 @@ label > textarea {
 .ias-input-container.ias-search > .ias-icon,
 .ias-input-container.ias-search > .ias-icon-button {
   color: inherit;
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   top: 55%;
   transform: translateY(-50%);
@@ -764,6 +764,7 @@ button.ias-icon-text-button > .ias-icon, button.ias-icon-text-button .svg-icon,
 a {
   border-radius: 3px;
   color: #0090da;
+  display: inline-block;
   padding: 0.15em;
   text-decoration: none;
 }
@@ -776,23 +777,17 @@ a.ias-link-no-highlight {
   color: #808080;
 }
 
-a:focus {
-  background-color: #2c2c2c;
-  border-color: #01a9e7;
-  color: #f6f9f8;
-  outline: none;
-  text-decoration: none;
-}
-
-a:hover {
+a:focus, a:hover {
   background-color: #434c50;
   color: #0061bd;
   text-decoration: none;
+  outline: none;
 }
 
-p a, span a {
-  padding: 0;
+p a, span a, td a, th a {
+  display: inline;
   margin: 0;
+  padding: 0;
 }
 
 [dir="rtl"] a + a, [dir="rtl"] a.ias-link-margin {
@@ -814,28 +809,22 @@ p a, span a {
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  height: 26px;
-  line-height: 26px;
+  height: 25px;
+  line-height: 25px;
   padding: 10px;
 }
 
-.ias-list > li:focus,
-.ias-list > .ias-list-item:focus {
-  background-color: #2c2c2c;
-  border-color: #01a9e7;
-  color: #f6f9f8;
-  outline: none;
-}
-
-.ias-list > li:hover,
+.ias-list > li:focus, .ias-list > li:hover,
+.ias-list > .ias-list-item:focus,
 .ias-list > .ias-list-item:hover {
   background-color: #434c50;
   color: inherit;
+  outline: none;
 }
 
 .ias-list > li.ias-offset,
 .ias-list > .ias-list-item.ias-offset {
-  padding-left: 46px;
+  padding-left: 45px;
 }
 
 .ias-list > li > span,
@@ -850,15 +839,15 @@ p a, span a {
 
 .ias-list > li > .ias-avatar,
 .ias-list > .ias-list-item > .ias-avatar {
-  -ms-flex: 0 0 26px;
-      flex: 0 0 26px;
-  height: 26px;
-  width: 26px;
+  -ms-flex: 0 0 25px;
+      flex: 0 0 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .ias-list > li > .ias-icon,
 .ias-list > .ias-list-item > .ias-icon {
-  font-size: 26px;
+  font-size: 25px;
 }
 
 .ias-list > li > .ias-icon:first-child,
@@ -880,7 +869,7 @@ p a, span a {
 [dir="rtl"] .ias-list > li.ias-offset,
 [dir="rtl"] .ias-list > .ias-list-item.ias-offset {
   padding-left: 10px;
-  padding-right: 46px;
+  padding-right: 45px;
 }
 
 [dir="rtl"] .ias-list > li > .ias-icon:first-child,
@@ -951,7 +940,8 @@ p a, span a {
   color: #b8b8b8;
 }
 
-.ias-menu-content .ias-list > li:hover,
+.ias-menu-content .ias-list > li:focus, .ias-menu-content .ias-list > li:hover,
+.ias-menu-content .ias-list > .ias-list-item:focus,
 .ias-menu-content .ias-list > .ias-list-item:hover {
   background-color: #575b5d;
 }
@@ -1065,7 +1055,7 @@ p a, span a {
 
 .ias-nav > a > .ias-icon,
 .ias-nav > a > .svg-icon {
-  font-size: 20px;
+  font-size: 25px;
   /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
   margin-bottom: 2px;
   vertical-align: middle;
@@ -1089,7 +1079,7 @@ p a, span a {
   padding: 0.15em;
 }
 
-.ias-nav > span:not(.ias-fill) > a:hover {
+.ias-nav > span:not(.ias-fill) > a:focus, .ias-nav > span:not(.ias-fill) > a:hover {
   background-color: #434c50;
 }
 
@@ -1102,7 +1092,7 @@ p a, span a {
 .ias-nav > .ias-icon-button > .svg-icon,
 .ias-nav > .ias-menu > .ias-icon-button > .ias-icon,
 .ias-nav > .ias-menu > .ias-icon-button > .svg-icon {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .ias-nav > .ias-menu > .ias-menu-content {
@@ -1155,11 +1145,12 @@ p a, span a {
 }
 
 .ias-panel a, .ias-tile a {
-  padding: 0;
+  display: inline;
   margin: 0;
+  padding: 0;
 }
 
-.ias-panel a:hover, .ias-tile a:hover {
+.ias-panel a:focus, .ias-tile a:focus, .ias-panel a:hover, .ias-tile a:hover {
   background-color: #2c2c2c;
 }
 
@@ -1180,17 +1171,16 @@ p a, span a {
 }
 
 .ias-side-nav.ias-open:not(.ias-locked) {
-  animation: fadein 500ms;
+  animation: 500ms fadein;
   z-index: 1000;
 }
 
 .ias-side-nav.ias-open:not(.ias-locked) > .ias-scrim {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(128, 128, 128, 0.7);
 }
 
 .ias-side-nav.ias-open:not(.ias-locked) > .ias-side-nav-content {
   animation: 500ms slidein;
-  animation-direction: normal;
 }
 
 .ias-side-nav.ias-locked {
@@ -1279,6 +1269,12 @@ p a, span a {
   padding: 0 10px 0 0;
 }
 
+@media (min-height: 425px) {
+  .ias-side-nav {
+    position: absolute;
+  }
+}
+
 @media (min-width: 768px) {
   .ias-side-nav {
     display: block;
@@ -1333,18 +1329,12 @@ p a, span a {
   margin-left: 10px;
 }
 
-.ias-tab:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected):focus {
-  background-color: #2c2c2c;
-  border-color: #01a9e7;
-  color: #f6f9f8;
-  outline: none;
-}
-
-.ias-tab:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected):hover {
+.ias-tab:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected):focus, .ias-tab:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected):hover {
   background-color: #434c50;
   border-color: #01a9e7;
   color: #007cd0;
   cursor: pointer;
+  outline: none;
 }
 
 .ias-tab[disabled], .ias-tab.ias-disabled {
@@ -1404,7 +1394,7 @@ table > tbody > tr > .ias-actions > .ias-icon-button {
   opacity: 0;
 }
 
-table > tbody > tr > .ias-actions > .ias-icon-button:focus {
+table > tbody > tr > .ias-actions > .ias-icon-button:focus, table > tbody > tr > .ias-actions > .ias-icon-button:hover {
   opacity: 1;
 }
 
@@ -1412,11 +1402,7 @@ table td, table th {
   padding: 0 10px;
 }
 
-table td > a, table th > a {
-  padding: 0;
-}
-
-table td > a:not(.ias-disabled):hover, table th > a:not(.ias-disabled):hover {
+table td > a:not(.ias-disabled):focus, table td > a:not(.ias-disabled):hover, table th > a:not(.ias-disabled):focus, table th > a:not(.ias-disabled):hover {
   background-color: transparent;
 }
 
@@ -1431,13 +1417,13 @@ table td > .ias-icon:first-child, table th > .ias-icon:first-child {
 }
 
 table tr {
-  height: 36px;
+  height: 35px;
   vertical-align: middle;
 }
 
 table .ias-icon,
 table .ias-icon-button {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 [dir="rtl"] table {
@@ -1458,18 +1444,11 @@ table .ias-icon-button {
   position: relative;
 }
 
-.ias-tile:focus {
-  background-color: #2c2c2c;
+.ias-tile:focus, .ias-tile:hover {
+  background-color: #434c50;
   border-color: #01a9e7;
   color: #f6f9f8;
   outline: none;
-}
-
-.ias-tile:hover {
-  background-color: #434c50;
-  border-color: #01a9e7;
-  color: #007cd0;
-  color: #f6f9f8;
 }
 
 .ias-tile.ias-tiny {
@@ -1612,7 +1591,7 @@ table .ias-icon-button {
   padding: 0;
 }
 
-.ias-tile a:hover {
+.ias-tile a:focus, .ias-tile a:hover {
   background-color: #2c2c2c;
 }
 
