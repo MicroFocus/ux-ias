@@ -1,0 +1,87 @@
+.ias-accordion-group {
+  display: block;
+  width: 700px;
+}
+
+.ias-accordion {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid transparent;
+  background: #eef2f2;
+  max-height: 40px;
+  margin-top: 15px;
+  .ias-icon-message_error_thick {
+    color: red;
+  }
+}
+
+.ias-accordion-open {
+  display: block;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid transparent;
+  background: #eef2f2;
+  min-height: 25px;
+  margin-top: 15px;
+}
+
+.ias-accordion:not(ias-accordion-open):hover  {
+  color: #1773bb;
+  background: #f6f9f8;
+  border: 1px solid #01a9e7;
+  cursor: pointer;
+}
+
+.ias-accordion-header {
+   align-items: center;
+   color: #434c50;
+  padding: .75rem 1.24rem;
+   font-weight: normal;
+  display: flex;
+}
+
+.ias-accordion-content {
+  display: block;
+  flex: 1 1 auto;
+  padding: 1rem;
+  background-color: white;
+  margin: auto;
+  border: .5px solid transparent;
+  position: relative;
+}
+
+.ias-accordion-icon {
+  color: #434c50;
+  position: relative;
+  font-size: 25px;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.ias-accordion-icon-toggle {
+  color: #434c50;
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  align-items: center;
+  padding: 0rem 1.24rem;
+}
+
+@media(min-width: 320px) {
+  .ias-accordion {
+    width: 280px;
+  }
+  .ias-accordion-open {
+    width: 280px;
+  }
+}
+
+@media(min-width: 768px) {
+  .ias-accordion {
+    width: 450px;
+  }
+  .ias-accordion-open {
+    width: 450px;
+  }
+}
