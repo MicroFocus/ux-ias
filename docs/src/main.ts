@@ -8,6 +8,7 @@ import ComponentsComponent from './components/components/components.component';
 import KitchenSinkComponent from './components/kitchen-sink/kitchen-sink.component';
 import ProjectComponent from './components/project/project.component';
 // Docs Components
+import AccordionControlComponent from './components/docs/accordion-control/accordion-control';
 import AppBarComponent from './components/docs/app-bar/app-bar.component';
 import ButtonComponent from './components/docs/button/button.component';
 import ColorsComponent from './components/docs/colors/colors.component';
@@ -23,6 +24,7 @@ import ListComponent from './components/docs/list/list.component';
 import MenuComponent from './components/docs/menu/menu.component';
 import NavComponent from './components/docs/nav/nav.component';
 import PanelComponent from './components/docs/panel/panel.component';
+import SearchComponent from './components/docs/search/search.component';
 import SideNavComponent from './components/docs/side-nav/side-nav.component';
 import SideNavUIComponent from './components/components/side-nav/side-nav.component';
 import TabComponent from './components/docs/tab/tab.component';
@@ -31,6 +33,14 @@ import TileComponent from './components/docs/tile/tile.component';
 import TileGridComponent from './components/docs/tile-grid/tile-grid.component';
 import {ToggleDirective} from './components/components/toggle/toggle.directive';
 import ToggleService from './components/components/toggle/toggle.service';
+import MultiValuedInputComponent from './components/docs/multi-valued-input/multi-valued-input.component';
+import TagsComponent from './components/docs/tags/tags.component';
+import DatepickerComponent from './components/docs/datepicker/datepicker.component';
+import PageComponent from './components/docs/page/page.component';
+import DualColumnComponent from './components/docs/dual-column/dual-column.component';
+import CommentComponent from './components/docs/comment/comment.component';
+import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
+import IconButtonToggleComponent from './components/docs/icon-button-toggle/icon-button-toggle.component';
 
 
 module('app', [
@@ -45,24 +55,34 @@ module('app', [
     .component('kitchenSink', KitchenSinkComponent)
     .component('project', ProjectComponent)
     // Docs Components
+    .component ('accordionControlDocumentation', AccordionControlComponent)
     .component('appBarDocumentation', AppBarComponent)
     .component('buttonDocumentation', ButtonComponent)
     .component('colorsDocumentation', ColorsComponent)
+    .component('commentDocumentation', CommentComponent)
+    .component('datepickerDocumentation', DatepickerComponent)
     .component('demoContent', DemoContentComponent)
     .component('dialogDocumentation', DialogComponent)
+    .component('dualColumnDocumentation', DualColumnComponent)
     .component('formFieldDocumentation', FormFieldComponent)
     .component('formValidationDocumentation', FormValidationComponent)
     .component('iasSideNav', SideNavUIComponent)
     .component('iconDocumentation', IconComponent)
     .component('iconButtonDocumentation', IconButtonComponent)
     .component('iconButtonTextDocumentation', IconButtonTextComponent)
+    .component('iconButtonToggleDocumentation', IconButtonToggleComponent)
     .component('linkDocumentation', LinkComponent)
     .component('listDocumentation', ListComponent)
     .component('menuDocumentation', MenuComponent)
+    .component('multiValuedInputDocumentation', MultiValuedInputComponent)
     .component('navDocumentation', NavComponent)
+    .component('pageDocumentation', PageComponent)
     .component('panelDocumentation', PanelComponent)
+    .component('searchDocumentation', SearchComponent)
     .component('sideNavDocumentation', SideNavComponent)
+    .component('statusMessagesDocumentation', StatusMessagesComponent)
     .component('tabDocumentation', TabComponent)
+    .component('tagsDocumentation', TagsComponent)
     .component('tableDocumentation', TableComponent)
     .component('tileDocumentation', TileComponent)
     .component('tileGridDocumentation', TileGridComponent)

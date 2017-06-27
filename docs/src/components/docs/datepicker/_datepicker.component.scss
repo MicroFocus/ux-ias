@@ -1,0 +1,165 @@
+.ias-datepicker-down{
+  vertical-align: middle;
+  font-size: 12px;
+}
+.ias-datepicker {
+  display: block;
+  vertical-align: middle;
+  .ias-icon .svg-icon{
+    align-items: center;
+  }
+  p {
+    display: inline;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}
+
+.ias-datepicker-two {
+  display: block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  .ias-icon .svg-icon{
+    align-items: center;
+  }
+  p {
+    display: inline;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+}
+
+.ias-datepicker-icon-open {
+  font-size: 30px;
+  float: left;
+  margin-right: 15px;
+}
+.ias-datepicker-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 30px;
+}
+.ias-datepicker-open-date {
+  border: 1px solid #dae1e1;
+  width: 300px;
+  padding: 5px;
+}
+
+.ias-datepicker-weekdays {
+  background-color: #dae1e1;
+  width: 305px;
+  border: 1px  solid transparent;
+  padding-left: 5px;
+  p {
+    display: inline;
+    margin: 15px;
+    vertical-align: middle;
+  }
+}
+
+.weekone {
+  border: 1px solid transparent;
+  p:not(.month-title) {
+    margin: 17px;
+  }
+}
+
+.weektwo {
+  padding-top: 10px;
+  p {
+    margin: 16.5px;
+  }
+}
+
+.ias-datepicker-month {
+  width: 300px;
+  border: 1px solid #dae1e1;
+  padding: 5px;
+
+  .ias-icon-next_right_thin {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  p {
+    display: inline;
+  }
+  .month-title {
+    margin-right: 87px;
+  }
+}
+
+.ias-datepicker-open {
+  float: left;
+  p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+}
+.datepicker-open {
+  float: left;
+  tbody {
+    display: block;
+  }
+  table {
+    border-color: #dae1e1;
+    border-radius: 3px;
+    display: table;
+    border-spacing: 0px;
+  }
+  tr {
+    border-color: transparent;
+  }
+  .weekdays {
+    background-color: rgb(224, 224, 224);
+  }
+  table > tbody > tr:not(:last-child) {
+    border-bottom: 1px solid transparent;
+  }
+  table >tbody >tr {
+    background-color: transparent;
+  }
+}
+
+.datepicker-open {
+  .ias-icon-next_right_thin {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  .ias-icon-prev_left_thin {
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  table td > .ias-icon:first-child {
+    margin-right: 0px;
+  }
+  p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    display: inline-block;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    vertical-align: center;
+
+  }
+  .hover {
+    td:hover {
+      cursor: pointer;
+      border: 1px solid #0090da;
+      color: #0090da;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .datepicker-open p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+

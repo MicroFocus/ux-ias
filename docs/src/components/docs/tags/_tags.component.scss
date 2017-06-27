@@ -1,0 +1,30 @@
+.ias-tags {
+  p {
+    font-size: 12px;
+    display: inline-flex;
+  }
+  button:not(.ias-icon-button) {
+    min-width: 20px;
+    display: inline-flex;
+    position: relative;
+  }
+  button:not(.ias-icon-button) > .ias-icon {
+    position: absolute;
+    line-height: 15%;
+    transform: translateX(-5.5px);
+    color: #434c50;
+  }
+  button:not(.ias-icon-button) > .ias-icon :hover {
+    color: #01a9e7;
+  }
+  button:not([disabled]):not(.ias-disabled):hover {
+    background-color: #f6f9f8;;
+    border: 1px solid transparent;
+    color: #01a9e7;
+  }
+  .ias-tile:focus, .ias-tile:hover {
+    background-color: #eef2f2;
+    border: 1px solid transparent;
+    outline: none;
+  }
+}

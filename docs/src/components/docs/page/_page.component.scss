@@ -1,0 +1,85 @@
+.content-header {
+  position: relative;
+  display: block;
+  .ias-icon-close_thin {
+    position: absolute;
+    right: 15px;
+    color: #434c50;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .ias-icon-close_thin:hover {
+    background: #f6f9f8;
+    border: 1px solid #dae1e1;
+    cursor: pointer;
+    color: #0088ce;
+  }
+}
+.content-title {
+  color: #434c50;
+  font-size: 20px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content-subtitle {
+  color: #808080;
+  font-size: 15px;
+  max-width: 600px;
+  margin-bottom: 10px;
+  margin-right: 25px;
+}
+.content-content-subtitle {
+  font-size: 15px;
+  color: #434c50;
+}
+
+.content {
+  .ias-icon-circle_vert_menu_fill {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #808080;
+    font-size: 5px;
+  }
+  .ias-tile.ias-tiny  > .ias-icon{
+    font-size: 20px;
+  }
+  .ias-tile > .ias-icon {
+    margin: 0px;
+  }
+}
+
+.tile-content {
+  text-align: left;
+  .ias-tile > .ias-avatar {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+}
+
+.tile-app-title {
+  font-size: 14px;
+  height: 48px;
+  color: #434c50;
+  padding-right: 0px;
+  padding-bottom: 2px;
+  white-space: normal;
+  text-align: center;
+}
+
+.closing-action {
+  left: 0;
+  bottom: 0;
+  height: 35px;
+  padding-top: 10px;
+  background: #fff;
+  border-top: 1px solid #dae1e1;
+  margin: 0!important;
+}
+
