@@ -1,3 +1,13 @@
+.ias-accordion-controller {
+  clear: both;
+min-height: 25px;
+position: relative;
+margin-top: 5px;
+background: #eef2f2;
+padding: 2px 15px;
+border: 1px solid transparent;
+}
+
 .ias-accordion-group {
   display: block;
   width: 700px;
@@ -8,8 +18,8 @@
   position: relative;
   flex-direction: column;
   border: 1px solid transparent;
-  background: #eef2f2;
-  max-height: 40px;
+  background: $color-gray-6;
+  max-height: 45px;
   margin-top: 15px;
   .ias-icon-message_error_thick {
     color: red;
@@ -20,8 +30,8 @@
   display: block;
   position: relative;
   flex-direction: column;
-  border: 1px solid transparent;
-  background: #eef2f2;
+  border: 1px solid $color-gray-5;
+  background: $color-gray-6;
   min-height: 25px;
   margin-top: 15px;
 }
@@ -34,10 +44,10 @@
 }
 
 .ias-accordion-header {
-   align-items: center;
-   color: #434c50;
-  padding: .75rem 1.24rem;
-   font-weight: normal;
+  align-items: center;
+  color: $color-gray-1;
+  padding: 15px;
+  font-weight: normal;
   display: flex;
 }
 
@@ -47,12 +57,12 @@
   padding: 1rem;
   background-color: white;
   margin: auto;
-  border: .5px solid transparent;
+  border: 1px solid $color-gray-5;
   position: relative;
 }
 
 .ias-accordion-icon {
-  color: #434c50;
+  color: $color-gray-1;
   position: relative;
   font-size: 25px;
   align-items: center;
@@ -60,12 +70,10 @@
 }
 
 .ias-accordion-icon-toggle {
-  color: #434c50;
+  color: $color-gray-1;
   position: absolute;
-  right: 10px;
-  font-size: 1rem;
+  right: 15px;
   align-items: center;
-  padding: 0rem 1.24rem;
 }
 
 @media(min-width: 320px) {

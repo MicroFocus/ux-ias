@@ -1,7 +1,7 @@
 .comment-frame {
-  border: 1px solid #dae1e1;
+  border: 1px solid $color-gray-5;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 550px;
   display: block;
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 .comment-frame-scroll {
-  border: 1px solid #dae1e1;
+  border: 1px solid $color-gray-5;
   background-color: #fff;
   border-radius: 5px;
   width: 550px;
@@ -37,8 +37,7 @@
 }
 
 .comment-header {
-  border-bottom: 1px solid #dae1e1;
-  background-color: #eef2f2;
+  background-color: $color-gray-6;
   padding: 12px;
   position: relative;
 }
@@ -162,7 +161,7 @@
 }
 
 .comment {
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 30px;
   padding-top: 10px;
   position: relative;
@@ -176,7 +175,6 @@
   font-weight: bold;
   padding-right: 4px;
   padding-left: 1px;
-  vertical-align: top;
   white-space: nowrap;
 }
 
@@ -185,7 +183,6 @@
   color: #808080;
   display: inline-block;
   padding-right: 70px;
-  vertical-align: top;
   white-space: nowrap;
 }
 
@@ -193,7 +190,7 @@
   cursor: pointer;
   color: #434c50;
   //font-size: 13px;
-  line-height: 17px;
+  line-height: 18px;
   margin-top: 4px;
   margin-left: 1px;
   margin-right: 20px;
@@ -253,9 +250,6 @@
   width: 100%;
   color: #353838;
   background-color: #eef2f2;
-  border-top-color: #dae1e1;
-  border-top-style: solid;
-  border-top-width: 1px;
   padding-bottom: 15px;
   .ias-icon-comment_user_thin {
     color: #007cd0;
