@@ -19,7 +19,7 @@
 .comment-frame-scroll {
   border: 1px solid $color-gray-5;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 550px;
   z-index: 1000;
   display: block;
@@ -40,6 +40,9 @@
   background-color: $color-gray-6;
   padding: 12px;
   position: relative;
+  p {
+    font-size: 12px;
+  }
 }
 
 .comment-body {
@@ -89,6 +92,9 @@
     width: 23px;
     display: inline-block;
   }
+  .ias-icon-comment_user_thin {
+    color: #007cd0;
+  }
 }
 
 .ias-avatar-tile {
@@ -109,12 +115,18 @@
   left: 0px;
 }
 
+.button-delete {
+  .button {
+    padding: 0em 0em;
+  }
+}
+
 .comment-action-text {
   button:not(.ias-icon-button) {
     min-width: 12px;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 0em;
+    padding: 0em 0em;
     font-size: 10px;
     margin-top: 3px;
   }
@@ -122,11 +134,13 @@
     font-size: 23px;
     color: #007cd0;
   }
+  .ias-icon-delete_thin {
+    font-size: 12px;
+  }
 }
 
 .comment-content-two {
   margin-left: 3px !important;
-  border-top: 1px solid #e0e0e0;
   padding-right: 0px;
   padding-left: 0px;
   position: relative;
@@ -142,6 +156,7 @@
     min-width: 12px;
     background-color: transparent;
     border: 1px solid transparent;
+    font-size: 12px;
   }
 }
 
@@ -166,6 +181,30 @@
   padding-top: 10px;
   position: relative;
   white-space: normal;
+
+}
+
+
+.action-button {
+  display: inline-block;
+  button:not(.ias-icon-buton) > .ias-icon {
+    vertical-align: middle;
+  }
+  .ias-icon-comment_thick {
+    line-height: normal;
+    margin: auto;
+  }
+  .button-delete {
+    padding: 0em 0em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    min-width: 17px;
+    font-size: 12px;
+    .ias-icon {
+      font-size: 15px;
+      display: block;
+    }
+  }
 }
 
 .comment-name {
@@ -182,14 +221,12 @@
   font-size: 10px;
   color: #808080;
   display: inline-block;
-  padding-right: 70px;
   white-space: nowrap;
 }
 
 .comment-text {
   cursor: pointer;
   color: #434c50;
-  //font-size: 13px;
   line-height: 18px;
   margin-top: 4px;
   margin-left: 1px;
@@ -232,8 +269,6 @@
   .ias-menu.ias-open > .ias-menu-content {
     z-index:9999;
     transform: translateX(13px);
-    //overflow: visible;
-    //visibility: visible;
   }
 }
 
@@ -378,6 +413,9 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
+  .comment-content {
+    border-top: 1px solid transparent;
+  }
 }
 
 @media (min-width: 320px) {
