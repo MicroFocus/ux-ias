@@ -79,6 +79,27 @@
   border: solid 1px transparent;
   overflow: hidden;
   color: #434c50;
+  button {
+    padding: 0em;
+    min-width: 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  .button-one {
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    color: transparent;
+    vertical-align: middle;
+  }
+  .button-two {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: transparent;
+  }
 }
 
 .list-item-one:hover {
@@ -86,6 +107,36 @@
   border: solid 1px #01a9e7;
   cursor: pointer;
   text-decoration: none;
+  .icon-one {
+    color: #434c50;
+    .button-two {
+      background-color: #f6f9f8;
+      border: 1px solid #dae1e1;
+      border-radius: 3px;
+      color: #434c50;
+    }
+  }
+  .icon-two {
+    color: #434c50;
+    .button-one {
+      background-color: #f6f9f8;
+      border: 1px solid #dae1e1;
+      border-radius: 3px;
+      color: #434c50;
+    }
+  }
+}
+
+.button-one:hover {
+  .ias-icon {
+    color: #0090da;
+  }
+}
+
+.button-two:hover {
+  .ias-icon {
+    color: #0090da;
+  }
 }
 
 .list-item-two {
@@ -100,6 +151,20 @@
   border: solid 1px transparent;
   overflow: hidden;
   color: #434c50;
+  button {
+    padding: 0em;
+    min-width: 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  .button-three {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: transparent;
+    vertical-align: middle;
+  }
 }
 
 .list-item-two:hover {
@@ -107,4 +172,22 @@
   border: solid 1px #01a9e7;
   cursor: pointer;
   text-decoration: none;
+  .ias-icon {
+    color: #434c50;
+    .button-three {
+      background-color: #f6f9f8;
+      border: 1px solid #dae1e1;
+      border-radius: 3px;
+      color: #0090da;
+      .ias-icon {
+        color: #0090da;
+      }
+    }
+  }
+}
+
+.button-three:hover {
+  .ias-icon {
+    color: #0090da;
+  }
 }
