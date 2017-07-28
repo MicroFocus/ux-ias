@@ -11,20 +11,21 @@
   button:not(.ias-icon-button) > .ias-icon {
     position: absolute;
     line-height: 15%;
-    transform: translateX(-5.5px);
+    font-size: 17px;
+    transform: translateX(-8.5px) translateY(-1px);
     color: #434c50;
   }
-  button:not(.ias-icon-button) > .ias-icon :hover {
+  button:not(.ias-icon-button) > .ias-icon:hover {
     color: #01a9e7;
   }
+
   button:not([disabled]):not(.ias-disabled):hover {
     background-color: #f6f9f8;;
-    border: 1px solid transparent;
-    color: #01a9e7;
+    border: 1px solid #01a9e7;
   }
   .ias-tile:focus, .ias-tile:hover {
     background-color: #eef2f2;
-    border: 1px solid transparent;
+    border: 1px solid #01a9e7;
     outline: none;
   }
 }
