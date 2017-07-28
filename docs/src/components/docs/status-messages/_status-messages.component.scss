@@ -1,0 +1,42 @@
+.status-message-tile {
+  text-align: left;
+  margin: 30px 0px;
+  max-width: 500px;
+  background: #f6f9f8;
+  border: 1px solid #dae1e1;
+  border-radius: 3px;
+  padding: 15px;
+  .ias-icon-message_error_thick {
+    color: #e50000;
+  }
+  .ias-icon-status_error_thick {
+    color: #e50000;
+  }
+  .ias-icon-status_warn_thick {
+    color: #f17e12;
+  }
+  .ias-icon-status_ok_thick {
+    color: #37c26a;
+  }
+}
+
+.status-message-title {
+  color: #434c50;
+  text-align: left;
+  p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    display: inline;
+    vertical-align: middle;
+  }
+  .ias-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+.status-message-subtitle {
+  color: #808080;
+  margin-top: 10px;
+  font-size: 14px;
+}
