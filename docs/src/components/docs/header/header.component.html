@@ -21,7 +21,7 @@
 
     <ias-header toggle-repeat-code>
         <h1>Header Title</h1>
-        <button class="ias-icon-button" type="button">
+        <button class=" ias-button ias-icon-button" type="button">
             <i class="ias-icon ias-icon-configure_thick"></i>
         </button>
     </ias-header>
@@ -52,15 +52,19 @@
     <ias-header toggle-repeat-code>
         <h1>Header Title</h1>
         <div class="ias-header-sub-title"><span>Sub Title</span></div>
-        <div class="header-ias-search">
-            <ias-search-box ng-model="$ctrl.data.value"></ias-search-box>
+        <div class="ias-input-container" id="input-container">
+            <input type="text" autocomplete="off" id="input">
+            <i class="ias-icon ias-icon-search_thick" id="input_img"></i>
+            <button class="ias-icon-button" type="button" id="input_search_button">
+                <i class="ias-icon ias-icon-close_thick"></i>
+            </button>
         </div>
-        <ias-button class="ias-icon-button">
-            <ias-icon icon="new_thick"></ias-icon>
-        </ias-button>
-        <ias-button class="ias-icon-button">
-            <ias-icon icon="configure_thick"></ias-icon>
-        </ias-button>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-new_thick"></i>
+        </button>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-configure_thick"></i>
+        </button>
 
         <span class="ias-fill"></span>
         <ias-button class="ias-icon-button">
