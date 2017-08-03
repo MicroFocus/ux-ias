@@ -1,5 +1,5 @@
 .dual-column-title {
-  color: #434c50;
+  color: #808080;
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -8,10 +8,10 @@
   border-radius: 2px;
   background-clip: padding-box;
   border: dashed 2px #808080 ;
-  padding: 8px;
+  padding: 10px;
   background-color: #fff;
   //float: left;
-  width: 250px;
+  width: 300px;
 }
 
 .dual-one {
@@ -27,13 +27,13 @@
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 3px;
-  width: 267px;
   float: left;
   height: 339px;
 }
 
 .dual-column-two-body {
-  padding: 8px;
+  padding: 10px;
+  width: 300px;
 }
 
 .dual-column-list-one {
@@ -62,7 +62,7 @@
   background-clip: padding-box;
   position: relative;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   padding: 8px;
   overflow: hidden;
 }
@@ -73,7 +73,7 @@
   position: relative;
   display: block;
   text-decoration: none;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   padding: 8px;
   background-color: #eef2f2;
   border: solid 1px transparent;
@@ -105,7 +105,7 @@
 .list-item-one:hover {
   background-color: #f6f9f8;
   border: solid 1px #01a9e7;
-  cursor: pointer;
+  cursor: move;
   text-decoration: none;
   .icon-one {
     color: #434c50;
@@ -145,7 +145,7 @@
   position: relative;
   display: block;
   text-decoration: none;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   padding: 8px;
   background-color: #eef2f2;
   border: solid 1px transparent;
