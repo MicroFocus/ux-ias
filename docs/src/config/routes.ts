@@ -24,6 +24,7 @@ function routes(
         .state('app.component.dialog', { url: 'dialog', component: 'dialogDocumentation' })
         .state('app.component.formField', { url: 'form-field', component: 'formFieldDocumentation' })
         .state('app.component.formValidation', { url: 'form-validation', component: 'formValidationDocumentation' })
+        .state('app.component.header', {url: 'header', component: 'headerDocumentation'})
         .state('app.component.icon', { url: 'icon', component: 'iconDocumentation' })
         .state('app.component.iconButton', { url: 'icon-button', component: 'iconButtonDocumentation' })
         .state('app.component.iconButtonText', { url: 'icon-button-text', component: 'iconButtonTextDocumentation' })
