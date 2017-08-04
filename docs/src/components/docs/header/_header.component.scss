@@ -1,0 +1,73 @@
+
+
+ias-header > .ias-header-sub-title > span{
+  color: #6a6f71;
+  font-size: 15px;
+}
+h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0 15px;
+}
+
+h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #434c50;
+  font-size: 21px;
+  line-height: 1.2em;
+  margin: 15px 0 15px;
+  font-weight: normal;
+}
+
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal;
+  color: #434c50;
+  font-size: 18px;
+  line-height: 1.2em;
+  margin: 10px 0 15px;
+}
+
+h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #575b5d;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 10px 0 5px;
+}
+
+#input {
+  margin: 0;
+  padding-left: 34px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #dae1e1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#input_img {
+  position: absolute;
+  bottom: 6px;
+  left: 5px;
+  padding-right: 6px;
+}
+
+.ias-input-container {
+  position: relative;
+  padding-top: 8px;
+}
+
+.ias-button {
+  display: inline-block;
+}
