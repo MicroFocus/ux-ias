@@ -35,6 +35,7 @@
 
 .ias-datepicker-not-button{
   margin-bottom: 10px;
+  display: inline-block;
   .ias-icon {
     vertical-align: middle;
     font-size: 20px;
@@ -106,7 +107,7 @@
     vertical-align: middle;
   }
   table td > .ias-icon:first-child {
-    margin-right: 0px;
+    margin-right: 5px;
   }
   p {
     -webkit-margin-before: 0em;
@@ -114,7 +115,7 @@
     display: inline-block;
     text-align: left;
     vertical-align: center;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .hover {
     td:hover {
@@ -139,20 +140,25 @@
     -webkit-margin-after: 0em;
     vertical-align: middle;
     margin-top: 7px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .ias-icon {
     font-size: 18px;
     vertical-align: middle;
+  }
+  .ias-icon-button {
     margin-top: 7px;
   }
 }
 
 .show-dates-tab {
   margin-bottom: 10px;
-  display: table;
+  display: block;
   border-radius: 3px;
   border: 1px solid #dae1e1;
+  width: 265px;
+  max-height: 213px;
+  overflow: scroll;
   .show-dates table >tbody > tr > .show-dates-title{
     max-width: 15px;
   }
@@ -160,20 +166,8 @@
     border-collapse: collapse;
     border-color: transparent;
   }
-
-  table tr:last-child td:first-child {
-    border-bottom-left-radius: 3px;
-    border-spacing: 0;
-  }
-  table tr:last-child td:first-child {
-    border-bottom-right-radius: 3px;
-    border-spacing: 0;
-  }
   table tr:nth-of-type(3n) td {
-    border-top: 1px solid #dae1e1;
-  }
-  table tr:nth-of-type(5n) td {
-    border-top: 1px solid #dae1e1;
+    border-bottom: 1px solid #dae1e1;
   }
   table > tbody > tr:not(:last-child){
     border-bottom: 1px solid transparent;
@@ -187,6 +181,7 @@
   .ias-icon-next_right_thin {
     font-size: 18px;
     vertical-align: middle;
+    margin-right: 4px;
   }
   .ias-icon-prev_left_thin {
     font-size: 18px;
@@ -201,7 +196,7 @@
     display: inline-block;
     text-align: left;
     vertical-align: center;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .hover {
     td:hover {
