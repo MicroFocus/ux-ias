@@ -1,0 +1,22 @@
+.comment-area-one{
+  float: none;
+  margin-right: 0;
+}
+
+.manage-comments-icon {
+  padding-right: 9px;
+}
+@media (min-width: 1024px) {
+  .comment-area-one {
+    width: 475px;
+  }
+}
+.comment-body {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.comment-date {
+  margin-top: 25px;
+}
