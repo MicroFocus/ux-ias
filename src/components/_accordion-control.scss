@@ -102,3 +102,9 @@ border: 1px solid transparent;
     width: 650px;
   }
 }
+
+[dir="rtl"] {
+  .ias-icon.ias-accordion-icon-toggle {
+    left: 15px;
+  }
+}
