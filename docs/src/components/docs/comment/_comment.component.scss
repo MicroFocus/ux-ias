@@ -3,14 +3,26 @@
   margin-right: 0;
 }
 
-.manage-comments-icon {
-  padding-right: 9px;
+.comment-content {
+  border-top: 0;
 }
+
+.comment-date {
+  border-bottom: 1px solid #dae1e1;
+}
+
+.manage-comments-icon {
+  margin-right: 9px;
+  padding-left: 0;
+  margin-left: 16px;
+}
+
 @media (min-width: 1024px) {
   .comment-area-one {
     width: 475px;
   }
 }
+
 .comment-body {
   padding-left: 15px;
   padding-right: 15px;
@@ -19,4 +31,11 @@
 
 .comment-date {
   margin-top: 25px;
+}
+
+.manage-comment-action-avatar {
+  position: relative;
+  margin-right: 5px;
+  padding-left: 0;
+  margin-left: 10px;
 }
