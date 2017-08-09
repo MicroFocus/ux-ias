@@ -15,25 +15,28 @@
 }
 
 .dual-one {
-  float: left;
+  display: inline-block;
   margin-right: 40px;
 }
 .dual-two {
-  float: left;
+  display: inline-block;
 }
 
 .dual-column-two {
-  border: 1px solid #808080;
-  margin-bottom: 20px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  border: 2px solid #808080;
+  padding: 10px;
   background-color: #fff;
-  border-radius: 3px;
-  float: left;
-  height: 339px;
+  width: 300px;
 }
 
 .dual-column-two-body {
-  padding: 10px;
-  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 320px;
+  overflow-y: auto;
 }
 
 .dual-column-list-one {
