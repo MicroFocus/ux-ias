@@ -1,3 +1,29 @@
 .ias-accordion {
   border: 1px solid #dae1e1;
+  border-radius: 3px;
+  max-width: 800px;
+}
+.ias-accordion-open {
+  border-color: #01a9e7;
+  border-radius: 3px;
+}
+.last-accordion {
+  margin-bottom: 50px;
+}
+.ias-accordion-header:hover {
+  cursor: pointer;
+  background-color: #f6f9f8;
+  .ias-icon.ias-accordion-icon-toggle {
+    color: #01a9e7;
+  }
+}
+
+[dir="rtl"] {
+  .ias-accordion-icon-toggle {
+    left: 15px;
+    right: auto;
+  }
+  .icon-button-toggle {
+    float: none;
+  }
 }
