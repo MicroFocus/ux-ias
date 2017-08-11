@@ -1376,7 +1376,7 @@ a.ias-link-no-highlight {
 
 a:focus, a:hover {
   background-color: #eef2f2;
-  color: #0061bd;
+  color: #0067ad;
   text-decoration: none;
   outline: none;
 }
@@ -2120,6 +2120,7 @@ table .ias-icon-button {
 
 .ias-tile.ias-medium > .ias-tile-content {
   margin: 10px 10px 10px 0;
+  height: 50px;
   overflow: hidden;
 }
 
