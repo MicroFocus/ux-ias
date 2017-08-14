@@ -1,8 +1,7 @@
 {
   "name": "ux-ias",
   "version": "0.0.1",
-  "description": "Micro Focus Identity and Access Management Group style and user-experience guidelines",
-  "main": "index.js",
+  "description": "Micro Focus Identity and Access Management Group UX guidelines",
   "engines": {
     "node": ">=6.2",
     "npm": ">=3.9"
@@ -17,14 +16,8 @@
     "url": "git+https://github.com/jedwardhawkins/ux-ias.git"
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
-  "contributors": [
-    "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
-    "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
-  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jedwardhawkins/ux-ias/issues"
-  },
+  "bugs": "https://github.com/jedwardhawkins/ux-ias/issues",
   "devDependencies": {
     "@types/angular": "1.5.8",
     "@types/angular-mocks": "1.5.8",
