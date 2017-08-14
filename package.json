@@ -42,7 +42,7 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
-    "ias-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git#v0.2.0",
+    "ias-icons": "jedwardhawkins/ias-icons#v0.2.0",
     "ng-gulp": "jedwardhawkins/ng-gulp#v0.7.2",
     "ng-prism": "joswhite/ng-prism#v1.3.3"
   }
