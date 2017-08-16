@@ -1,6 +1,6 @@
-# Micro Focus UX-IAS
+# Micro Focus ux-ias
 
-Identity and Access UX Guidelines (UX-IAS) is the official CSS framework for web applications built by Micro Focus 
+Identity and Access UX Guidelines (ux-ias) is the official CSS framework for web applications built by Micro Focus 
 Identity and Access Management Group. These guidelines help establish a consistent look and feel among common
 user interface elements throughout Identity and Access Management Group products. This documentation contains
 information about components, user experience (UX) patterns, and application layout. It also contains the

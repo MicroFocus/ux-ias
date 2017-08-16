@@ -8,8 +8,6 @@
   },
   "engineStrict": true,
   "scripts": {
-    "preversion": "gulp clean",
-    "version": "gulp build:production && git add -A dist"
   },
   "repository": {
     "type": "git",
