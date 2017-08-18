@@ -7,7 +7,7 @@ information about components, user experience (UX) patterns, and application lay
 required structure and options for the HTML that uses this framework.
 
 This is only a CSS framework. Interactive components shown in this framework are not functional (they can
-only be viewed). Please refer to ng-ias to view a fully functional implementation of these components.
+only be viewed). Please refer to [ng-ias](https://github.com/jedwardhawkins/ng-ias) to view a fully functional implementation of these components.
 
 ### Helpful Links
 
