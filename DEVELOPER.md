@@ -1,29 +1,36 @@
-# Setting up the Developer Environment
+# Setting up the Development Environment
+The development environment has two parts. One part handles building `ux-ias.css` and another builds and serves the documentation application.
 
 1. Clone the repository and install packages via NPM
 
        git clone git@github.com:jedwardhawkins/ux-ias.git
+       cd ux-ias
        npm install -g gulp-cli
        npm install
 
-2. Build the project
+2. In one terminal window
 
        ~/ux-ias# gulp
+       
+This will build ux-ias, and watch files under src/ for changes.
    
    In a new terminal:
 
        ~/ux-ias# cd docs
        ~/ux-ias/docs# gulp
+       
+This will build the documentation application, start a local server, and watch files under docs/src for changes.
 
-3. Navigate to localhost:8080 to view the application.
+3. Navigate to localhost:8080 to view the documentation application.
 
-## Build Command Explanation
+## ng-gulp
 
-This project uses [gulp.js](https://gulpjs.com/) and 
-[ng-gulp](https://github.com/jedwardhawkins/ng-gulp) to build ux-ias as well as the documentation
-site for it. Running gulp tasks from the project root builds ux-ias. Running gulp tasks from
-`/docs` inside the project root builds the documentation site for ux-ias, which can be viewed on
-localhost:8080. Running `gulp` builds and serves the given application, watching the files for 
-changes and recompiling as necessary. (This command doesn't serve ux-ias since it does not have 
-any content to be served.) For a one-time build, run `gulp build:production`. To simply serve 
-files, run `gulp serve:production`.
+This project uses [Gulp](https://gulpjs.com/) and 
+[ng-gulp](https://github.com/jedwardhawkins/ng-gulp) to build the project, watch the source for changes, and start a local server which hosts the application.
+
+### Useful ng-gulp commands
+- `gulp build:production` Build project without watching for changes or starting server
+- `gulp serve:production` Start local server
+- `gulp clean` Remove build output directory
+
+To build the application without watching for changes or starting a local server, run `gulp build:production`. To serve the application without watching for changes, run `gulp serve:production`.
