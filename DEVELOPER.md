@@ -12,16 +12,16 @@ The development environment has two parts. One part handles building `ux-ias.css
 
        ~/ux-ias# gulp
        
-This will build ux-ias, and watch files under src/ for changes.
+   This will build ux-ias, and watch files under src/ for changes.
    
-   In a new terminal:
+3. In a new terminal:
 
        ~/ux-ias# cd docs
        ~/ux-ias/docs# gulp
        
-This will build the documentation application, start a local server, and watch files under docs/src for changes.
+   This will build the documentation application, start a local server, and watch files under docs/src for changes.
 
-3. Navigate to localhost:8080 to view the documentation application.
+4. Navigate to localhost:8080 to view the documentation application.
 
 ## ng-gulp
 
