@@ -1,7 +1,7 @@
 {
   "name": "ux-ias",
   "version": "0.0.1",
-  "description": "Micro Focus Identity and Access Management Group UX guidelines",
+  "description": "UX library for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
     "npm": ">=3.9"
