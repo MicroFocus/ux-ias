@@ -32,3 +32,9 @@ nav-documentation {
   vertical-align: middle;
   padding-right: 5px;
 }
+
+@media (min-width: 768px) {
+  .ias-nav {
+    padding: 0 13px;
+  }
+}
