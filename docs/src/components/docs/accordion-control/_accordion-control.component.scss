@@ -1,11 +1,15 @@
 .ias-accordion {
   border: 1px solid #dae1e1;
   border-radius: 3px;
-  max-width: 800px;
+  max-height: none;
+  background-clip: border-box;
 }
-.ias-accordion-open {
+.ias-open {
   border-color: #01a9e7;
   border-radius: 3px;
+  min-height: 25px;
+  flex-direction: column;
+
 }
 .last-accordion {
   margin-bottom: 50px;
@@ -18,6 +22,26 @@
   }
 }
 
+.ias-accordion:not(ias-open):hover {
+  background: #f6f9f8;
+  border: 1px solid #01a9e7;
+  cursor: pointer;
+  color: #434c50;
+}
+
+.ias-accordion-group {
+  margin-bottom: 50px;
+  position: relative;
+  width: auto;
+  display: inline-block;
+  .icon-button-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+}
+
 [dir="rtl"] {
   .ias-accordion-icon-toggle {
     left: 15px;
@@ -25,5 +49,15 @@
   }
   .icon-button-toggle {
     float: none;
+  }
+}
+
+.ias-accordion-content {
+  border-radius: 0 0 3px 3px;
+}
+
+.ias-accordion-header {
+  .ias-icon {
+    font-size: 20px;
   }
 }
