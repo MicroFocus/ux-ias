@@ -133,7 +133,7 @@
   border: 1px solid #dae1e1;
   border-bottom: 1px solid transparent;
   padding: 0 10px;
-  border-radius: 3px;
+  border-radius: 3px 3px 0px 0px;
   p {
     display: inline-block;
     -webkit-margin-before: 0em;
@@ -154,7 +154,7 @@
 .show-dates-tab {
   margin-bottom: 10px;
   display: block;
-  border-radius: 3px;
+  border-radius: 0px 0px 3px 3px;
   border: 1px solid #dae1e1;
   width: 265px;
   max-height: 213px;
