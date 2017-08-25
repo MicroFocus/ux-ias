@@ -1,7 +1,7 @@
 <h2 class="ias-page-title">Icon Button with Toggle</h2>
 <p class="ias-page-instructions">This shows one button that is disabled. We are unable to toggle to the table view because we are already in that state. The other
 available buttons are views that we can navigate to.</p>
-<div class="icon-button-toggle">
+<ias-header class="icon-button-toggle">
     <button class="ias-icon-button main" type="button">
         <i class="ias-icon ias-icon-view_list_thin"></i>
     </button>
@@ -11,41 +11,24 @@ available buttons are views that we can navigate to.</p>
     <button class="ias-icon-button" type="button">
         <i class="ias-icon ias-icon-orgchart_thin"></i>
     </button>
-
-</div>
+</ias-header>
 <table>
     <thead>
     <tr>
-        <th></th>
         <th>Name</th>
         <th>Title</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <td>
-            <button class="ias-icon-button" type="button">
-                <i class="ias-icon ias-icon-search_thick"></i>
-            </button>
-        </td>
         <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
         <td>Asst. to the UX Director</td>
     </tr>
     <tr>
-        <td>
-            <button class="ias-icon-button" type="button" disabled="disabled">
-                <i class="ias-icon ias-icon-cancel_thick"></i>
-            </button>
-        </td>
         <td><a ui-sref="app.component.table">Fleece Marigold</a></td>
         <td>Regional Manager</td>
     </tr>
     <tr>
-        <td>
-            <button class="ias-icon-button" type="button">
-                <i class="ias-icon ias-icon-search_thick"></i>
-            </button>
-        </td>
         <td><a ui-sref="app.component.table">Gustav Purpleson</a></td>
         <td>Assistant Regional Manager</td>
     </tr>
