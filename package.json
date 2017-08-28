@@ -21,7 +21,7 @@
     "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
     "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
   ],
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jedwardhawkins/ux-ias/issues"
   },
