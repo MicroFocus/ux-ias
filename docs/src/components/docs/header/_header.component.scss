@@ -1,9 +1,53 @@
-
-
-ias-header > .ias-header-sub-title > span{
-  color: #6a6f71;
-  font-size: 15px;
+ias-header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
 }
+
+ias-header > .ias-header-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+ias-header > .ias-icon-button {
+  margin-left: 10px;
+}
+
+ias-header > .ias-header-sub-title {
+  color: #6a6f71;
+  flex: 0 0 100%;
+  font-size: 15px;
+  order: 1;
+}
+
+ias-header > .ias-fill {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.demo-section{
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.ias-button.ias-icon-button {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+}
+
+.ias-button:last-of-type {
+  margin-right: 0;
+}
+
+.ias-button.ias-icon-button ias-icon {
+  display: block;
+}
+
 h1 {
   overflow: hidden;
   text-overflow: ellipsis;
