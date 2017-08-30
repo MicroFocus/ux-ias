@@ -47,6 +47,7 @@
   }
   .ias-tile.ias-medium {
     width: auto;
+    margin-bottom: 5px;
   }
 }
 
@@ -211,5 +212,11 @@
 .button-three:hover {
   .ias-icon {
     color: #0090da;
+  }
+}
+
+[dir="rtl"] {
+  .dual-two {
+    margin-right: 40px;
   }
 }
