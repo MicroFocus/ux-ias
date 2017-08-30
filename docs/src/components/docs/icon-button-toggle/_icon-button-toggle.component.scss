@@ -14,3 +14,9 @@
   background-color: transparent;
   border-color: transparent;
 }
+
+[dir="rtl"] {
+  .icon-button-toggle {
+    float: left;
+  }
+}
