@@ -13,7 +13,7 @@ nav-documentation {
   p {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    padding-right: 25px;
+    padding-right: 15px;
   }
 }
 
@@ -36,5 +36,20 @@ nav-documentation {
 @media (min-width: 768px) {
   .ias-nav {
     padding: 0 13px;
+  }
+}
+
+[dir="rtl"] {
+  #alerts-item {
+    right: auto;
+    left: 10px;
+  }
+  #alerts-item p {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+  .status-icon-warn {
+    padding-right: 0;
+    padding-left: 5px;
   }
 }
