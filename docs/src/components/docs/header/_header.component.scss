@@ -155,3 +155,28 @@ h4 {
 .ias-button {
   display: inline-block;
 }
+
+[dir="rtl"] {
+  ias-header > .ias-header-title {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  #input {
+    padding-right: 34px;
+    padding-left: 8px;
+  }
+  #input_img {
+    left: auto;
+    right: 5px;
+    padding-right: 0;
+    padding-left: 6px;
+  }
+  #input_search_button {
+    right: auto;
+    left: 5px;
+  }
+  ias-header > .ias-icon-button {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+}
