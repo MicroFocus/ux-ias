@@ -94,3 +94,9 @@ table td {
 table tr {
   paddding: 0 10px;
 }
+
+[dir="rtl"] {
+  td.last {
+    text-align: left;
+  }
+}
