@@ -42,17 +42,6 @@
   }
 }
 
-[dir="rtl"] {
-  .ias-accordion-icon-toggle {
-    left: 15px;
-    right: auto;
-  }
-  .icon-button-toggle {
-    float: none;
-  }
-}
-
-
 .ias-accordion-header {
   .ias-icon {
     font-size: 20px;
@@ -63,3 +52,19 @@
 .ias-accordion-content {
   border-radius: 0 0 3px 3px;
 }
+
+
+[dir="rtl"] {
+  .ias-accordion-icon-toggle {
+    left: 15px;
+    right: auto;
+  }
+  .icon-button-toggle {
+    float: none;
+  }
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
+
+
