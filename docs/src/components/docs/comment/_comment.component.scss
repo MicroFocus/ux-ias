@@ -126,3 +126,41 @@ textarea {
 .comment-frame p {
   padding: 10px 10px 10px 3px;
 }
+
+[dir="rtl"] {
+  .comment-icon {
+    left: auto;
+  }
+  .comment-action-text {
+    left: 0;
+    right: auto;
+  }
+  .comment-action-avatar {
+    left: auto;
+    right: 0;
+  }
+  .comment-name {
+    margin-right: 40px;
+  }
+  .comment-text {
+    margin-right: 45px;
+  }
+  .manage-comments .ias-icon-comment_user_thin {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .manage-comments .ias-avatar {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .comment-count {
+    right: auto;
+    left: 10px;
+  }
+  .ias-menu-content {
+    margin-right: 25px;
+  }
+  .comment-button {
+    margin-right: 5px;
+  }
+}
