@@ -17,7 +17,7 @@ border: 1px solid transparent;
   display: flex;
   position: relative;
   flex-direction: column;
-  border: 1px solid transparent;
+  border: 1px solid #dae1e1;
   background: $color-gray-6;
   max-height: 45px;
   margin-top: 15px;
@@ -100,5 +100,11 @@ border: 1px solid transparent;
   }
   .ias-accordion-open {
     width: 650px;
+  }
+}
+
+[dir="rtl"] {
+  .ias-icon.ias-accordion-icon-toggle {
+    left: 15px;
   }
 }

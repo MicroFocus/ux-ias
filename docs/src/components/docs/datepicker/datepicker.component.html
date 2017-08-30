@@ -2,11 +2,12 @@
 <p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar in small overlay.</p>
 <h3>Closed Datepicker</h3>
 <div class="ias-datepicker">
+    <button class="ias-icon-button" type="button">
         <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
+    </button>
 </div>
 <div class="ias-datepicker-not-button">
-    <span>06/29/2017</span>
-    <i class="ias-icon ias-icon-date_thick"></i>
+    <a ui-sref="app.component.link" href="/component/link">06/29/2017<i class="ias-icon ias-icon-date_thick"></i></a>
 </div>
 <div class="ias-datepicker">
     <button type="button" >
@@ -16,12 +17,21 @@
 </div>
 <h3>Open Datepicker</h3>
 <div class="ias-datepicker-calendar">
-        <i class="ias-icon ias-icon-date_thick"></i>
+    <button class="ias-icon-button" type="button">
+        <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
+    </button>
 </div>
 <div class="datepicker-open">
     <table border=".5" aria-hidden="true" class="datepicker-dates">
         <tr>
-            <td colspan="7" align="left"><p>June 2017</p><i class="ias-icon ias-icon-next_right_thin"></i></td>
+            <td colspan="7" align="left">
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-prev_left_thin"></i>
+                </button>
+                <p>June 2017</p>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-next_right_thin"></i>
+                </button>
         </tr>
         <tr class="weekdays">
             <td align="center">S</td>
@@ -33,10 +43,10 @@
             <td align="center">S</td>
         </tr>
         <tr class="hover">
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center" class="rollover">28</td>
+            <td align="center" class="rollover">29</td>
+            <td align="center" class="rollover">30</td>
+            <td align="center" class="rollover">31</td>
             <td class="hover" align="center">1</td>
             <td class="hover" align="center">2</td>
             <td class="hover" align="center">3</td>
@@ -75,15 +85,24 @@
             <td align="center">28</td>
             <td align="center">29</td>
             <td align="center">30</td>
-            <td align="center"></td>
+            <td align="center" class="rollover">1</td>
         </tr>
     </table>
 </div>
 
 <div class="ias-datepicker-calendar">
-        <i class="ias-icon ias-icon-date_thick"></i>
+    <button class="ias-icon-button" type="button">
+        <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
+    </button>
 </div>
-<div class="show-dates-header"><p class="show-dates-title">June 2017</p><i class="ias-icon ias-icon-next_right_thin"></i></div>
+<div class="show-dates-header">
+    <button class="ias-icon-button" type="button">
+        <i class="ias-icon ias-icon-prev_left_thin"></i>
+    </button>
+    <p class="show-dates-title">June 2017</p>
+    <button class="ias-icon-button" type="button">
+        <i class="ias-icon ias-icon-next_right_thin"></i>
+    </button></div>
 <div class="show-dates-tab">
     <table border=".5" aria-hidden="true" class="datepicker-dates">
         <tr class="hover">
@@ -92,13 +111,16 @@
             <td align="center">Feb</td>
             <td align="center">Mar</td>
             <td class="hover" align="center">Apr</td>
-            <td class="hover" align="center">May</td>
-            <td class="hover" align="center">Jun</td>
         </tr>
-        <tr class="hover bottom-border">
+        <tr class="hover">
             <td align="center" colspan = "2"></td>
+            <td align="center">May</td>
+            <td align="center">Jun</td>
             <td align="center">Jul</td>
             <td align="center">Aug</td>
+        </tr>
+        <tr class="hover calendar-year">
+            <td align="center" colspan = "2"></td>
             <td align="center">Sep</td>
             <td align="center">Oct</td>
             <td align="center">Nov</td>
@@ -110,13 +132,16 @@
             <td align="center">Feb</td>
             <td align="center">Mar</td>
             <td class="hover" align="center">Apr</td>
-            <td class="hover" align="center">May</td>
-            <td class="hover" align="center">Jun</td>
         </tr>
         <tr class="hover bottom-border">
             <td align="center" colspan = "2"></td>
+            <td align="center">May</td>
+            <td align="center">Jun</td>
             <td align="center">Jul</td>
             <td align="center">Aug</td>
+        </tr>
+        <tr class="hover calendar-year">
+            <td align="center" colspan = "2"></td>
             <td align="center">Sep</td>
             <td align="center">Oct</td>
             <td align="center">Nov</td>
@@ -128,8 +153,41 @@
             <td align="center">Feb</td>
             <td align="center">Mar</td>
             <td class="hover" align="center">Apr</td>
-            <td class="hover" align="center">May</td>
-            <td class="hover" align="center">Jun</td>
+        </tr>
+        <tr class="hover">
+            <td align="center" colspan = "2"></td>
+            <td align="center">May</td>
+            <td align="center">Jun</td>
+            <td align="center">Jul</td>
+            <td class="hover" align="center">Aug</td>
+        </tr>
+        <tr class="hover calendar-year">
+            <td align="center" colspan = "2"></td>
+            <td align="center">Sep</td>
+            <td align="center">Oct</td>
+            <td align="center">Nov</td>
+            <td class="hover" align="center">Dec</td>
+        </tr>
+        <tr class="hover">
+            <td align="center" colspan = "2">2020</td>
+            <td align="center">Jan</td>
+            <td align="center">Feb</td>
+            <td align="center">Mar</td>
+            <td class="hover" align="center">Apr</td>
+        </tr>
+        <tr class="hover">
+            <td align="center" colspan = "2"></td>
+            <td align="center">May</td>
+            <td align="center">Jun</td>
+            <td align="center">Jul</td>
+            <td class="hover" align="center">Aug</td>
+        </tr>
+        <tr class="hover">
+            <td align="center" colspan = "2"></td>
+            <td align="center">Sep</td>
+            <td align="center">Oct</td>
+            <td align="center">Nov</td>
+            <td class="hover" align="center">Dec</td>
         </tr>
     </table>
 </div>
