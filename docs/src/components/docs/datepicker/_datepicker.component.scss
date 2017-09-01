@@ -265,3 +265,25 @@
     }
   }
 }
+
+[dir="rtl"] {
+  table td {
+    text-align: right;
+  }
+  .ias-icon-prev_left_thin {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .ias-icon-next_right_thin {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
