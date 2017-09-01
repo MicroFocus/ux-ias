@@ -43,6 +43,13 @@
   font-size: 14px;
 }
 
+
+@media(max-width: 320px) {
+  .status-message-tile {
+    width: 225px;
+  }
+}
+
 [dir="rtl"] {
   .status-message-title {
     text-align: right;
