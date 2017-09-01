@@ -70,3 +70,15 @@
 .ias-accordion-content {
   border-radius: 0 0 3px 3px;
 }
+
+@media (max-width: 768px) {
+  .toggle-show > .show-code > button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .toggle-show > .show-code > button {
+    margin-bottom: 50px;
+  }
+}
