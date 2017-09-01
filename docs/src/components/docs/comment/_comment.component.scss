@@ -127,6 +127,15 @@ textarea {
   padding: 10px 10px 10px 3px;
 }
 
+@media(max-width: 320px) {
+  .comment-frame {
+    width: 250px;
+  }
+  .comment-frame-scroll {
+    width: 250px;
+  }
+}
+
 [dir="rtl"] {
   .comment-icon {
     left: auto;
