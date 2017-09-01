@@ -215,6 +215,15 @@
   }
 }
 
+@media(max-width: 320px) {
+  .dual-column-one {
+    max-width: 250px;
+  }
+  .dual-column-two {
+    max-width: 250px;
+  }
+}
+
 [dir="rtl"] {
   .dual-two {
     margin-right: 40px;
