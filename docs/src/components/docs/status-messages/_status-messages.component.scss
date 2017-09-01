@@ -42,3 +42,15 @@
   margin-top: 10px;
   font-size: 14px;
 }
+
+[dir="rtl"] {
+  .status-message-title {
+    text-align: right;
+  }
+  .status-message-subtitle {
+    text-align: right;
+  }
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
