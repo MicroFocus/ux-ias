@@ -78,6 +78,9 @@
 }
 
 @media (max-width: 320px) {
+  .ias-accordion {
+    width: 250px;
+  }
   .toggle-show > .show-code > button {
     margin-bottom: 50px;
   }
