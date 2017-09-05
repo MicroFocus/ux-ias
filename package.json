@@ -1,30 +1,21 @@
 {
   "name": "ux-ias",
   "version": "0.0.1",
-  "description": "Micro Focus Identity and Access Management Group style and user-experience guidelines",
-  "main": "index.js",
+  "description": "UX library for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
     "npm": ">=3.9"
   },
   "engineStrict": true,
   "scripts": {
-    "preversion": "gulp clean",
-    "version": "gulp build:production && git add -A dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jedwardhawkins/ux-ias.git"
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
-  "contributors": [
-    "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
-    "Lynn Christensen <lynn.christensen@microfocus.com> (https://github.com/ldchrist)"
-  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jedwardhawkins/ux-ias/issues"
-  },
+  "bugs": "https://github.com/jedwardhawkins/ux-ias/issues",
   "devDependencies": {
     "@types/angular": "1.5.8",
     "@types/angular-mocks": "1.5.8",
@@ -42,7 +33,7 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
-    "ias-icons": "git+https://secmgmtgit.provo.novell.com:8443/scm/~jhawkins/ias-icons.git#v0.2.0",
+    "ias-icons": "jedwardhawkins/ias-icons#v0.2.0",
     "ng-gulp": "jedwardhawkins/ng-gulp#v0.7.2",
     "ng-prism": "joswhite/ng-prism#v1.3.3"
   }
