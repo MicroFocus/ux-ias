@@ -8,7 +8,7 @@ import ComponentsComponent from './components/components/components.component';
 import KitchenSinkComponent from './components/kitchen-sink/kitchen-sink.component';
 import ProjectComponent from './components/project/project.component';
 // Docs Components
-import AccordionControlComponent from './components/docs/accordion-control/accordion-control';
+import AccordionControlComponent from './components/docs/accordion-control/accordion-control.component';
 import AppBarComponent from './components/docs/app-bar/app-bar.component';
 import ButtonComponent from './components/docs/button/button.component';
 import ColorsComponent from './components/docs/colors/colors.component';

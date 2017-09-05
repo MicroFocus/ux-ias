@@ -1,110 +1,70 @@
-.ias-accordion-controller {
-  clear: both;
-min-height: 25px;
-position: relative;
-margin-top: 5px;
-background: #eef2f2;
-padding: 2px 15px;
-border: 1px solid transparent;
-}
+// closed border: #eef2f2
+// open border: #dae1e1
+// hover border: #01a9e7
+// header: #eef2f2
+// header hover: #f6f9f8
 
 .ias-accordion-group {
   display: block;
-  width: 700px;
-}
+  max-width: 750px;
 
-.ias-accordion {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  border: 1px solid transparent;
-  background: $color-gray-6;
-  max-height: 45px;
-  margin-top: 15px;
-  .ias-icon-message_error_thick {
-    color: red;
+  > .ias-accordion-link {
+    text-align: right;
+    margin-bottom: 2px;
   }
-}
 
-.ias-accordion-open {
-  display: block;
-  position: relative;
-  flex-direction: column;
-  border: 1px solid $color-gray-5;
-  background: $color-gray-6;
-  min-height: 25px;
-  margin-top: 15px;
-}
+  > .ias-accordion {
+    border: 1px solid #eef2f2;
+    border-radius: 3px;
+    margin-bottom: 15px;
 
-.ias-accordion:not(ias-accordion-open):hover  {
-  color: #1773bb;
-  background: #f6f9f8;
-  border: 1px solid #01a9e7;
-  cursor: pointer;
-}
+    &.ias-open {
+      border-color: #dae1e1;
+    }
 
-.ias-accordion-header {
-  align-items: center;
-  color: $color-gray-1;
-  padding: 15px;
-  font-weight: normal;
-  display: flex;
-}
+    > .ias-accordion-header {
+      align-items: center;
+      background-color: #eef2f2;
+      border: 1px solid #eef2f2;
+      border-radius: 3px;
+      color: $color-gray-1;
+      display: flex;
+      height: 41px;
+      padding: 0 15px;
 
-.ias-accordion-content {
-  display: block;
-  flex: 1 1 auto;
-  padding: 1rem;
-  background-color: white;
-  margin: auto;
-  border: 1px solid $color-gray-5;
-  position: relative;
-}
+      &:hover {
+        cursor: pointer;
+        background-color: #f6f9f8;
+        border-color: #01a9e7;
+      }
 
-.ias-accordion-icon {
-  color: $color-gray-1;
-  position: relative;
-  font-size: 25px;
-  align-items: center;
-  padding-left: 10px;
-}
+      > .ias-icon {
+        align-items: center;
+        color: $color-gray-1;
+        padding-left: 10px;
 
-.ias-accordion-icon-toggle {
-  color: $color-gray-1;
-  position: absolute;
-  right: 15px;
-  align-items: center;
-}
+        &.ias-accordion-icon-toggle {
+          color: #01a9e7;
+          font-size: 20px;
+        }
+      }
+    }
 
-@media(min-width: 320px) {
-  .ias-accordion {
-    width: 280px;
-  }
-  .ias-accordion-open {
-    width: 280px;
-  }
-}
 
-@media(min-width: 768px) {
-  .ias-accordion {
-    width: 450px;
-  }
-  .ias-accordion-open {
-    width: 450px;
-  }
-}
 
-@media(min-width: 1024px) {
-  .ias-accordion {
-    width: 650px;
-  }
-  .ias-accordion-open {
-    width: 650px;
-  }
-}
+    > .ias-accordion-content {
+      display: block;
+      flex: 1 1 auto;
+      padding: 15px;
+      background-color: white;
+      margin: auto;
+      border-radius: 0 0 3px 3px;
+    }
 
-[dir="rtl"] {
-  .ias-icon.ias-accordion-icon-toggle {
-    left: 15px;
+    &:not(.ias-open) {
+      > .ias-accordion-content {
+        display: none;
+      }
+    }
   }
 }
