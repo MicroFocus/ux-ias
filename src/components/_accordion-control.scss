@@ -1,70 +1,59 @@
-// closed border: #eef2f2
-// open border: #dae1e1
-// hover border: #01a9e7
-// header: #eef2f2
-// header hover: #f6f9f8
-
 .ias-accordion-group {
   display: block;
-  max-width: 750px;
+  max-width: $accordion-group-max-width;
 
   > .ias-accordion-link {
+    margin-bottom: $accordion-link-margin-bottom;
     text-align: right;
-    margin-bottom: 2px;
   }
 
   > .ias-accordion {
-    border: 1px solid #eef2f2;
-    border-radius: 3px;
-    margin-bottom: 15px;
+    margin-bottom: $accordion-margin-bottom;
 
     &.ias-open {
-      border-color: #dae1e1;
+      > .ias-accordion-header {
+        border-color: $accordion-border-color-open $accordion-border-color-open $accordion-header-bg-color;
+        border-radius: $border-radius $border-radius 0 0;
+      }
+
+      > .ias-accordion-content {
+        border-color: $accordion-border-color-open;
+        display: block;
+      }
     }
 
     > .ias-accordion-header {
       align-items: center;
-      background-color: #eef2f2;
-      border: 1px solid #eef2f2;
-      border-radius: 3px;
-      color: $color-gray-1;
+      background-color: $accordion-header-bg-color;
+      border: $accordion-border-width solid $accordion-header-bg-color;
+      border-radius: $border-radius;
+      color: $accordion-header-color;
       display: flex;
-      height: 41px;
-      padding: 0 15px;
+      height: $accordion-header-height;
+      padding: 0 $accordion-header-padding;
 
       &:hover {
         cursor: pointer;
-        background-color: #f6f9f8;
-        border-color: #01a9e7;
+        background-color: $accordion-header-bg-color-hover;
+        border-color: $accordion-header-border-color-hover;
       }
 
       > .ias-icon {
-        align-items: center;
-        color: $color-gray-1;
-        padding-left: 10px;
+        padding-left: $accordion-icon-spacing;
 
         &.ias-accordion-icon-toggle {
-          color: #01a9e7;
-          font-size: 20px;
+          color: $accordion-icon-toggle-color;
+          font-size: $accordion-icon-toggle-size;
         }
       }
     }
 
-
-
     > .ias-accordion-content {
-      display: block;
-      flex: 1 1 auto;
+      border: $accordion-border-width solid;
+      border-radius: 0 0 $border-radius $border-radius;
+      border-top-width: 0;
+      display: none;
       padding: 15px;
-      background-color: white;
-      margin: auto;
-      border-radius: 0 0 3px 3px;
-    }
-
-    &:not(.ias-open) {
-      > .ias-accordion-content {
-        display: none;
-      }
     }
   }
 }

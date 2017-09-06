@@ -45,6 +45,22 @@ $focus-border-color: $color-primary-4;
 $focus-text-color: $color-gray-1;
 
 // COMPONENTS
+$accordion-border-color-open: $color-gray-5;
+$accordion-border-width: 1px;
+$accordion-content-border-color: $color-gray-6;
+$accordion-group-max-width: 750px;
+$accordion-header-bg-color: $color-gray-6;
+$accordion-header-bg-color-hover: $color-gray-7;
+$accordion-header-border-color-hover: $color-primary-4;
+$accordion-header-color: $color-gray-1;
+$accordion-header-height: 41px;
+$accordion-header-padding: $body-spacing-medium;
+$accordion-icon-spacing: $spacing;
+$accordion-icon-toggle-color: $color-gray-4;
+$accordion-icon-toggle-size: 20px;
+$accordion-link-margin-bottom: 2px;
+$accordion-margin-bottom: $body-spacing-medium;
+
 $app-bar-action-color: rgba(67,76,80,.3);
 $app-bar-bg-fallback: $color-primary-2;
 $app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
