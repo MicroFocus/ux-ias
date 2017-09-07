@@ -1,6 +1,6 @@
 .comment-frame {
   border: 1px solid $color-gray-5;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 3px;
   width: 550px;
   display: block;
@@ -11,14 +11,14 @@
     -webkit-margin-after: 0em;
     display: inline;
     padding: 10px;
-    color: #434c50;
+    color: $comment-frame-p;
     vertical-align: middle;
   }
 }
 
 .comment-frame-scroll {
   border: 1px solid $color-gray-5;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 3px;
   width: 550px;
   z-index: 1000;
@@ -37,7 +37,7 @@
 }
 
 .comment-header {
-  background-color: $color-gray-6;
+  background-color: $comment-header;
   padding: 12px;
   position: relative;
   p {
@@ -207,7 +207,7 @@
 }
 
 .comment-name {
-  color: #434c50 ;
+  color: $comment-name;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -218,7 +218,7 @@
 
 .comment-time {
   font-size: 10px;
-  color: #808080;
+  color: $comment-time;
   display: inline-block;
   white-space: nowrap;
 }
@@ -283,7 +283,7 @@
 .manage-comments {
   width: 100%;
   color: #353838;
-  background-color: #eef2f2;
+  background-color: $comment-manage-comments;
   padding-bottom: 15px;
   .ias-icon-comment_user_thin {
     color: #007cd0;
@@ -362,7 +362,7 @@
 .comment-date {
   margin-left: 4px;
   font-size: 10px;
-  color: #808080;
+  color: $comment-date;
   margin-top: 15px;
   margin-bottom: 3px;
 }
