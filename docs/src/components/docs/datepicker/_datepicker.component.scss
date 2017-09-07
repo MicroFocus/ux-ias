@@ -87,13 +87,13 @@
     border-color: transparent;
   }
   .weekdays {
-    background-color: #eef2f2;
+    background-color: transparent;
   }
   table > tbody > tr:not(:last-child) {
     border-bottom: 1px solid transparent;
   }
   table >tbody > tr:not(.hover) {
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid #dae1e1;
   }
   table >tbody >tr {
     background-color: transparent;
