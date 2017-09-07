@@ -1,6 +1,6 @@
 .comment-frame {
   border: 1px solid $color-gray-5;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 3px;
   width: 100%;
   display: block;
@@ -11,14 +11,14 @@
     -webkit-margin-after: 0em;
     display: inline;
     padding: 10px;
-    color: #434c50;
+    color: $comment-frame-p;
     vertical-align: middle;
   }
 }
 
 .comment-frame-scroll {
   border: 1px solid $color-gray-5;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 3px;
   width: 550px;
   z-index: 1000;
@@ -31,7 +31,7 @@
     -webkit-margin-after: 0em;
     display: inline;
     padding: 10px;
-    color: #434c50;
+    color: $comment-frame-p;
     vertical-align: middle;
   }
 }
@@ -148,7 +148,7 @@
     color: #007cd0;
   }
   .ias-icon-comment_sys_thin {
-    color: #434c50;
+    color: $comment-frame-p;
     padding-top: 7px;
   }
   button:not(.ias-icon-button) {
@@ -207,7 +207,7 @@
 }
 
 .comment-name {
-  color: #434c50 ;
+  color: $comment-frame-p;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -225,7 +225,7 @@
 
 .comment-text {
   cursor: pointer;
-  color: #434c50;
+  color: $comment-frame-p;
   line-height: 18px;
   margin-top: 4px;
   margin-left: 1px;
@@ -260,7 +260,7 @@
   }
   .ias-icon-circle_horz_menu_fill {
     font-size: 23px;
-    color: #434c50;
+    color: $comment-frame-p;
   }
   button:not([disabled]):not(.ias-disabled):hover {
     border-color: transparent;
@@ -283,7 +283,7 @@
 .manage-comments {
   width: 100%;
   color: #353838;
-  background-color: #eef2f2;
+  background-color: $comments-manage-comments;
   padding-bottom: 15px;
   .ias-icon-comment_user_thin {
     color: #007cd0;
@@ -413,7 +413,7 @@
   padding-left: 10px;
   padding-bottom: 10px;
   .comment-content {
-    border-top: 1px solid transparent;
+    border-top: 1px solid $comment-content-border;
   }
 }
 
