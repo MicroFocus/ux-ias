@@ -1,20 +1,20 @@
 .ias-grid {
   display: flex;
   flex-flow: row wrap;
+  max-width: 750px;
 
   > .ias-tile {
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex: none;
     margin-right: $tile-margin;
     margin-bottom: $tile-margin;
-    vertical-align: top;
   }
 
   &.ias-stacked {
-    display: block;
+    align-items: flex-start;
+    flex-flow: column nowrap;
 
     > .ias-tile {
-      width: auto;
+      margin: 0;
 
       &:not(:last-child) {
         margin-bottom: $tile-margin;
