@@ -39,7 +39,7 @@
       }
 
       > .ias-icon {
-        padding-left: $accordion-icon-spacing;
+        margin-left: $accordion-icon-spacing;
 
         &.ias-accordion-icon-toggle {
           color: $accordion-icon-toggle-color;
@@ -54,6 +54,23 @@
       border-top-width: 0;
       display: none;
       padding: $accordion-padding;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .ias-accordion-group {
+    > .ias-accordion-link {
+      text-align: left;
+    }
+
+    > .ias-accordion {
+      > .ias-accordion-header {
+        > .ias-icon {
+          margin-left: 0;
+          margin-right: $accordion-icon-spacing;
+        }
+      }
     }
   }
 }
