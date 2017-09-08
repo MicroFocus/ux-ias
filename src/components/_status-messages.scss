@@ -4,6 +4,7 @@
   width: 635px;
   max-width: 800px;
   min-height: 78px;
+  background: transparent;
   border: 1px solid #dae1e1;
   border-radius: 3px;
   padding: 15px;
@@ -22,7 +23,7 @@
 }
 
 .status-message-title {
-  //color: #434c50;
+  color: #434c50;
   text-align: left;
   p {
     -webkit-margin-before: 0em;
