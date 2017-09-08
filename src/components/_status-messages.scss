@@ -4,26 +4,26 @@
   width: 635px;
   max-width: 800px;
   min-height: 78px;
-  background: transparent;
-  border: 1px solid #dae1e1;
+  background-color: $status-message-tile;
+  border: 1px solid $status-message-border;
   border-radius: 3px;
   padding: 15px;
   .ias-icon-message_error_thick {
-    color: #e50000;
+    color: $status-message-thick;
   }
   .ias-icon-status_error_thick {
-    color: #e50000;
+    color: $status-message-thick;
   }
   .ias-icon-status_warn_thick {
-    color: #f17e12;
+    color: $status-message-warn;
   }
   .ias-icon-status_ok_thick {
-    color: #37c26a;
+    color: $status-message-ok;
   }
 }
 
 .status-message-title {
-  color: #434c50;
+  color: $status-message-title;
   text-align: left;
   p {
     -webkit-margin-before: 0em;
