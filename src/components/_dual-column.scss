@@ -1,0 +1,119 @@
+.ias-bucket {
+  display: inline-block;
+
+  &:not(:last-of-type) {
+    margin-right: 40px;
+  }
+
+  &.ias-target {
+    > .dual-column {
+      border: 2px dashed #808080;
+    }
+  }
+
+  > h3 {
+    color: #808080;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .dual-column {
+    border-radius: 2px;
+    background-clip: padding-box;
+    border: 2px solid #808080;
+    padding: 10px;
+    background-color: #fff;
+    width: 300px;
+    .ias-tile.ias-small {
+      width: auto;
+    }
+    .ias-tile.ias-medium {
+      width: auto;
+      margin-bottom: 5px;
+    }
+  }
+
+  .column-tile {
+    margin-bottom: 5px;
+  }
+
+  .dual-column-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 320px;
+    overflow-y: auto;
+  }
+
+  .ias-disabled {
+    background-color: #f6f9f8;
+    border: solid 1px #f6f9f8;
+    cursor: no-drop;
+    text-decoration: none;
+    color: #9DABAC;
+    border-radius: 3px;
+    background-clip: padding-box;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px;
+    overflow: hidden;
+  }
+
+  .list-item {
+    border-radius: 3px;
+    background-clip: padding-box;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: #eef2f2;
+    border: solid 1px transparent;
+    overflow: hidden;
+    color: #434c50;
+
+    &:hover {
+      background-color: #f6f9f8;
+      border: solid 1px #01a9e7;
+      cursor: move;
+      text-decoration: none;
+      .ias-icon {
+        color: #434c50;
+        button {
+          background-color: #f6f9f8;
+          border: 1px solid #dae1e1;
+          border-radius: 3px;
+          color: #434c50;
+        }
+      }
+    }
+
+    > button {
+      padding: 0;
+      min-width: 12px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      font-size: 20px;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      color: transparent;
+
+      &:hover {
+        .ias-icon {
+          color: #0090da;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 320px) {
+  .dual-column {
+    max-width: 250px;
+  }
+}
