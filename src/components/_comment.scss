@@ -67,7 +67,7 @@
   bottom: 0px;
   //margin-left: 290px;
   font-size: 12px;
-  color: #434c50;
+  color: $comment-frame-p;
   position: absolute;
 }
 
@@ -81,7 +81,7 @@
 
 .comment-content {
   margin-left: 3px !important;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid $comment-content-border;
   padding-right: 0px;
   padding-left: 0px;
   position: relative;
@@ -92,7 +92,7 @@
     display: inline-block;
   }
   .ias-icon-comment_user_thin {
-    color: #007cd0;
+    color: $comment-p-hover;
   }
 }
 
@@ -131,7 +131,7 @@
   }
   button.ias-menu-toggle > .ias-icon {
     font-size: 23px;
-    color: #007cd0;
+    color: $comment-p-hover;
   }
   .ias-icon-delete_thin {
     font-size: 12px;
@@ -145,7 +145,7 @@
   position: relative;
   margin-bottom: 25px;
   .ias-icon-comment_user_thin {
-    color: #007cd0;
+    color: $comment-p-hover;
   }
   .ias-icon-comment_sys_thin {
     color: $comment-frame-p;
@@ -169,9 +169,9 @@
   border-radius: 2px;
   padding-top: 7px;
   .ias-icon:not(.ias-icon-comment_sys_thin) {
-    color: #007cd0;
+    color: $comment-p-hover;
   }
-  color: #007cd0;
+  color: $comment-p-hover;
 }
 
 .comment {
@@ -218,7 +218,7 @@
 
 .comment-time {
   font-size: 10px;
-  color: #808080;
+  color: $comment-date;
   display: inline-block;
   white-space: nowrap;
 }
@@ -236,7 +236,7 @@
 }
 
 .comment-action {
-  border-top: 0px solid #d2d5d1;
+  border-top: 0px solid $comment-content-border;
   font-size: 13px;
   line-height: 15px;
   margin-left: 40px;
@@ -272,7 +272,7 @@
 }
 
 .action {
-  color: #666666;
+  color: $comment-frame-p;
   font-size: 10px;
   padding-left: 5px;
   padding-right: 2px;
@@ -282,11 +282,11 @@
 
 .manage-comments {
   width: 100%;
-  color: #353838;
+  color: $comment-frame-p;
   background-color: $comments-manage-comments;
   padding-bottom: 15px;
   .ias-icon-comment_user_thin {
-    color: #007cd0;
+    color: $comment-p-hover;
     padding-left: 2px;
     padding-right: 12px;
     padding-top: 13.5px;
@@ -295,7 +295,7 @@
     padding: 0px;
     vertical-align: middle;
     font-size: 14px;
-    color: #434c50;
+    color: $comment-frame-p;
     transform: translateY(-5px);
   }
   .ias-input-container:not(:last-child) {
@@ -329,7 +329,7 @@
 .comment-text-area {
   textarea:not(.comment-area-one) {
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     min-height: 40px;
@@ -340,7 +340,7 @@
 .comment-area-one {
   margin-top: 15px;
   width: 445px;
-  background-color: #fff;
+  background-color: transparent;
   font-family: "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 12px;
   min-height: 40px;
@@ -353,7 +353,7 @@
   font-size: 13px!important;
   text-align: center !important;
   white-space: nowrap !important;
-  border: 1px solid #dae1e1;
+  border: 1px solid $comment-content-border;
   margin-right: 5px;
   margin-left: 457px;
   margin-top: 5px;
@@ -362,13 +362,13 @@
 .comment-date {
   margin-left: 4px;
   font-size: 10px;
-  color: #808080;
+  color: $comment-date;
   margin-top: 15px;
   margin-bottom: 3px;
 }
 
 .comment-menu {
-  border: 1px solid #dae1e1;
+  border: 1px solid $comment-content-border;
   color: gray;
   float: right;
   //position: absolute;
@@ -383,7 +383,7 @@
 
   }
   p:hover {
-    color: #007cd0;
+    color: $comment-p-hover;
   }
 }
 
