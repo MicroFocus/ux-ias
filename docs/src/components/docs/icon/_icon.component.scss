@@ -3,3 +3,9 @@ icon-documentation {
     vertical-align: middle;
   }
 }
+
+[dir='rtl'] {
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
