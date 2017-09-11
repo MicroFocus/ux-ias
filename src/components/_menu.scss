@@ -27,11 +27,11 @@
 }
 
 .ias-menu-content {
-  background-color: $menu-bg-color;
-  border-color: $menu-border-color;
+  background-color: $menu-background-color;
+  border-color: $menu-border-color-1;
   border-radius: $border-radius;
   box-sizing: border-box;
-  color: $menu-text-color;
+  color: $menu-text-color-1;
   font-size: $menu-content-font-size;
   left: 0;
   overflow: hidden;
@@ -52,7 +52,7 @@
     &:not([disabled]):not(.ias-disabled) {
       &:focus,
       &:hover {
-        background-color: $menu-bg-color-hover;
+        background-color: $menu-background-color-hover;
         color: inherit;
       }
     }
@@ -65,7 +65,7 @@
   .ias-list {
     > li,
     > .ias-list-item {
-      @include focus-hover-background($menu-bg-color-hover);
+      @include focus-hover-background($menu-background-color-hover);
     }
   }
 
