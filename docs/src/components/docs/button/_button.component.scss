@@ -32,3 +32,9 @@ button.special-button[disabled] {
     opacity: .4;
 
  }
+
+[dir='rtl'] {
+   .toggle-show > .show-code {
+     text-align: left;
+   }
+ }
