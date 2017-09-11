@@ -157,6 +157,9 @@ h4 {
 }
 
 [dir="rtl"] {
+  .text-show > .show-code {
+    text-align: left;
+  }
   ias-header > .ias-header-title {
     padding-right: 0;
     padding-left: 10px;
