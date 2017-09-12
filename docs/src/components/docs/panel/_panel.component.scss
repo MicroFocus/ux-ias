@@ -60,3 +60,9 @@ panel-documentation {
     color: darkorange;
   }
 }
+
+[dir="rtl"] {
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
