@@ -29,6 +29,7 @@
   }
 }
 
+
 .rollover{
   color: $datepicker-rollover;
 }
@@ -130,6 +131,12 @@
       color: $datepicker-icon-hover;
       border-radius: 3px;
     }
+    td:focus {
+      background-color: #f6f9f8;
+      border: 1px solid #01a9e7;
+      color: #434c50;
+      outline: none;
+    }
   }
 }
 
@@ -165,7 +172,7 @@
   width: 265px;
   max-height: 213px;
   overflow-y: scroll;
-  .show-dates table >tbody > tr > .show-dates-title{
+  .show-dates table > tbody > tr > .show-dates-title {
     max-width: 15px;
   }
   table {
@@ -175,10 +182,10 @@
   table tr:nth-of-type(3n) td {
     border-bottom: 1px solid $datepicker-rollover;
   }
-  table > tbody > tr:not(:last-child){
+  table > tbody > tr:not(:last-child) {
     border-bottom: 1px solid transparent;
   }
-  table >tbody >tr {
+  table > tbody > tr:hover {
     background-color: transparent;
   }
   .ias-icon-next_right_thin {
@@ -205,6 +212,15 @@
     td:hover {
       cursor: pointer;
       color: $datepicker-icon-hover;
+      background-color: #f6f9f8;
+      border: 1px solid #007cd0;
+      border-radius: 3px;
+    }
+    td:focus {
+      background-color: #f6f9f8;
+      border: 1px solid #01a9e7;
+      color: #434c50;
+      outline: none;
     }
   }
 }
