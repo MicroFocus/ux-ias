@@ -17,6 +17,14 @@ nav-documentation {
   }
 }
 
+#alerts-item :hover {
+  background-color: #dae1e1;
+  cursor: pointer;
+}
+#alerts-item:focus {
+  background-color: #dae1e1;
+}
+
 .ias-nav {
   position: relative;
 }
