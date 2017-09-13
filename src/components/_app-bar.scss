@@ -71,7 +71,7 @@
   }
 }
 
-@media(min-width: 320px) {
+@media(max-width: 320px) {
   .ias-app-bar > .ias-avatar > img {
     max-width: 80px;
   }
