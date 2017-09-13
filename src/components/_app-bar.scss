@@ -71,6 +71,12 @@
   }
 }
 
+@media(min-width: 320px) {
+  .ias-app-bar > .ias-avatar > img {
+    max-width: 80px;
+  }
+}
+
 [dir="rtl"] {
   .ias-app-bar {
     background: $app-bar-bg-rtl;
