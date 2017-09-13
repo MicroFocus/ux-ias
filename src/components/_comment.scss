@@ -262,9 +262,7 @@
     font-size: 23px;
     color: $comment-frame-p;
   }
-  button:not([disabled]):not(.ias-disabled):hover {
-    border-color: transparent;
-  }
+
   .ias-menu.ias-open > .ias-menu-content {
     z-index:9999;
     transform: translateX(13px);
