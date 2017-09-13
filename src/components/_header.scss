@@ -13,10 +13,6 @@ ias-header > .ias-header-title {
   padding-right: 10px;
 }
 
-ias-header > .ias-icon-button {
-  margin-left: 10px;
-}
-
 ias-header > .ias-header-sub-title {
   color: $header-subtitle;
   flex: 0 0 100%;
@@ -178,7 +174,7 @@ h4 {
     right: auto;
     left: 5px;
   }
-  ias-header > .ias-icon-button {
+  .ias-header > .ias-icon-button {
     margin-right: 10px;
     margin-left: 0;
   }

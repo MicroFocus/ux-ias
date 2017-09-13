@@ -178,8 +178,14 @@ h4 {
     right: auto;
     left: 5px;
   }
-  ias-header > .ias-icon-button {
+  .ias-header > .ias-icon-button {
     margin-right: 10px;
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 320px) {
+  ias-header > .ias-icon-button {
     margin-left: 0;
   }
 }
