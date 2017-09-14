@@ -1,71 +1,147 @@
-.mf-side-nav {
-  background-color: $side-nav-scrim-bg-color;
+.ias-side-nav {
   bottom: 0;
+  display: none;
   left: 0;
-  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
   right: 0;
   top: 0;
 
-  &.mf-locked {
-    background-color: transparent;
-	display: flex;
-    position: relative;
-    height: 100%;
-    width: $side-nav-width;
+  &.ias-open,
+  &.ias-locked {
+    display: block;
+    opacity: 1;
+  }
 
-    > .mf-side-nav-content {
-      max-width: initial;
+  &.ias-open {
+    &:not(.ias-locked) {
+      animation: 500ms fadein;
+      z-index: 1000;
+
+      > .ias-scrim {
+        background-color: $side-nav-scrim-color;
+      }
+
+      > .ias-side-nav-content {
+        animation: 500ms slidein;
+      }
     }
   }
 
-  > .mf-side-nav-content {
+  &.ias-locked {
+    height: 100%;
+    position: relative;
+    width: $side-nav-width;
+
+    > .ias-side-nav-content {
+      max-width: none;
+    }
+  }
+
+  > .ias-scrim {
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  > .ias-side-nav-content {
     background-color: $side-nav-bg-color;
-    box-sizing: border-box;
     color: $side-nav-text-color;
     height: 100%;
     max-width: $side-nav-max-width;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: $side-nav-padding;
+    position: relative;
     width: $side-nav-width;
+
+    > .ias-side-nav-header,
+    > .ias-side-nav-footer {
+      @include single-line;
+
+      color: $side-nav-header-text-color;
+      font-size: $side-nav-header-font-size;
+      font-weight: $side-nav-header-font-weight;
+      text-transform: $side-nav-header-text-transform;
+    }
+
+    > .ias-side-nav-body {
+      padding: $side-nav-padding;
+    }
   }
 
-  button,
-  .mf-button {
+  a {
+    margin: 0;
+  }
+
+  a,
+  button {
+    @include single-line;
     background-color: transparent;
     border: none;
     box-sizing: border-box;
     color: inherit;
     display: block;
+    height: $side-nav-item-height;
+    line-height: $side-nav-item-height;
+    padding: 0 0 0 $spacing;
     text-align: inherit;
     width: 100%;
 
-    &:not([disabled]):not(.mf-disabled) {
-      &:focus,
-      &:hover {
-        background-color: $side-nav-bg-color-hover;
-        color: inherit;
-      }
+    &:focus:not([disabled]),
+    &:hover:not([disabled]),
+    &.ias-active {
+      background-color: $side-nav-bg-color-hover;
+      color: inherit;
     }
   }
+}
 
-  .mf-list {
-    > li,
-    > .mf-list-item {
-      &:hover {
-        background-color: $side-nav-bg-color-hover;
-        color: inherit;
+[dir="rtl"] {
+  .ias-side-nav {
+    &.ias-open {
+      &:not(.ias-locked) {
+        > .ias-side-nav-content {
+          animation: 500ms slidein-rtl;
+        }
       }
     }
+
+    a {
+      margin: 0;
+    }
+
+    a,
+    .ias-button {
+      padding: 0 $spacing 0 0;
+    }
   }
+}
 
-  .mf-side-nav-header,
-  .mf-side-nav-footer {
-    @include single-line;
+@media (min-height: $small-display) {
+  .ias-side-nav {
+    position: absolute;
+  }
+}
 
-    color: $side-nav-header-text-color;
-    font-size: $side-nav-header-font-size;
-    font-weight: $side-nav-header-font-weight;
-    text-transform: $side-nav-header-text-transform;
+@media (min-width: $medium-display) {
+  .ias-side-nav {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    width: $side-nav-width;
+
+    &.ias-open {
+      &:not(.ias-locked) {
+        z-index: auto;
+      }
+    }
+
+    > .ias-side-nav-content {
+      max-width: none;
+    }
   }
 }

@@ -1,48 +1,34 @@
 button,
-.mf-button {
-  @include disable-text-selection();
-  @include single-line();
+.ias-button {
+  @include disable-text-selection;
+  @include single-line;
 
   background-color: $button-bg-color;
-  border: 1px solid $button-border-color;
+  border: $button-border-width solid $button-border-color;
   border-radius: $border-radius;
-  box-sizing: content-box;
   color: $button-text-color;
   cursor: pointer;
   display: inline-block;
-  height: $button-height;
-  line-height: $button-height;
   font-size: $button-font-size;
-  min-width: $button-min-width;
-  padding: 0 $spacing;
+  padding: $button-padding;
   text-align: center;
   text-decoration: $button-text-transform;
   vertical-align: middle;
 
-  &.mf-cta {
-    background-color: $color-gray-1;
-    border-color: $color-gray-1;
-    color: $color-gray-7;	
-  }
-  &.mf-cta-disabled {
-    background-color: $color-gray-1;
-    border-color: $color-gray-1;
-    color: $color-gray-7;	
-	opacity: $disabled-opacity;
-	cursor: default;
-  }
-
   &[disabled],
-  &.mf-disabled {
+  &.ias-disabled {
     background-color: $button-bg-color-disabled;
     border-color: $button-border-color-disabled;
-    opacity: $disabled-opacity;
+    color: $button-text-color-disabled;
     cursor: default;
   }
 
-  &:not([disabled]):not(.mf-disabled):not(.mf-cta-disabled) {
+  &:not([disabled]):not(.ias-disabled) {
     &:focus {
-      @include focus-state;
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color;
+      outline: none;
     }
 
     &:hover {
@@ -52,25 +38,58 @@ button,
     }
   }
 
-  &:not(.mf-icon-button) {
-    > .mf-icon {
-      color: inherit;
-      font-size: $button-inline-icon-size;
-      margin-left: $button-inline-icon-padding;
+  &.ias-cta {
+    background-color: $button-cta-bg-color;
+    border-color: $button-cta-bg-color;
+    color: $button-cta-color;
+
+    &[disabled],
+    &.ias-disabled {
+      background-color: $button-cta-bg-color;
+      border-color: $button-cta-bg-color;
+      color: $button-text-color-disabled;
+    }
+  }
+
+  &:not(.ias-icon-button) {
+    min-width: $button-min-width;
+
+    > .ias-icon, .svg-icon {
       vertical-align: middle;
+    }
+  }
+
+  &.ias-menu-toggle {
+    > .ias-icon, .svg-icon {
+      font-size: inherit;
+      margin-left: $button-inline-icon-padding;
     }
   }
 }
 
+/* Stop FF buttons from being larger. http://stackoverflow.com/questions/7928521 */
+button::-moz-focus-inner {
+  padding: 0 !important;
+  border: 0 none !important;
+}
+
+a.ias-button {
+  margin-left: 0;
+}
+
 [dir="rtl"] {
   button,
-  .mf-button {
+  .ias-button {
 
-    &:not(.mf-icon-button) {
-      > .mf-icon {
+    &.ias-menu-toggle {
+      > .ias-icon, .svg-icon {
         margin-left: 0;
         margin-right: $button-inline-icon-padding;
       }
     }
+  }
+
+  a.ias-button {
+    margin-right: 0;
   }
 }

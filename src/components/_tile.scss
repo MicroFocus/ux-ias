@@ -1,5 +1,5 @@
-.mf-tile {
-  @extend .mf-panel;
+.ias-tile {
+  @extend .ias-panel;
 
   border: $tile-border-width solid transparent;
   color: $tile-text-color;
@@ -9,52 +9,50 @@
   position: relative;
 
   // STATES
-  &:focus {
-    @include focus-state;
-  }
-
+  &:focus,
   &:hover {
-    background-color: $tile-bg-color;
-    border-color: $tile-border-color;
+    background-color: $button-bg-color-hover;
+    border-color: $button-border-color-hover;
     color: $tile-text-color;
+    outline: none;
   }
 
   // SIZES
-  &.mf-tiny {
+  &.ias-tiny {
     height: $tile-height-tiny;
     max-width: $tile-width-tiny;
     width: $tile-width-tiny;
 
-    > .mf-avatar {
+    > .ias-avatar {
       height: $tile-avatar-size-tiny;
       width: $tile-avatar-size-tiny;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       font-size: $tile-avatar-size-tiny;
     }
 
-    > .mf-tile-content {
+    > .ias-tile-content {
       display: none;
     }
   }
 
-  &.mf-small {
+  &.ias-small {
     display: flex;
     flex-flow: row nowrap;
     height: $tile-height-small;
     width: $tile-width-small;
 
-    > .mf-avatar {
+    > .ias-avatar {
       height: $tile-avatar-size-small;
       width: $tile-avatar-size-small;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       font-size: $tile-avatar-size-small;
     }
 
-    > .mf-tile-content {
+    > .ias-tile-content {
       margin: $tile-padding $tile-padding $tile-padding 0;
 
       > :not(h3) {
@@ -68,23 +66,23 @@
     }
   }
 
-  &.mf-medium {
+  &.ias-medium {
     display: flex;
     flex-flow: row nowrap;
     height: $tile-height-medium;
     width: $tile-width-medium;
 
-    > .mf-avatar {
+    > .ias-avatar {
       flex: 0 0 $tile-avatar-size-medium;
       height: $tile-avatar-size-medium;
       width: $tile-avatar-size-medium;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       font-size: $tile-avatar-size-medium;
     }
 
-    > .mf-tile-content {
+    > .ias-tile-content {
       margin: $tile-padding $tile-padding $tile-padding 0;
       height: $tile-avatar-size-medium;
       overflow: hidden;
@@ -97,7 +95,7 @@
     }
   }
 
-  &.mf-large {
+  &.ias-large {
     display: flex;
     flex-flow: column nowrap;
     height: $tile-height-large;
@@ -105,22 +103,22 @@
     text-align: center;
     width: $tile-width-large;
 
-    > .mf-avatar,
-    > .mf-icon {
+    > .ias-avatar,
+    > .ias-icon {
       margin: $tile-padding auto;
     }
 
-    > .mf-avatar {
+    > .ias-avatar {
       flex: 0 0 $tile-avatar-size-large;
       height: $tile-avatar-size-large;
       width: $tile-avatar-size-large;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       font-size: $tile-avatar-size-large;
     }
 
-    > .mf-tile-content {
+    > .ias-tile-content {
       margin: 0 $tile-padding $tile-padding $tile-padding;
       overflow: hidden;
 
@@ -132,44 +130,49 @@
     }
   }
 
-  > .mf-avatar {
+  > .ias-avatar {
     margin: $tile-padding;
   }
 
-  > .mf-icon {
+  > .ias-icon {
     margin: $tile-padding;
   }
 
-  > .mf-actions {
+  > .ias-actions {
     position: absolute;
     top: 0;
     right: 0;
   }
 
-  > .mf-tile-content {
+  > .ias-tile-content {
     > h3,
     > p {
       margin: 0;
       padding: 0;
     }
   }
+
+  a {
+    @include focus-hover-background($body-bg-color);
+  }
+
 }
 
 [dir="rtl"] {
-  .mf-tile {
-    &.mf-small {
-      > .mf-tile-content {
+  .ias-tile {
+    &.ias-small {
+      > .ias-tile-content {
         margin: $tile-padding 0 $tile-padding $tile-padding;
       }
     }
 
-    &.mf-medium {
-      > .mf-tile-content {
+    &.ias-medium {
+      > .ias-tile-content {
         margin: $tile-padding 0 $tile-padding $tile-padding;
       }
     }
 
-    > .mf-actions {
+    > .ias-actions {
       left: 0;
       right: initial;
     }

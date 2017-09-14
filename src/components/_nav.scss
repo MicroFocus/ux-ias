@@ -1,89 +1,124 @@
-.mf-nav {
+.ias-nav {
   background-color: $nav-bg-color;
   color: $nav-text-color;
   display: flex;
   flex-flow: row nowrap;
-  height: $nav-height;
-  padding: 0 $body-spacing-small;
+  min-height: $nav-height;
+  padding: 0 $nav-content-padding;
 
-  > a {
-    padding: 0 $spacing;
+  // Fixed size nav items
+  > a,
+  > button,
+  > .ias-button,
+  > .ias-menu {
+    flex: none;
   }
 
+  // All nav items
   > a,
-  .mf-icon,
-  .mf-icon-button,
-  > .mf-menu > button,
-  > .mf-menu > .mf-button {
-    height: $nav-height - $nav-item-border-width-active - $nav-item-border-width;
-    line-height: $nav-height;
-    text-align: center;
+  > button,
+  > .ias-button,
+  > .ias-menu > button,
+  > .ias-menu > .ias-button,
+  > span:not(.ias-fill) {
+    color: inherit;
+    padding: 0 $nav-item-padding;
   }
 
+  // Hoverable nav items
   > a,
-  .mf-icon-button,
-  > .mf-menu > button,
-  > .mf-menu > .mf-button {
+  > button,
+  > .ias-button,
+  > .ias-menu > button,
+  > .ias-menu > .ias-button {
     background-color: transparent;
-    border: $nav-item-border-width solid transparent;
-    border-bottom-width: $nav-item-border-width-active;
+    border-color: transparent;
+    border-style: solid;
     border-radius: 0;
-    box-sizing: content-box;
-    color: $nav-text-color;
+    border-width: $nav-item-border-vertical-width $nav-item-border-horizontal-width;
 
     &[disabled],
-    &.mf-disabled {
-      background-color: $nav-item-bg-color-disabled;
-      border-color: $nav-item-border-color-disabled;
-      opacity: $disabled-opacity;
+    &.ias-disabled {
+      background-color: transparent;
+      border-color: transparent;
+      color: $text-color-disabled;
     }
 
-    &:not([disabled]):not(.mf-disabled):not(.mf-icon) {
-      &:focus {
-        background-color: $nav-item-bg-color-focus;
-        border-color: $nav-item-border-color-focus;
-        color: $nav-item-text-color-focus;
-      }
-
+    &:not([disabled]):not(.ias-disabled) {
+      &:focus:not(.ias-active),
       &:hover {
         background-color: $nav-item-bg-color-hover;
         border-color: $nav-item-border-color-hover;
         color: $nav-item-color-hover;
       }
+    }
+  }
 
-      &.mf-active {
+  // Active-capable nav items
+  > a {
+    line-height: $nav-item-height;
+    margin: 0;
+
+    > .ias-icon,
+    > .svg-icon {
+      font-size: $nav-icon-size;
+      /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
+      margin-bottom: $nav-icon-margin;
+      vertical-align: middle;
+    }
+
+    &:not([disabled]):not(.ias-disabled) {
+      &.ias-active {
         border-bottom-color: $nav-item-border-bottom-color-active;
-        border-left-color: $nav-item-border-color-active;
-        border-right-color: $nav-item-border-color-active;
+        border-left-color: $nav-item-border-side-color-active;
+        border-right-color: $nav-item-border-side-color-active;
         color: $nav-item-color-active;
-		font-weight: $font-weight-medium;
+        font-weight: $font-weight-medium;
       }
     }
   }
 
-  > .mf-icon-button,
-  > .mf-menu > .mf-icon-button {
-    font-size: $nav-icon-size;
-    padding: 0 $nav-icon-padding;
+  // Non-hoverable, non-active-capable nav items
+  > span:not(.ias-fill) {
+    line-height: normal;
+    margin: $nav-text-vertical-margin 0;
+    max-width: $nav-text-max-width;
+
+    > a {
+      @include focus-hover-background($nav-link-color-hover);
+      padding: $link-padding;
+    }
   }
 
-  > .mf-menu {
-    > button,
-    > .mf-button {
-      > .mf-icon {
-        vertical-align: top;
-      }
-    }
+  // Hoverable, non-active-capable nav items
+  > button,
+  > .ias-button {
+    box-sizing: content-box;
+  }
 
-    > .mf-menu-content {
+  > .ias-icon-button,
+  > .ias-menu > .ias-icon-button {
+    > .ias-icon,
+    > .svg-icon {
+      font-size: $nav-icon-size;
+    }
+  }
+
+  > .ias-menu {
+    > .ias-menu-content {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+    }
+
+    > button,
+    > .ias-button {
+      height: 100%;
     }
   }
 }
 
-@media (min-width: $large-display) {
-  .mf-nav {
-    padding: 0 $body-spacing-large;
+@media (min-width: $medium-display) {
+  .ias-nav {
+    padding: 0 $nav-content-padding-large;
   }
 }

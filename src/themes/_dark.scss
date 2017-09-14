@@ -1,8 +1,7 @@
-// BORDERS
-$border-radius: 3px;
-$border-radius-small: 2px;
+// Note: These variables are overridden by _common.scss: make sure none here are declared there.
 
 // COLORS
+$color-white-1: #fff;
 $color-black-1: #000;
 $color-black-2: #1f1f1f;
 
@@ -11,237 +10,58 @@ $color-gray-2: #eef2f2;
 $color-gray-3: #dae1e1;
 $color-gray-4: #808080;
 $color-gray-5: #6a6f71;
-$color-gray-6: #59656a;
+$color-gray-6: #575b5d;
 $color-gray-7: #434c50;
 $color-gray-8: #2c2c2c;
 
-$color-primary-1: #1773bb;
+$color-primary-1: #0061bd;
 $color-primary-2: #007cd0;
-$color-primary-3: #0088ce;
-$color-primary-4: #28a9e1;
-$color-primary-5: #01a9e7;
+$color-primary-3: #0090da;
+$color-primary-4: #01a9e7;
+$color-primary-5: #29ceff;
 
 $color-accent-1: #ffd92d;
 $color-accent-2: #fff6ce;
 $color-accent-3: #f17e12;
-$color-accent-4: #dc233f;
+$color-accent-4: #e50000;
+$color-accent-5: #37c26a;
 
-$disabled-opacity: .3;
-
-// Font size variants
-$font-size-xsmall:	11px;
-$font-size-small:	13px;
-$font-size-base:	15px;
-$font-size-medium:	18px;
-$font-size-large:	21px;
-$font-size-xlarge:	24px;
+// COLOR PALETTE
+$body-bg-color: $color-gray-8;
 
 // TYPOGRAPHY
-$font-family: 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-size: 14px;
-$font-weight: 400;
-$font-weight-medium: 500;
-
-$heading-text-color: inherit;
-$heading-font-size: 22px;
-$heading-font-weight: 200;
-$heading-letter-spacing: 1px;
-
-$text-color: $color-gray-1;
 $text-color-disabled: $color-gray-4;
 
 $title-text-color: $color-gray-3;
-$title-font-size: 15px;
-$title-font-weight: normal;
-$title-text-transform: uppercase;
-
-// DISPLAY SIZE
-$large-display: 769px;
-
-// SPACING
-$body-spacing-xsmall: 5px;
-$body-spacing-small: 10px;
-$body-spacing-medium: 15px;
-$body-spacing-large: 25px;
-$content-padding: 25px;
-$spacing: 10px;
 
 //STATES
 $disabled-bg-color: $color-gray-7;
 $disabled-border-color: $color-gray-7;
 $disabled-text-color: $color-gray-6;
 
-$focus-bg-color: $color-accent-2;
-$focus-border-color: $color-accent-1;
-$focus-text-color: $color-gray-7;
-
 // COMPONENTS
-$app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: linear-gradient(to right, $color-primary-5, $color-primary-2);
-$app-bar-bg-rtl: linear-gradient(to left, $color-primary-5, $color-primary-2);
-$app-bar-font-size: 12px;
-$app-bar-height-small: 50px;
-$app-bar-height-large: 100px;
-$app-bar-icon-size: 20px;
 $app-bar-text-color: $color-gray-1;
 
-$body-bg-color: $color-gray-8;
-
-$border-color: $color-gray-5;
-
-$button-bg-color: $color-gray-7;
-$button-bg-color-disabled: $button-bg-color;
-$button-bg-color-hover: $button-bg-color;
-$button-border-color: $color-gray-5;
 $button-border-color-disabled: $text-color-disabled;
-$button-border-color-hover: $color-primary-2;
-$button-border-width: 1px;
-$button-cta-bg-color: $color-gray-1;
-$button-cta-color: $color-gray-7;
-$button-font-size: $font-size;
-$button-height: 28px;
-$button-inline-icon-size: $font-size-small;
-$button-inline-icon-padding: $body-spacing-xsmall;
-$button-min-width: 42px;
-$button-text-color: $text-color;
+$button-border-color-hover: $color-primary-4;
 $button-text-color-disabled: $button-border-color-disabled;
-$button-text-color-hover: $color-primary-2;
-$button-text-transform: none;
 
-$dialog-bg-color: $color-gray-7;
-$dialog-label-color: $color-gray-4;
-$dialog-padding: 20px;
 $dialog-scrim-color: rgba(106, 111, 113, .8);
 $dialog-content-color: $color-gray-8;
 
-$icon-button-border-width: 1px;
-$icon-button-color: $color-gray-4;
-$icon-button-size: 25px;
-$icon-button-size-large: 28px;
-
-$icon-size-small: 25px;
-$icon-size-medium: 50px;
-$icon-size-large: 75px;
-
-$input-bg-color: $color-gray-7;
-$input-border: 1px solid $color-gray-5;
-$input-inline-label-padding: 5px;
-$input-label-font-size: 12px;
-$input-label-margin: 10px 0 5px;
-$input-label-text-color: $color-gray-2;
-$input-padding: 8px;
-
-$link-text-color: $color-primary-3;
-$link-bg-color-disabled: transparent;
-$link-bg-color-focus: $color-accent-2;
 $link-bg-color-hover: $color-gray-7;
-$link-border-color-focus: $color-accent-1;
-$link-padding: .15em;
-$link-text-color-disabled: $text-color-disabled;
-$link-text-color-focus: $color-gray-2;
-$link-text-color-hover: $color-primary-4;
 
 $list-item-bg-color-hover: $color-gray-7;
-$list-item-height: 26px;
-$list-item-avatar-size: 26px;
 
 $list-header-text-color: #b8b8b8;
-$list-header-font-size: 12px;
-$list-header-margin: $spacing 0;
-$list-header-font-weight: normal;
-$list-header-text-transform: uppercase;
 
 $menu-bg-color: $color-gray-7;
 $menu-bg-color-hover: $color-gray-6;
 $menu-border-color: $color-gray-6;
-$menu-content-font-size: $font-size;
-$menu-header-font-size: 12px;
-$menu-header-font-weight: normal;
-$menu-header-text-color: #b8b8b8;
-$menu-header-text-transform: uppercase;
 $menu-text-color: $color-gray-1;
-
-$nav-bg-color: $color-gray-6;
-$nav-icon-size: 20px;
-$nav-icon-padding: 5px;
-$nav-item-bg-color-disabled: transparent;
-$nav-item-bg-color-hover: $color-gray-5;
-$nav-item-border-bottom-color-active: $color-primary-4;
-$nav-item-border-color-active: $color-gray-5;
-$nav-item-border-color-disabled: transparent;
-$nav-item-border-color-hover: transparent;
-$nav-item-border-width: 1px;
-$nav-item-border-width-active: 2px;
-$nav-item-color-active: $text-color;
-$nav-item-color-hover: $color-gray-2;
-$nav-height: 32px;
-$nav-text-color: $color-gray-2;
-$nav-item-bg-color-focus: $nav-item-bg-color-hover;
-$nav-item-border-color-focus: transparent;
-$nav-item-border-bottom-color-focus: $nav-item-border-bottom-color-active;
-$nav-item-text-color-focus: inherit;
-
-$panel-bg-color: $color-gray-6;
-$panel-height: $button-height + (2 * $button-border-width);
-
-$search-box-icon-padding: 5px;
-$search-box-icon-size: 20px;
-$search-box-max-width: 300px;
 
 $side-nav-bg-color: $menu-bg-color;
 $side-nav-bg-color-hover: $menu-bg-color-hover;
-$side-nav-header-text-color: $menu-header-text-color;
-$side-nav-header-font-size: $menu-header-font-size;
-$side-nav-header-font-weight: $menu-header-font-weight;
-$side-nav-header-text-transform: $menu-header-text-transform;
-$side-nav-max-width: 85%;
-$side-nav-padding: $spacing;
-$side-nav-scrim-bg-color: rgba(0, 0, 0, .50);
-$side-nav-text-color: inherit;
-$side-nav-width: 220px;
+$side-nav-header-text-color: $list-header-text-color;
 
-$table-header-border-color: $color-gray-5;
-$table-header-font-size: 12px;
-$table-icon-margin: 5px;
-$table-icon-size: 20px;
-$table-body-border-color: $color-gray-5;
 $table-row-bg-color-hover: $color-gray-7;
-$table-row-height: 36px;
-
-$tile-bg-color: $color-gray-7;
-$tile-border-color: $color-primary-4;
-$tile-border-width: 1px;
-$tile-description-font-size: 12px;
-$tile-description-line-height: 15px;
-$tile-margin: 5px;
-$tile-padding: 10px;
-$tile-text-color: $color-gray-1;
-$tile-title-font-size-large: 15px;
-$tile-title-font-size-medium: 15px;
-$tile-title-font-size-small: 20px;
-$tile-title-margin-bottom-large: 5px;
-$tile-title-margin-bottom-medium: 5px;
-
-$tile-avatar-size-large: 100px;
-$tile-height-large:
-        $tile-avatar-size-large +
-        (3 * ($tile-description-line-height + $tile-padding)) +
-        (2 * $tile-border-width) +
-        $tile-title-font-size-large +
-        $tile-title-margin-bottom-large;
-$tile-height-medium:
-        (2 * ($tile-description-line-height + $tile-padding + $tile-border-width)) +
-        $tile-title-font-size-medium +
-        $tile-title-margin-bottom-medium;
-$tile-height-small: $tile-height-medium;
-$tile-height-tiny: $tile-height-medium;
-$tile-avatar-size-medium:
-        (2 * $tile-description-line-height) +
-        $tile-title-font-size-medium +
-        $tile-title-margin-bottom-medium;
-$tile-avatar-size-small: $tile-height-small - (2 * ($tile-padding + $tile-border-width));
-$tile-avatar-size-tiny: $tile-height-tiny - (2 * ($tile-padding + $tile-border-width));
-$tile-width-large: 160px;
-$tile-width-medium: 240px;
-$tile-width-small: 240px;
-$tile-width-tiny: $tile-height-small;

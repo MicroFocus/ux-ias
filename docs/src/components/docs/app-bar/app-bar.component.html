@@ -1,74 +1,83 @@
-<h2>App Bar</h2>
+<h2 class="ias-page-title">App Bar</h2>
+<p class="ias-page-instructions">The application bar is the first element of an application page that establishes our UX branding. The first example below details the attributes that define it. Consistent implementation of all the attributes will help with a consistent look.</p>
 
-<div class="mf-app-bar" repeat-as-code>
-	<h3 class="mf-heading">Application Title</h3>
-	<span class="mf-fill"></span>
-	<div class="mf-menu">
-		<button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
-	</div>
-</div>
-<ul>
-    <li>Edge-to-edge implementation: never use space or margin on the top or sides.</li>
-    <li>Default background color blend (#01a9e7 --> #007cd0): colors are from the Micro Focus color guidelines.</li>
-    <li>Minimum height is 45px. When the app bar has no logo or branding image, the height is 45px.</li>
-    <li>Maximum height is 100px. No matter the image size, the implementation will only allow the height to grow to the maximum.</li>
-    <li>Title and user menu are center-aligned (vertical).</li>
-</ul>
-<div class="mf-app-bar margintop20" repeat-as-code>
-	<div class="mf-avatar">
-		<img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/access_air_200.png" alt="">
-	</div>
-	<h3 class="mf-heading">Application Title</h3>
-	<span class="mf-fill"></span>
-	<div class="mf-menu">
-		<button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
-	</div>
-</div>
-<ul>
-    <li>Logo or branding image inside the app bar has an edge-to-edge design</li>
-    <li>The airplane image above is a 200 x 200 pixel image. It is proportionally sized to the app bar max-height.</li>
-</ul>
-<div class="mf-app-bar margintop20" repeat-as-code style="background: linear-gradient(to right, yellow, green)">
-	<div class="mf-avatar">
-		<img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/branding/healthequity_logo.png" alt="">
-	</div>
-	<h3 class="mf-heading">Application Title</h3>
-	<span class="mf-fill"></span>
-	<div class="mf-menu">
-		<button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
-	</div>
-</div>
-<ul>
-    <li>If a margin is desired for the logo, it can be added within the image file.</li>
-	<li>The HealthEquity logo is a 200 x 50 pixel image, but has a transparent background. The image includes spacing, thus it adds a nice margin between the logo and the app bar border.</li>
-    <li>The image inside the app bar is still edge-to-edge.</li>
-    <li>The image is proportionally sized to the max-height.</li>
-</ul>
-<div class="mf-app-bar margintop20" repeat-as-code style="background: linear-gradient(to right, lightgray, gray)">
-	<div class="mf-avatar">
-		<img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/branding/r-logo.jpg" alt="">
-	</div>
-	<h3 class="mf-heading" style="color: #1f1f1f">Application Title</h3>
-	<span class="mf-fill"></span>
-	<div class="mf-menu" style="color: #1f1f1f">
-		<button type="button"><span>Jonathan Smithsonian</span><i class="mf-icon mf-icon-down_thick"></i></button>
-	</div>
-</div>
-<ul>
-    <li>When the Logo image is less than 45px height, it is vertically centered.</li>
-</ul>
+<section>
+    <div class="ias-app-bar" toggle-repeat-code>
+        <h3 class="ias-heading">Application Title</h3>
+        <span class="ias-fill"></span>
+        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
+    </div>
+    <ul>
+        <li>Edge-to-edge implementation: never use space or margin on the top or sides.</li>
+        <li>Default background color blend (#01a9e7 --> #007cd0): colors are from the Micro Focus color guidelines.</li>
+        <li>Minimum height is 45px. When the app bar has no logo or branding image, the height is 45px.</li>
+        <li>Maximum height is 100px. No matter the image size, the implementation will only allow the height to grow to
+            the maximum.
+        </li>
+        <li>Title and user menu are center-aligned (vertical).</li>
+    </ul>
+</section>
+<section>
+    <div class="ias-app-bar" toggle-repeat-code>
+        <div class="ias-avatar">
+            <img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/access_air_200.png"
+                 alt="">
+        </div>
+        <h3 class="ias-heading">Application Title</h3>
+        <span class="ias-fill"></span>
+        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
+    </div>
+    <ul>
+        <li>Logo or branding image inside the app bar has an edge-to-edge design</li>
+        <li>The airplane image above is a 200 x 200 pixel image. It is proportionally sized to the app bar max-height.
+        </li>
+    </ul>
+</section>
+<section>
+    <div class="ias-app-bar" toggle-repeat-code style="background: linear-gradient(to right, yellow, green)">
+        <div class="ias-avatar">
+            <img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/branding/healthequity_logo.png"
+                 alt="">
+        </div>
+        <h3 class="ias-heading">Application Title</h3>
+        <span class="ias-fill"></span>
+        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
+    </div>
+    <ul>
+        <li>If a margin is desired for the logo, it can be added within the image file.</li>
+        <li>The HealthEquity logo is a 200 x 50 pixel image, but has a transparent background. The image includes
+            spacing, thus it adds a nice margin between the logo and the app bar border.
+        </li>
+        <li>The image inside the app bar is still edge-to-edge.</li>
+        <li>The image is proportionally sized to the max-height.</li>
+    </ul>
+</section>
+<section>
+    <div class="ias-app-bar" toggle-repeat-code style="background: linear-gradient(to right, lightgray, gray)">
+        <div class="ias-avatar">
+            <img src="http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/branding/r-logo.jpg"
+                 alt="">
+        </div>
+        <h3 class="ias-heading" style="color: #1f1f1f">Application Title</h3>
+        <span class="ias-fill"></span>
+        <button type="button" class="ias-menu-toggle" style="color: #1f1f1f"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
+    </div>
+    <ul>
+        <li>When the Logo image is less than 45px height, it is vertically centered.</li>
+    </ul>
+</section>
 
 <h3>Purpose</h3>
 <p>For product naming, branding, application scope settings/actions, and managing user state. Sometimes
-used for notifications (using .mf-icon-button>i.mf-icon-bell_thick)</p>
+    used for notifications (using .ias-icon-button>i.ias-icon-bell_thick)</p>
 <p>Always used edge-to-edge at application scope. Never nested.</p>
 
 <h3>Nestable components</h3>
 <ul>
     <li>img (for branding)</li>
-    <li>.mf-button</li>
-    <li>.mf-menu</li>
-    <li>span[.mf-fill]</li>
+    <li>.ias-button</li>
+    <li>.ias-menu</li>
+    <li>span[.ias-fill]</li>
 </ul>
 
 <h3>Common patterns</h3>

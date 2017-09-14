@@ -1,0 +1,16 @@
+.ias-page-title {
+	@include single-line;
+
+	font-size: $font-size-xlarge;
+	font-weight: normal;
+	margin: 0 0 $body-spacing-medium;
+}
+
+.ias-page-instructions {
+	color: $color-gray-4;
+	font-size: 16px;
+	line-height: $font-size-large;
+	margin: $body-spacing-medium 0;
+}
+
+

@@ -1,1 +1,195 @@
-<h2>Table Component</h2>
+<h2 class="ias-page-title">Table</h2>
+
+<section>
+    <h3>Default</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-search_thick"></i>
+                </button>
+            </td>
+            <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
+            <td>Asst. to the UX Director</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="ias-icon-button" type="button" disabled="disabled">
+                    <i class="ias-icon ias-icon-cancel_thick"></i>
+                </button>
+            </td>
+            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
+            <td>The Valiant</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-search_thick"></i>
+                </button>
+            </td>
+            <td><a ui-sref="app.component.table">Joseph White</a></td>
+            <td>Destroyer of Worlds</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Inline .ias-icon</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <i class="ias-icon ias-icon-favorite_fill"></i>
+                <a ui-sref="app.component.table">Jonathan Smithsonian</a>
+            </td>
+            <td>Asst. to the UX Director</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="ias-icon ias-icon-favorite_fill"></i>
+                <a ui-sref="app.component.table">Joe Hawkins</a>
+            </td>
+            <td>The Valiant</td>
+        </tr>
+        <tr>
+            <td>
+                <i class="ias-icon ias-icon-favorite_fill"></i>
+                <a ui-sref="app.component.table">Joseph White</a>
+            </td>
+            <td>Destroyer of Worlds</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Sorted</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name <i class="ias-icon ias-icon-up_thick"></i></th>
+            <th>Title</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
+            <td>The Valiant</td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joseph White</a></td>
+            <td>Destroyer of Worlds</td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
+            <td>Asst. to the UX Director</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>th,td.ias-align-end</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th class="ias-align-end">Owes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
+            <td class="ias-align-end">$10.21</td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
+            <td class="ias-align-end">$1000.21</td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joseph White</a></td>
+            <td class="ias-align-end">$100.21</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>th,td.ias-actions</h3>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th class="ias-align-end">Owes</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
+            <td class="ias-align-end">$10.21</td>
+            <td class="ias-actions">
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-search_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-close_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-new_thick"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
+            <td class="ias-align-end">$1000.21</td>
+            <td class="ias-actions">
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-search_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-close_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-new_thick"></i>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joseph White</a></td>
+            <td class="ias-align-end">$100.21</td>
+            <td class="ias-actions">
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-search_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-close_thick"></i>
+                </button>
+                <button class="ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-new_thick"></i>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>

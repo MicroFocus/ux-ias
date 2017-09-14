@@ -12,7 +12,7 @@ table {
 		  padding: $body-spacing-xsmall $spacing;
 	  	}
 	  
-    .mf-icon {
+    .ias-icon {
       font-size: inherit;
       vertical-align: middle;
     }
@@ -29,18 +29,19 @@ table {
       &:hover {
         background-color: $table-row-bg-color-hover;
 
-        > .mf-actions {
-          > .mf-icon-button {
+        > .ias-actions {
+          > .ias-icon-button {
             opacity: 1;
           }
         }
       }
 
-      > .mf-actions {
-        > .mf-icon-button {
+      > .ias-actions {
+        > .ias-icon-button {
           opacity: 0;
 
-          &:focus {
+          &:focus,
+          &:hover {
             opacity: 1;
           }
         }
@@ -52,21 +53,17 @@ table {
     padding: 0 $spacing;
 
     > a {
-      padding: 0;
-
-      &:not(.mf-disabled) {
-        &:hover {
-          background-color: transparent;
-        }
+      &:not(.ias-disabled) {
+        @include focus-hover-background(transparent);
       }
     }
 
     > a,
-    > .mf-icon {
+    > .ias-icon {
       vertical-align: middle;
     }
 
-    > .mf-icon {
+    > .ias-icon {
       &:first-child {
         margin-right: $table-icon-margin;
       }
@@ -78,8 +75,8 @@ table {
     vertical-align: middle;
   }
 
-  .mf-icon,
-  .mf-icon-button {
+  .ias-icon,
+  .ias-icon-button {
     font-size: $table-icon-size;
   }
 }
@@ -89,7 +86,7 @@ table {
     text-align: right;
 
     td, th {
-      > .mf-icon {
+      > .ias-icon {
         &:first-child {
           margin-left: $table-icon-margin;
           margin-right: initial;

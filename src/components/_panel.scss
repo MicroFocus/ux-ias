@@ -1,12 +1,20 @@
-.mf-panel {
+.ias-panel {
   background-color: $panel-bg-color;
   border-radius: $border-radius;
-}
+  box-sizing: content-box;
+  padding: $content-padding;
 
-.mf-panel-header {
-  display: flex;
-  flex-flow: row nowrap;
-  height: $panel-height;
-  line-height: $panel-height;
-  margin-bottom: $content-padding;
+  > .ias-panel-header {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: $content-padding;
+  }
+
+  a {
+    @include focus-hover-background($body-bg-color);
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
 }

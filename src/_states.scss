@@ -11,3 +11,10 @@
   color: $focus-text-color;
   outline: none;
 }
+
+@mixin focus-hover-background($background-color) {
+  &:focus,
+  &:hover {
+    background-color: $background-color;
+  }
+}

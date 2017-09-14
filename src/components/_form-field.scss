@@ -9,6 +9,7 @@ textarea {
   padding: $input-padding;
   margin: 0;
   margin-right: 5px;
+  margin-top: 3px;
 
   &::-ms-clear {
     display: none;
@@ -26,7 +27,9 @@ textarea {
 label {
   color: $input-label-text-color;
   font-size: $input-label-font-size;
+  line-height: $font-size-large;
   vertical-align: middle;
+  padding-right: 5px;
 
   &:not(:first-of-type) {
     margin-left: $spacing;
@@ -39,16 +42,16 @@ label {
   }
 }
 
-.mf-input-container {
+.ias-input-container {
   &:not(:last-child) {
     margin-bottom: $body-spacing-medium;
   }
 
-  &.mf-inline {
+  &.ias-inline {
     display: inline-block;
   }
 
-  &.mf-search {
+  &.ias-search {
     max-width: $search-box-max-width;
     position: relative;
 
@@ -58,30 +61,30 @@ label {
       width: 100%;
 
       &:focus {
-        & ~ .mf-icon,
-        & ~ .mf-icon-button {
+        & ~ .ias-icon,
+        & ~ .ias-icon-button {
           color: $focus-text-color;
         }
       }
     }
 
-    > .mf-icon {
+    > .ias-icon {
       left: $search-box-icon-padding;
     }
 
-    > .mf-icon-button {
+    > .ias-icon-button {
       right: $search-box-icon-padding;
     }
 
-    > .mf-icon,
-    > .mf-icon-button {
+    > .ias-icon,
+    > .ias-icon-button {
       color: inherit;
       font-size: $search-box-icon-size;
       position: absolute;
-      top: 50%;
+      top: 55%;
       transform: translateY(-50%);
 
-      > .mf-icon {
+      > .ias-icon {
         font-size: inherit;
       }
     }
@@ -108,15 +111,15 @@ label {
     }
   }
 
-  .mf-input-container {
+  .ias-input-container {
 
-    &.mf-search {
-      > .mf-icon {
+    &.ias-search {
+      > .ias-icon {
         left: initial;
         right: $search-box-icon-padding;
       }
 
-      > .mf-icon-button {
+      > .ias-icon-button {
         left: $search-box-icon-padding;
         right: initial;
       }

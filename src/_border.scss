@@ -1,52 +1,52 @@
-.mf-border-1 {
+.ias-border-1 {
   border: 1px solid $color-gray-5;
   border-radius: $border-radius;
 }
 
-.mf-border-1-small {
+.ias-border-1-small {
   border: 1px solid $color-gray-5;
   border-radius: $border-radius-small;
 }
 
-.mf-border-2 {
+.ias-border-2 {
   border: 1px solid $color-gray-6;
   border-radius: $border-radius;
 }
 
-.mf-border-tabs {
+.ias-border-tabs {
   border: 1px solid $color-gray-5;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
 }
 
-@mixin mf-border() {
-  &.mf-border-bottom {
+@mixin ias-border() {
+  &.ias-border-bottom {
     border-bottom: 1px solid;
     border-color: inherit;
   }
-  &.mf-border-top {
+  &.ias-border-top {
     border-top: 1px solid;
     border-color: inherit;
   }
 }
 
-@mixin mf-border-ltr() {
-  &.mf-border-start {
+@mixin ias-border-ltr() {
+  &.ias-border-start {
     border-left: 1px solid;
     border-color: inherit;
   }
-  &.mf-border-end {
+  &.ias-border-end {
     border-right: 1px solid;
     border-color: inherit;
   }
 }
 
-@mixin mf-border-rtl() {
-  &.mf-border-start {
+@mixin ias-border-rtl() {
+  &.ias-border-start {
     border-right: 1px solid;
     border-color: inherit;
   }
-  &.mf-border-end {
+  &.ias-border-end {
     border-left: 1px solid;
     border-color: inherit;
   }

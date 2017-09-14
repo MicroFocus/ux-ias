@@ -1,4 +1,4 @@
-.mf-tabset {
+.ias-tabset {
   align-items: left;
   color: $nav-text-color;
   display: flex;
@@ -12,55 +12,54 @@
   height: 28px;
 }
 
-.mf-tab-base {
-  border-bottom:  1px solid $color-gray-3;
+.ias-tab-base {
+  border-bottom: 1px solid $color-gray-3;
   position: absolute;
   top: 29px;
   left: 0;
   width: 100%;
 }
 
-.mf-tab {
+.ias-tab {
   &:first-child {
-	margin-left: 10px;
+    margin-left: 10px;
   }
-  @extend .mf-border-tabs;
+
+  @extend .ias-border-tabs;
   background-color: $color-gray-7;
   color: $text-color;
   margin-right: 5px;
   min-width: 60px;
   padding: $body-spacing-xsmall $body-spacing-small;
   text-align: center;
-	
-  &:not([disabled]):not(.mf-disabled):not(.mf-cta-disabled):not(.mf-selected) {
-    &:focus {
-      @include focus-state;
-    }
 
+  &:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected) {
+    &:focus,
     &:hover {
       background-color: $button-bg-color-hover;
       border-color: $button-border-color-hover;
       color: $button-text-color-hover;
-	  cursor: pointer;
+      cursor: pointer;
+      outline: none;
     }
   }
 
   &[disabled],
-  &.mf-disabled {
-    opacity: $disabled-opacity;
+  &.ias-disabled {
+    color: grey;
     cursor: default;
   }
-  
-  &.mf-selected {
-	color: $color-gray-1;
+
+  &.ias-selected {
+    color: $color-gray-1;
     cursor: default;
-	font-size: $font-size-base;
-	font-weight: $font-weight-medium;
-	background-color: white;
-	border-color: $color-gray-4;
-	border-bottom:  4px solid white;
-	z-index: 100;
-  }	
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    background-color: white;
+    border-color: $color-gray-4;
+    border-bottom: 4px solid white;
+    z-index: 100;
+  }
 }
 
 

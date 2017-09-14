@@ -1,79 +1,78 @@
-<h2>Button</h2>
+<h2 class="ias-page-title">Button</h2>
 
 <section>
-	<div repeat-as-code="inner">
+	<div toggle-repeat-code="inner">
 		<button type="button">Button</button>
-		<div class="mf-button" tabindex="0">CSS Class</div>
-		<a class="mf-button" href="#buttons">Anchor</a>
-		<button type="button">
-			<span>Jonathan Smithsonian</span>
-			<i class="mf-icon mf-icon-down_thick"></i>
+		<div class="ias-button" tabindex="0">CSS Class</div>
+		<a class="ias-button" ui-sref="app.component.button">Anchor</a>
+		<button type="button" class="ias-menu-toggle">
+			<span>Menu Toggle</span>
+			<i class="ias-icon ias-icon-down_thick"></i>
 		</button>
 	</div>
 
 	<ul>
 		<li>Example 1: button node</li>
-		<li>Example 2: div, .mf-button</li>
-		<li>Example 3: anchor, .mf-button</li>
-		<li>Example 4: Add text span and mf-icon to any button type</li>
+		<li>Example 2: div, .ias-button</li>
+		<li>Example 3: anchor, .ias-button</li>
+		<li>Example 4: Add text span and ias-icon to any button type</li>
 	</ul>
 
 </section>
 
 <section>
 	<h3>Disabled Button</h3>
-	<div repeat-as-code="inner">
+	<div toggle-repeat-code="inner">
 		<button type="button" disabled="disabled">Button</button>
-		<div class="mf-button mf-disabled" tabindex="-1">CSS Class</div>
-		<a class="mf-button mf-disabled" href="#buttons" tabindex="-1">Anchor</a>
-		<button type="button" disabled="disabled">
-			<span>Jonathan Smithsonian</span>
-			<i class="mf-icon mf-icon-down_thick"></i>
+		<div class="ias-button ias-disabled" tabindex="-1">CSS Class</div>
+		<button type="button" class="ias-menu-toggle" disabled="disabled">
+			<span>Menu Toggle</span>
+			<i class="ias-icon ias-icon-down_thick"></i>
 		</button>
 	</div>
 	<ul>
-		<li>[disabled], .mf-disabled</li>
+		<li>[disabled], .ias-disabled</li>
 	</ul>
 </section>
 
 <section>
 	<h3>Special Button</h3>
-	<div repeat-as-code="inner">
-		<button type="button" class="mf-cta">Button</button>
-		<button type="button" class="mf-cta-disabled">Button</button>
+	<div toggle-repeat-code="inner">
+		<button type="button" class="ias-cta">Button</button>
+		<button type="button" class="ias-cta ias-disabled" tabindex="-1">Button</button>
+		<button type="button" class="ias-cta" disabled="disabled">Button</button>
 	</div>
 
 	<ul>
 		<li>Special button is used to emphasize an action within the context of a page</li>
 		<li>Only use one special button per page</li>
-		<li>.mf-cta</li>
-		<li>.mf-cta-disabled</li>
+		<li>.ias-cta</li>
 	</ul>
 </section>
 
 <h3>Purpose</h3>
 <p>Action, navigation, and closure element on a page.</p>
 
-<h3>.mf-button</h3>
+<h3>.ias-button</h3>
 <p>What can it apply to?</p>
 
-<h3>.mf-button.mf-cta</h3>
+<h3>.ias-button.ias-cta</h3>
 <ul>
 	<li>Usage scenario</li>
 	<li>Limitations</li>
 </ul>
 
 <h3>Icons</h3>
-<p>Nesting icons in buttons (not .mf-icon-button) should be used sparingly. Use of icons in buttons should be
+<p>Nesting icons in buttons (not .ias-icon-button) should be used sparingly. Use of icons in buttons should be
 	the exception. They should not be used on the left of text in a button. They can be used on the right side
-	of text in a button to display state. If an icon is used alone you should use .mf-icon-button instead.</p>
+	of text in a button to display state. If an icon is used alone you should use .ias-icon-button instead.</p>
 
 <h3>Tab support</h3>
 
 <h3>Nestable components</h3>
 <ul>
-	<li>.mf-icon-button</li>
-	<li>.mf-icon</li>
+	<li>.ias-icon-button</li>
+	<li>.ias-icon</li>
 	<li>a</li>
 </ul>
 

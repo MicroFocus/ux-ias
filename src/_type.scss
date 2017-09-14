@@ -1,5 +1,5 @@
-.mf-heading {
-  @include single-line();
+.ias-heading {
+  @include single-line;
 
   color: $heading-text-color;
   font-size: $heading-font-size;
@@ -9,8 +9,8 @@
   padding: 0;
 }
 
-.mf-title {
-  @include single-line();
+.ias-panel-title {
+  @include single-line;
 
   color: $title-text-color;
   font-size: $title-font-size;

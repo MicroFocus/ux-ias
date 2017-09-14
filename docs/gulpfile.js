@@ -1,41 +1,65 @@
+var connectHistoryApiFallback = require('connect-history-api-fallback');
 var gulp = require('gulp');
 var ngGulp = require('ng-gulp');
 var path = require('path');
 
-var cwd = process.cwd();
+function exclude(path) {
+    return '!' + path;
+}
 
 ngGulp(gulp, {
+    devServer: {
+        middleware: function(connect, opt) {
+            return [ connectHistoryApiFallback() ]
+        },
+        root: [
+            path.resolve(__dirname, '../dist'),
+            path.resolve(__dirname, '../dist/docs')
+        ]
+    },
     directories: {
-        nodeModules: path.resolve(cwd, '../node_modules'),
-        output: path.resolve(cwd, '../dist/docs'),
-        outputImages: path.resolve(cwd, '../dist/docs/images'),
-        outputVendor: path.resolve(cwd, '../dist/docs/vendor')
+        nodeModules: path.resolve(__dirname, '../node_modules'),
+        output: path.resolve(__dirname, '../dist/docs'),
+        outputImages: path.resolve(__dirname, '../dist/docs/images'),
+        outputVendor: path.resolve(__dirname, '../dist/docs/vendor')
     },
     externals: {
         'angular-ui-router': 'window["angular-ui-router"]',
-		'ng-prism': 'window["ng-prism"]'
+        'ng-prism': 'window["ng-prism"]'
     },
     files: {
-        sassManifest: [
-            'src/app.scss',
-            'src/app_dark.scss'
-        ],
+        indexProduction: 'src/index.production.html',
         vendorDevelopment: [
-            path.resolve(cwd, '../node_modules/angular/angular.js'),
-            path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
-			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
+            path.resolve(__dirname, '../node_modules/angular/angular.js'),
+            path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
+            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/docs/**/*')),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.js')),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
         ],
         vendorProduction: [
-            path.resolve(cwd, '../node_modules/angular/angular.js'),
-            path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-			path.resolve(cwd, '../node_modules/ng-prism/dist/ng-prism.js'),
-			path.resolve(cwd, '../node_modules/mf-icons/dist/**/*')
-		],
+            path.resolve(__dirname, '../node_modules/angular/angular.js'),
+            path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
+            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/docs/**/*')),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.js')),
+            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
+        ],
         vendorTest: [
-            path.resolve(cwd, '../node_modules/angular/angular.js'),
-            path.resolve(cwd, '../node_modules/angular-mocks/angular-mocks.js'),
-            path.resolve(cwd, '../node_modules/angular-ui-router/release/angular-ui-router.js')
+            path.resolve(__dirname, '../node_modules/angular/angular.js'),
+            path.resolve(__dirname, '../node_modules/angular-mocks/angular-mocks.js'),
+            path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js')
+        ]
+    },
+    productionServer: {
+        root: [
+            path.resolve(__dirname, '../dist'),
+            path.resolve(__dirname, '../dist/docs')
         ]
     }
 });

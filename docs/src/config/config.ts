@@ -1,5 +1,5 @@
 export default {
-    companyName: 'MicroFocus',
-    projectName: 'Access and Identity UX Guidelines',
-    teamName: 'MicroFocus Identity and Access Management Group'
+    companyName: 'Micro Focus',
+    projectName: 'ux-ias',
+    teamName: 'Micro Focus Identity, Access, and Security Group'
 };

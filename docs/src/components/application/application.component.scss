@@ -5,12 +5,14 @@ application {
   width: 100%;
 
   > main {
-    height: 100%;
-    overflow: hidden;
+    flex-grow: 1;
+    overflow: auto;
+    position: relative;
+  }
+}
 
-    > [ui-view] {
-      height: 100%;
-      overflow: hidden;
-    }
+@media (min-width: $medium-display) {
+  .ias-nav #componentsSideNavToggle {
+    display: none;
   }
 }

@@ -33,6 +33,10 @@ export default class ApplicationComponent {
         this.$state.go('app.component.appBar');
     };
 
+    isComponentsView(): boolean {
+        return /^app.component/.test(this.$state.current.name);
+    }
+
     setDisplayDirection(direction): void {
         this.displayDirection = direction || 'ltr';
 
@@ -41,10 +45,10 @@ export default class ApplicationComponent {
 
     setTheme(theme): void {
         if (theme) {
-            this.theme = 'app' + '_' + theme;
+            this.theme = 'ux-ias' + '_' + theme;
         }
         else {
-            this.theme = 'app';
+            this.theme = 'ux-ias';
         }
 
         this.themeLink.href = this.themeLink.href.replace(/(\/)([^\/]+)(\.css$)/, '$1' + this.theme + '$3');
@@ -66,7 +70,7 @@ export default class ApplicationComponent {
     };
 
     isDefaultTheme(): boolean {
-        return this.theme === 'app';
+        return this.theme === 'ux-ias';
     };
 
 }

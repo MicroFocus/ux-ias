@@ -1,40 +1,46 @@
-<h2>Icon</h2>
+<h2 class="ias-page-title">Icon</h2>
 
-<h3>Purpose</h3>
-<p>Visually add continuity, branding, and flow to otherwise homogenous data. The contrast added to the UI
+<p class="ias-page-instructions">Visually add continuity, branding, and flow to otherwise homogenous data. The contrast added to the UI
 can help make important data stand out. Adding too many icons increases visual turbulence and will decrease the icons' value.</p>
 
 <p>The following are three standard sizes. Exceptions will exist, but try to use these sizes, if possible, to contribute to a consistent look.</p>
 <section>
-	<h3>.mf-small<span style="font-weight: normal; padding-left: 15px;">(25x25 pixels)</span></h3>
+	<h3>.ias-icon</h3>
 
-	<div repeat-as-code="inner">
-		<i class="mf-icon mf-icon-resource_thick"></i>
-		<i class="mf-icon mf-icon-phone_thick"></i>
-		<i class="mf-icon mf-icon-favorite_outline_thin"></i>
+	<div toggle-repeat-code="inner">
+		<i class="ias-icon ias-icon-resource_thick"></i>
+		<i class="ias-icon ias-icon-phone_thick"></i>
+		<i class="ias-icon ias-icon-favorite_outline_thin"></i>
+	</div>
+</section>
+
+<section>
+	<h3>w/ .ias-medium</h3>
+
+	<div toggle-repeat-code="inner">
+		<i class="ias-icon ias-icon-resource_thick ias-medium"></i>
+		<i class="ias-icon ias-icon-phone_thick ias-medium"></i>
+		<i class="ias-icon ias-icon-favorite_outline_thin ias-medium"></i>
+	</div>
+</section>
+
+<section>
+	<h3>w/ .ias-large</h3>
+
+	<div toggle-repeat-code="inner">
+		<i class="ias-icon ias-icon-resource_thick ias-large"></i>
+		<i class="ias-icon ias-icon-phone_thick ias-large"></i>
+		<i class="ias-icon ias-icon-favorite_outline_thin ias-large"></i>
+	</div>
+</section>
+
+<section>
+	<h3>w/ svg icons<span></span></h3>
+
+	<div toggle-repeat-code="inner">
 		<img class="svg-icon" src="images/account-box.svg" alt="images/account-box.svg">
-	</div>
-</section>
-
-<section>
-	<h3>.mf-medium<span style="font-weight: normal; padding-left: 15px;">(50x50 pixels)</span></h3>
-
-	<div repeat-as-code="inner">
-		<i class="mf-icon mf-icon-resource_thick mf-medium"></i>
-		<i class="mf-icon mf-icon-phone_thick mf-medium"></i>
-		<i class="mf-icon mf-icon-favorite_outline_thin mf-medium"></i>
-		<img class="svg-icon mf-medium" src="images/account-box.svg" alt="images/account-box.svg">
-	</div>
-</section>
-
-<section>
-	<h3>.mf-large<span style="font-weight: normal; padding-left: 15px;">(75x75 pixels)</span></h3>
-
-	<div repeat-as-code="inner">
-		<i class="mf-icon mf-icon-resource_thick mf-large"></i>
-		<i class="mf-icon mf-icon-phone_thick mf-large"></i>
-		<i class="mf-icon mf-icon-favorite_outline_thin mf-large"></i>
-		<img class="svg-icon mf-large" src="images/account-box.svg" alt="images/account-box.svg">
+		<img class="svg-icon ias-medium" src="images/account-box.svg" alt="images/account-box.svg">
+		<img class="svg-icon ias-large" src="images/account-box.svg" alt="images/account-box.svg">
 	</div>
 </section>
 
@@ -54,5 +60,5 @@ can help make important data stand out. Adding too many icons increases visual t
 
 <h3>Approved icon fonts</h3>
 <ul>
-	<li>mf-icons</li>
+	<li>ias-icons</li>
 </ul>

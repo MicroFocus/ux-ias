@@ -21,8 +21,8 @@ kitchen-sink {
   text-transform: uppercase;
 }
 
-.kitchen-sink-content > #app-bars .mf-app-bar,
-.kitchen-sink-content > #navs .mf-nav {
+.kitchen-sink-content > #app-bars .ias-app-bar,
+.kitchen-sink-content > #navs .ias-nav {
   margin-bottom: 24px;
 }
 
@@ -31,11 +31,11 @@ kitchen-sink {
   position: relative;
 }
 
-.kitchen-sink-content > #dialogs .mf-dialog {
+.kitchen-sink-content > #dialogs .ias-dialog {
   position: absolute;
 }
 
-.kitchen-sink-content > #dialogs .mf-dialog-container {
+.kitchen-sink-content > #dialogs .ias-dialog-container {
   width: 300px;
 }
 
@@ -78,8 +78,8 @@ kitchen-sink {
   margin-right: 10px;
 }
 
-.kitchen-sink-content > #lists .mf-list,
-.kitchen-sink-content > #panels .mf-panel {
+.kitchen-sink-content > #lists .ias-list,
+.kitchen-sink-content > #panels .ias-panel {
   width: 300px;
 }
 
@@ -94,16 +94,16 @@ kitchen-sink {
   position: relative;
 }
 
-.kitchen-sink-content > #tiles .mf-tile {
+.kitchen-sink-content > #tiles .ias-tile {
   display: inline-flex;
   vertical-align: top;
 }
 
-.kitchen-sink-content > #tiles .mf-tile > .mf-actions {
+.kitchen-sink-content > #tiles .ias-tile > .ias-actions {
   color: #007cd0;
 }
 
-.kitchen-sink-content > #tiles .mf-tile:not(:last-child) {
+.kitchen-sink-content > #tiles .ias-tile:not(:last-child) {
   margin-bottom: 5px;
 }
 

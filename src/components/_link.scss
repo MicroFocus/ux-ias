@@ -1,28 +1,40 @@
 a {
   border-radius: $border-radius;
   color: $link-text-color;
-  cursor: pointer;
   display: inline-block;
-  font-size: inherit;
   padding: $link-padding;
   text-decoration: none;
 
-  &.mf-disabled {
-    background-color: $link-bg-color-disabled;
-    color: $link-text-color-disabled;
-    cursor: default;
+  + a, &.ias-link-margin {
+    margin-left: $link-spacing;
   }
 
-  &:not(.mf-disabled) {
-    &:focus {
-      @include focus-state;
-    }
-
-    &:hover {
-      background-color: $link-bg-color-hover;
-      color: $link-text-color-hover;
-    }
+  &.ias-link-no-highlight {
+    color: $link-text-color-no-highlight;
   }
 
+  &:focus,
+  &:hover {
+    background-color: $link-bg-color-hover;
+    color: $link-text-color-hover;
+    text-decoration: none;
+    outline: none;
+  }
+}
 
+p, span, td, th {
+  a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+[dir="rtl"] {
+  a {
+    + a, &.ias-link-margin {
+      margin-left: initial;
+      margin-right: $link-spacing;
+    }
+  }
 }

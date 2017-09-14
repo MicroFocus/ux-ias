@@ -1,11 +1,18 @@
 components {
+  bottom: 0;
   display: flex;
   flex-flow: row nowrap;
-  height: 100%;
+  position: absolute;
+  top: 0;
   width: 100%;
 
-  > [ui-view] {
-    flex: 1 1;
+  > .ias-side-nav {
+    flex: none;
+  }
+
+  > .components-body {
+    flex-grow: 1;
+    height: 100%;
     overflow: auto;
   }
 }
