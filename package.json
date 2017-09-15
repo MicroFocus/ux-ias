@@ -16,7 +16,7 @@
   },
   "author": "Joe Hawkins <joe.hawkins@microfocus.com> (https://github.com/jedwardhawkins)",
   "license": "MIT",
-  "bugs": "https://github.com/@microfocus/ux-ias/issues",
+  "bugs": "https://github.com/microfocus/ux-ias/issues",
   "devDependencies": {
     "@types/angular": "1.5.8",
     "@types/angular-mocks": "1.5.8",
