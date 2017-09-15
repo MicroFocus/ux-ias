@@ -1,7 +1,6 @@
-after_deploy: "echo 'after deploy'"
-before_deploy: "echo 'before deploy'"
 before_script:
   - npm install -g gulp-cli
+before_deploy: "cd dist && gulp build:production"
 cache:
   directories:
     - "node_modules"
