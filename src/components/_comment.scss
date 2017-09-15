@@ -279,15 +279,14 @@
 }
 
 .manage-comments {
-  width: 100%;
+  position: relative;
   color: $comment-frame-p;
   background-color: $comments-manage-comments;
-  padding-bottom: 15px;
+  padding: 15px;
   .ias-icon-comment_user_thin {
     color: $comment-p-hover;
     padding-left: 2px;
     padding-right: 12px;
-    padding-top: 13.5px;
   }
   p {
     padding: 0px;
@@ -300,18 +299,12 @@
     margin-bottom: 0px;
   }
   .ias-avatar {
-    //vertical-align: middle;
-    //position: absolute;
-    //left: 0px;
-    //margin-top: 0px;
+
     width: 23px;
     height: 23px;
     display: inline-block;
-    //margin-left: 12px;
-    //padding-top: 5px;
     margin-left: 2px;
     margin-right: 12px;
-    margin-top: 13.5px;
   }
 }
 
@@ -326,7 +319,7 @@
 
 .comment-text-area {
   textarea:not(.comment-area-one) {
-    width: 100%;
+    width: 75%;
     background-color: transparent;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -346,6 +339,22 @@
   margin-right: 40px;
 }
 
+
+.comment-container {
+  position: relative;
+  textarea {
+    display: block;
+    width: 90%;
+    min-height: 65px;
+    margin-left: 27px;
+    margin-top: 0;
+  }
+  button:not(.ias-icon-button) {
+    margin-top: 10px;
+    margin-left: 87%;
+
+  }
+}
 
 .manage-comments-button {
   font-size: 13px!important;
