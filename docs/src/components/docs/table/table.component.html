@@ -1,9 +1,9 @@
 <h2 class="ias-page-title">Table</h2>
 
-<section toggle-repeat-code="">
+<section>
     <h3>Default</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th></th>
@@ -43,10 +43,10 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>Inline .ias-icon</h3>
+<section>
+    <h3>.ias-icon</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -79,21 +79,17 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>Sorted</h3>
+<section>
+    <h3>.ias-sorted</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
-            <th class="ias-sortable">Name <i class="ias-icon ias-icon-up_thick"></i></th>
+            <th class="ias-sortable ias-sorted">Name <i class="ias-icon ias-icon-flow_goto_prev_thin"></i></th>
             <th class="ias-sortable">Title</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
-            <td>The Valiant</td>
-        </tr>
         <tr>
             <td><a ui-sref="app.component.table">Joseph White</a></td>
             <td>Destroyer of Worlds</td>
@@ -102,14 +98,18 @@
             <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
             <td>Asst. to the UX Director</td>
         </tr>
+        <tr>
+            <td><a ui-sref="app.component.table">Joe Hawkins</a></td>
+            <td>The Valiant</td>
+        </tr>
         </tbody>
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>th,td.ias-align-end</h3>
+<section>
+    <h3>.ias-align-end</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -133,10 +133,10 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>th,td.ias-actions</h3>
+<section>
+    <h3>Actions</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -194,108 +194,85 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>IDM Prototype</h3>
+<section>
+    <h3>Checkboxes</h3>
 
-    <table id="role-list-2" class="list" cellpadding="0" cellspacing="0">
+    <table class="ias-table" toggle-repeat-code>
+        <thead>
+        <tr>
+            <th><input type="checkbox" title="Select item"></th>
+            <th class="ias-sortable ias-sorted">Name <i class="ias-icon ias-icon-flow_goto_next_thin"></i></th>
+            <th>Description</th>
+        </tr>
+        </thead>
        <tbody>
-       <tr class="tbl-head" style="background:transparent;">
-           <td class="select">
-               <input type="checkbox">
-           </td>
-           <td class="sort-1">Name<i class="ias-icon ias-icon-flow_goto_next_thin"></i></td>
-           <td>Description</td>
-           <td>Level</td>
-           <td>Category</td>
-           <td>Implicit Containers</td>
-           <td>Owner</td>
-            <td class="last">
-                <span class="ias-icon ias-icon-configure_thick" title="Configure list"></span>
-            </td>
-       </tr>
-       <tr class="tbl-r2">
-           <td class="select">
-               <input type="checkbox">
-           </td>
-           <td>
-               <a class="role-a" href="#">Associate Software Engineer</a>
-           </td>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Associate Software Engineer</a></td>
            <td>Associate Software Engineer</td>
-           <td>Permission Role</td>
-           <td>Default</td>
-           <td>&nbsp;</td>
-           <td>
-               <span class="badge">
-                   <div class="selected-tag-content">
-                       <span class="icon icon-role"></span>
-                       <span>Printer Access</span>
-                   </div>
-               </span>
-           </td>
-           <td class="last">&nbsp;</td>
        </tr>
-       <tr class="tbl-r2">
-           <td class="select">
-               <input type="checkbox">
-           </td>
-           <td>
-               <a class="role-a" href="#">Compliance Administrator</a>
-           </td>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Compliance Administrator</a></td>
            <td>A domain administrator who has the full range of</td>
-           <td>IT Role</td>
-           <td>System Roles</td>
-           <td>System</td>
-           <td>
-               <span class="badge">
-                   <div class="selected-tag-content">
-                       <span class="icon icon-role"></span>
-                       <span>Owner</span>
-                   </div>
-               </span>
-           </td>
-           <td class="last">&nbsp;</td>
        </tr>
-       <tr class="tbl-r2">
-           <td class="select">
-               <input type="checkbox">
-           </td>
-           <td>
-               <a class="role-a" href="#">Doctor</a>
-           </td>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Doctor</a></td>
            <td>Doctor Role</td>
-           <td>Business Role</td>
-           <td>Default</td>
-           <td>&nbsp;</td>
-           <td>
-               <span class="badge">
-                   <div class="selected-tag-content">
-                       <span class="icon icon-role"></span>
-                       <span>Owner</span>
-                   </div>
-               </span>
-           </td>
-           <td class="last">&nbsp;</td>
        </tr>
-       <tr class="tbl-r2">
-           <td class="select">
-               <input type="checkbox">
-           </td>
-           <td>
-               <a class="role-a" href="#">Provisioning Administrator</a>
-           </td>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Provisioning Administrator</a></td>
            <td>Mon Aug 10 16:31:05 GMT-600 2015</td>
-           <td>Level</td>
-           <td>Category</td>
-           <td>Implicit Containers</td>
-           <td>
-               <span class="badge">
-                   <div class="selected-tag-content">
-                       <span class="icon icon-role"></span>
-                       <span>Owner</span>
-                   </div>
-               </span>
-           </td>
-           <td class="last">&nbsp;</td>
+       </tr>
+       </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Configuration</h3>
+
+    <table class="ias-table" toggle-repeat-code>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th class="ias-align-end">
+
+                <div class="ias-menu ias-open ias-end">
+                    <button class="ias-icon-button" type="button" title="Configure table">
+                        <i class="ias-icon ias-icon-configure_thick"></i>
+                    </button>
+                    <div class="ias-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+            </th>
+        </tr>
+        </thead>
+       <tbody>
+       <tr>
+           <td><a href="#">Associate Software Engineer</a></td>
+           <td>Associate Software Engineer</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Compliance Administrator</a></td>
+           <td>A domain administrator who has the full range of</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Doctor</a></td>
+           <td>Doctor Role</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Provisioning Administrator</a></td>
+           <td>Mon Aug 10 16:31:05 GMT-600 2015</td>
+           <td></td>
        </tr>
        </tbody>
     </table>
