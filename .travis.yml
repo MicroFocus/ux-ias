@@ -1,6 +1,6 @@
 before_script:
   - npm install -g gulp-cli
-before_deploy: ./before_deploy.sh
+before_deploy: /bin/sh before_deploy.sh
 cache:
   directories:
     - "node_modules"
