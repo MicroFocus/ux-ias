@@ -1,0 +1,20 @@
+after_deploy: "echo 'after deploy'"
+before_deploy: "echo 'before deploy'"
+before_script:
+  - npm install -g gulp-cli
+cache:
+  directories:
+    - "node_modules"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: dist
+  email: polishedsapphire@gmail.com
+  name: Joseph White
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
+language: node_js
+node_js:
+  - "node"
+  - "6"
