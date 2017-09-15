@@ -1,0 +1,9 @@
+# Exclude everything from "npm publish", except dist/ and src/
+# Also exclude dist/docs/
+# See https://stackoverflow.com/questions/30976685
+*
+
+!dist/**
+dist/docs
+
+!src/**
