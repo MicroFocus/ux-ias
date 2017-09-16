@@ -176,7 +176,7 @@
 
 .comment {
   font-size: 14px;
-  margin-left: 30px;
+  margin-left: 40px;
   padding-top: 10px;
   position: relative;
   white-space: normal;
@@ -283,10 +283,17 @@
   color: $comment-frame-p;
   background-color: $comments-manage-comments;
   padding: 15px;
+  width: auto;
   display: flex;
   .ias-icon-comment_user_thin {
     color: $comment-p-hover;
     margin-right: 15px;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    height: 65px;
+    margin-top: 0;
   }
   p {
     padding: 0px;
