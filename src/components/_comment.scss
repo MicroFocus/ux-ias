@@ -283,10 +283,10 @@
   color: $comment-frame-p;
   background-color: $comments-manage-comments;
   padding: 15px;
+  display: flex;
   .ias-icon-comment_user_thin {
     color: $comment-p-hover;
-    padding-left: 2px;
-    padding-right: 12px;
+    margin-right: 15px;
   }
   p {
     padding: 0px;
@@ -341,12 +341,12 @@
 
 
 .comment-container {
-  position: relative;
+  flex: 1 0;
+  text-align: right;
   textarea {
     display: block;
-    width: 90%;
+    width: 100%;
     min-height: 65px;
-    margin-left: 27px;
     margin-top: 0;
   }
   button:not(.ias-icon-button) {
