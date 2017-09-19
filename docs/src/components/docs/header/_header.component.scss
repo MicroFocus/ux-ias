@@ -184,7 +184,7 @@ h4 {
   }
 }
 
-@media(min-width: 320px) {
+@media(max-width: 320px) {
   ias-header > .ias-icon-button {
     margin-left: 0;
   }
