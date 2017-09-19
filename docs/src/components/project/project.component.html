@@ -1,15 +1,18 @@
 <div class="ias-content-padding">
     <section id="introduction">
         <h1 ng-bind="$ctrl.projectName"></h1>
-        <p><span ng-bind="$ctrl.projectName"></span> is the official CSS framework for web applications built by
-            <span ng-bind="$ctrl.teamName"></span>. This documentation contains information about components,
-            user experience (UX) patterns, and application layout. It also contains the required structure and options
-            for the HTML that uses this framework.</p>
-        <p>This is only a CSS framework. It contains no Javascript and no HTML templates. Many of the examples in this
-            documentation are not fully functional. This document aims to define the style and user experience for each
-            component but cannot fully implement interactive behaviors using CSS alone. To view a fully functional
-            implementation of these components please refer to any
-            <a href="#implementations">full implementation.</a></p>
+        <p>
+            UX Library for Identity, Access, and Security Products (<span ng-bind="$ctrl.projectName"></span>) is the
+            official CSS framework for web applications built by Micro Focus Identity, Access, and Security Group.
+            These guidelines help establish a consistent look and feel among common user interface elements throughout
+            Identity Access, and Security products. This documentation contains information about components, user
+            experience (UX) patterns, and application layout. It also contains the required structure and options
+            for the HTML that uses this framework.
+        </p>
+        <p>
+            This is only a CSS framework. Interactive components shown in this framework are not functional (they can
+            only be viewed). Please refer to <a href="https://github.com/microfocus/ng-ias">ng-ias</a> to view a fully
+            functional implementation of these components.
     </section>
 
     <section id="installation">
@@ -17,9 +20,12 @@
 
         <section>
             <h3>Manual Installation</h3>
-            <p>Download <a href="/ux-ias.css" target="_blank">ux-ias.css</a> and
-                <a href="/ias-icons.css" target="_blank">ias-icons.css</a> (NOTE: ias-icons.css requires the referenced
-                font files as well). Add the stylesheets to your .html file:</p>
+            <p>
+                Download <a href="../ux-ias.css" target="_blank">ux-ias.css</a> and
+                <a href="https://microfocus.github.io/ias-icons/ias-icons.css" target="_blank">ias-icons.css</a>.
+                If you are using <a href="https://github.com/microfocus/ias-icons" target="_blank">ias-icons</a>,
+                add the ias-icons font files as well. Add the stylesheets to your HTML page:
+            </p>
             <pre><code highlight="markup">
                 &lt;link rel="stylesheet" href="ux-ias.css" /&gt;
                 &lt;link rel="stylesheet" href="ias-icons.css" /&gt;
@@ -29,14 +35,8 @@
         <section>
             <h3>NPM</h3>
             <pre><code highlight="clike">
-                npm install --save --save-exact git@github.com:jedwardhawkins/ux-ias
+                npm install --save --save-exact git@github.com:microfocus/ux-ias
             </code></pre>
         </section>
-    </section>
-    <section id="implementations">
-        <h2>Implementations</h2>
-        <ul>
-            <li><a href="https://secmgmtgit.provo.novell.com:8443/users/jhawkins/repos/ng-ias/browse">Angular 1</a></li>
-        </ul>
     </section>
 </div>
