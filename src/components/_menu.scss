@@ -106,3 +106,9 @@
     }
   }
 }
+
+[dir="rtl"] {
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
