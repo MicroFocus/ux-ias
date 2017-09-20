@@ -13,7 +13,7 @@ implementation of these components.
 
 ### Helpful Links
 
-- [Documentation Site](https://microfocus.github.io/ux-ias/docs)
+- [Documentation Site](https://microfocus.github.io/ux-ias)
 - [Changelog](./CHANGELOG.md)
 - [Developer Guide](./DEVELOPER.md)
 - [Guidelines for Contribution](./CONTRIBUTING.md)
