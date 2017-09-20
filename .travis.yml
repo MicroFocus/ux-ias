@@ -1,13 +1,14 @@
 language: node_js
-notifications:
-  email: false
 node_js:
   - "node"
   - "6"
-
 before_script:
   - npm install -g gulp-cli
 before_deploy: gulp --cwd docs build:production
+branches:
+  only:
+    - master
+    - development
 cache:
   directories:
     - "node_modules"
@@ -18,3 +19,5 @@ deploy:
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
     branch: master
+notifications:
+  email: false
