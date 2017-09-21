@@ -1,27 +1,18 @@
-var connectHistoryApiFallback = require('connect-history-api-fallback');
 var gulp = require('gulp');
 var ngGulp = require('ng-gulp');
 var path = require('path');
 
-function exclude(path) {
-    return '!' + path;
-}
-
 ngGulp(gulp, {
     devServer: {
-        middleware: function(connect, opt) {
-            return [ connectHistoryApiFallback() ]
-        },
         root: [
-            path.resolve(__dirname, '../dist'),
-            path.resolve(__dirname, '../dist/docs')
+            path.resolve(__dirname, '../dist')
         ]
     },
     directories: {
         nodeModules: path.resolve(__dirname, '../node_modules'),
-        output: path.resolve(__dirname, '../dist/docs'),
-        outputImages: path.resolve(__dirname, '../dist/docs/images'),
-        outputVendor: path.resolve(__dirname, '../dist/docs/vendor')
+        output: path.resolve(__dirname, '../dist'),
+        outputImages: path.resolve(__dirname, '../dist/images'),
+        outputVendor: path.resolve(__dirname, '../dist/vendor')
     },
     externals: {
         'angular-ui-router': 'window["angular-ui-router"]',
@@ -32,22 +23,18 @@ ngGulp(gulp, {
         vendorDevelopment: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
             path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/@microfocus/ias-icons/dist/font**/*'),
+            path.resolve(__dirname, '../node_modules/@microfocus/ias-icons/dist/ias-icons.css'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
-            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/docs/**/*')),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.js')),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js')
         ],
         vendorProduction: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
             path.resolve(__dirname, '../node_modules/angular-ui-router/release/angular-ui-router.js'),
-            path.resolve(__dirname, '../node_modules/ias-icons/dist/**/*'),
+            path.resolve(__dirname, '../node_modules/@microfocus/ias-icons/dist/font**/*'),
+            path.resolve(__dirname, '../node_modules/@microfocus/ias-icons/dist/ias-icons.css'),
             path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.css'),
-            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js'),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/docs/**/*')),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.js')),
-            exclude(path.resolve(__dirname, '../node_modules/ias-icons/dist/ias-icons.min.css'))
+            path.resolve(__dirname, '../node_modules/ng-prism/dist/ng-prism.js')
         ],
         vendorTest: [
             path.resolve(__dirname, '../node_modules/angular/angular.js'),
@@ -58,8 +45,7 @@ ngGulp(gulp, {
     },
     productionServer: {
         root: [
-            path.resolve(__dirname, '../dist'),
-            path.resolve(__dirname, '../dist/docs')
+            path.resolve(__dirname, '../dist')
         ]
     }
 });

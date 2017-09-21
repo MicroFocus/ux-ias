@@ -5,7 +5,7 @@ serves the documentation application.
 
 1. Clone the repository and install packages via NPM
 
-       git clone git@github.com:jedwardhawkins/ux-ias.git
+       git clone git@github.com:microfocus/ux-ias.git
        cd ux-ias
        npm install -g gulp-cli
        npm install
