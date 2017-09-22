@@ -8,11 +8,12 @@ experience (UX) patterns, and application layout. It also contains the required 
 for the HTML that uses this framework.
 
 This is only a CSS framework. Interactive components shown in this framework are not functional (they can
-only be viewed). Please refer to [ng-ias](https://github.com/jedwardhawkins/ng-ias) to view a fully functional 
+only be viewed). Please refer to [ng-ias](https://github.com/microfocus/ng-ias) to view a fully functional 
 implementation of these components.
 
 ### Helpful Links
 
+- [Documentation Site](https://microfocus.github.io/ux-ias)
 - [Changelog](./CHANGELOG.md)
 - [Developer Guide](./DEVELOPER.md)
 - [Guidelines for Contribution](./CONTRIBUTING.md)
