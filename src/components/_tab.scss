@@ -1,66 +1,70 @@
+
 .ias-tabset {
-  align-items: left;
-  color: $nav-text-color;
+  align-items: flex-start;
   display: flex;
   flex-flow: row nowrap;
-  margin-bottom: $body-spacing-medium;
+  justify-content: flex-start;
+  margin-bottom: $tabset-margin-bottom;
   max-width: 100%;
   overflow: hidden;
-  padding-top: 2px;
-  padding-right: 15px;
+  padding: 0 $tabset-padding;
   position: relative;
-  height: 28px;
+  height: $tabset-height;
 }
 
 .ias-tab-base {
-  border-bottom: 1px solid $color-gray-3;
+  border-bottom: 1px solid $tabset-bottom-border-color;
   position: absolute;
-  top: 29px;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
 }
 
 .ias-tab {
-  &:first-child {
-    margin-left: 10px;
-  }
-
   @extend .ias-border-tabs;
-  background-color: $color-gray-7;
-  color: $text-color;
-  margin-right: 5px;
-  min-width: 60px;
-  padding: $body-spacing-xsmall $body-spacing-small;
+  @include single-line;
+
+  background-color: $tabset-tab-bg-color;
+  margin-right: $tabset-tab-margin;
+  min-width: $tabset-tab-min-width;
+  padding: $tabset-tab-padding;
   text-align: center;
 
-  &:not([disabled]):not(.ias-disabled):not(.ias-cta-disabled):not(.ias-selected) {
-    &:focus,
-    &:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: #434c50;
-      cursor: pointer;
-      outline: none;
-    }
+  &:focus,
+  &:hover {
+    background-color: $tabset-tab-bg-color-hover;
+    border-color: $tabset-tab-border-color-hover;
+    color: $tabset-tab-text-color-hover;
+    cursor: pointer;
+    outline: none;
   }
 
   &[disabled],
   &.ias-disabled {
-    color: grey;
+    color: $tabset-tab-text-color-disabled;
+
+    &:hover {
+      @extend .ias-border-tabs;
+    }
+  }
+
+  &.ias-active,
+  &[disabled],
+  &.ias-disabled {
     cursor: default;
   }
 
-  &.ias-selected {
-    color: $color-gray-1;
-    cursor: default;
-    font-size: $font-size-base;
-    font-weight: $font-weight-medium;
-    background-color: white;
-    border-color: $color-gray-4;
-    border-bottom: 4px solid white;
-    z-index: 100;
+  &.ias-active {
+    background-color: $tabset-tab-bg-color-selected;
+    border-color: $tabset-tab-border-color-selected;
+    z-index: 1;
   }
 }
 
-
-
+[dir="rtl"] {
+  .ias-tab {
+    margin-left: $tabset-tab-margin;
+    margin-right: initial;
+  }
+}

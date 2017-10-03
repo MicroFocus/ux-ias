@@ -160,6 +160,20 @@ $table-icon-size: 25px;
 $table-body-border-color: $color-gray-5;
 $table-row-height: 35px;
 
+$tabset-height: 28px;
+$tabset-margin-bottom: $body-spacing-medium;
+$tabset-padding: 15px;
+$tabset-tab-bg-color: $color-gray-7;
+$tabset-tab-bg-color-hover: $button-bg-color-hover;
+$tabset-tab-border-color: $color-gray-5;
+$tabset-tab-border-color-hover: $button-border-color-hover;
+$tabset-tab-border-color-selected: $color-gray-4;
+$tabset-tab-margin: 5px;
+$tabset-tab-min-width: 60px;
+$tabset-tab-padding: $body-spacing-xsmall $body-spacing-small;
+$tabset-tab-text-color-disabled: $color-gray-5;
+$tabset-tab-text-color-hover: $color-gray-1;
+
 $tile-bg-color: $color-gray-7;
 $tile-border-color: $color-primary-4;
 $tile-border-width: 1px;
