@@ -40,7 +40,7 @@ import DualColumnComponent from './components/docs/dual-column/dual-column.compo
 import CommentComponent from './components/docs/comment/comment.component';
 import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
 import IconButtonToggleComponent from './components/docs/icon-button-toggle/icon-button-toggle.component';
-import HeaderComponent from "./components/docs/header/header.component";
+import HeaderComponent from './components/docs/header/header.component';
 
 
 module('app', [

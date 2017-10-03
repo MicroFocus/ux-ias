@@ -1,63 +1,43 @@
-.status-message-tile {
-  text-align: left;
-  margin: 30px 0px;
-  width: 635px;
-  max-width: 800px;
-  min-height: 78px;
-  background-color: $status-message-tile;
-  border: 1px solid $status-message-border;
-  border-radius: 3px;
-  padding: 15px;
-  .ias-icon-message_error_thick {
-    color: $status-message-thick;
-  }
-  .ias-icon-status_error_thick {
-    color: $status-message-thick;
-  }
-  .ias-icon-status_warn_thick {
-    color: $status-message-warn;
-  }
-  .ias-icon-status_ok_thick {
-    color: $status-message-ok;
+.ias-status-message {
+  background-color: $status-message-bg-color;
+  border: 1px solid $status-message-border-color;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  margin: $status-message-margin 0;
+  max-width: $status-message-max-width;
+  padding: $status-message-padding;
+  width: 100%;
+
+  p {
+    color: $status-message-body-text-color;
+    margin: $status-message-body-margin;
+    font-size: $status-message-body-text-size;
   }
 }
 
-.status-message-title {
-  color: $status-message-title;
-  text-align: left;
-  p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    display: inline;
-    vertical-align: middle;
-  }
+.ias-error { color: $status-color-error; }
+.ias-warn { color: $status-color-warn; }
+.ias-ok { color: $status-color-ok; }
+
+.ias-status-message-title {
+  color: $status-message-text-color;
+  font-weight: bold;
+
+  span,
   .ias-icon {
     vertical-align: middle;
-    margin-right: 5px;
   }
-}
 
-.status-message-subtitle {
-  color: $status-message-subtitle;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-
-@media(max-width: 320px) {
-  .status-message-tile {
-    width: 225px;
+  .ias-icon {
+    margin-right: $status-message-icon-margin;
   }
 }
 
 [dir="rtl"] {
-  .status-message-title {
-    text-align: right;
-  }
-  .status-message-subtitle {
-    text-align: right;
-  }
-  .toggle-show > .show-code {
-    text-align: left;
+  .ias-status-message-title {
+    .ias-icon {
+      margin-left: $status-message-icon-margin;
+      margin-right: initial;
+    }
   }
 }
