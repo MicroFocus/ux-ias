@@ -2,8 +2,8 @@
 <p class="ias-page-instructions">Single line of text. Selectable. Has primary action by clicking anywhere
     on the list item. Can have multiple secondary actions. They are displayed edge-to-edge in their container.</p>
 <h3>Default</h3>
-<section toggle-repeat-code="">
-    <ul class="ias-list">
+<section>
+    <ul class="ias-list" toggle-repeat-code>
         <li tabindex="0"><span>Jonathan Smithsonian</span></li>
         <li tabindex="0"><span>Joe Hawkins</span></li>
         <li tabindex="0"><span>Joseph White</span></li>
@@ -12,8 +12,8 @@
 </section>
 
 <h3>w/ primary .ias-icon</h3>
-<section toggle-repeat-code="">
-    <ul class="ias-list">
+<section>
+    <ul class="ias-list" toggle-repeat-code>
         <li tabindex="0">
             <i class="ias-icon ias-icon-favorite_fill"></i>
             <span>Jonathan Smithsonian</span>
@@ -34,8 +34,8 @@
 </section>
 
 <h3>w/ .ias-avatar</h3>
-<section toggle-repeat-code="">
-    <ul class="ias-list">
+<section>
+    <ul class="ias-list" toggle-repeat-code>
         <li tabindex="0">
             <div class="ias-avatar"
                  style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
@@ -64,8 +64,8 @@
 </section>
 
 <h3>w/ secondary .ias-icon</h3>
-<section toggle-repeat-code="">
-    <ul class="ias-list">
+<section>
+    <ul class="ias-list" toggle-repeat-code>
         <li tabindex="0">
             <div class="ias-avatar"
                  style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
@@ -99,8 +99,8 @@
 
 
 <h3>.ias-offset</h3>
-<section toggle-repeat-code="">
-    <ul class="ias-list">
+<section>
+    <ul class="ias-list" toggle-repeat-code>
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Jonathan Smithsonian</span>
@@ -125,27 +125,30 @@
 
 
 <h3>w/ .ias-list-header</h3>
-<section toggle-repeat-code="">
-    <h3 class="ias-list-header">List Header</h3>
-    <ul class="ias-list">
-        <li tabindex="0">
-            <i class="ias-icon ias-icon-check_thick"></i>
-            <span>Jonathan Smithsonian</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
-        </li>
-        <li tabindex="0" class="ias-offset">
-            <span>Joe Hawkins</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
-        </li>
-        <li tabindex="0">
-            <i class="ias-icon ias-icon-check_thick"></i>
-            <span>Joseph White</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
-        </li>
-        <li tabindex="0">
-            <i class="ias-icon ias-icon-check_thick"></i>
-            <span>James Albright</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
-        </li>
-    </ul>
+<section>
+    <div toggle-repeat-code="inner">
+        <h3 class="ias-list-header">List Header</h3>
+
+        <ul class="ias-list">
+            <li tabindex="0">
+                <i class="ias-icon ias-icon-check_thick"></i>
+                <span>Jonathan Smithsonian</span>
+                <i class="ias-icon ias-icon-search_thick"></i>
+            </li>
+            <li tabindex="0" class="ias-offset">
+                <span>Joe Hawkins</span>
+                <i class="ias-icon ias-icon-search_thick"></i>
+            </li>
+            <li tabindex="0">
+                <i class="ias-icon ias-icon-check_thick"></i>
+                <span>Joseph White</span>
+                <i class="ias-icon ias-icon-search_thick"></i>
+            </li>
+            <li tabindex="0">
+                <i class="ias-icon ias-icon-check_thick"></i>
+                <span>James Albright</span>
+                <i class="ias-icon ias-icon-search_thick"></i>
+            </li>
+        </ul>
+    </div>
 </section>
