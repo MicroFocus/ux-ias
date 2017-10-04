@@ -1,153 +1,148 @@
 <h2 class="ias-page-title">Menus</h2>
-<p class="ias-page-instructions">Grouped navigation actions</p>
-<section toggle-repeat-code>
-    <h3>.ias-closed</h3>
 
-    <div class="ias-menu ias-closed">
-        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
-        <div class="ias-menu-content"></div>
+<section>
+    <h3>.ias-menu-toggle</h3>
+
+    <div toggle-repeat-code="inner">
+        <button type="button" class="ias-button ias-menu-toggle">
+            <span>Jonathan Smithsonian</span>
+            <i class="ias-icon ias-icon-down_thick"></i>
+        </button>
     </div>
 </section>
 
-<section toggle-repeat-code>
-    <h3>.ias-open.ias-start</h3>
+<section>
+    <h3>.ias-icon-button Menu Toggle</h3>
 
-    <div class="ias-menu ias-open">
-        <button class="ias-icon-button" type="button"><i class="ias-icon ias-icon-new_thick"></i></button>
-        <div class="ias-menu-content">
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
+    <div toggle-repeat-code="inner">
+        <button class="ias-button ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-new_thick"></i>
+        </button>
+    </div>
+</section>
+
+<section>
+    <h3>.ias-open</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-menu ias-open">
+            <div class="ias-menu-content">
+                <button type="button">Button 1</button>
+                <button type="button">Button 2</button>
+                <button type="button">Button 3</button>
+            </div>
         </div>
     </div>
 </section>
 
-<section toggle-repeat-code>
-    <h3>.ias-open.ias-start</h3>
-
-    <div class="ias-menu ias-open">
-        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
-        <div class="ias-menu-content">
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
-        </div>
-    </div>
-</section>
-
-<section toggle-repeat-code>
-    <h3>.ias-open.ias-end</h3>
-
-    <div class="ias-menu ias-open ias-end">
-        <button type="button" class="ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
-        <div class="ias-menu-content">
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
-        </div>
-    </div>
-</section>
-
-<section toggle-repeat-code>
+<section>
     <h3>Complex Menu</h3>
 
-    <div class="ias-menu-content">
-        <div class="ias-row ias-border-bottom">
-            <div class="ias-column ias-border-end">
+    <div toggle-repeat-code="inner">
+        <div class="ias-menu ias-open">
+            <div class="ias-menu-content">
                 <div class="ias-row ias-border-bottom">
-                    <div class="ias-column">
-                        <h3 class="ias-menu-header">First Section</h3>
-                        <button type="button">View My Devices</button>
-                        <button type="button">Help Me...(end-user)</button>
-                        <button type="button">Request impersonate session...(HelpDesk)</button>
+                <div class="ias-column ias-border-end">
+                    <div class="ias-row ias-border-bottom">
+                        <div class="ias-column">
+                            <h3 class="ias-menu-header">First Section</h3>
+                            <button type="button">View My Devices</button>
+                            <button type="button">Help Me...(end-user)</button>
+                            <button type="button">Request impersonate session...(HelpDesk)</button>
+                        </div>
+                    </div>
+                    <div class="ias-row ias-border-bottom">
+                        <div class="ias-column">
+                            <h3 class="ias-menu-header">Second Section</h3>
+                            <button type="button">Button 4</button>
+                            <button type="button">An Interesting Link</button>
+                            <button type="button">Button 6</button>
+                            <button type="button">Button 7</button>
+                            <button type="button">Request Support</button>
+                            <button type="button">Button 9</button>
+                        </div>
+                    </div>
+                    <div class="ias-row">
+                        <div class="ias-column">
+                            <button type="button">Button 10</button>
+                        </div>
                     </div>
                 </div>
+                <div class="ias-column ias-align-end">
+                    <h3 class="ias-menu-header">User Section</h3>
+                    <button type="button">Help</button>
+                    <button type="button">Settings</button>
+                    <button type="button">Log Out</button>
+                </div>
+            </div>
+                <div class="ias-row">
+                <div class="ias-column">
+                    <h3 class="ias-menu-header">Big Section</h3>
+                    <button type="button">IDM Prototype</button>
+                    <button type="button">Add Users</button>
+                    <button type="button">Button 13</button>
+                    <button type="button">A Button That Extends Well Beyond the Column Immediately Above It</button>
+                    <button type="button">Button 15</button>
+                    <button type="button">Micro Focus Branded Sign</button>
+                </div>
+            </div>
+                <div class="ias-row ias-border-top">
+                <div class="ias-column">
+                    <h3 class="ias-menu-footer">VERSION 2.0</h3>
+                </div>
+                <div class="ias-column">
+                    <h3 class="ias-menu-footer">BUILD 123456</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>w/ .ias-list</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-menu ias-open">
+            <div class="ias-menu-content">
                 <div class="ias-row ias-border-bottom">
                     <div class="ias-column">
-                        <h3 class="ias-menu-header">Second Section</h3>
-                        <button type="button">Button 4</button>
-                        <button type="button">An Interesting Link</button>
-                        <button type="button">Button 6</button>
-                        <button type="button">Button 7</button>
-                        <button type="button">Request Support</button>
-                        <button type="button">Button 9</button>
+                        <h3 class="ias-list-header">First List</h3>
+                        <ul class="ias-list">
+                            <li tabindex="0">
+                                <div class="ias-avatar"
+                                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
+                                </div>
+                                <span>Search</span>
+                            </li>
+                            <li tabindex="0">
+                                <div class="ias-avatar"
+                                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
+                                </div>
+                                <span>OneDrive</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="ias-row">
                     <div class="ias-column">
-                        <button type="button">Button 10</button>
+                        <h3 class="ias-list-header">Second List</h3>
+                        <ul class="ias-list">
+                            <li tabindex="0">
+                                <div class="ias-avatar"
+                                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
+                                </div>
+                                <span>Geeko</span>
+                            </li>
+                            <li tabindex="0">
+                                <div class="ias-avatar"
+                                     style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
+                                </div>
+                                <span>Version One</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="ias-column ias-align-end">
-                <h3 class="ias-menu-header">User Section</h3>
-                <button type="button">Help</button>
-                <button type="button">Settings</button>
-                <button type="button">Log Out</button>
-            </div>
-        </div>
-        <div class="ias-row">
-            <div class="ias-column">
-                <h3 class="ias-menu-header">Big Section</h3>
-                <button type="button">IDM Prototype</button>
-                <button type="button">Add Users</button>
-                <button type="button">Button 13</button>
-                <button type="button">A Button That Extends Well Beyond the Column Immediately Above It</button>
-                <button type="button">Button 15</button>
-                <button type="button">Micro Focus Branded Sign</button>
-            </div>
-        </div>
-        <div class="ias-row ias-border-top">
-            <div class="ias-column">
-                <h3 class="ias-menu-footer">VERSION 2.0</h3>
-            </div>
-            <div class="ias-column">
-                <h3 class="ias-menu-footer">BUILD 123456</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section toggle-repeat-code>
-    <h3>w/ .ias-list</h3>
-
-    <div class="ias-menu-content">
-        <div class="ias-row ias-border-bottom">
-            <div class="ias-column">
-                <h3 class="ias-list-header">First List</h3>
-                <ul class="ias-list">
-                    <li tabindex="0">
-                        <div class="ias-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/search_115.png)">
-                        </div>
-                        <span>Search</span>
-                    </li>
-                    <li tabindex="0">
-                        <div class="ias-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/oneDrive_300.png)">
-                        </div>
-                        <span>OneDrive</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="ias-row">
-            <div class="ias-column">
-                <h3 class="ias-list-header">Second List</h3>
-                <ul class="ias-list">
-                    <li tabindex="0">
-                        <div class="ias-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/geeko_icon.png)">
-                        </div>
-                        <span>Geeko</span>
-                    </li>
-                    <li tabindex="0">
-                        <div class="ias-avatar"
-                             style="background-image:url(http://hfux.provo.novell.com/~teaming_ux/1Web/testing/AccessUserApp/images/appmarks/VersionOne_115.png)">
-                        </div>
-                        <span>Version One</span>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>

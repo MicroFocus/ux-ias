@@ -1,42 +1,29 @@
 .ias-menu {
-  color: inherit;
-  display: inline-block;
-  font-size: inherit;
-  position: relative;
+  display: none;
+  position: absolute;
   max-width: 100%;
 
   &.ias-open {
-    > .ias-menu-content {
-      display: block;
-      height: auto;
-    }
-  }
-
-  &.ias-end {
-    > .ias-menu-content {
-      left: auto;
-      right: 0;
-    }
-  }
-
-  > .ias-menu-content {
-    display: none;
-    height: 0;
-    position: absolute;
+    display: inline-block;
   }
 }
 
 .ias-menu-content {
   background-color: $menu-background-color;
-  border-color: $menu-border-color-1;
   border-radius: $border-radius;
-  box-sizing: border-box;
-  color: $menu-text-color-1;
+  color: $menu-text-color;
   font-size: $menu-content-font-size;
   left: 0;
   overflow: hidden;
   padding: $spacing;
   right: auto;
+
+  .ias-border-bottom,
+  .ias-border-top,
+  .ias-border-start,
+  .ias-border-end {
+    border-color: $menu-border-color;
+  }
 
   button,
   .ias-button {
@@ -85,30 +72,8 @@
 }
 
 [dir="rtl"] {
-  .ias-menu {
-    &.ias-end {
-      > .ias-menu-content {
-        left: 0;
-        right: auto;
-      }
-    }
-  }
-
   .ias-menu-content {
     left: auto;
     right: 0;
-
-    .ias-border-start {
-      border-color: $menu-border-color;
-    }
-    .ias-border-end {
-      border-color: $menu-border-color;
-    }
-  }
-}
-
-[dir="rtl"] {
-  .toggle-show > .show-code {
-    text-align: left;
   }
 }
