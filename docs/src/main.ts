@@ -35,12 +35,12 @@ import ToggleService from './components/components/toggle/toggle.service';
 import MultiValuedInputComponent from './components/docs/multi-valued-input/multi-valued-input.component';
 import TagsComponent from './components/docs/tags/tags.component';
 import DatepickerComponent from './components/docs/datepicker/datepicker.component';
-import PageComponent from './components/docs/page/page.component';
+// import PageComponent from './components/docs/page/page.component';
 import DualColumnComponent from './components/docs/dual-column/dual-column.component';
 import CommentComponent from './components/docs/comment/comment.component';
 import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
 import IconButtonToggleComponent from './components/docs/icon-button-toggle/icon-button-toggle.component';
-import HeaderComponent from "./components/docs/header/header.component";
+import HeaderComponent from './components/docs/header/header.component';
 
 
 module('app', [
@@ -77,7 +77,7 @@ module('app', [
     .component('menuDocumentation', MenuComponent)
     .component('multiValuedInputDocumentation', MultiValuedInputComponent)
     .component('navDocumentation', NavComponent)
-    .component('pageDocumentation', PageComponent)
+    // .component('pageDocumentation', PageComponent)
     .component('panelDocumentation', PanelComponent)
     .component('sideNavDocumentation', SideNavComponent)
     .component('statusMessagesDocumentation', StatusMessagesComponent)

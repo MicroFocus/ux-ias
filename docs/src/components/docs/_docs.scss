@@ -4,7 +4,7 @@
 @import 'dual-column/dual-column.component';
 @import 'icon-button-toggle/icon-button-toggle.component';
 @import 'status-messages/status-messages.component';
-@import 'page/page.component.scss';
+@import 'page/page.component';
 @import 'panel/panel.component';
 @import 'side-nav/side-nav.component';
 @import 'tile/tile.component';
@@ -12,17 +12,18 @@
 @import 'multi-valued-input/multi-valued-input.component';
 @import 'tags/tags.component';
 @import 'datepicker/datepicker.component';
-@import 'accordion-control/_accordion-control.component';
-@import 'tab/_tabs.component.scss';
-@import 'tags/_tags.component.scss';
-@import 'button/_button.component.scss';
+@import 'accordion-control/accordion-control.component';
+@import 'tab/tabs.component.scss';
+@import 'tags/tags.component.scss';
+@import 'button/button.component.scss';
 @import 'dialog/dialog.component';
-@import 'header/_header.component';
-@import 'form-field/_form-field.component';
-@import 'table/_table.component.scss';
-@import 'comment/_comment.component.scss';
-@import 'dialog/_dialog.component.scss';
-@import 'icon-button/_icon-button.component.scss';
+@import 'header/header.component';
+@import 'form-field/form-field.component';
+@import 'table/table.component.scss';
+@import 'comment/comment.component.scss';
+@import 'dialog/dialog.component.scss';
+@import 'icon-button/icon-button.component.scss';
+
 li {
 	line-height: 22px;
 }

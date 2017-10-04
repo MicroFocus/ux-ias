@@ -1,6 +1,7 @@
 .content-header {
   position: relative;
   display: block;
+
   .ias-icon-close_thin {
     position: absolute;
     right: 15px;
@@ -8,6 +9,7 @@
     align-items: center;
     font-size: 1rem;
   }
+
   .ias-icon-close_thin:hover {
     background: #f6f9f8;
     border: 1px solid #dae1e1;
@@ -15,6 +17,7 @@
     color: #0088ce;
   }
 }
+
 .content-title {
   color: #434c50;
   font-size: 20px;
@@ -23,6 +26,7 @@
   display: inline-block;
   vertical-align: middle;
 }
+
 .content-subtitle {
   color: #808080;
   font-size: 15px;
@@ -30,6 +34,7 @@
   margin-bottom: 10px;
   margin-right: 25px;
 }
+
 .content-content-subtitle {
   font-size: 15px;
   color: #434c50;
@@ -45,9 +50,11 @@
     color: #808080;
     font-size: 5px;
   }
-  .ias-tile.ias-tiny  > .ias-icon{
+
+  .ias-tile.ias-tiny > .ias-icon {
     font-size: 20px;
   }
+
   .ias-tile > .ias-icon {
     margin: 0px;
   }
@@ -55,6 +62,7 @@
 
 .tile-content {
   text-align: left;
+
   .ias-tile > .ias-avatar {
     margin-right: 0px;
     margin-top: 0px;
@@ -80,6 +88,6 @@
   padding-top: 10px;
   background: #fff;
   border-top: 1px solid #dae1e1;
-  margin: 0!important;
+  margin: 0 !important;
 }
 

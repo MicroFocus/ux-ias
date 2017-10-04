@@ -83,10 +83,37 @@ $button-text-transform: none;
 $dialog-label-color: $color-gray-4;
 $dialog-padding: 20px;
 
-$header-h2: $color-gray-1;
-$header-h4: $color-gray-2;
-$header-input-border: $color-gray-5;
-$header-subtitle: $color-gray-3;
+$header-margin-bottom: 15px;
+$header-max-width: 750px;
+$header-icon-spacing: 5px;
+$header-search-margin: 15px;
+$header-title-spacing: 15px;
+
+$heading-line-height: 1.2em;
+
+$heading-1-font-weight: bold;
+$heading-1-margin: 1rem 0 1rem;
+$heading-1-text-size: 2em;
+
+$heading-2-font-weight: normal;
+$heading-2-margin: 1rem 0 1rem;
+$heading-2-text-color: $color-gray-1;
+$heading-2-text-size: 1.67rem;
+
+$heading-3-font-weight: normal;
+$heading-3-margin: 10px 0 1rem;
+$heading-3-text-color: $color-gray-1;
+$heading-3-text-size: 1.20rem;
+
+$heading-4-font-weight: bold;
+$heading-4-margin: 10px 0 5px;
+$heading-4-text-color: $color-gray-2;
+$heading-4-text-size: 1rem;
+
+$heading-5-font-weight: normal;
+$heading-5-margin: 5px 0 5px;
+$heading-5-text-color: $color-gray-4;
+$heading-5-text-size: 1rem;
 
 $icon-size-small: 25px;
 $icon-size-medium: 50px;
