@@ -1,4 +1,5 @@
 .ias-nav {
+  align-items: center;
   background-color: $nav-bg-color;
   color: $nav-text-color;
   display: flex;
@@ -6,176 +7,67 @@
   min-height: $nav-height;
   padding: 0 $nav-content-padding;
 
-  // Fixed size nav items
   > a,
   > button,
-  > .ias-button,
-  > .ias-menu {
-    flex: none;
-  }
+  > .ias-button {
+    @include single-line;
 
-  // All nav items
-  > a,
-  > button,
-  > .ias-button,
-  > .ias-menu > button,
-  > .ias-menu > .ias-button,
-  > span:not(.ias-fill) {
-    color: inherit;
-    padding: 0 $nav-item-padding;
-  }
-
-  // Hoverable nav items
-  > a,
-  > button,
-  > .ias-button,
-  > .ias-menu > button,
-  > .ias-menu > .ias-button {
     background-color: transparent;
-    border-color: transparent;
-    border-style: solid;
-    border-radius: 0;
+    border: solid transparent;
     border-width: $nav-item-border-vertical-width $nav-item-border-horizontal-width;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    flex: none;
+    line-height: $nav-height - (2 * $nav-item-border-vertical-width);
+    height: $nav-height;
+    padding: 0 $nav-item-padding;
+    margin: 0;
+
+    > * {
+      vertical-align: middle;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $nav-item-bg-color-hover;
+      border-color: $nav-item-border-color-hover;
+      color: $nav-item-color-hover;
+    }
 
     &[disabled],
     &.ias-disabled {
       background-color: transparent;
       border-color: transparent;
-      color: $text-color-disabled;
+      color: $nav-item-color-disabled;
     }
 
-    &:not([disabled]):not(.ias-disabled) {
-      &:focus:not(.ias-active),
-      &:hover {
-        background-color: $nav-item-bg-color-hover;
-        border-color: $nav-item-border-color-hover;
-        color: $nav-item-color-hover;
-      }
-    }
-  }
-
-  // Active-capable nav items
-  > a {
-    line-height: $nav-item-height;
-    margin: 0;
-
-    > .ias-icon,
-    > .svg-icon {
-      font-size: $nav-icon-size;
-      /* Icons are a bit too low with vertical-align: middle, so use margin-bottom to compensate */
-      margin-bottom: $nav-icon-margin;
-      vertical-align: middle;
-    }
-
-    &:not([disabled]):not(.ias-disabled) {
-      &.ias-active {
-        border-bottom-color: $nav-item-border-bottom-color-active;
-        border-left-color: $nav-item-border-side-color-active;
-        border-right-color: $nav-item-border-side-color-active;
-        color: $nav-item-color-active;
-        font-weight: $font-weight-medium;
-      }
+    &.ias-active {
+      border-bottom-color: $nav-item-border-bottom-color-active;
+      border-left-color: $nav-item-border-side-color-active;
+      border-right-color: $nav-item-border-side-color-active;
+      color: $nav-item-color-active;
+      font-weight: $nav-item-font-weight-active;
     }
   }
 
-  // Non-hoverable, non-active-capable nav items
-  > span:not(.ias-fill) {
-    line-height: normal;
-    margin: $nav-text-vertical-margin 0;
-    max-width: $nav-text-max-width;
+  > span {
+    &:not(.ias-fill) {
+      @include single-line;
 
-    > a {
-      @include focus-hover-background($nav-link-color-hover);
-      padding: $link-padding;
-    }
-  }
-
-  // Hoverable, non-active-capable nav items
-  > button,
-  > .ias-button {
-    box-sizing: content-box;
-  }
-
-  > .ias-icon-button,
-  > .ias-menu > .ias-icon-button {
-    > .ias-icon,
-    > .svg-icon {
-      font-size: $nav-icon-size;
-    }
-  }
-
-  > .ias-menu {
-    > .ias-menu-content {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
-
-    > button,
-    > .ias-button {
-      height: 100%;
+      max-width: $nav-text-max-width;
+      padding: 0 5px;
     }
   }
 }
-
-.ias-nav {
-  position: relative;
-}
-
-nav-documentation {
-  .section-with-menus {
-    margin-top: 10px;
-    margin-bottom: 85px;
-  }
-}
-
-
-.top-menu-but {
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: center;
-}
-
-#alerts-item {
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  padding: 6px;
-  p {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    padding-right: 15px;
-  }
-}
-
-#alerts-item :hover {
-  background-color: #dae1e1;
-  cursor: pointer;
-}
-#alerts-item:focus {
-  background-color: #dae1e1;
-}
-
-@media (min-width: $medium-display) {
-  .ias-nav {
-    padding: 0 $nav-content-padding-large;
-  }
-}
-
 
 [dir="rtl"] {
-  #alerts-item {
-    right: auto;
-    left: 10px;
-  }
-  #alerts-item p {
-    padding-right: 0;
-    padding-left: 15px;
-  }
-  .status-icon-warn {
-    padding-right: 0;
-    padding-left: 5px;
-  }
-  .toggle-show > .show-code {
-    text-align: left;
+  .ias-nav {
+    > a,
+    > button,
+    > .ias-button {
+      margin: 0;
+    }
   }
 }

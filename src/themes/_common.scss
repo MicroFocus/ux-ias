@@ -121,10 +121,7 @@ $menu-header-text-transform: uppercase;
 
 $nav-bg-color: $color-gray-6;
 $nav-content-padding: $body-spacing-medium;
-$nav-content-padding-large: $body-spacing-large;
 $nav-height: 34px;
-$nav-icon-margin: 2px;
-$nav-icon-size: 25px;
 $nav-item-bg-color-hover: $color-gray-5;
 $nav-item-border-bottom-color-active: $color-primary-4;
 $nav-item-border-color-hover: transparent;
@@ -132,13 +129,13 @@ $nav-item-border-side-color-active: $color-gray-5;
 $nav-item-border-horizontal-width: 1px;
 $nav-item-border-vertical-width: 2px;
 $nav-item-color-active: $text-color;
+$nav-item-color-disabled: $text-color-disabled;
 $nav-item-color-hover: $color-gray-2;
-$nav-item-height: $nav-height - ($nav-item-border-vertical-width * 2);
+$nav-item-font-weight-active: $font-weight-medium;
 $nav-item-padding: $spacing;
-$nav-link-color-hover: $color-gray-7;
 $nav-text-color: $color-gray-2;
 $nav-text-element-height: $font-size + 2px;
-$nav-text-max-width: 700px;
+$nav-text-max-width: 750px;
 $nav-text-vertical-margin: ($nav-height - $nav-text-element-height) / 2;
 
 $panel-bg-color: $color-gray-6;
