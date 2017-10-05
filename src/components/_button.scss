@@ -65,6 +65,12 @@ button,
       margin-left: $button-inline-icon-padding;
     }
   }
+
+  &.ias-selected {
+    background-color: $icon-button-toggle-background-color;
+    border-color: $icon-button-toggle-border-color;
+    color: $icon-button-toggle-view-list;
+  }
 }
 
 /* Stop FF buttons from being larger. http://stackoverflow.com/questions/7928521 */
