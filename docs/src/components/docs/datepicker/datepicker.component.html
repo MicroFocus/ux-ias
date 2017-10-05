@@ -2,11 +2,12 @@
 <p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar in small overlay.</p>
 <h3>Closed Datepicker</h3>
 <div class="ias-datepicker">
+    <button class="ias-icon-button" type="button">
         <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
+    </button>
 </div>
 <div class="ias-datepicker-not-button">
-    <span>06/29/2017</span>
-    <i class="ias-icon ias-icon-date_thick"></i>
+    <a ui-sref="app.component.link" href="/component/link">06/29/2017<i class="ias-icon ias-icon-date_thick"></i></a>
 </div>
 <div class="ias-datepicker">
     <button type="button" >
@@ -33,10 +34,10 @@
             <td align="center">S</td>
         </tr>
         <tr class="hover">
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
+            <td align="center" class="rollover">28</td>
+            <td align="center" class="rollover">29</td>
+            <td align="center" class="rollover">30</td>
+            <td align="center" class="rollover">31</td>
             <td class="hover" align="center">1</td>
             <td class="hover" align="center">2</td>
             <td class="hover" align="center">3</td>
