@@ -1,3 +1,39 @@
+@mixin button-colors {
+  background-color: $button-bg-color;
+  border-color: $button-border-color;
+  color: $button-text-color;
+}
+
+@mixin button-focus-colors {
+  background-color: $button-bg-color-hover;
+  border-color: $button-border-color-hover;
+  color: $button-text-color-hover;
+}
+
+@mixin cta-button-colors {
+  background-color: $button-cta-bg-color;
+  border-color: $button-cta-bg-color;
+  color: $button-cta-text-color;
+}
+
+@mixin icon-button-colors {
+  background-color: transparent;
+  border-color: transparent;
+  color: $icon-button-color;
+}
+
+@mixin icon-button-focus-colors {
+  background-color: $button-bg-color-hover;
+  border-color: $button-border-color;
+  color: $button-text-color-hover;
+}
+
+@mixin icon-cta-button-colors {
+  background-color: $button-cta-bg-color;
+  border-color: transparent;
+  color: $button-cta-text-color;
+}
+
 .ias-button {
   @include disable-text-selection;
   @include single-line;
@@ -15,44 +51,68 @@
   text-decoration: $button-text-transform;
   vertical-align: middle;
 
-  &:focus,
-  &:hover,
-  &.ias-cta:focus,
-  &.ias-cta:hover {
-    background-color: $button-bg-color-hover;
-    border-color: $button-border-color-hover;
-    color: $button-text-color-hover;
+  &:focus {
     outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    @include button-focus-colors;
   }
 
   &[disabled],
   &.ias-disabled {
+    @include button-colors;
     @include disabled-state;
-
-    background-color: $button-bg-color;
-    border-color: $button-border-color;
-    color: $button-text-color;
   }
 
-  &.ias-cta,
-  &.ias-cta[disabled],
-  &.ias-cta.ias-disabled {
-    background-color: $button-cta-bg-color;
-    border-color: $button-cta-bg-color;
-    color: $button-cta-color;
+  &.ias-cta {
+    @include cta-button-colors;
+
+    &:focus,
+    &:hover {
+      @include button-focus-colors;
+    }
+
+    &[disabled],
+    &.ias-disabled {
+      @include cta-button-colors;
+    }
   }
 
   &.ias-icon-button {
     min-width: 0;
     padding: 0;
 
+    @include icon-button-colors;
+
     &:focus,
-    &:hover,
-    &.ias-cta:focus,
-    &.ias-cta:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color;
-      color: $button-text-color-hover;
+    &:hover {
+      @include icon-button-focus-colors;
+    }
+
+    &[disabled],
+    &.ias-disabled {
+      @include icon-button-colors;
+    }
+
+    &.ias-cta {
+      @include icon-cta-button-colors;
+
+      &:focus,
+      &:hover {
+        @include icon-button-focus-colors;
+      }
+
+      &[disabled],
+      &.ias-disabled {
+        @include icon-cta-button-colors;
+      }
+    }
+
+    &.ias-selected {
+      color: $icon-button-color-selected;
+      opacity: 1;
     }
 
     .ias-icon,
@@ -61,42 +121,27 @@
     }
   }
 
-  &.ias-icon-button,
-  &.ias-icon-button[disabled],
-  &.ias-icon-button.ias-cta[disabled],
-  &.ias-icon-button.ias-cta.ias-disabled,
-  &.ias-icon-button.ias-disabled {
-    background-color: transparent;
-    border-color: transparent;
-    color: $icon-button-text-color;
+  &.ias-icon-text-button {
+    padding: $button-padding-with-icon;
 
-    &.ias-cta {
-      background-color: $button-cta-bg-color;
-      color: $button-cta-color;
+    span {
+      vertical-align: middle;
     }
   }
 
-  &.ias-selected {
-    background-color: $icon-button-toggle-background-color;
-    border-color: $icon-button-toggle-border-color;
-    color: $icon-button-color-selected;
-  }
-
   &.ias-menu-toggle {
-    > .ias-icon, .svg-icon {
+    .ias-icon,
+    .svg-icon {
       font-size: inherit;
     }
   }
 
-
-
   i + span,
   span + i {
-    margin-left: $button-inline-icon-padding; // Stop inconsistencies in orders
+    margin-left: $button-inline-icon-padding;
   }
 
-  i,
-  span {
+  i {
     vertical-align: middle;
   }
 }
@@ -112,15 +157,12 @@ a.ias-button {
 }
 
 
-// Redo all this below...
 [dir="rtl"] {
   .ias-button {
-
-    &.ias-menu-toggle {
-      > .ias-icon, .svg-icon {
-        margin-left: 0;
-        margin-right: $button-inline-icon-padding;
-      }
+    i + span,
+    span + i {
+      margin-left: 0;
+      margin-right: $button-inline-icon-padding;
     }
   }
 
@@ -128,7 +170,4 @@ a.ias-button {
     margin-right: 0;
   }
 
-  .toggle-show > .show-code {
-    text-align: left;
-  }
 }

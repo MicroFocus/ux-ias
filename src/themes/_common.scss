@@ -65,12 +65,14 @@ $border-color: $color-gray-5;
 $button-bg-color: $color-gray-7;
 $button-bg-color-hover: $button-bg-color;
 $button-border-color: $color-gray-5;
+$button-border-color-hover: $color-primary-4;
 $button-cta-bg-color: $color-primary-2;
-$button-cta-color: $color-gray-7;
+$button-cta-text-color: $color-gray-7;
 $button-font-size: $font-size;
 $button-inline-icon-padding: 7px;
 $button-min-width: 42px;
 $button-padding: .45em .75em;
+$button-padding-with-icon: .2em .75em;
 $button-text-color: $text-color;
 $button-text-color-hover: $color-primary-2;
 $button-text-transform: none;
@@ -82,9 +84,8 @@ $icon-size-small: 25px;
 $icon-size-medium: 50px;
 $icon-size-large: 75px;
 
-$icon-button-text-color: $color-gray-4;
-$icon-button-toggle-background-color: $color-gray-7;
-$icon-button-toggle-border-color: $color-gray-5;
+$icon-button-color-selected: $color-primary-2;
+$icon-button-color: $color-gray-4;
 
 $input-bg-color: inherit;
 $input-border: 1px solid $color-gray-5;
