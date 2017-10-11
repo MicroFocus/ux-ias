@@ -1,68 +1,78 @@
-button,
 .ias-button {
   @include disable-text-selection;
   @include single-line;
 
   background-color: $button-bg-color;
-  border: $button-border-width solid $button-border-color;
+  border: 1px solid $button-border-color;
   border-radius: $border-radius;
   color: $button-text-color;
   cursor: pointer;
   display: inline-block;
   font-size: $button-font-size;
+  min-width: $button-min-width;
   padding: $button-padding;
   text-align: center;
   text-decoration: $button-text-transform;
   vertical-align: middle;
 
+  &:focus,
+  &:hover,
+  &.ias-cta:focus,
+  &.ias-cta:hover {
+    background-color: $button-bg-color-hover;
+    border-color: $button-border-color-hover;
+    color: $button-text-color-hover;
+    outline: none;
+  }
+
   &[disabled],
   &.ias-disabled {
-    background-color: $button-bg-color-disabled;
-    border-color: $button-border-color-disabled;
-    color: $button-text-color-disabled;
-    cursor: default;
+    @include disabled-state;
+
+    background-color: $button-bg-color;
+    border-color: $button-border-color;
+    color: $button-text-color;
   }
 
-  &:not([disabled]):not(.ias-disabled) {
-    &:focus {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: $button-text-color;
-      outline: none;
-    }
-
-    &:hover {
-      background-color: $button-bg-color-hover;
-      border-color: $button-border-color-hover;
-      color: $button-text-color-hover;
-    }
-  }
-
-  &.ias-cta {
+  &.ias-cta,
+  &.ias-cta[disabled],
+  &.ias-cta.ias-disabled {
     background-color: $button-cta-bg-color;
     border-color: $button-cta-bg-color;
     color: $button-cta-color;
+  }
 
-    &[disabled],
-    &.ias-disabled {
+  &.ias-icon-button {
+    min-width: 0;
+    padding: 0;
+
+    &:focus,
+    &:hover,
+    &.ias-cta:focus,
+    &.ias-cta:hover {
+      background-color: $button-bg-color-hover;
+      border-color: $button-border-color;
+      color: $button-text-color-hover;
+    }
+
+    .ias-icon,
+    .svg-icon {
+      display: block;
+    }
+  }
+
+  &.ias-icon-button,
+  &.ias-icon-button[disabled],
+  &.ias-icon-button.ias-cta[disabled],
+  &.ias-icon-button.ias-cta.ias-disabled,
+  &.ias-icon-button.ias-disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: $icon-button-text-color;
+
+    &.ias-cta {
       background-color: $button-cta-bg-color;
-      border-color: $button-cta-bg-color;
-      color: $button-text-color-disabled;
-    }
-  }
-
-  &:not(.ias-icon-button) {
-    min-width: $button-min-width;
-
-    > .ias-icon, .svg-icon {
-      vertical-align: middle;
-    }
-  }
-
-  &.ias-menu-toggle {
-    > .ias-icon, .svg-icon {
-      font-size: inherit;
-      margin-left: $button-inline-icon-padding;
+      color: $button-cta-color;
     }
   }
 
@@ -70,6 +80,24 @@ button,
     background-color: $icon-button-toggle-background-color;
     border-color: $icon-button-toggle-border-color;
     color: $icon-button-color-selected;
+  }
+
+  &.ias-menu-toggle {
+    > .ias-icon, .svg-icon {
+      font-size: inherit;
+    }
+  }
+
+
+
+  i + span,
+  span + i {
+    margin-left: $button-inline-icon-padding; // Stop inconsistencies in orders
+  }
+
+  i,
+  span {
+    vertical-align: middle;
   }
 }
 
@@ -83,44 +111,9 @@ a.ias-button {
   margin-left: 0;
 }
 
-.ias-button.ias-disabled {
-  outline: none;
-}
 
-.ias-button.ias-disabled {
-  background-color: #f6f9f8;
-  border: 1px solid #dae1e1;
-  color: #434c50;
-  opacity: .4;
-}
-
-
-.special-button {
-  background-color: #434c50;
-  border-color: #434c50;
-  color: #f6f9f8;
-}
-
-button.special-button[disabled] {
-  background-color: #434c50;
-  border-color: #434c50;
-  color: #f6f9f8;
-}
-
-button[disabled] {
-  background-color: #f6f9f8;
-  border: 1px solid #dae1e1;
-  color: #434c50;
-  opacity: .4;
-}
-
-button.special-button:not([disabled]):not(.ias-disabled):hover {
-  background-color: #01a9e7;
-  color: #f6f9f8;
-}
-
+// Redo all this below...
 [dir="rtl"] {
-  button,
   .ias-button {
 
     &.ias-menu-toggle {
@@ -139,5 +132,3 @@ button.special-button:not([disabled]):not(.ias-disabled):hover {
     text-align: left;
   }
 }
-
-

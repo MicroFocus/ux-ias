@@ -1,7 +1,6 @@
 @mixin disabled-state() {
-  background-color: $disabled-bg-color;
-  border-color: $disabled-border-color;
-  color: $disabled-text-color;
+  cursor: default;
+  opacity: 0.4;
   outline: none;
 }
 

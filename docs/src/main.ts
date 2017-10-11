@@ -17,8 +17,6 @@ import DialogComponent from './components/docs/dialog/dialog.component';
 import FormFieldComponent from './components/docs/form-field/form-field.component';
 import FormValidationComponent from './components/docs/form-validation/form-validation.component';
 import IconComponent from './components/docs/icon/icon.component';
-import IconButtonComponent from './components/docs/icon-button/icon-button.component';
-import IconButtonTextComponent from './components/docs/icon-button-text/icon-button-text.component';
 import LinkComponent from './components/docs/link/link.component';
 import ListComponent from './components/docs/list/list.component';
 import MenuComponent from './components/docs/menu/menu.component';
@@ -39,7 +37,6 @@ import PageComponent from './components/docs/page/page.component';
 import DualColumnComponent from './components/docs/dual-column/dual-column.component';
 import CommentComponent from './components/docs/comment/comment.component';
 import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
-import IconButtonToggleComponent from './components/docs/icon-button-toggle/icon-button-toggle.component';
 
 
 module('app', [
@@ -67,9 +64,6 @@ module('app', [
     .component('formValidationDocumentation', FormValidationComponent)
     .component('iasSideNav', SideNavUIComponent)
     .component('iconDocumentation', IconComponent)
-    .component('iconButtonDocumentation', IconButtonComponent)
-    .component('iconButtonTextDocumentation', IconButtonTextComponent)
-    .component('iconButtonToggleDocumentation', IconButtonToggleComponent)
     .component('linkDocumentation', LinkComponent)
     .component('listDocumentation', ListComponent)
     .component('menuDocumentation', MenuComponent)

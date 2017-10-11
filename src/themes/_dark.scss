@@ -34,17 +34,11 @@ $text-color-disabled: $color-gray-4;
 
 $title-text-color: $color-gray-3;
 
-//STATES
-$disabled-bg-color: $color-gray-7;
-$disabled-border-color: $color-gray-7;
-$disabled-text-color: $color-gray-6;
-
 // COMPONENTS
 $app-bar-text-color: $color-gray-1;
 
 $button-border-color-disabled: $text-color-disabled;
 $button-border-color-hover: $color-primary-4;
-$button-text-color-disabled: $button-border-color-disabled;
 
 $dialog-scrim-color: rgba(106, 111, 113, .8);
 $dialog-content-color: $color-gray-8;
