@@ -1,4 +1,4 @@
-import {module, bootstrap, ILocationProvider} from 'angular';
+import {module, bootstrap} from 'angular';
 // Config
 import config from './config/config';
 import routes from './config/routes';
@@ -86,15 +86,6 @@ module('app', [
     .component('tileGridDocumentation', TileGridComponent)
 
     .directive('iasToggle', ToggleDirective)
-
-    .config(['$locationProvider',
-        ($locationProvider: ILocationProvider) => {
-            $locationProvider.html5Mode({
-                enabled: true,
-                requireBase: false
-            });
-        }
-    ])
 
     .service('IasToggleService', ToggleService)
 
