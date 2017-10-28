@@ -63,16 +63,13 @@ $app-bar-text-button-spacing: $spacing;
 $border-color: $color-gray-5;
 
 $button-bg-color: $color-gray-7;
-$button-bg-color-disabled: $button-bg-color;
 $button-bg-color-hover: $button-bg-color;
 $button-border-color: $color-gray-5;
-$button-border-width: 1px;
-$button-cta-bg-color: $color-gray-1;
-$button-cta-color: $color-gray-7;
+$button-border-color-hover: $color-primary-4;
+$button-cta-bg-color: $color-primary-2;
+$button-cta-text-color: $color-gray-7;
 $button-font-size: $font-size;
-$button-inline-icon-size: 25px;
-$button-inline-icon-padding: .5em;
-$button-inline-icon-padding-with-icon: .25em;
+$button-inline-icon-padding: 7px;
 $button-min-width: 42px;
 $button-padding: .45em .75em;
 $button-padding-with-icon: .2em .75em;
@@ -86,6 +83,9 @@ $dialog-padding: 20px;
 $icon-size-small: 25px;
 $icon-size-medium: 50px;
 $icon-size-large: 75px;
+
+$icon-button-color-selected: $color-primary-2;
+$icon-button-color: $color-gray-4;
 
 $input-bg-color: inherit;
 $input-border: 1px solid $color-gray-5;

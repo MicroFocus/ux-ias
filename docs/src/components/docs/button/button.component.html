@@ -1,46 +1,33 @@
 <h2 class="ias-page-title">Button</h2>
 
 <section>
+	<h3>Default Usage</h3>
+
 	<div toggle-repeat-code="inner">
-		<button type="button">Button</button>
+		<button type="button" class="ias-button">Button</button>
 		<div class="ias-button" tabindex="0">CSS Class</div>
 		<a class="ias-button" ui-sref="app.component.button">Anchor</a>
-		<button type="button" class="ias-menu-toggle">
-			<span>Menu Toggle</span>
-			<i class="ias-icon ias-icon-down_thick"></i>
-		</button>
 	</div>
 
-	<ul>
-		<li>Example 1: button node</li>
-		<li>Example 2: div, .ias-button</li>
-		<li>Example 3: anchor, .ias-button</li>
-		<li>Example 4: Add text span and ias-icon to any button type</li>
-	</ul>
-
+	<p>
+		Use the .ias-button class on a button, div, or anchor.
+	</p>
 </section>
 
 <section>
 	<h3>Disabled Button</h3>
+
 	<div toggle-repeat-code="inner">
-		<button type="button" disabled="disabled">Button</button>
+		<button type="button" class="ias-button" disabled>Button</button>
 		<div class="ias-button ias-disabled" tabindex="-1">CSS Class</div>
-		<button type="button" class="ias-menu-toggle" disabled="disabled">
-			<span>Menu Toggle</span>
-			<i class="ias-icon ias-icon-down_thick"></i>
-		</button>
 	</div>
-	<ul>
-		<li>[disabled], .ias-disabled</li>
-	</ul>
 </section>
 
 <section>
 	<h3>Special Button</h3>
 	<div toggle-repeat-code="inner">
-		<button type="button" class="ias-cta">Button</button>
-		<button type="button" class="ias-cta ias-disabled" tabindex="-1">Button</button>
-		<button type="button" class="ias-cta" disabled="disabled">Button</button>
+		<button type="button" class="ias-button ias-cta">Button</button>
+		<button type="button" class="ias-button ias-cta" disabled="">Disabled Button</button>
 	</div>
 
 	<ul>
@@ -48,6 +35,70 @@
 		<li>Only use one special button per page</li>
 		<li>.ias-cta</li>
 	</ul>
+</section>
+
+<section>
+	<h3>Icon Button</h3>
+
+	<button class="ias-button ias-icon-button" type="button" repeat-as-code prism-insert-id="code-01">
+		<i class="ias-icon ias-icon-check_thick"></i>
+	</button>
+	<button class="ias-button ias-icon-button" type="button">
+		<i class="ias-icon ias-icon-close_thick"></i>
+	</button>
+	<button class="ias-button ias-icon-button" type="button" disabled="">
+		<i class="ias-icon ias-icon-new_thick"></i>
+	</button>
+	<toggleable-code id="code-01"></toggleable-code>
+</section>
+
+<section>
+	<h3>Special Icon Button</h3>
+	<div toggle-repeat-code="inner">
+		<button class="ias-button ias-icon-button ias-cta" type="button">
+			<i class="ias-icon ias-icon-check_thick"></i>
+		</button>
+		<button class="ias-button ias-icon-button ias-cta" type="button" disabled="">
+			<i class="ias-icon ias-icon-new_thick"></i>
+		</button>
+	</div>
+</section>
+
+<section>
+	<h3>Icons Used with Text</h3>
+
+	<div toggle-repeat-code="inner">
+		<button type="button" class="ias-button ias-menu-toggle">
+			<span>Menu Toggle</span>
+			<i class="ias-icon ias-icon-down_thick"></i>
+		</button>
+		<button type="button" class="ias-button ias-icon-text-button">
+			<i class="ias-icon ias-icon-search_thick"></i>
+			<span>John Smithsonian</span>
+		</button>
+	</div>
+</section>
+
+
+<section>
+	<h3>Selected Icon Button</h3>
+
+	<div toggle-repeat-code="inner">
+		<button class="ias-button ias-icon-button ias-selected" type="button" disabled="">
+			<i class="ias-icon ias-icon-view_list_thin"></i>
+		</button>
+		<button class="ias-button ias-icon-button" type="button">
+			<i class="ias-icon ias-icon-view_tile_thin"></i>
+		</button>
+		<button class="ias-button ias-icon-button" type="button">
+			<i class="ias-icon ias-icon-orgchart_thin"></i>
+		</button>
+	</div>
+
+	<p>
+		This shows one button that is disabled. We are unable to toggle to the table view because we are
+		already in that state. The other available buttons are views that we can navigate to.
+	</p>
 </section>
 
 <h3>Purpose</h3>
@@ -66,6 +117,51 @@
 <p>Nesting icons in buttons (not .ias-icon-button) should be used sparingly. Use of icons in buttons should be
 	the exception. They should not be used on the left of text in a button. They can be used on the right side
 	of text in a button to display state. If an icon is used alone you should use .ias-icon-button instead.</p>
+
+<h3>Icon Button</h3>
+
+<h5>Icon/Action assignments</h5>
+
+<table>
+	<tr>
+		<th>Icon</th>
+		<th>Primary Action</th>
+		<th>Other Actions</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+<h5>Use Cases</h5>
+<ul>
+	<li>Perform an action</li>
+	<li>Configuration</li>
+	<li>Use when space is limited or simplicity is desired</li>
+	<li>Menu overflow (hamburger or vertical dots)</li>
+	<li>List item primary and secondary actions</li>
+</ul>
+
+<h5>Dimensions</h5>
+<ul>
+	<li>25x25 pixels is the standard size</li>
+	<li>28x28 pixels is the size when used in the page title component</li>
+</ul>
+
+<h5>Accessibility</h5>
+<p>Always include a [title] attribute.</p>
 
 <h3>Tab support</h3>
 
