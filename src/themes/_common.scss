@@ -211,6 +211,20 @@ $side-nav-scrim-color: rgba(128, 128, 128, .7);
 $side-nav-text-color: inherit;
 $side-nav-width: 240px;
 
+$status-color-error: $color-accent-4;
+$status-color-ok: $color-accent-5;
+$status-color-warn: $color-accent-3;
+
+$status-message-bg-color: $color-gray-6;
+$status-message-body-margin: 10px 0 0;
+$status-message-body-text-size: 14px;
+$status-message-border-color: $color-gray-5;
+$status-message-icon-margin: 5px;
+$status-message-margin: 15px;
+$status-message-max-width: 750px;
+$status-message-padding: 15px;
+$status-message-text-color: $color-gray-1;
+
 $table-header-border-color: $color-gray-5;
 $table-header-font-size: 12px;
 $table-header-text-color: $color-gray-4;

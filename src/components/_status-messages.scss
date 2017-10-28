@@ -1,0 +1,43 @@
+.ias-status-message {
+  background-color: $status-message-bg-color;
+  border: 1px solid $status-message-border-color;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  margin: $status-message-margin 0;
+  max-width: $status-message-max-width;
+  padding: $status-message-padding;
+  width: 100%;
+
+  p {
+    color: $status-message-body-text-color;
+    margin: $status-message-body-margin;
+    font-size: $status-message-body-text-size;
+  }
+}
+
+.ias-error { color: $status-color-error; }
+.ias-warn { color: $status-color-warn; }
+.ias-ok { color: $status-color-ok; }
+
+.ias-status-message-title {
+  color: $status-message-text-color;
+  font-weight: bold;
+
+  span,
+  .ias-icon {
+    vertical-align: middle;
+  }
+
+  .ias-icon {
+    margin-right: $status-message-icon-margin;
+  }
+}
+
+[dir="rtl"] {
+  .ias-status-message-title {
+    .ias-icon {
+      margin-left: $status-message-icon-margin;
+      margin-right: initial;
+    }
+  }
+}
