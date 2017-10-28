@@ -1,12 +1,11 @@
-<h1>Panel</h1>
+<h2 class="ias-page-title">Panel</h2>
 
 <section>
     <h3>Default</h3>
 
     <div class="ias-panel" toggle-repeat-code>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
-        Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
-        Integer vel auctor felis. Donec dignissim nulla lectus, <a ui-sref=".">eget</a>.
+        Morbi ex tellus, condimentum a commodo sed, sagittis non massa <a ui-sref=".">eget</a>.
     </div>
 </section>
 
@@ -17,46 +16,78 @@
         <div class="ias-panel-header">
             <div class="ias-panel-title">Header</div>
             <span class="ias-fill"></span>
-            <button>Button</button>
+            <button class="ias-button">Button</button>
         </div>
         <div class="ias-panel-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
-            Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
-            Integer vel auctor felis. Donec dignissim nulla lectus, <a ui-sref=".">eget</a>.
+            Morbi ex tellus, condimentum a commodo sed, sagittis non massa <a ui-sref=".">eget</a>.
         </div>
     </div>
 </section>
 
 <section>
-    <h3>.ias-panel-header</h3>
+    <h3>Customization</h3>
 
-    <div class="ias-panel" toggle-repeat-code>
-        <div class="ias-panel-header">
-            <div class="ias-panel-title">My Tasks</div>
-            <span class="ias-fill"></span>
-        </div>
-        <div class="ias-panel-data">
-            <div class="panel-data-label">New Tasks</div>
-            <div class="panel-data">
-                <a href="#">34</a>
+    <div toggle-repeat-code>
+        <style>
+            .task-data {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .task-data > div {
+                flex: 1 1;
+                text-align: center;
+            }
+
+            .task-data-label {
+                font-size: 14px;
+            }
+
+            .task-data-point {
+                color: #007cd0;
+                font-size: 3em;
+            }
+
+            .task-data-point a {
+                color: inherit;
+                padding: 0 5px;
+            }
+
+            .task-expiring .task-data-point {
+                color: darkorange;
+            }
+        </style>
+
+        <div class="ias-panel">
+            <div class="ias-panel-header">
+                <span>My Tasks</span>
             </div>
-        </div>
-        <div class="ias-panel-data">
-            <div class="panel-data-label">Expiring</div>
-            <div class="panel-data">
-                <a class="expiring" href="#">128</a>
+
+            <div class="task-data">
+                <div>
+                    <div class="task-data-label">New Tasks</div>
+                    <div class="task-data-point">
+                        <a ui-sref="app.component.panel">34</a>
+                    </div>
+                </div>
+                <div class="task-expiring">
+                    <div class="task-data-label">Expiring</div>
+                    <div class="task-data-point">
+                        <a class="expiring" ui-sref="app.component.panel">128</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="task-data-label">Claimed</div>
+                    <div class="task-data-point">
+                        <a ui-sref="app.component.panel">34</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="ias-panel-data">
-            <div class="panel-data-label">Claimed</div>
-            <div class="panel-data">
-                <a href="#">34</a>
+
+            <div class="ias-panel-footer">
+                <span>Total tasks: <strong>196</strong></span>
             </div>
-        </div>
-        <div class="divider" style="clear: both;"></div>
-        <div class="dash-attributes">
-            <span class="label-medium">Total tasks</span>
-            <span class="label-large-dark">365</span>
         </div>
     </div>
 </section>

@@ -1,18 +1,27 @@
 .ias-panel {
   background-color: $panel-bg-color;
   border-radius: $border-radius;
-  box-sizing: content-box;
-  padding: $content-padding;
+  box-sizing: border-box;
+  max-width: $panel-max-width;
+  padding: $panel-padding;
+  width: 100%;
 
   > .ias-panel-header {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: $content-padding;
+    margin-bottom: $panel-padding;
+  }
+
+  > .ias-panel-footer {
+    margin-top: $panel-footer-margin-top;
+    padding-top: $panel-footer-padding-top;
+    border-top: 1px solid $panel-footer-border-color;
   }
 
   a {
     @include focus-hover-background($body-bg-color);
+
     display: inline;
     margin: 0;
     padding: 0;
