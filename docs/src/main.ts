@@ -37,6 +37,7 @@ import PageComponent from './components/docs/page/page.component';
 import DualColumnComponent from './components/docs/dual-column/dual-column.component';
 import CommentComponent from './components/docs/comment/comment.component';
 import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
+import HeaderComponent from './components/docs/header/header.component';
 
 
 module('app', [
@@ -51,7 +52,7 @@ module('app', [
     .component('kitchenSink', KitchenSinkComponent)
     .component('project', ProjectComponent)
     // Docs Components
-    .component ('accordionControlDocumentation', AccordionControlComponent)
+    .component('accordionControlDocumentation', AccordionControlComponent)
     .component('appBarDocumentation', AppBarComponent)
     .component('buttonDocumentation', ButtonComponent)
     .component('colorsDocumentation', ColorsComponent)
@@ -62,6 +63,7 @@ module('app', [
     .component('dualColumnDocumentation', DualColumnComponent)
     .component('formFieldDocumentation', FormFieldComponent)
     .component('formValidationDocumentation', FormValidationComponent)
+    .component('headerDocumentation', HeaderComponent)
     .component('iasSideNav', SideNavUIComponent)
     .component('iconDocumentation', IconComponent)
     .component('linkDocumentation', LinkComponent)

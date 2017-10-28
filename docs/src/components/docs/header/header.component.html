@@ -1,0 +1,85 @@
+<div class="ias-page-title">Headers</div>
+<p class="ias-page-instructions">Headers are used within elements including pages, panels, and dialogs. The header element should be used as the starting point of the UI element that contains the header.</p>
+
+<h1 class="demo-section">
+    <h4>ias-header</h4>
+    <ias-header toggle-repeat-code>
+        <h1>Header Title</h1>
+    </ias-header>
+</h1>
+
+<div class="demo-section">
+    <h4>w/ .ias-header-sub-title</h4>
+    <ias-header toggle-repeat-code>
+        <h1>Header Title</h1>
+        <div class="ias-header-sub-title"><span>Sub Title</span></div>
+    </ias-header>
+</div>
+
+<div class="demo-section">
+    <h4>w/ .ias-icon-button</h4>
+
+    <ias-header toggle-repeat-code>
+        <h1>Header Title</h1>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-configure_thick"></i>
+        </button>
+    </ias-header>
+</div>
+
+<div class="demo-section">
+    <h4>w/ .ias-fill</h4>
+
+    <ias-header toggle-repeat-code>
+        <h1>Header Title</h1>
+        <div class="ias-header-sub-title"><span>Sub Title</span></div>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-new_thick"></i>
+        </button>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-configure_thick"></i>
+        </button>
+        <span class="ias-fill"></span>
+        <button class="ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-close_thick"></i>
+        </button>
+    </ias-header>
+</div>
+
+<div class="demo-section">
+    <h4>w/ .ias-input-container</h4>
+
+    <ias-header toggle-repeat-code>
+        <h1>Header Title</h1>
+        <div class="ias-header-sub-title"><span>Sub Title</span></div>
+        <div class="header-ias-search">
+            <ias-search-box ng-model="$ctrl.data.value"></ias-search-box>
+        </div>
+        <ias-button class="ias-icon-button">
+            <ias-icon icon="new_thick"></ias-icon>
+        </ias-button>
+        <ias-button class="ias-icon-button">
+            <ias-icon icon="configure_thick"></ias-icon>
+        </ias-button>
+
+        <span class="ias-fill"></span>
+        <ias-button class="ias-icon-button">
+            <ias-icon icon="close_thick"></ias-icon>
+        </ias-button>
+    </ias-header>
+</div>
+
+
+<div class="demo-section">
+    <h4>(.ias-page-title)</h4>
+    <h1 toggle-repeat-code>Page Title</h1>
+</div>
+
+<div class="demo-section">
+    <h4>h2-h4 (.ias-page-heading-2 - .ias-page-heading-4)</h4>
+    <div toggle-repeat-code="inner">
+        <h2>Page Heading 2</h2>
+        <h3>Page Heading 3</h3>
+        <h4>Page Heading 4</h4>
+    </div>
+</div>
