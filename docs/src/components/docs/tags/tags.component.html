@@ -1,28 +1,55 @@
 <h2 class="ias-page-title">Tags</h2>
-<p class="ias-page-instructions">Tags quickly tell the user the content of what they're using.</p>
-<div class="ias-tags" toggle-repeat-code="">
-    <div class="ias-tile ias-tile-multi" tabindex="0">
-        <div class="ias-tile-content-multi"><i class="ias-icon ias-icon-user_thin ias-icon-multi"></i><p class="tile-text">Person One</p><button class="ias-button-close-multi">
-            <i class="ias-icon ias-icon-new_thin ias-icon-close-multi"></i></button></div>
+<p class="ias-page-instructions">Tags represent lists of strings or other objects.</p>
+<div class="ias-tags">
+    <h3>Text Only</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">Person One</span>
+        </div>
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">Person With a Really Long Name</span>
+        </div>
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">Another Person</span>
+        </div>
     </div>
-    <div class="ias-tile ias-tile-multi" tabindex="0">
-        <div class="ias-tile-content-multi"><i class="ias-icon ias-icon-user_thin ias-icon-multi"></i><p class="tile-text">Person With a Really Long Name</p>
-            <button class="ias-button-close-multi">
-                <i class="ias-icon ias-icon-new_thin ias-icon-close-multi"></i></button></div>
+</div>
+
+
+<div class="ias-tags">
+    <h3>Text w/ Action</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">Person One</span>
+            <button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-close_thin"></i></button>
+        </div>
+
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">Person With a Really Long Name</span>
+            <button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-close_thin"></i></button>
+        </div>
     </div>
-    <div class="ias-tile ias-tile-multi" tabindex="0">
-        <div class="ias-tile-content-multi"><i class="ias-icon ias-icon-user_thin ias-icon-multi"></i><p class="tile-text">Another Person</p>
-            <button class="ias-button-close-multi">
-                <i class="ias-icon ias-icon-new_thin ias-icon-close-multi"></i></button></div>
-    </div>
-    <div class="ias-tile ias-tile-multi" tabindex="0">
-        <div class="ias-tile-content-multi"><i class="ias-icon ias-icon-folder_thin ias-icon-multi"></i><p class="tile-text">untitled_folder</p>
-            <button class="ias-button-close-multi">
-                <i class="ias-icon ias-icon-new_thin ias-icon-close-multi"></i></button></div>
-    </div>
-    <div class="ias-tile ias-tile-multi" tabindex="0">
-        <div class="ias-tile-content-multi"><i class="ias-icon ias-icon-folder_thin ias-icon-multi"></i><p class="tile-text">lucky_folder_that_got_named</p>
-            <button class="ias-button-close-multi">
-                <i class="ias-icon ias-icon-new_thin ias-icon-close-multi"></i></button></div>
+</div>
+
+
+<div class="ias-tags">
+    <h3>Text w/ Action and Icon</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">
+                <i class="ias-icon ias-icon-user_thin"></i> Person One
+            </span>
+            <button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-new_thin"></i></button>
+        </div>
+
+        <div class="ias-tag" tabindex="0">
+            <span class="ias-tag-content">
+                <i class="ias-icon ias-icon-folder_thin"></i> lucky_folder_that_got_named
+            </span>
+            <button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-new_thin"></i></button>
+        </div>
     </div>
 </div>

@@ -1,0 +1,59 @@
+.ias-tag {
+  align-items: center;
+  background-color: $tag-bg-color;
+  border: $tag-border;
+  border-radius: $tag-border-radius;
+  color: $tag-text-color;
+  cursor: pointer;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  font-size: $tag-font-size;
+  margin-bottom: $tag-margin;
+  max-width: 100%;
+  padding: $tag-padding;
+
+  &:focus,
+  &:hover {
+    border-color: $tag-border-color-hover;
+    color: $tag-text-color-hover;
+    outline: none;
+  }
+
+  > .ias-tag-content {
+    @include single-line;
+
+    + .ias-icon-button {
+      margin-left: $tag-action-margin;
+    }
+
+    > * {
+      vertical-align: middle;
+    }
+
+    .ias-icon {
+      font-size: $tag-icon-size;
+    }
+  }
+
+  .ias-icon-button {
+    > .ias-icon {
+      font-size: inherit;
+    }
+
+    &:hover {
+      background-color: $tag-action-bg-color-hover;
+      border-color: $tag-action-border-color-hover;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .ias-tag {
+    > .ias-tag-content {
+      + .ias-icon-button {
+        margin-left: 0;
+        margin-right: $tag-action-margin;
+      }
+    }
+  }
+}
