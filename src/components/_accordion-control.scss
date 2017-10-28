@@ -1,110 +1,76 @@
-.ias-accordion-controller {
-  clear: both;
-min-height: 25px;
-position: relative;
-margin-top: 5px;
-background: #eef2f2;
-padding: 2px 15px;
-border: 1px solid transparent;
-}
-
 .ias-accordion-group {
   display: block;
-  width: 700px;
-}
+  max-width: $accordion-group-max-width;
 
-.ias-accordion {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  border: 1px solid #dae1e1;
-  background: $color-gray-6;
-  max-height: 45px;
-  margin-top: 15px;
-  .ias-icon-message_error_thick {
-    color: red;
+  > .ias-accordion-link {
+    margin-bottom: $accordion-link-margin-bottom;
+    text-align: right;
   }
-}
 
-.ias-accordion-open {
-  display: block;
-  position: relative;
-  flex-direction: column;
-  border: 1px solid $color-gray-5;
-  background: $color-gray-6;
-  min-height: 25px;
-  margin-top: 15px;
-}
+  > .ias-accordion {
+    margin-bottom: $accordion-margin-bottom;
 
-.ias-accordion:not(ias-accordion-open):hover  {
-  color: #1773bb;
-  background: #f6f9f8;
-  border: 1px solid #01a9e7;
-  cursor: pointer;
-}
+    &.ias-open {
+      > .ias-accordion-header {
+        border-color: $accordion-border-color-open $accordion-border-color-open $accordion-header-bg-color;
+        border-radius: $border-radius $border-radius 0 0;
+      }
 
-.ias-accordion-header {
-  align-items: center;
-  color: $color-gray-1;
-  padding: 15px;
-  font-weight: normal;
-  display: flex;
-}
+      > .ias-accordion-content {
+        border-color: $accordion-border-color-open;
+        display: block;
+      }
+    }
 
-.ias-accordion-content {
-  display: block;
-  flex: 1 1 auto;
-  padding: 1rem;
-  background-color: white;
-  margin: auto;
-  border: 1px solid $color-gray-5;
-  position: relative;
-}
+    > .ias-accordion-header {
+      align-items: center;
+      background-color: $accordion-header-bg-color;
+      border: $accordion-border-width solid $accordion-header-bg-color;
+      border-radius: $border-radius;
+      color: $accordion-header-color;
+      display: flex;
+      height: $accordion-header-height;
+      padding: 0 $accordion-padding;
 
-.ias-accordion-icon {
-  color: $color-gray-1;
-  position: relative;
-  font-size: 25px;
-  align-items: center;
-  padding-left: 10px;
-}
+      &:hover {
+        cursor: pointer;
+        background-color: $accordion-header-bg-color-hover;
+        border-color: $accordion-header-border-color-hover;
+      }
 
-.ias-accordion-icon-toggle {
-  color: $color-gray-1;
-  position: absolute;
-  right: 15px;
-  align-items: center;
-}
+      > .ias-icon {
+        margin-left: $accordion-icon-spacing;
 
-@media(min-width: 320px) {
-  .ias-accordion {
-    width: 280px;
-  }
-  .ias-accordion-open {
-    width: 280px;
-  }
-}
+        &.ias-accordion-icon-toggle {
+          color: $accordion-icon-toggle-color;
+          font-size: $accordion-icon-toggle-size;
+        }
+      }
+    }
 
-@media(min-width: 768px) {
-  .ias-accordion {
-    width: 450px;
-  }
-  .ias-accordion-open {
-    width: 450px;
-  }
-}
-
-@media(min-width: 1024px) {
-  .ias-accordion {
-    width: 650px;
-  }
-  .ias-accordion-open {
-    width: 650px;
+    > .ias-accordion-content {
+      border: $accordion-border-width solid;
+      border-radius: 0 0 $border-radius $border-radius;
+      border-top-width: 0;
+      display: none;
+      padding: $accordion-padding;
+    }
   }
 }
 
 [dir="rtl"] {
-  .ias-icon.ias-accordion-icon-toggle {
-    left: 15px;
+  .ias-accordion-group {
+    > .ias-accordion-link {
+      text-align: left;
+    }
+
+    > .ias-accordion {
+      > .ias-accordion-header {
+        > .ias-icon {
+          margin-left: 0;
+          margin-right: $accordion-icon-spacing;
+        }
+      }
+    }
   }
 }
