@@ -1,12 +1,56 @@
 .ias-tile {
-  @extend .ias-panel;
-
+  background-color: $tile-bg-color;
   border: $tile-border-width solid transparent;
+  border-radius: $border-radius;
+  box-sizing: content-box;
   color: $tile-text-color;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
   font-size: $tile-description-font-size;
   line-height: $tile-description-line-height;
+  padding: $tile-padding;
   position: relative;
+
+  > .ias-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  > .ias-avatar,
+  > .ias-icon {
+    flex: none;
+  }
+
+  > .ias-avatar {
+    height: $tile-avatar-size;
+    width: $tile-avatar-size;
+  }
+
+  > .ias-icon {
+    font-size: $tile-avatar-size;
+  }
+
+  > .ias-tile-content {
+    overflow: hidden;
+
+    > h3,
+    > p {
+      margin: 0;
+      padding: 0;
+    }
+
+    > p {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  a {
+    @include focus-hover-background($body-bg-color);
+  }
 
   // STATES
   &:focus,
@@ -19,18 +63,7 @@
 
   // SIZES
   &.ias-tiny {
-    height: $tile-height-tiny;
-    max-width: $tile-width-tiny;
-    width: $tile-width-tiny;
-
-    > .ias-avatar {
-      height: $tile-avatar-size-tiny;
-      width: $tile-avatar-size-tiny;
-    }
-
-    > .ias-icon {
-      font-size: $tile-avatar-size-tiny;
-    }
+    display: inline-flex;
 
     > .ias-tile-content {
       display: none;
@@ -38,78 +71,56 @@
   }
 
   &.ias-small {
-    display: flex;
-    flex-flow: row nowrap;
-    height: $tile-height-small;
+    max-width: $tile-width-small;
     width: $tile-width-small;
 
-    > .ias-avatar {
-      height: $tile-avatar-size-small;
-      width: $tile-avatar-size-small;
-    }
-
+    > .ias-avatar,
     > .ias-icon {
-      font-size: $tile-avatar-size-small;
+      margin-right: $tile-padding;
     }
 
     > .ias-tile-content {
-      margin: $tile-padding $tile-padding $tile-padding 0;
-
       > :not(h3) {
         display: none;
       }
 
       > h3 {
+        @include single-line;
         font-size: $tile-title-font-size-small;
-        line-height: $tile-avatar-size-small;
+        line-height: $tile-avatar-size;
       }
     }
   }
 
   &.ias-medium {
-    display: flex;
-    flex-flow: row nowrap;
-    height: $tile-height-medium;
     width: $tile-width-medium;
 
-    > .ias-avatar {
-      flex: 0 0 $tile-avatar-size-medium;
-      height: $tile-avatar-size-medium;
-      width: $tile-avatar-size-medium;
-    }
-
+    > .ias-avatar,
     > .ias-icon {
-      font-size: $tile-avatar-size-medium;
+      margin-right: $tile-padding;
     }
 
     > .ias-tile-content {
-      margin: $tile-padding $tile-padding $tile-padding 0;
-      //height: $tile-avatar-size-medium;
-      overflow: hidden;
-
       > h3 {
         font-size: $tile-title-font-size-medium;
-        line-height: 1em;
         margin-bottom: $tile-title-margin-bottom-medium;
       }
     }
   }
 
   &.ias-large {
-    display: flex;
+    align-items: center;
     flex-flow: column nowrap;
-    height: $tile-height-large;
     max-width: $tile-width-large;
     text-align: center;
     width: $tile-width-large;
 
     > .ias-avatar,
     > .ias-icon {
-      margin: $tile-padding auto;
+      margin-bottom: $tile-padding;
     }
 
     > .ias-avatar {
-      flex: 0 0 $tile-avatar-size-large;
       height: $tile-avatar-size-large;
       width: $tile-avatar-size-large;
     }
@@ -119,56 +130,22 @@
     }
 
     > .ias-tile-content {
-      margin: 0 $tile-padding $tile-padding $tile-padding;
-      overflow: hidden;
-
       > h3 {
         font-size: $tile-title-font-size-large;
-        line-height: 1em;
         margin-bottom: $tile-title-margin-bottom-large;
       }
     }
   }
-
-  > .ias-avatar {
-    margin: $tile-padding;
-  }
-
-  > .ias-icon {
-    margin: $tile-padding;
-  }
-
-  > .ias-actions {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  > .ias-tile-content {
-    > h3,
-    > p {
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  a {
-    @include focus-hover-background($body-bg-color);
-  }
-
 }
 
 [dir="rtl"] {
   .ias-tile {
-    &.ias-small {
-      > .ias-tile-content {
-        margin: $tile-padding 0 $tile-padding $tile-padding;
-      }
-    }
-
+    &.ias-small,
     &.ias-medium {
-      > .ias-tile-content {
-        margin: $tile-padding 0 $tile-padding $tile-padding;
+      > .ias-avatar,
+      > .ias-icon {
+        margin-left: $tile-padding;
+        margin-right: 0;
       }
     }
 
