@@ -3,39 +3,35 @@
 <section>
 	<h3>Default</h3>
 	<div class="ias-tabset" toggle-repeat-code>
-		<div class="ias-tab ias-selected">Tab 1</div>
-		<div class="ias-tab">Tab 2</div>
-		<div class="ias-tab">Tab 3</div>
+		<div class="ias-tab ias-active" tabindex="0">Tab 1</div>
+		<div class="ias-tab" tabindex="0">Tab 2</div>
+		<div class="ias-tab" tabindex="0">Tab 3</div>
 		<div class="ias-tab ias-disabled">Tab 4</div>
 		<div class="ias-tab-base"></div>
 	</div>
-	<div class="text">This is sample content text for the selected tab.</div>
 </section>
 <section>
 	<h3>Tabs with text link</h3>
 	<div class="ias-tabset" toggle-repeat-code>
-		<div class="ias-tab">Short Label</div>
-		<div class="ias-tab ias-selected">A bit longer label</div>
-		<div class="ias-tab">A really long label to show width</div>
-		<div class="ias-tab ias-disabled">Tab 4</div>
+		<div class="ias-tab" tabindex="0" title="Short Label">Short Label</div>
+		<div class="ias-tab ias-active" title="A bit longer label">A bit longer label</div>
+		<div class="ias-tab" tabindex="0" title="A really long label to show width">A really long label to show width</div>
 		<div class="ias-tab-base"></div>
 		<div class="ias-fill"></div>
 		<a ui-sref=".">Action link</a>
 	</div>
-	<div class="text">This is sample content text for the selected tab.</div>
 </section>
 <section>
-	<h3>Tabs with action buttons</h3>
+	<h3>Tabs with .ias-icon-button</h3>
 	<div class="ias-tabset" toggle-repeat-code>
-		<div class="ias-tab">Tab 1</div>
-		<div class="ias-tab">Tab 2</div>
-		<div class="ias-tab ias-selected ">Tab 3</div>
+		<div class="ias-tab" tabindex="0">Tab 1</div>
+		<div class="ias-tab" tabindex="0">Tab 2</div>
+		<div class="ias-tab ias-active">Tab 3</div>
 		<div class="ias-tab ias-disabled">Tab 4</div>
 		<div class="ias-fill"></div>
-		<button class="ias-icon-button" type="button">
-			<i class="ias-icon ias-icon-m_020_favorite_outline_thin"></i>
+		<button class="ias-button ias-icon-button" type="button">
+			<i class="ias-icon ias-icon-favorite_outline_thin"></i>
 		</button>
 		<div class="ias-tab-base"></div>
 	</div>
-	<div class="text">This is sample content text for the selected tab.</div>
 </section>
