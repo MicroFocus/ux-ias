@@ -2,7 +2,7 @@
   border: 1px solid $color-gray-5;
   background-color: #fff;
   border-radius: 3px;
-  width: 550px;
+  width: 100%;
   display: block;
   position: relative;
   margin-bottom: 50px;
@@ -328,7 +328,7 @@
 
 .comment-text-area {
   textarea:not(.comment-area-one) {
-    width: 445px;
+    width: 100%;
     background-color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;

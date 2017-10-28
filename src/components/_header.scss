@@ -1,0 +1,124 @@
+.ias-header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: $header-margin-bottom;
+  max-width: $header-max-width;
+
+  > h2 {
+    margin: 0 $header-title-spacing 0 0;
+  }
+
+  > h5 {
+    flex: 0 0 100%;
+    order: 1;
+  }
+
+  > .ias-button {
+    + .ias-button {
+      margin-left: $header-icon-spacing;
+    }
+  }
+
+  > .ias-input-container {
+    margin: 0;
+    order: 2;
+    padding: 0;
+    width: 100%;
+
+    + .ias-button {
+      //margin-left: $header-search-margin;
+    }
+
+    > input {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .ias-header {
+    > h2 {
+      margin: 0 0 0 $header-title-spacing;
+    }
+
+    > .ias-button {
+      + .ias-button {
+        margin-left: initial;
+        margin-right: $header-icon-spacing;
+      }
+    }
+
+    > .ias-input-container {
+      + .ias-button {
+        margin-left: initial;
+        margin-right: $header-search-margin;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ias-header {
+    > .ias-input-container {
+      order: initial;
+      width: auto;
+
+      + .ias-button {
+        margin-left: $header-search-margin;
+      }
+    }
+  }
+
+  [dir="rtl"] {
+    .ias-header {
+      > .ias-input-container {
+        + .ias-button {
+          margin-left: initial;
+          margin-right: $header-search-margin;
+        }
+      }
+    }
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  @include single-line;
+
+  line-height: $heading-line-height;
+}
+
+h1 {
+  font-size: $heading-1-text-size;
+  font-weight: $heading-1-font-weight;
+  margin: $heading-1-margin;
+}
+
+h2 {
+  color: $heading-2-text-color;
+  font-size: $heading-2-text-size;
+  font-weight: $heading-2-font-weight;
+  margin: $heading-2-margin;
+}
+
+h3 {
+  color: $heading-3-text-color;
+  font-size: $heading-3-text-size;
+  font-weight: $heading-3-font-weight;
+  margin: $heading-3-margin;
+}
+
+h4 {
+  color: $heading-4-text-color;
+  font-size: $heading-4-text-size;
+  font-weight: $heading-4-font-weight;
+  margin: $heading-4-margin;
+}
+
+h5 {
+  color: $heading-5-text-color;
+  font-size: $heading-5-text-size;
+  font-weight: $heading-5-font-weight;
+  margin: $heading-5-margin;
+}

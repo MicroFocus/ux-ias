@@ -33,7 +33,7 @@ import ToggleService from './components/components/toggle/toggle.service';
 import MultiValuedInputComponent from './components/docs/multi-valued-input/multi-valued-input.component';
 import TagsComponent from './components/docs/tags/tags.component';
 import DatepickerComponent from './components/docs/datepicker/datepicker.component';
-import PageComponent from './components/docs/page/page.component';
+// import PageComponent from './components/docs/page/page.component';
 import DualColumnComponent from './components/docs/dual-column/dual-column.component';
 import CommentComponent from './components/docs/comment/comment.component';
 import StatusMessagesComponent from './components/docs/status-messages/status-messages.component';
@@ -71,7 +71,7 @@ module('app', [
     .component('menuDocumentation', MenuComponent)
     .component('multiValuedInputDocumentation', MultiValuedInputComponent)
     .component('navDocumentation', NavComponent)
-    .component('pageDocumentation', PageComponent)
+    // .component('pageDocumentation', PageComponent)
     .component('panelDocumentation', PanelComponent)
     .component('sideNavDocumentation', SideNavComponent)
     .component('statusMessagesDocumentation', StatusMessagesComponent)
