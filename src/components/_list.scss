@@ -1,6 +1,7 @@
 .ias-list {
   list-style: none;
   margin: 0;
+  max-width: $list-max-width;
   padding: 0;
 
   > li,
