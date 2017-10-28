@@ -1,11 +1,8 @@
 .ias-icon, .svg-icon {
   @include square($icon-size-small);
-  
-  &.ias-accordion-icon-toggle {
-    font-size: 18px;
-  }
 
   color: inherit;
+  display: inline-block;
 
   &.ias-medium {
     @include square($icon-size-medium);
@@ -14,8 +11,4 @@
   &.ias-large {
     @include square($icon-size-large);
   }
-}
-
-.svg-icon {
-  display: inline-block;
 }
