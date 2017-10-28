@@ -1,16 +1,24 @@
-table {
+.ias-table {
   border-collapse: collapse;
   text-align: left;
 
   > thead {
     border-bottom: 1px solid $table-header-border-color;
-    color: $color-gray-4;
+    color: $table-header-text-color;
     font-size: $table-header-font-size;
 	  
-	  th { 
-		font-weight: normal;
-		  padding: $body-spacing-xsmall $spacing;
-	  	}
+    th {
+      font-weight: normal;
+      padding: $body-spacing-xsmall $spacing;
+
+      &.ias-sortable {
+        cursor: pointer;
+
+        &.ias-sorted {
+          font-weight: 700;
+        }
+      }
+    }
 	  
     .ias-icon {
       font-size: inherit;
@@ -26,31 +34,27 @@ table {
         border-bottom: 1px solid $table-body-border-color;
       }
 
-      &:hover {
+      &:focus {
+        outline: none;
+      }
+
+      &:hover,
+      &:focus {
         background-color: $table-row-bg-color-hover;
 
-        > .ias-actions {
-          > .ias-icon-button {
-            opacity: 1;
-          }
+        input[type='checkbox'] {
+          opacity: 1;
         }
       }
 
-      > .ias-actions {
-        > .ias-icon-button {
-          opacity: 0;
-
-          &:focus,
-          &:hover {
-            opacity: 1;
-          }
-        }
+      .ias-actions {
+        white-space: nowrap;
       }
     }
   }
 
   td, th {
-    padding: 0 $spacing;
+    padding: $table-cell-padding;
 
     > a {
       &:not(.ias-disabled) {

@@ -1,9 +1,9 @@
 <h2 class="ias-page-title">Table</h2>
 
-<section toggle-repeat-code="">
+<section>
     <h3>Default</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th></th>
@@ -14,7 +14,7 @@
         <tbody>
         <tr>
             <td>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-search_thick"></i>
                 </button>
             </td>
@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <td>
-                <button class="ias-icon-button" type="button" disabled="disabled">
+                <button class="ias-button ias-icon-button" type="button" disabled="disabled">
                     <i class="ias-icon ias-icon-cancel_thick"></i>
                 </button>
             </td>
@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-search_thick"></i>
                 </button>
             </td>
@@ -43,10 +43,10 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>Inline .ias-icon</h3>
+<section>
+    <h3>.ias-icon</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -79,14 +79,14 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>Sorted</h3>
+<section>
+    <h3>.ias-sorted</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
-            <th>Name <i class="ias-icon ias-icon-up_thick"></i></th>
-            <th>Title</th>
+            <th class="ias-sortable ias-sorted">Name <i class="ias-icon ias-icon-flow_goto_prev_thin"></i></th>
+            <th class="ias-sortable">Title</th>
         </tr>
         </thead>
         <tbody>
@@ -106,10 +106,10 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>th,td.ias-align-end</h3>
+<section>
+    <h3>.ias-align-end</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -133,10 +133,10 @@
     </table>
 </section>
 
-<section toggle-repeat-code="">
-    <h3>th,td.ias-actions</h3>
+<section>
+    <h3>Actions</h3>
 
-    <table>
+    <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
             <th>Name</th>
@@ -149,13 +149,13 @@
             <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
             <td class="ias-align-end">$10.21</td>
             <td class="ias-actions">
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-search_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-new_thick"></i>
                 </button>
             </td>
@@ -164,13 +164,13 @@
             <td><a ui-sref="app.component.table">Camelot Rinkus</a></td>
             <td class="ias-align-end">$1000.21</td>
             <td class="ias-actions">
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-search_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-new_thick"></i>
                 </button>
             </td>
@@ -179,17 +179,101 @@
             <td><a ui-sref="app.component.table">Christian Pledger</a></td>
             <td class="ias-align-end">$100.21</td>
             <td class="ias-actions">
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-search_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
-                <button class="ias-icon-button" type="button">
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-new_thick"></i>
                 </button>
             </td>
         </tr>
         </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Checkboxes</h3>
+
+    <table class="ias-table" toggle-repeat-code>
+        <thead>
+        <tr>
+            <th><input type="checkbox" title="Select item"></th>
+            <th class="ias-sortable ias-sorted">Name <i class="ias-icon ias-icon-flow_goto_next_thin"></i></th>
+            <th>Description</th>
+        </tr>
+        </thead>
+       <tbody>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Associate Software Engineer</a></td>
+           <td>Associate Software Engineer</td>
+       </tr>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Compliance Administrator</a></td>
+           <td>A domain administrator who has the full range of</td>
+       </tr>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Doctor</a></td>
+           <td>Doctor Role</td>
+       </tr>
+       <tr tabindex="0">
+           <td><input type="checkbox" title="Select item"></td>
+           <td><a href="#">Provisioning Administrator</a></td>
+           <td>Mon Aug 10 16:31:05 GMT-600 2015</td>
+       </tr>
+       </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Configuration</h3>
+
+    <table class="ias-table" toggle-repeat-code>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th class="ias-align-end">
+
+                <div class="ias-menu ias-open ias-end">
+                    <button class="ias-button ias-icon-button" type="button" title="Configure table">
+                        <i class="ias-icon ias-icon-configure_thick"></i>
+                    </button>
+                    <div class="ias-menu-content">
+                        <button type="button">Button 1</button>
+                        <button type="button">Button 2</button>
+                        <button type="button">Button 3</button>
+                    </div>
+                </div>
+            </th>
+        </tr>
+        </thead>
+       <tbody>
+       <tr>
+           <td><a href="#">Associate Software Engineer</a></td>
+           <td>Associate Software Engineer</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Compliance Administrator</a></td>
+           <td>A domain administrator who has the full range of</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Doctor</a></td>
+           <td>Doctor Role</td>
+           <td></td>
+       </tr>
+       <tr>
+           <td><a href="#">Provisioning Administrator</a></td>
+           <td>Mon Aug 10 16:31:05 GMT-600 2015</td>
+           <td></td>
+       </tr>
+       </tbody>
     </table>
 </section>
