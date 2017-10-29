@@ -12,7 +12,7 @@
 
     background: #fff;
 	left: 0;
-    margin: 0 auto;
+    margin: 0 $dialog-padding;
     max-height: 100%;
     max-width: 100%;
     padding: $dialog-padding;
@@ -52,6 +52,15 @@
 
     .ias-icon {
       color: $dialog-content-color;
+    }
+  }
+}
+
+@media (min-width: $medium-display) {
+  .ias-dialog {
+    .ias-dialog-container {
+      margin: 0 auto;
+      max-width: 750px;
     }
   }
 }

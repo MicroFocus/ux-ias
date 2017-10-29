@@ -14,3 +14,8 @@
 .ias-dialog .ias-dialog-container {
   border: none;
 }
+[dir='rtl'] {
+  .toggle-show > .show-code {
+    text-align: left;
+  }
+}
