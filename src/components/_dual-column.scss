@@ -1,0 +1,102 @@
+.ias-bucket {
+  display: inline-block;
+  vertical-align: top;
+
+  &:not(:last-of-type) {
+    margin-right: $target-margin-right;
+  }
+
+  &.ias-target {
+    > ul {
+      border: $target-border-width dashed $target-border-color;
+
+      > li {
+        &:hover {
+          cursor: move;
+        }
+      }
+    }
+  }
+
+  > h3 {
+    color: $target-header-color;
+    font-size: $target-header-font-size;
+    font-weight: normal;
+  }
+
+  > ul {
+    border: $target-border-width solid $target-border-color;
+    border-radius: $target-border-radius;
+    list-style: none;
+    margin: 0;
+    padding: $target-padding;
+    width: $target-width;
+
+    > li {
+      align-items: center;
+      background-color: $target-item-bg-color;
+      border: solid 1px $target-item-bg-color;
+      border-radius: $target-item-border-radius;
+      color: $target-item-color;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      line-height: $target-item-line-height;
+      padding: $target-item-padding;
+
+      &:hover {
+        background-color: $target-item-bg-color-hover;
+        border-color: $target-item-border-color-hover;
+        cursor: pointer;
+
+        > button {
+          &.ias-icon-button {
+            &:not([disabled]) {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      &.ias-locked {
+        background-color: $target-item-bg-color-locked;
+        border: solid 1px $target-item-bg-color-locked;
+        color: $target-item-color-locked;
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: $target-item-spacing;
+      }
+
+      > button {
+        &.ias-icon-button {
+          &:not([disabled]) {
+            color: transparent;
+
+            &:focus,
+            &:hover {
+              border-color: $target-button-border-color-hover;
+              color: $target-button-color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[dir="rtl"] {
+  .ias-bucket {
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:last-of-type) {
+      margin-left: $target-margin-right;
+      margin-right: 0;
+    }
+  }
+}
