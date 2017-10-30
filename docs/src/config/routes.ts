@@ -26,11 +26,6 @@ function routes(
         .state('app.component.formValidation', { url: 'form-validation', component: 'formValidationDocumentation' })
         .state('app.component.header', {url: 'header', component: 'headerDocumentation'})
         .state('app.component.icon', { url: 'icon', component: 'iconDocumentation' })
-        .state('app.component.iconButton', { url: 'icon-button', component: 'iconButtonDocumentation' })
-        .state('app.component.iconButtonText', { url: 'icon-button-text', component: 'iconButtonTextDocumentation' })
-        .state('app.component.iconButtonToggle', {
-            url: 'icon-button-toggle',
-            component: 'iconButtonToggleDocumentation'})
         .state('app.component.link', { url: 'link', component: 'linkDocumentation' })
         .state('app.component.list', { url: 'list', component: 'listDocumentation' })
         .state('app.component.menu', { url: 'menu', component: 'menuDocumentation' })
@@ -40,7 +35,6 @@ function routes(
         .state('app.component.nav', { url: 'nav', component: 'navDocumentation' })
         .state ('app.component.page', {url: 'page', component: 'pageDocumentation'})
         .state('app.component.panel', { url: 'panel', component: 'panelDocumentation' })
-        .state('app.component.search', { url: 'search', component: 'searchDocumentation'})
         .state('app.component.sideNav', { url: 'side-nav', component: 'sideNavDocumentation' })
         .state('app.component.statusMessages', { url: 'status-messages', component: 'statusMessagesDocumentation'})
         .state('app.component.tab', { url: 'tab', component: 'tabDocumentation' })
