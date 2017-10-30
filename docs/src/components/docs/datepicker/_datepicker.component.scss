@@ -87,7 +87,7 @@
     border-color: transparent;
   }
   .weekdays {
-    background-color: #eef2f2;
+    background-color: $datepicker-weekdays;
   }
   table > tbody > tr:not(:last-child) {
     border-bottom: 1px solid transparent;
