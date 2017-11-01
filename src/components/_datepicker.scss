@@ -1,0 +1,104 @@
+@mixin non-focusable-table-cell {
+  &:focus,
+  &:hover {
+    border: inherit;
+    color: inherit;
+  }
+
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.ias-datepicker {
+  border: 1px solid $datepicker-border-color;
+  border-radius: $border-radius;
+  display: inline-block;
+  text-align: center;
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    display: block;
+    max-height: $datepicker-max-height;
+    overflow-y: auto;
+
+    &.ias-break {
+      border-top: 1px solid $datepicker-border-color;
+    }
+
+    > tbody,
+    > thead {
+      > tr {
+        height: $datepicker-row-height;
+
+        > td {
+          padding: $datepicker-cell-padding;
+        }
+      }
+    }
+
+    > tbody {
+      > tr {
+        &.ias-break {
+          border-top: 1px solid $datepicker-border-color;
+          height: 0;
+
+          > td {
+            @include non-focusable-table-cell;
+
+            border: inherit;
+          }
+        }
+
+        > td {
+          border: 1px solid transparent;
+          border-radius: $border-radius-small;
+
+          &.ias-blank {
+            @include non-focusable-table-cell;
+          }
+
+          &.ias-soften {
+            color: $datepicker-border-color;
+          }
+
+          &:focus,
+          &:hover {
+            border-color: $datepicker-cell-color-hover;
+            color: $datepicker-cell-color-hover;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    > thead {
+      > tr {
+        > th {
+          background-color: $datepicker-header-color;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .ias-actions {
+    span {
+      line-height: $datepicker-row-height;
+      margin: $datepicker-actions-text-margin;
+      vertical-align: middle;
+    }
+  }
+
+  .ias-icon {
+    font-size: $datepicker-icon-size;
+  }
+}

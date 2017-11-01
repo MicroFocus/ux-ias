@@ -1,198 +1,209 @@
-<h1>Datepicker</h1>
-<p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar in small overlay.</p>
-<h3>Closed Datepicker</h3>
-<div class="ias-datepicker" toggle-repeat-code="">
-    <button class="ias-icon-button" type="button">
-        <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
+<h2 class="ias-page-title">Datepicker</h2>
+<p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar
+    in small overlay.</p>
+
+<section>
+    <h3>Closed Datepicker</h3>
+
+    <button class="ias-button ias-icon-button" type="button" toggle-repeat-code>
+        <i class="ias-icon ias-icon-date_thick"></i>
     </button>
-</div>
-<div class="ias-datepicker-not-button" toggle-repeat-code>
-    <a ui-sref="app.component.link" href="/component/link">06/29/2017<i class="ias-icon ias-icon-date_thick"></i></a>
-</div>
-<div class="ias-datepicker" toggle-repeat-code>
-    <button type="button" >
+    <a ui-sref="app.component.datepicker" class="ias-link-icon" toggle-repeat-code>
+        <span>06/29/2017</span>
+        <i class="ias-icon ias-icon-date_thick"></i>
+    </a>
+    <button type="button" class="ias-button ias-icon-text-button" toggle-repeat-code>
         <span>06/29/2017</span>
         <i class="ias-icon ias-icon-date_thick"></i>
     </button>
-</div>
-<h3>Open Datepicker</h3>
-<div class="datepicker-weeks" toggle-repeat-code>
-<div class="ias-datepicker-calendar">
-    <button class="ias-icon-button" type="button">
-        <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
-    </button>
-</div>
-<div class="datepicker-open">
-    <table border=".5" aria-hidden="true" class="datepicker-dates">
-        <tr>
-            <td colspan="7" align="left">
-                <button class="ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-prev_left_thin ng-scope"></i>
+</section>
+
+
+<section>
+    <h3>Open Datepicker</h3>
+
+    <div toggle-repeat-code>
+        <button class="ias-button ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-date_thick"></i>
+        </button>
+        <div class="ias-datepicker">
+            <div class="ias-actions">
+                <button class="ias-button ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-prev_left_thin"></i>
                 </button>
-                <p>June 2017</p>
-                <button class="ias-icon-button" type="button">
+                <span>June 2017</span>
+                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-next_right_thin"></i>
                 </button>
-        </tr>
-        <tr class="weekdays">
-            <td align="center">S</td>
-            <td align="center">M</td>
-            <td align="center">T</td>
-            <td align="center">W</td>
-            <td align="center">T</td>
-            <td align="center">F</td>
-            <td align="center">S</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" class="rollover" tabindex="0">28</td>
-            <td align="center" class="rollover" tabindex="0">29</td>
-            <td align="center" class="rollover" tabindex="0">30</td>
-            <td align="center" class="rollover" tabindex="0">31</td>
-            <td class="hover" align="center" tabindex="0">1</td>
-            <td class="hover" align="center" tabindex="0">2</td>
-            <td class="hover" align="center" tabindex="0">3</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" tabindex="0">4</td>
-            <td align="center" tabindex="0">5</td>
-            <td align="center" tabindex="0">6</td>
-            <td align="center" tabindex="0">7</td>
-            <td align="center" tabindex="0">8</td>
-            <td align="center" tabindex="0">9</td>
-            <td align="center" tabindex="0">10</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" tabindex="0">11</td>
-            <td align="center" tabindex="0">12</td>
-            <td align="center" tabindex="0">13</td>
-            <td align="center" tabindex="0">14</td>
-            <td align="center" tabindex="0">15</td>
-            <td align="center" tabindex="0">16</td>
-            <td align="center" tabindex="0">17</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" tabindex="0">18</td>
-            <td align="center" tabindex="0">19</td>
-            <td align="center" tabindex="0">20</td>
-            <td align="center" tabindex="0">21</td>
-            <td align="center" tabindex="0">22</td>
-            <td align="center" tabindex="0">23</td>
-            <td align="center" tabindex="0">24</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" tabindex="0">25</td>
-            <td align="center" tabindex="0">26</td>
-            <td align="center" tabindex="0">27</td>
-            <td align="center" tabindex="0">28</td>
-            <td align="center" tabindex="0">29</td>
-            <td align="center" tabindex="0">30</td>
-            <td align="center" class="rollover" tabindex="0">1</td>
-        </tr>
-    </table>
-</div>
-</div>
-<div class="datepicker-months" toggle-repeat-code>
-<div class="ias-datepicker-calendar">
-    <button class="ias-icon-button" type="button">
-        <i class="ias-icon ias-icon-date_thick standalone-calendar"></i>
-    </button>
-</div>
-<div class="show-dates-header">
-    <button class="ias-icon-button" type="button">
-        <i class="ias-icon ias-icon-prev_left_thin"></i>
-    </button>
-    <p class="show-dates-title">June 2017</p>
-    <button class="ias-icon-button" type="button">
-        <i class="ias-icon ias-icon-next_right_thin"></i>
-    </button>
-</div>
-<div class="show-dates-tab">
-    <table border=".5" aria-hidden="true" class="datepicker-dates">
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0">2017</td>
-            <td align="center" tabindex="0">Jan</td>
-            <td align="center" tabindex="0">Feb</td>
-            <td align="center" tabindex="0">Mar</td>
-            <td class="hover" align="center" tabindex="0">Apr</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">May</td>
-            <td align="center" tabindex="0">Jun</td>
-            <td align="center" tabindex="0">Jul</td>
-            <td align="center" tabindex="0">Aug</td>
-        </tr>
-        <tr class="hover calendar-year">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">Sep</td>
-            <td align="center" tabindex="0">Oct</td>
-            <td align="center" tabindex="0">Nov</td>
-            <td align="center" tabindex="0">Dec</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0">2018</td>
-            <td align="center" tabindex="0">Jan</td>
-            <td align="center" tabindex="0">Feb</td>
-            <td align="center" tabindex="0">Mar</td>
-            <td class="hover" align="center" tabindex="0">Apr</td>
-        </tr>
-        <tr class="hover bottom-border">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">May</td>
-            <td align="center" tabindex="0">Jun</td>
-            <td align="center" tabindex="0">Jul</td>
-            <td align="center" tabindex="0">Aug</td>
-        </tr>
-        <tr class="hover calendar-year">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">Sep</td>
-            <td align="center" tabindex="0">Oct</td>
-            <td align="center" tabindex="0">Nov</td>
-            <td align="center" tabindex="0">Dec</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0">2019</td>
-            <td align="center" tabindex="0">Jan</td>
-            <td align="center" tabindex="0">Feb</td>
-            <td align="center" tabindex="0">Mar</td>
-            <td class="hover" align="center" tabindex="0">Apr</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">May</td>
-            <td align="center" tabindex="0">Jun</td>
-            <td align="center" tabindex="0">Jul</td>
-            <td class="hover" align="center" tabindex="0">Aug</td>
-        </tr>
-        <tr class="hover calendar-year">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">Sep</td>
-            <td align="center" tabindex="0">Oct</td>
-            <td align="center" tabindex="0">Nov</td>
-            <td class="hover" align="center" tabindex="0">Dec</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0">2020</td>
-            <td align="center" tabindex="0">Jan</td>
-            <td align="center" tabindex="0">Feb</td>
-            <td align="center" tabindex="0">Mar</td>
-            <td class="hover" align="center" tabindex="0">Apr</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">May</td>
-            <td align="center" tabindex="0">Jun</td>
-            <td align="center" tabindex="0">Jul</td>
-            <td class="hover" align="center" tabindex="0">Aug</td>
-        </tr>
-        <tr class="hover">
-            <td align="center" colspan = "2" tabindex="0"></td>
-            <td align="center" tabindex="0">Sep</td>
-            <td align="center" tabindex="0">Oct</td>
-            <td align="center" tabindex="0">Nov</td>
-            <td class="hover" align="center" tabindex="0">Dec</td>
-        </tr>
-    </table>
-</div>
-</div>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td tabindex="0" class="ias-soften">28</td>
+                    <td tabindex="0" class="ias-soften">29</td>
+                    <td tabindex="0" class="ias-soften">30</td>
+                    <td tabindex="0" class="ias-soften">31</td>
+                    <td tabindex="0">1</td>
+                    <td tabindex="0">2</td>
+                    <td tabindex="0">3</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">4</td>
+                    <td tabindex="0">5</td>
+                    <td tabindex="0">6</td>
+                    <td tabindex="0">7</td>
+                    <td tabindex="0">8</td>
+                    <td tabindex="0">9</td>
+                    <td tabindex="0">10</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">11</td>
+                    <td tabindex="0">12</td>
+                    <td tabindex="0">13</td>
+                    <td tabindex="0">14</td>
+                    <td tabindex="0">15</td>
+                    <td tabindex="0">16</td>
+                    <td tabindex="0">17</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">18</td>
+                    <td tabindex="0">19</td>
+                    <td tabindex="0">20</td>
+                    <td tabindex="0">21</td>
+                    <td tabindex="0">22</td>
+                    <td tabindex="0">23</td>
+                    <td tabindex="0">24</td>
+                </tr>
+                <tr>
+                    <td tabindex="0">25</td>
+                    <td tabindex="0">26</td>
+                    <td tabindex="0">27</td>
+                    <td tabindex="0">28</td>
+                    <td tabindex="0">29</td>
+                    <td tabindex="0">30</td>
+                    <td tabindex="0" class="ias-soften">1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
+    <div toggle-repeat-code>
+        <button class="ias-button ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-date_thick"></i>
+        </button>
+        <div class="ias-datepicker">
+            <div class="ias-actions">
+                <button class="ias-button ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-prev_left_thin"></i>
+                </button>
+                <span>June 2017</span>
+                <button class="ias-button ias-icon-button" type="button">
+                    <i class="ias-icon ias-icon-next_right_thin"></i>
+                </button>
+            </div>
+            <table class="ias-break">
+                <tbody>
+                <tr>
+                    <td tabindex="0">2017</td>
+                    <td tabindex="0">Jan</td>
+                    <td tabindex="0">Feb</td>
+                    <td tabindex="0">Mar</td>
+                    <td tabindex="0">Apr</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">May</td>
+                    <td tabindex="0">Jun</td>
+                    <td tabindex="0">Jul</td>
+                    <td tabindex="0">Aug</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">Sep</td>
+                    <td tabindex="0">Oct</td>
+                    <td tabindex="0">Nov</td>
+                    <td tabindex="0">Dec</td>
+                </tr>
+                <tr class="ias-break"><td colspan="5"></td></tr>
+                <tr>
+                    <td tabindex="0">2018</td>
+                    <td tabindex="0">Jan</td>
+                    <td tabindex="0">Feb</td>
+                    <td tabindex="0">Mar</td>
+                    <td tabindex="0">Apr</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">May</td>
+                    <td tabindex="0">Jun</td>
+                    <td tabindex="0">Jul</td>
+                    <td tabindex="0">Aug</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">Sep</td>
+                    <td tabindex="0">Oct</td>
+                    <td tabindex="0">Nov</td>
+                    <td tabindex="0">Dec</td>
+                </tr>
+                <tr class="ias-break"><td colspan="5"></td></tr>
+                <tr>
+                    <td tabindex="0">2019</td>
+                    <td tabindex="0">Jan</td>
+                    <td tabindex="0">Feb</td>
+                    <td tabindex="0">Mar</td>
+                    <td tabindex="0">Apr</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">May</td>
+                    <td tabindex="0">Jun</td>
+                    <td tabindex="0">Jul</td>
+                    <td tabindex="0">Aug</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">Sep</td>
+                    <td tabindex="0">Oct</td>
+                    <td tabindex="0">Nov</td>
+                    <td tabindex="0">Dec</td>
+                </tr>
+                <tr class="ias-break"><td colspan="5"></td></tr>
+                <tr>
+                    <td tabindex="0">2020</td>
+                    <td tabindex="0">Jan</td>
+                    <td tabindex="0">Feb</td>
+                    <td tabindex="0">Mar</td>
+                    <td tabindex="0">Apr</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">May</td>
+                    <td tabindex="0">Jun</td>
+                    <td tabindex="0">Jul</td>
+                    <td tabindex="0">Aug</td>
+                </tr>
+                <tr>
+                    <td class="ias-blank"></td>
+                    <td tabindex="0">Sep</td>
+                    <td tabindex="0">Oct</td>
+                    <td tabindex="0">Nov</td>
+                    <td tabindex="0">Dec</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

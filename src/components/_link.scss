@@ -13,6 +13,13 @@ a {
     color: $link-text-color-no-highlight;
   }
 
+  &.ias-link-icon {
+    i,
+    span {
+      vertical-align: middle;
+    }
+  }
+
   &:focus,
   &:hover {
     background-color: $link-bg-color-hover;
@@ -33,7 +40,7 @@ p, span, td, th {
 [dir="rtl"] {
   a {
     + a, &.ias-link-margin {
-      margin-left: initial;
+      margin-left: 0;
       margin-right: $link-spacing;
     }
   }
