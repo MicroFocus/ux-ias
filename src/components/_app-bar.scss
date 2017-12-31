@@ -46,6 +46,7 @@
     margin-left: $app-bar-button-spacing;
 
     &.ias-icon-button {
+      color: $app-bar-text-color;
       padding: $app-bar-button-padding;
 
       > .ias-icon,
