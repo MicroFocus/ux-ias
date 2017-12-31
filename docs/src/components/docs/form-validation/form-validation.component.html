@@ -1,165 +1,204 @@
 <h1>Form Validation</h1>
 
-<p class="ias-page-instructions">Input validation should only occur once the user has interacted with the field in some way. Do not display a form with input fields already displayed in a warning state before the user has interacted with it.
-We also need to decide if we want to show an error for required fields after the user has interacted with them by clicking or tabbing through them, but hasn’t entered any data yet.</p>
+<section>
+    <h3>Pristine input field</h3>
+    <p>Pristine input fields are fields which have not been interacted with. A pristine field that is in an invalid
+        state should not appear to be in an invalid state (i.e. do not display red border, validation messages, or
+        icons). After the user interacts with the input, apply invalid state styles.</p>
 
-<section id="form-validation" style="margin-bottom: 100px;">
-	<section toggle-repeat-code="">
-		<h3>Required input field</h3>
-		<p>The required field element should be applied to all required input fields. This element is meant to be used in regular or complex forms that have three or more input fields. Not all forms will need to use the require field notification. For example, a sign in page often includes a form with username and password input fields. These inputs are understood to be required to sign in, but usually don't include a required mark.</p>
-		<div>
-			<label>Label stacked</label><span class="required">*</span>
-			<div><input type="text" name="" /></div>
-		</div>
-		<div class="margintop15">
-			<label>Label inline</label><span class="required">*</span><input type="text" name="" />
-		</div>
-		<div class="margintop15">
-			<input type="text" name="" placeholder="Input label placeholder*"/>
-		</div>
-		<ul>
-			<li>A "required" note is not required at the bottom of the form since the require asterisk is widely used and understood</li>
-			<li>Color: #e50000 ($color-accent-4)</li>
-		</ul>
-	</section>
-	<section toggle-repeat-code="">
-		<h3>Input focus</h3>
-		<label>Label stacked</label>
-		<div>
-			<div><input class="input-focus" type="text" name="username" autocomplete="off"/></div>
-		</div>
-		<ul>
-			<li>On focus, only the border color changes</li>
-			<li>Color: #01a9e7 ($color-primary-4)</li>
-		</ul>
-	</section>
-	<section>
-		<h3>Input information</h3>
-		<p>Use the following three methods to instruct the user when an input field needs specific instructions.</p>
-		<ul>
-			<li>Inline label hint</li>
-			<li>Hint text after the input field</li>
-			<li>Hint text in a dialog launched from an Info icon</li>
-		</ul>
-		<div toggle-repeat-code="">
-			<h4>1. Inline label hint</h4>
-			<label>Username (min 5 characters)</label>
-			<div>
-				<div><input type="text" name="username" autocomplete="off"/></div>
-			</div>
-			<ul>
-				<li>Place hint text inside parenthesis</li>
-				<li>keep the hint short and use abbreviations where appropriate</li>
-			</ul>
-		</div>
-		<div toggle-repeat-code="">
-			<h4>2. Hint text after input</h4>
-			<label>Server</label>
-			<div>
-				<div><input type="text" name="username" autocomplete="off"/></div>
-				<Label>
-					<ul>
-						<li>First item in the hint text</li>
-						<li>This is the second item</li>
-						<li>If a third is fun, here it is</li>
-					</ul>
-				</Label>
-			</div>
-			<ul>
-				<li>Use the same style as the label</li>
-				<li>Keep the hint short and descriptive.</li>
-				<li>Longer hints should use the dialog method.</li>
-			</ul>
-		</div>
-		<div toggle-repeat-code="">
-			<h4>3. Info icon to launch hint dialog</h4>
-			<label>Username</label><i class="info-icon"></i>
-			<div>
-				<div><input type="text" name="username" autocomplete="off"/></div>
-			</div>
-			<ul>
-				<li>Selecting the info icon launches a dialog containing hint for just the input field.</li>
-				<li>Dialog does not replace or contain full documentation, just information specific to the input task.</li>
-			</ul>
-		</div>
-	</section>
-	<section>
-		<h3>Form message with icon</h3>
-		<p>This message element is specifically for use within forms.</p>
-		<div class="form-message"><span></span>App connector needs more information.</div>
-		<div class="form-message"><span></span>More information needed before submitting.</div>
-		<ul>
-			<li>The default position is to display message at the top of the form.</li>
-			<li>Message text can vary to match context</li>
-			<li>Message Color: #6a6f71 ($color-gray-3)</li>
-			<li>Icon Color: #e50000 ($color-accent-4)</li>
-		</ul>
-		<div class="docs-example">
-			<div class="docs-example-title">Form message example</div>
-			<div class="docs-example-desc">The form message can be used to reference an object that needs information or attention. The referenced object uses only the icon, without a label.</div>
-			<img src="images/warning_icon1.png" alt="">
-		</div>
-		<div class="docs-example">
-			<div class="docs-example-title">Form message example</div>
-			<div class="docs-example-desc">The form message can be used to reference a section in an accordian control that's missing information (rather than on a specific input field). Again, the warning icon does not necessarily need to be presented with a label since the form message clearly defines the icon.</div>
-			<img src="images/warning_icon2.png" alt="">
-		</div>
-	</section>
-	<section toggle-repeat-code="">
-		<h3>Missing data in a required field</h3>
-		<div class="input-required-missing">
-			<label>Label stacked</label><span class="required">*</span>
-			<div><input type="text" name="" /></div>
-		</div>
-		<ul>
-			<li>Border color: #e50000 ($color-accent-4)</li>
-		</ul>
-	</section>
-	<section toggle-repeat-code="">
-		<h3>Invalid data in a field</h3>
-		<div class="input-invalid">
-			<label>Label stacked</label><i></i>
-			<div><input type="text" name="" value="data entered by user" /></div>
-		</div>
-		<div class="input-invalid margintop10">
-			<label>Label inline</label><i></i><input type="text" name="" value="data entered by user" />
-		</div>
-		<ul>
-			<li>Warning icon is displayed on left side of label</li>
-			<li>Border color: #e50000 ($color-accent-4)</li>
-		</ul>
-	</section>
-	<section toggle-repeat-code="">
-		<h3>Invalid data in a field with message</h3>
-		<div class="input-invalid-message">
-			<label>Email</label><i></i>
-			<div><input type="text" name="" value="smithsonian.gmail.com" /></div>
-			<div class="invalid-message">Enter a valid email</div>
-		</div>
-		<ul>
-			<li>Warning icon is displayed on left side of label</li>
-			<li>Border color: #e50000 ($color-accent-4)</li>
-		</ul>
-	</section>
-	<section toggle-repeat-code="">
-		<h3>Validating data asynchronously</h3>
-		<div class="input-validate validating">
-			<label>Last name</label><img class="wait-icon" src="images/waiting_25.gif" alt="">
-			<div><input type="text" name="" value="Smithsonian" /></div>
-		</div>
-		<ul>
-			<li>Wait icon (animated) is displayed on right side of label</li>
-			<li>Animated icon is displayed while validating data</li>
-			<li>If data is invalid, the input field changes to the "Invalid data" or "Invalid data w/ message" style (above).</li>
-		</ul>
-		<div class="input-validate valid">
-			<label>Last name</label><i></i>
-			<div><input type="text" name="" value="Smithsonian" /></div>
-		</div>
-		<ul>
-			<li>If data is valid, the animated icon disappears and the input field keeps the default look. The valid checkmark icon displays for 4 seconds, then fades away.
-			</li>
-		</ul>
+    <div class="ias-input-container">
+        <label>Pristine email input</label>
+        <input class="ias-invalid ias-invalid-required ias-pristine" type="email"/>
+    </div>
 
-	</section>
+    <div class="ias-input-container">
+        <label>Non-pristine email input</label>
+        <input class="ias-invalid ias-invalid-required" type="text" value="invalidemail"/>
+    </div>
+</section>
+
+<section>
+    <h3>Required input field</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-input-container">
+            <label>Label stacked <span class="ias-required">*</span></label>
+            <input type="text" required/>
+        </div>
+        <div class="ias-input-container">
+            <label>
+                Label inline <span class="ias-required">*</span>
+                <input type="text" required/>
+            </label>
+        </div>
+        <div class="ias-input-container">
+            <input type="text" placeholder="Required input placeholder *" required/>
+        </div>
+    </div>
+
+    <p>The required field element should be applied to all required input fields. This element is meant to be used in
+        regular or complex forms that have three or more input fields. Not all forms will need to use the require field
+        notification. For example, a sign in page often includes a form with username and password input fields. These
+        inputs are understood to be required to sign in, but usually don't include a required mark.</p>
+    <p>A "required" note is not necessary at the bottom of the form since the require asterisk is widely used and
+        understood</p>
+</section>
+
+<section>
+    <h3>Hints</h3>
+    <p>Use the following three methods to instruct the user when a user requires additional information to complete a
+        form field.</p>
+
+
+    <h4>1. Inline label hint</h4>
+    <p>Inline label hints must always be placed inside of parenthesis. The hint should be clear, short, and
+        helpful.</p>
+
+    <div class="ias-input-container" toggle-repeat-code>
+        <label>Username (min 5 characters)</label>
+        <div>
+            <div><input type="text"/></div>
+        </div>
+    </div>
+
+
+    <h4>2. Validation message after input</h4>
+    <p>Validation messages placed after the input are visible only after the user has interacted with the input. The
+        text should be read and easy to read. Messages should be clear, short, and helpful. For longer messages use the
+        info icon method (see below).</p>
+
+    <div class="ias-input-container" toggle-repeat-code>
+        <label>Server</label>
+        <input class="ias-invalid" type="text"/>
+        <div class="ias-input-messages" role="alert">
+            <div class="ias-input-message">Validation error</div>
+        </div>
+    </div>
+
+
+    <h4>3. Info icon to launch tooltip</h4>
+    <p>If your hint text is too complex for the other methods, use an info icon and tooltip. Clicking/Hovering the info
+        icon displays a tooltip. The tooltip should not contain extensive documentation or instructions. It should
+        contain just enough to instruct the user on how to complete the input.
+    </p>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-input-container">
+            <label>Username <i class="ias-icon ias-icon-status_info_thick" style="color:#0090da;"></i></label>
+            <input type="text"/>
+        </div>
+        <div class="ias-input-container">
+            <label>Label <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000;"></i></label>
+            <input class="ias-invalid" type="text"/>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Form Messages</h3>
+    <p>Form messages are used when portions of the form are not visible to the user (ex: in tabs, accordions, or tile
+        grids). The message should appear at the top of the form and should instruct the user that additional changes
+        are required to complete the form.</p>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-form-message">
+            <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000"></i>
+            <span>App connector needs more information.</span>
+        </div>
+        <div class="ias-form-message">
+            <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000"></i>
+            <span>More information needed before submitting.</span>
+        </div>
+    </div>
+
+    <div class="ias-panel">
+        <div class="ias-panel-header">
+            <div class="ias-panel-title">Tile Grids</div>
+        </div>
+        <div class="ias-panel-body">
+            <p>Tile grids hide information about each element in the grid. Form messages make it obvious to the user
+                that a tile in the tile grid requires additional attention. The offending tile should similarly be
+                marked as invalid.</p>
+            <img src="images/warning_icon1.png" alt="">
+        </div>
+    </div>
+
+    <div class="ias-panel">
+        <div class="ias-panel-header">
+            <div class="ias-panel-title">Accordion</div>
+        </div>
+        <div class="ias-panel-body">
+            <p>Accordions hide information about each section. Form messages make it obvious to the user
+                that a section of the accordion requires additional attention. The offending section should similarly be
+                marked as invalid.</p>
+            <img src="images/warning_icon2.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Invalid state styles</h3>
+
+    <h4>Invalid required field</h4>
+    <div class="ias-input-container" toggle-repeat-code>
+        <label>Label stacked <span class="ias-required">*</span></label>
+        <input class="ias-invalid ias-invalid-required" type="text" required/>
+    </div>
+
+
+    <h4>Invalid data in a field</h4>
+    <div toggle-repeat-code="inner">
+        <div class="ias-input-container">
+            <label>Label stacked <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000"></i></label>
+            <input class="ias-invalid" type="text" value="data entered by user"/>
+        </div>
+
+        <div class="ias-input-container">
+            <label>
+                Label inline <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000"></i>
+                <input class="ias-invalid" type="text" value="data entered by user"/>
+            </label>
+
+        </div>
+    </div>
+
+
+    <h4>Invalid data in a field with message</h4>
+    <div class="ias-input-container" toggle-repeat-code>
+        <label>Email</label>
+        <input class="ias-invalid" type="email" value="smithsonian.gmail.com"/>
+        <div class="ias-input-messages" role="alert">
+            <div class="ias-input-message">Enter a valid email</div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Validating data asynchronously</h3>
+    <p>Sometimes it may be necessary to validate user input on a server. A loader clearly indicates to the user that
+        validation is occurring. When the validation is complete indicate to the user the result of the validation with
+        status icons. In the event that validation fails, clicking on the info icon should present a tooltip with
+        additional information to correct the error.</p>
+    <p>Asynchronous validation should be de-bounced to allow the user to complete input before validation occurs. This
+        prevents validation from occurring on each keystroke.</p>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-input-container">
+            <label>
+                Email <img class="ias-wait-icon ias-small" src="images/waiting_25.gif" alt="">
+            </label>
+            <input type="email" value="jonathan@smithsonian.com"/>
+        </div>
+
+        <div class="ias-input-container">
+            <label>Email <i class="ias-icon ias-icon-status_ok_thin" style="color:#37c26a;"></i></label>
+            <input type="email" value="jonathan@smithsonian.com"/>
+        </div>
+
+        <div class="ias-input-container">
+            <label>Email <i class="ias-icon ias-icon-message_error_thick" style="color:#e50000"></i></label>
+            <input class="ias-invalid" type="email" value="jonathan.com"/>
+        </div>
+    </div>
+
 </section>

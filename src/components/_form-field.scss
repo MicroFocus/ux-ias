@@ -40,6 +40,14 @@ label {
   > textarea {
     margin-left: $input-inline-label-padding;
   }
+
+  > * {
+    vertical-align: middle;
+  }
+
+  > .ias-icon {
+    font-size: 22px;
+  }
 }
 
 .ias-input-container {

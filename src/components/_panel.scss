@@ -6,6 +6,10 @@
   padding: $panel-padding;
   width: 100%;
 
+  + .ias-panel {
+    margin-top: 1rem;
+  }
+
   > .ias-panel-header {
     align-items: center;
     display: flex;
