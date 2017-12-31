@@ -5,7 +5,6 @@ import routes from './config/routes';
 // Layout Components
 import ApplicationComponent from './components/application/application.component';
 import ComponentsComponent from './components/components/components.component';
-import KitchenSinkComponent from './components/kitchen-sink/kitchen-sink.component';
 import ProjectComponent from './components/project/project.component';
 // Docs Components
 import AccordionControlComponent from './components/docs/accordion-control/accordion-control.component';
@@ -49,7 +48,6 @@ module('app', [
     // Layout Components
     .component('application', ApplicationComponent)
     .component('components', ComponentsComponent)
-    .component('kitchenSink', KitchenSinkComponent)
     .component('project', ProjectComponent)
     // Docs Components
     .component('accordionControlDocumentation', AccordionControlComponent)

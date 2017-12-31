@@ -9,8 +9,6 @@ function routes(
     $stateProvider
         .state('app', { url: '/?dir&theme', abstract: true, component: 'application' })
         .state('app.project', { url: '', component: 'project' })
-        .state('app.kitchenSink', { url: 'kitchen-sink', component: 'kitchenSink' })
-
         .state('app.component', { url: 'component/', abstract: true, component: 'components' })
         .state('app.component.accordionControl', {
             url: 'accordion-control',
