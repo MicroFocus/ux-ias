@@ -9,6 +9,7 @@
 
   > .ias-accordion {
     margin-bottom: $accordion-margin-bottom;
+    outline: none;
 
     &.ias-open {
       > .ias-accordion-header {
@@ -38,7 +39,7 @@
         border-color: $accordion-header-border-color-hover;
       }
 
-      > .ias-icon {
+      .ias-icon {
         margin-left: $accordion-icon-spacing;
 
         &.ias-accordion-icon-toggle {
@@ -54,6 +55,12 @@
       border-top-width: 0;
       display: none;
       padding: $accordion-padding;
+    }
+
+    .ias-accordion-title {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
     }
   }
 }

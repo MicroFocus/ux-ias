@@ -55,12 +55,22 @@
           border: 1px solid transparent;
           border-radius: $border-radius-small;
 
-          &.ias-blank {
-            @include non-focusable-table-cell;
+          &.ias-today {
+            background-color: $color-gray-7;
+          }
+
+          &.ias-selected {
+            background-color: $color-gray-5;
+            font-weight: bold;
           }
 
           &.ias-soften {
             color: $datepicker-border-color;
+
+            &.ias-selected {
+              background-color: $color-gray-6;
+              color: inherit;
+            }
           }
 
           &:focus,
@@ -92,8 +102,10 @@
 
   .ias-actions {
     span {
+      cursor: pointer;
       line-height: $datepicker-row-height;
       margin: $datepicker-actions-text-margin;
+      outline: none;
       vertical-align: middle;
     }
   }

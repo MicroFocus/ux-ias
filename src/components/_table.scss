@@ -34,6 +34,10 @@
         border-bottom: 1px solid $table-body-border-color;
       }
 
+      &[role=button] {
+        cursor: pointer;
+      }
+
       &:focus {
         outline: none;
       }

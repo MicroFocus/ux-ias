@@ -22,6 +22,10 @@ textarea {
   &[disabled] {
     @include disabled-state;
   }
+
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
 }
 
 label {
@@ -30,6 +34,7 @@ label {
   line-height: $font-size-large;
   vertical-align: middle;
   padding-right: 5px;
+  user-select: none;
 
   &:not(:first-of-type) {
     margin-left: $spacing;

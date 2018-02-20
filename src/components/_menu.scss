@@ -1,7 +1,11 @@
 .ias-menu {
+  bottom: 0;
   display: none;
   position: absolute;
+  left: 0;
   max-width: 100%;
+  right: 0;
+  top: 0;
 
   &.ias-open {
     display: inline-block;
@@ -15,8 +19,11 @@
   font-size: $menu-content-font-size;
   left: 0;
   overflow: hidden;
+  overflow-y: auto;
   padding: $spacing;
+  position: absolute;
   right: auto;
+  z-index: 1;
 
   .ias-border-bottom,
   .ias-border-top,

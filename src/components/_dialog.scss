@@ -6,6 +6,7 @@
   right: 0;
   top: 0;
   width: 100%;
+  z-index: 10;
 
   .ias-dialog-container {
     @extend .ias-border-1;
@@ -60,7 +61,7 @@
   .ias-dialog {
     .ias-dialog-container {
       margin: 0 auto;
-      max-width: 750px;
+      max-width: 375px;
     }
   }
 }

@@ -12,6 +12,7 @@
   line-height: $tile-description-line-height;
   padding: $tile-padding;
   position: relative;
+  text-align: left;
 
   > .ias-actions {
     position: absolute;
@@ -140,6 +141,8 @@
 
 [dir="rtl"] {
   .ias-tile {
+    text-align: right;
+
     &.ias-small,
     &.ias-medium {
       > .ias-avatar,

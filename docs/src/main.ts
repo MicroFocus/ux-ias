@@ -40,6 +40,7 @@ import HeaderComponent from './components/docs/header/header.component';
 
 
 module('app', [
+    'ngAria',
     'ng-prism',
     'ui.router'
 ])

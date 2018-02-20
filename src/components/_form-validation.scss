@@ -11,9 +11,12 @@
 }
 
 .ias-input-container {
-  input {
-    &:not(.ias-pristine) {
-      &.ias-invalid {
+  input,
+  select {
+    &.ias-touched,
+    &.ng-touched {
+      &.ias-invalid,
+      &.ng-invalid {
         border-color: $color-accent-4;
       }
     }
@@ -27,7 +30,7 @@
 
 .ias-wait-icon {
   &.ias-small {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }
 }
