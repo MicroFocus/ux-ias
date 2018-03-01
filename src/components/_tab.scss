@@ -10,15 +10,17 @@
   padding: 0 $tabset-padding;
   position: relative;
   height: $tabset-height;
-}
 
-.ias-tab-base {
-  border-bottom: 1px solid $tabset-bottom-border-color;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  &::after {
+    border-bottom: 1px solid $tabset-bottom-border-color;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
 
 .ias-tab {
@@ -59,6 +61,14 @@
     background-color: $tabset-tab-bg-color-selected;
     border-color: $tabset-tab-border-color-selected;
     z-index: 1;
+  }
+}
+
+.ias-tab-pane {
+  display: none;
+
+  &.ias-open {
+    display: initial;
   }
 }
 
