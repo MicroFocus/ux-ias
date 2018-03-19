@@ -9,6 +9,10 @@
   min-height: $app-bar-height-small;
   padding-right: $app-bar-padding;
   overflow: hidden;
+  
+  &.micro-bg-color {
+    background: #0073e7; //primary microfocus color;
+  }
 
   > .ias-avatar {
     border-radius: 0;
@@ -16,6 +20,11 @@
     > img {
       display: block;
       max-height: $app-bar-height-small;
+      
+      &.micro-logo {
+        max-height: $app-bar-height-microfocus;
+      }
+      
     }
   }
 
@@ -23,7 +32,7 @@
     /* Add height and line-height for align-items bug in IE11 */
     height: $app-bar-height-small;
     line-height: $app-bar-height-small;
-    margin-left: $app-bar-padding;
+    margin-left: 15px;
   }
 
   > span:not(.ias-fill) {
@@ -112,7 +121,7 @@
     }
 
     > .ias-heading {
-      margin-left: $app-bar-padding-large;
+      margin-left: $app-bar-padding-normal;
     }
   }
 
