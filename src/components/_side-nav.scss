@@ -91,10 +91,14 @@
     width: 100%;
 
     &:focus:not([disabled]),
-    &:hover:not([disabled]),
+    &:hover:not([disabled]) {
+      background-color: $side-nav-bg-color-hover;
+      color: inherit;
+    }
     &.ias-active {
       background-color: $side-nav-bg-color-hover;
       color: inherit;
+      font-weight: 500;
     }
   }
 }
