@@ -3,6 +3,7 @@
   max-width: $accordion-group-max-width;
 
   > .ias-accordion-link {
+    cursor: pointer;
     margin-bottom: $accordion-link-margin-bottom;
     text-align: right;
   }
@@ -32,6 +33,7 @@
       display: flex;
       height: $accordion-header-height;
       padding: 0 $accordion-padding;
+      outline: none;
 
       &:hover {
         cursor: pointer;

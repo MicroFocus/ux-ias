@@ -64,48 +64,84 @@ label {
     display: inline-block;
   }
 
-  &.ias-search {
-    max-width: $search-box-max-width;
-    position: relative;
+  > label {
+    display: block;
+    margin: $input-label-margin;
+  }
+}
 
-    > input {
-      box-sizing: border-box;
-      padding: $input-padding ($search-box-icon-size + (2 * $search-box-icon-padding));
-      width: 100%;
+.ias-search {
+  max-width: $search-box-max-width;
+  position: relative;
 
-      &:focus {
-        & ~ .ias-icon,
-        & ~ .ias-icon-button {
-          color: $focus-text-color;
-        }
-      }
-    }
+  > input {
+    box-sizing: border-box;
+    padding: $input-padding ($search-box-icon-size + (2 * $search-box-icon-padding));
+    margin: 0;
+    width: 100%;
 
-    > .ias-icon {
-      left: $search-box-icon-padding;
-    }
-
-    > .ias-icon-button {
-      right: $search-box-icon-padding;
-    }
-
-    > .ias-icon,
-    > .ias-icon-button {
-      color: $color-gray-4;
-      font-size: $search-box-icon-size;
-      position: absolute;
-      top: 55%;
-      transform: translateY(-50%);
-
-      > .ias-icon {
-        font-size: inherit;
+    &:focus {
+      & ~ .ias-icon,
+      & ~ .ias-icon-button {
+        color: $focus-text-color;
       }
     }
   }
 
-  > label {
-    display: block;
-    margin: $input-label-margin;
+  > .ias-icon {
+    left: $search-box-icon-padding;
+  }
+
+  > .ias-icon-button {
+    right: $search-box-icon-padding;
+  }
+
+  > .ias-icon,
+  > .ias-icon-button {
+    color: $color-gray-4;
+    font-size: $search-box-icon-size;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    > .ias-icon {
+      font-size: inherit;
+    }
+  }
+}
+
+.ias-autocomplete {
+  position: relative;
+
+  .ias-result {
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+
+    &:focus,
+    &:hover {
+      @include icon-button-focus-colors;
+    }
+  }
+
+  .ias-results {
+    background-color: $body-bg-color;
+    border: 1px solid #dae1e1;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    display: none;
+    margin-right: auto;
+    min-width: $search-box-max-width;
+    overflow: hidden;
+    position: absolute;
+    //width: 100%;
+    z-index: 1;
+  }
+
+  &.ias-open {
+    .ias-results {
+      display: block;
+    }
   }
 }
 
@@ -124,18 +160,15 @@ label {
     }
   }
 
-  .ias-input-container {
+  .ias-search {
+    > .ias-icon {
+      left: initial;
+      right: $search-box-icon-padding;
+    }
 
-    &.ias-search {
-      > .ias-icon {
-        left: initial;
-        right: $search-box-icon-padding;
-      }
-
-      > .ias-icon-button {
-        left: $search-box-icon-padding;
-        right: initial;
-      }
+    > .ias-icon-button {
+      left: $search-box-icon-padding;
+      right: initial;
     }
   }
 }
