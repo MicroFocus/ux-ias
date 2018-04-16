@@ -1,6 +1,17 @@
 <h1>App Bar</h1>
-<p class="ias-page-instructions">The application bar is the first element of an application page that establishes our UX branding. The first example below details the attributes that define it. Consistent implementation of all the attributes will help with a consistent look.</p>
 
+<h2>General</h2>
+<p class="ias-page-instructions">The application bar is the first element of an application page that establishes our UX
+    branding. The default example below details the attributes that define it. Consistent implementation of all the
+    attributes will help in establishing the Micro Focus UX brand image.</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">The App Bar is used to consistently provide information about product naming, branding,
+    user settings/actions, and managing user state throughout the application.</p>
+
+<h2>Examples</h2>
+
+<h3>Micro Focus Default Branding</h3>
 <section>
     <div class="ias-app-bar micro-bg-color" toggle-repeat-code>
         <div class="ias-avatar">
@@ -10,12 +21,20 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
+    <h5>App Bar Specifics</h5>
     <ul>
+        <li>Use an edge-to-edge implementation that doesn't offer space or margins on the top or sides.</li>
+        <li>Default color background is a solid implementation of the primary Micro Focus blue, (#0073e7).</li>
+        <li>Minimum height is 45px while the maximum height is 100px.</li>
+        <li>When present, the user account actions menu appears on the right hand side.</li>
+        <li>Title and user menu are vertically center-aligned.</li>
+        <li>A logo or branding image inside the app bar has an edge-to-edge design</li>
         <li>This example includes the standard Micro Focus security family logo design (AM - Access Manager).</li>
-        <li>Logo or branding image inside the app bar has an edge-to-edge design</li>
-        </li>
     </ul>
+
 </section>
+
+<h3>App Bar without Branding</h3>
 <section>
     <div class="ias-app-bar micro-bg-color" toggle-repeat-code>
         <h3 class="ias-heading">Application Title</h3>
@@ -23,15 +42,11 @@
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
     <ul>
-        <li>Edge-to-edge implementation: never use space or margin on the top or sides.</li>
-        <li>Default background color blend (#01a9e7 --> #007cd0): colors are from the Micro Focus color guidelines.</li>
-        <li>Minimum height is 45px. When the app bar has no logo or branding image, the height is 45px.</li>
-        <li>Maximum height is 100px. No matter the image size, the implementation will only allow the height to grow to
-            the maximum.
-        </li>
-        <li>Title and user menu are center-aligned (vertical).</li>
+        <li>When the app bar has no logo or branding image the height is set to the minimum of 45px.</li>
     </ul>
 </section>
+
+<h3>App Bar with an Image Larger than Maximum Height</h3>
 <section>
     <div class="ias-app-bar" toggle-repeat-code>
         <div class="ias-avatar">
@@ -43,11 +58,14 @@
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
     <ul>
-        <li>Logo or branding image inside the app bar has an edge-to-edge design</li>
         <li>The airplane image above is a 200 x 200 pixel image. It is proportionally sized to the app bar max-height.
         </li>
+        <li>This example makes use of a color gradient. Color gradients should transition from light to dark and
+            only use two colors.</li>
     </ul>
 </section>
+
+<h3>App Bar Customized with a Logo Image</h3>
 <section>
     <div class="ias-app-bar" toggle-repeat-code style="background: linear-gradient(to right, yellow, green)">
         <div class="ias-avatar">
@@ -59,14 +77,15 @@
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
     <ul>
+        <li>The BrandName logo is a 200 x 50 pixel image, but has a transparent background.</li>
         <li>If a margin is desired for the logo, it can be added within the image file.</li>
-        <li>The HealthEquity logo is a 200 x 50 pixel image, but has a transparent background. The image includes
-            spacing, thus it adds a nice margin between the logo and the app bar border.
-        </li>
+        <li>The image includes spacing, which adds a nice margin between the logo and the app bar border.</li>
         <li>The image inside the app bar is still edge-to-edge.</li>
         <li>The image is proportionally sized to the max-height.</li>
     </ul>
 </section>
+
+<h3>App Bar with Image Smaller than Minimum Height</h3>
 <section>
     <div class="ias-app-bar" toggle-repeat-code style="background: linear-gradient(to right, lightgray, gray)">
         <div class="ias-avatar">
@@ -78,42 +97,52 @@
         <button type="button" class="ias-button ias-menu-toggle" style="color: #1f1f1f"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
     <ul>
-        <li>When the Logo image is less than 45px height, it is vertically centered.</li>
+        <li>When a logo or brand image is less than 45px height, it will be vertically centered.</li>
     </ul>
 </section>
 
-<h3>Purpose</h3>
-<p>For product naming, branding, application scope settings/actions, and managing user state. Sometimes
-    used for notifications (using .ias-icon-button>i.ias-icon-bell_thick)</p>
-<p>Always used edge-to-edge at application scope. Never nested.</p>
+    <h2>Appearance</h2>
 
-<h3>Nestable components</h3>
-<ul>
-    <li>img (for branding)</li>
-    <li>.ias-button</li>
-    <li>.ias-menu</li>
-    <li>span[.ias-fill]</li>
-</ul>
+    <h3>Common patterns</h3>
+    <ul>
+        <li>Always use an edge-to-edge implementation at the application scope. Do not nest the app bar within other
+            elements.</li>
+        <li>The app bar is often coupled with a navigation bar underneath, allowing users to access important elements
+            from anywhere within the application.</li>
+        <li>When implemented, the user account menu is positioned on right side allowing users to quickly access
+            settings and actions.</li>
+        <li>A notification icon may be implemented next to the user account settings to notify the user,
+            (using .ias-icon-button>i.ias-icon-bell_thick).</li>
+    </ul>
 
-<h3>Common patterns</h3>
-<ul>
-    <li>Nav bar underneath</li>
-    <li>User account settings menu on right side</li>
-</ul>
+    <h3>Nestable components</h3>
+    <p class="ias-page-instructions">Specific information for each nestable component can be found in their
+    individual sections.</p>
+    <ul>
+        <li>img (used for branding)</li>
+        <li>.ias-button</li>
+        <li>.ias-menu</li>
+        <li>span[.ias-fill]</li>
+    </ul>
 
-<h3>Small Displays</h3>
-<p>Height should be shorter. Side padding should be narrower.</p>
-<p>Overflow</p>
+    <h3>Responsive Displays</h3>
+    <p class="ias-page-instructions">When transitioning to a smaller display the app bar will become smaller as well.
+        When this happens, the minimum height and side padding are reduced to prevent text and element wrapping.</p>
+    <p class="ias-page-instructions">If the app bar elements encounter overflow due to size constraints, the title will
+        be adjusted to accommodate for lack of space.  Ellipsis are appended to the title and display preference is
+        given to user account menu and the icon.</p>
 
-<h3>States</h3>
-<ul>
-    <li>Button hover</li>
-    <li>Button focus</li>
-    <li>Button disabled</li>
-</ul>
+    <h3>Background Color</h3>
+    <ul>
+        <li>A solid color background is the default setting for the app bar and uses the Micro Focus blue.</li>
+        <li>The background color may also use a transitional style between two colors, as seen in the third example.</li>
+        <li>A transitional background should limit the transition to be between only two colors</li>
+    </ul>
 
-<h3>Colors</h3>
-
-<h3>Dimensions</h3>
-
-<h3>Branding</h3>
+    <h3>Branding</h3>
+    <ul>
+        <li>The product will be distributed with the default Micro Focus branding seen in the first example above.</li>
+        <li>Default Micro Focus branding consist of having: Icon image, product title, and user account
+            menu. Text is displayed in white.</li>
+        <li>Customers will be able to adjust the branding to fit their personal needs, (colors, images, etc).</li>
+    </ul>
