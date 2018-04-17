@@ -1,11 +1,21 @@
-<h2 class="ias-page-title">
+<h1 class="ias-page-title">
     Accordion Control
-</h2>
+</h1>
 
+<h2>General</h2>
 <p class="ias-page-instructions">
-    Accordion controls allow the user to switch between hiding and showing a large amount of content.
+    A container for information that makes use of a short descriptive title bar to define what information is held
+    inside. Information can be shown or hidden from the arrow icon in title bar by the user.
+    This element offers the user the ability to navigate large amounts of content with ease.
 </p>
 
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    To hide information behind a descriptive title that informs the user what content is held inside. Proper use of the
+    accordion control will save screen space and result in a clean user interface.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Closed</h3>
 
@@ -21,6 +31,12 @@
             </div>
         </div>
     </div>
+    <ul>
+        <li>The title bar is the only element that is displayed in this state</li>
+        <li>Title bar text should be short and descriptive to inform the user what content is held inside when closed.
+        </li>
+        <li>Arrow icon points down to indicate a user can display the content stored inside.</li>
+    </ul>
 </section>
 
 <section>
@@ -41,6 +57,11 @@
             </div>
         </div>
     </div>
+    <ul>
+        <li>An opened accordion simply displays its content to the user.</li>
+        <li>The arrow icon changes from pointing down to pointing up, indicating a user can hide the displayed content.
+        </li>
+    </ul>
 </section>
 
 <section>
@@ -65,9 +86,6 @@
 
 <section>
     <h3>Group</h3>
-    <p>
-        Optional feature: "Open All" is displayed when all accordions are closed, otherwise "Close All" is displayed.
-    </p>
 
     <div class="ias-accordion-group" toggle-repeat-code>
         <div class="ias-accordion-link">
@@ -107,4 +125,37 @@
             </div>
         </div>
     </div>
+    <ul>
+        <li>A "Close All" link is displayed at the top right of the accordion group when at least one accordion is open.
+        </li>
+        <li>"Close All" does as the name implies, allowing the user to quickly collapse a group of accordions.</li>
+        <li>An optional feature is the "Open All" link.</li>
+        <li>If used, "Open All" is displayed only when all accordions are closed, otherwise a "Close All" link is
+            displayed.</li>
+    </ul>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Each accordion uses a title bar that has a descriptive title and an action icon that allows for hiding and
+        showing the accordion's content.</li>
+        <li>The content section can implement a number of elements, from dialogue to input fields.</li>
+        <li>Think of each accordion as a vertical tab that organized information in a readable way.</li>
+    </ul>
+
+<h3>Nestable Components</h3>
+<h5>Content Section</h5>
+<p class="ias-page-instructions">
+    Accordions can make use of a large number of nestable components within their content section.  Input fields,
+    dialogue boxes, lists, or any element that is necessary for accomplishing the goal of the accordion can likely be
+    used.
+</p>
+<h5>Title Bar</h5>
+<ul>
+    <li>ias.header (descriptive title)</li>
+    <li>ias.icon (accordion control toggle)</li>
+    <li>The ias.icon can also be used to add another icon for notifying the user or allowing interaction.</li>
+</ul>
+
