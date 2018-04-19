@@ -45,13 +45,6 @@
         margin-right: $header-icon-spacing;
       }
     }
-
-    > .ias-input-container {
-      + .ias-button {
-        margin-left: 0;
-        margin-right: $header-search-margin;
-      }
-    }
   }
 }
 

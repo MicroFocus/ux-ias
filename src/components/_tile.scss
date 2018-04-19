@@ -143,6 +143,11 @@
   .ias-tile {
     text-align: right;
 
+    > .ias-actions {
+      left: 0;
+      right: auto;
+    }
+
     &.ias-small,
     &.ias-medium {
       > .ias-avatar,
@@ -152,9 +157,6 @@
       }
     }
 
-    > .ias-actions {
-      left: 0;
-      right: auto;
-    }
+
   }
 }
