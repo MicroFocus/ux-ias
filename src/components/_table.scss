@@ -97,7 +97,7 @@
       > .ias-icon {
         &:first-child {
           margin-left: $table-icon-margin;
-          margin-right: initial;
+          margin-right: 0;
         }
       }
     }

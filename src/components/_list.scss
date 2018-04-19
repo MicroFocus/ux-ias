@@ -73,7 +73,7 @@
       > .ias-avatar {
         &:first-child {
           margin-left: $spacing;
-          margin-right: initial;
+          margin-right: 0;
         }
       }
     }

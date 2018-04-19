@@ -26,7 +26,7 @@
   .ias-grid {
     > .ias-tile {
       margin-left: $tile-margin;
-      margin-right: initial;
+      margin-right: 0;
     }
   }
 }

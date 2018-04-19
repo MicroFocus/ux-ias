@@ -148,27 +148,27 @@ label {
 [dir="rtl"] {
   label {
     &:not(:first-of-type) {
-      margin-left: initial;
+      margin-left: 0;
       margin-right: $spacing;
     }
 
     > input,
     > select,
     > textarea {
-      margin-left: initial;
+      margin-left: 0;
       margin-right: $input-inline-label-padding;
     }
   }
 
   .ias-search {
     > .ias-icon {
-      left: initial;
+      left: auto;
       right: $search-box-icon-padding;
     }
 
     > .ias-icon-button {
       left: $search-box-icon-padding;
-      right: initial;
+      right: auto;
     }
   }
 }
