@@ -1,13 +1,28 @@
-<h2 class="ias-page-title">Comment</h2>
+<h1 class="ias-page-title">Comment</h1>
+
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Comments allow for communication to take place within a product. This communication can be between a number of
+    parties, such as: End users, technical support staff, and the system itself. Comments should at a minimum
+    have the defining elements of an avatar image, name, timestamp, available actions, and the message itself.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    An element used to allow communication between users or elements of a product.
+</p>
+
+<h2>Examples</h2>
 
 <section>
-    <h3>Comment w/ Icon Actions</h3>
+    <h3>Comment with Icon Actions</h3>
 
     <div class="ias-comment" toggle-repeat-code>
-        <i class="ias-icon ias-icon-comment_sys_thin"></i>
+
+        <div class="ias-avatar" style="background-image:url(images/appmarks/mark_02.png)"></div>
         <div class="ias-comment-content">
             <div>
-                <span class="ias-author">System</span>
+                <span class="ias-author">Jonathan Smithsonian</span>
                 <span class="ias-date">10:38 AM MDT</span>
                 <button class="ias-button ias-icon-button" type="button" title="Reply">
                     <i class="ias-icon ias-icon-comment_thick"></i>
@@ -19,30 +34,69 @@
                     <i class="ias-icon ias-icon-delete_thin"></i>
                 </button>
             </div>
-            <p>System crashed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo sapien et erat auctor mollis.</p>
         </div>
     </div>
+    <h5>Specifics</h5>
+    <ul>
+        <li>Each comment consists of an avatar image, name, timestamp, available actions and the message itself.</li>
+        <li>Use .ias-avatar to set the avatar image to the default size of 40px square.</li>
+        <li>Author and timestamp depicted with .ias-author, and .ias-date respectively within the comment content area.
+        </li>
+        <li>Available actions are placed after the timestamp when not in a defined area to create an association with
+            the title portion of the comment.</li>
+    </ul>
 </section>
 
 <section>
-    <h3>Comment w/ Menu Actions</h3>
+    <h3>Comment with Menu Actions</h3>
 
-    <div class="section-with-menus" toggle-repeat-code="inner">
-        <div class="ias-comment">
-            <div class="ias-avatar" style="background-image:url(images/appmarks/mark_02.png)"></div>
+    <h5>Comment with Menu Activated</h5>
+    <div class="ias-comment"  style="padding-bottom: 50px" toggle-repeat-code="">
+        <i class="ias-icon ias-avatar ias-icon-comment_sys_thin"></i>
+        <div class="ias-comment-content">
+            <div>
+                <span class="ias-author">System</span>
+                <span class="ias-date">10:45 AM MDT</span>
+                <button class="ias-button ias-icon-button" type="button" title="Show Menu">
+                    <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
+                </button>
+                <div class="ias-menu ias-open">
+                    <div class="ias-menu-content">
+                        <button type="button" class="ias-button">Button 1</button>
+                        <button type="button" class="ias-button">Button 2</button>
+                        <button type="button" class="ias-button">Button 3</button>
+                    </div>
+                </div>
+            </div>
+            <p>System has been restored.</p>
+        </div>
+    </div>
+
+
+    <h5>Comment with Inactive Menu</h5>
+        <div class="ias-comment" toggle-repeat-code>
+            <i class="ias-icon ias-avatar ias-icon-comment_sys_thin"></i>
             <div class="ias-comment-content">
                 <div>
                     <span class="ias-author">System</span>
                     <span class="ias-date">10:45 AM MDT</span>
+                    <button class="ias-button ias-icon-button" type="button" title="Show Menu">
+                        <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
+                    </button>
                 </div>
-                <p>System is back up and running.</p>
+                <p>System has been restored.</p>
             </div>
-
-            <button class="ias-button ias-icon-button" type="button" title="Show Menu">
-                <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
-            </button>
         </div>
-    </div>
+
+    <ul>
+        <li>Menu icon is placed after the timestamp when not in a defined area to create an association with
+        the title portion of the comment.</li>
+        <li>Active menus will overlay content.</li>
+        <li>Add ias-avatar to the icon class declaration when using an icon as an avatar to set the size to 40px.</li>
+        <li>A padding-bottom was added to the active menu section for the sake of separation between the two examples.
+        </li>
+    </ul>
 </section>
 
 <section>
@@ -56,7 +110,7 @@
         <div class="ias-body">
             <div class="ias-date">June 20th, 2017</div>
             <div class="ias-comment">
-                <i class="ias-icon ias-icon-comment_user_thin"></i>
+                <i class="ias-icon ias-avatar ias-icon-comment_user_thin"></i>
                 <div class="ias-comment-content">
                     <div>
                         <span class="ias-author">Support Technician</span>
@@ -85,7 +139,7 @@
             </div>
             <div class="ias-date">June 21st, 2017</div>
             <div class="ias-comment">
-                <i class="ias-icon ias-icon-comment_user_thin"></i>
+                <i class="ias-icon ias-avatar ias-icon-comment_user_thin"></i>
                 <div class="ias-comment-content">
                     <div>
                         <span class="ias-author">Support Technician</span>
@@ -109,4 +163,38 @@
             </div>
         </div>
     </div>
+    <ul>
+        <li>A comment thread is an example of a defined area.</li>
+        <li>Available actions can be right-aligned when used in a defined area.</li>
+        <li>Use a horizontal line as a divider for comments written on different dates.</li>
+    </ul>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Common Patterns</h3>
+<ul>
+    <li>Comments should have an avatar image that is 40px by 40px.</li>
+    <li>Always depict an author and a timestamp that is left-aligned at the top of the comment area.</li>
+    <li>Action icons or a menu icon give options to the user, and if not in a defined area are placed after the title
+    elements to create association.</li>
+    <li>When there are more than three icon buttons for available actions, it's more appropriate to use them in a menu
+        instead of individual buttons.</li>
+    <li>Active menus for available actions will hover over the rest of the element when active.</li>
+</ul>
+
+<h3>Nestable Components</h3>
+<ul>
+    <li>Images .img (As the avatar image)</li>
+    <li>Icons .ias-icons (As system avatar image)</li>
+    <li>Icon Buttons .ias-icon-button (available action)</li>
+    <li>Buttons .ias-button (Send button)</li>
+    <li>Text Entry (textarea and .ias-comment-content)</li>
+</ul>
+
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    Comments will adapt to the size of the screen in which they are in.  When that screen size is decreased a comment
+    will become decrease as well, wrapping text as needed.  Comments will define margins on the sides to give them space
+    from the edge of the screen.
+</p>
