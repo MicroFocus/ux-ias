@@ -1,7 +1,18 @@
-<h2 class="ias-page-title">Datepicker</h2>
-<p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar
-    in small overlay.</p>
+<h1 class="ias-page-title">Datepicker</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    A datepicker is an interactive calendar overlay that allows for user to easily input a desired date. Datepickers
+    are tied to a standard input field that takes input from the interactive calendar. A user can click into a
+    similar month picker by clicking the month/ year in the datepicker title bar.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Allow a user to choose a date from a familiar calendar representation.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Closed Datepicker</h3>
 
@@ -16,12 +27,18 @@
         <span>06/29/2017</span>
         <i class="ias-icon ias-icon-date_thick"></i>
     </button>
+    <ul>
+        <li>The initial states for a datepicker are .ias-icon-button, .ias-link-icon, or .ias-icon-text-button.</li>
+        <li>A developer can choose which closed datepicker style fits the UI best.</li>
+        <li>The user will open the datepicker overlay by clicking the initial state given here.</li>
+        <li>Closed datepickers will change color when hovered over to indicate interactability.</li>
+    </ul>
 </section>
-
 
 <section>
     <h3>Open Datepicker</h3>
 
+    <h5>Opened Datepicker Example</h5>
     <div toggle-repeat-code="inner">
         <button class="ias-button ias-icon-button" type="button">
             <i class="ias-icon ias-icon-date_thick"></i>
@@ -98,7 +115,17 @@
             </table>
         </div>
     </div>
+    <ul>
+        <li>The datepicker is laid out in a simple calendar format that users can recognize immediately.</li>
+        <li>Hovering over elements will highlight icons and buttons to communicate interactability to the user.</li>
+        <li>A user can step into a month picker by clicking the month and year in the table header; the month picker
+            is detailed below.
+        </li>
+        <li>Dates outside the range of the current month should be greyed-out by using .ias-soften.</li>
+    </ul>
 
+
+    <h5>Opened Month Picker Example</h5>
     <div toggle-repeat-code="inner">
         <button class="ias-button ias-icon-button" type="button">
             <i class="ias-icon ias-icon-date_thick"></i>
@@ -137,4 +164,31 @@
             </table>
         </div>
     </div>
+    <ul>
+        <li>The month picker is opened by clicking the month and year in the header of the a datepicker.</li>
+        <li>A month picker allows for the user to choose any month in a given year.</li>
+        <li>Users can cycle through different years with the arrow icons when in a month picker.</li>
+        <li>When a user selects a month within a month picker, they will step back out to a datepicker to select a date
+            in the selected month.</li>
+
+    </ul>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Common Patterns</h3>
+<ul>
+    <li>Datepickers are always laid out as a familiar calendar with interactive dates.</li>
+    <li>A month picker element can be accessed by clicking the month/ year in the title of a datepicker.</li>
+    <li>Clicking a month within a month picker steps back to that month and year in a datepicker to allow for a more
+        specific selection.</li>
+    <li>If it is necessary to choose a distant date, consider using a simple input field that uses a format hint
+    instead.</li>
+</ul>
+<h3>Nestable Components</h3>
+<ul>
+    <li>.ias-icon-text-button (Closed datepicker button with date text)</li>
+    <li>.ias-icon-button</li>
+    <li>.ias-actions[span] (used with the span element to create the link to a month picker)</li>
+    <li>Tables</li>
+</ul>
