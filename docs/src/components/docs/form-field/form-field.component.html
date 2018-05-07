@@ -1,14 +1,34 @@
-<h2 class="ias-page-title">Form Field</h2>
+<h1 class="ias-page-title">Form Field</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Form fields are used to both request desired information from a user as well as be a place to receive that input.
+    When requesting an input from a user, make sure it is clear what is being requested. This can be gleaned
+    from the context of the input field, but more often it will be from an input label or placeholder.  If the input
+    format needs to be specific, create a visible hint that expresses the format to the user through a placeholder.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Allows a user to enter requested information into an application.
+</p>
+
+<h2>Examples</h2>
+
+<h3>Basic Examples</h3>
+<p class="ias-page-instructions">
+
+</p>
 <section id="form-fields" style="margin-bottom: 100px;">
 
 	<section>
-		<h3>input</h3>
+		<h5>Input</h5>
 
 		<input type="text" name="username" autocomplete="off" toggle-repeat-code/>
 	</section>
+
 	<section>
-		<h3>input with placeholder</h3>
+		<h5>Input with a Placeholder</h5>
 
 		<div toggle-repeat-code="inner">
 			<input type="text" placeholder="Username" name="username" autocomplete="off"/>
@@ -17,7 +37,7 @@
 	</section>
 
 	<section>
-		<h3>label and input</h3>
+		<h5>Input with a Label</h5>
 
 		<div toggle-repeat-code="inner">
 			<label>
@@ -29,8 +49,34 @@
 		</div>
 	</section>
 
+    <section>
+        <h5>label > select</h5>
+        <div toggle-repeat-code="inner">
+            <label>
+                Drop Down 1
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </label>
+            <label>
+                Drop Down 2
+                <select>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </label>
+        </div>
+    </section>
+
+<h3>Input Container Class</h3>
+    <p class="ias-page-instructions">
+        The input container class is used to help with the styling of input elements.
+    </p>
 	<section>
-		<h3>.ias-input-container w/ input</h3>
+		<h5>.ias-input-container with an Input</h5>
 
 		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
@@ -42,8 +88,16 @@
 		</div>
 	</section>
 
+    <section>
+        <h5>.ias-input-container with Disabled Input</h5>
+
+        <div class="ias-input-container" toggle-repeat-code>
+            <input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
+        </div>
+    </section>
+
 	<section>
-		<h3>.ias-input-container w/ label</h3>
+		<h5>.ias-input-container with a label</h5>
 
 		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
@@ -57,40 +111,25 @@
 		</div>
 	</section>
 
-	<section>
-		<h3>[disabled]</h3>
-
-		<div class="ias-input-container" toggle-repeat-code>
-			<input type="text" placeholder="Username" name="username" autocomplete="off" disabled="disabled"/>
-		</div>
-	</section>
-
-	<section>
-		<h3>label > select</h3>
-
-		<div toggle-repeat-code="inner">
-			<label>
-				Drop Down 1
-				<select>
-					<option value="1">Option 1</option>
-					<option value="2">Option 2</option>
-					<option value="3">Option 3</option>
-				</select>
-			</label>
-			<label>
-				Drop Down 2
-				<select>
-					<option value="1">Option 1</option>
-					<option value="2">Option 2</option>
-					<option value="3">Option 3</option>
-				</select>
-			</label>
-		</div>
-	</section>
+    <section>
+        <h5>.ias-input-container.ias-inline</h5>
+        <div toggle-repeat-code="inner">
+            <div class="ias-input-container ias-inline">
+                <label for="username-2">Username</label>
+                <input type="text" name="username" id="username-2" autocomplete="off"/>
+            </div>
+            <div class="ias-input-container ias-inline">
+                <label for="password-2">Password</label>
+                <input type="password" name="password" id="password-2"/>
+            </div>
+        </div>
+        <ul>
+            <li>Label elements within an ias-input-container are block level elements</li>
+        </ul>
+    </section>
 
 	<section>
-		<h3>.ias-input-container > select w/ label</h3>
-
+		<h5>.ias-input-container > select with a label</h5>
 		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<label for="drop-down-1">Drop Down 1</label>
@@ -112,26 +151,26 @@
 	</section>
 
 	<section>
-		<h3>Radio Buttons</h3>
-		<ias-input-container class="ias-inline" toggle-repeat-code="inner">
-    <span>
-        <input type="radio" value="1" name="radio1" id="radio1-1">
-        <label class="label-large-dark" for="radio1-1">One</label>
-    </span>
-			<span>
-        <input type="radio" value="2" name="radio1" id="radio1-2">
-        <label class="label-large-dark" for="radio1-2">Two</label>
-    </span>
-			<span>
-        <input type="radio" value="3" name="radio1" id="radio1-3">
-        <label class="label-large-dark" for="radio1-3">Three</label>
-    </span>
-		</ias-input-container>
+		<h5>Radio Buttons</h5>
+		<div class="ias-input-container ias-inline" toggle-repeat-code="inner">
+            <span>
+                <input type="radio" value="1" name="radio1" id="radio1-1">
+                <label class="label-large-dark" for="radio1-1">One</label>
+            </span>
+            <span>
+                <input type="radio" value="2" name="radio1" id="radio1-2">
+                <label class="label-large-dark" for="radio1-2">Two</label>
+            </span>
+            <span>
+                <input type="radio" value="3" name="radio1" id="radio1-3">
+                <label class="label-large-dark" for="radio1-3">Three</label>
+            </span>
+		</div>
 	</section>
 
 	<section>
-		<h3>Check Boxes</h3>
-		<ias-input-container class="ias-inline" toggle-repeat-code>
+		<h5>Check Boxes</h5>
+		<div class="ias-input-container ias-inline" toggle-repeat-code>
 			<div>
 				<input type="checkbox" value="1" id="checkbox1">
 				<label class="label-large-dark" for="checkbox1">One</label>
@@ -144,26 +183,11 @@
 				<input type="checkbox" value="3" id="checkbox3">
 				<label class="label-large-dark" for="checkbox3">Three</label>
 			</div>
-		</ias-input-container>
-	</section>
-
-	<section>
-		<h3>.ias-input-container.ias-inline</h3>
-
-		<div toggle-repeat-code="inner">
-			<div class="ias-input-container ias-inline">
-				<label for="username-2">Username</label>
-				<input type="text" name="username" id="username-2" autocomplete="off"/>
-			</div>
-			<div class="ias-input-container ias-inline">
-				<label for="password-2">Password</label>
-				<input type="password" name="password" id="password-2"/>
-			</div>
 		</div>
 	</section>
 
 	<section>
-		<h3>ias-input-container > textarea</h3>
+		<h5>ias-input-container > textarea</h5>
 
 		<div class="ias-input-container" toggle-repeat-code>
 			<label for="textarea-2">Long Text</label>
@@ -179,17 +203,24 @@
 			<i class="ias-icon ias-icon-search_thick"></i>
 			<button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-close_thick"></i></button>
 		</div>
+        <ul>
+           <li>When using a search input, remember to sanitize the input given to safeguard against malicious code.</li>
+        </ul>
 	</section>
 
 	<section>
 		<h3>.ias-autocomplete</h3>
 
 		<div class="ias-autocomplete ias-open" toggle-repeat-code>
+            <ul>
+                <li>When using the autocomplete functionality, remember to debounce the input to help with performance.</li>
+            </ul>
 			<div class="ias-search">
 				<input type="text" placeholder="Search"/>
 				<i class="ias-icon ias-icon-search_thick"></i>
 				<button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-close_thick"></i></button>
 			</div>
+
 			<div class="ias-results">
 				<div class="ias-result" tabindex="0">Item 1</div>
 				<div class="ias-result" tabindex="0">Item 2</div>
