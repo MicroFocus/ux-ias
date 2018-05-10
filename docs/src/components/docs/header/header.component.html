@@ -1,11 +1,24 @@
-<h1>Headers</h1>
+<h1 class="ias-page-title">Headers</h1>
+<h2>General</h2>
 <p class="ias-page-instructions">
-    Headers are used within elements including pages, panels, and dialogs. The header element should be used as the
-    starting point of the UI element that contains the header.
+    Headers are a simple means of adding organization to a page. By using varying sizes and weights of text through
+    header elements, developers can create visually recognizable sections. These sections start with the
+    heaviest visual element (header) followed by smaller sized content.
+    </p>
+<p class="ias-page-instructions">
+    Readers often scan pages using headers to navigate rather than reading content to find desired information.
+    Headings help improve search engine optimization because browsers will index headings as keywords.
 </p>
 
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Headers are a textual method of organizing content on a page.
+</p>
+
+<h2>Examples</h2>
+
 <section>
-    <h4>h1-h5</h4>
+    <h4>Heading Sizes (h1-h5)</h4>
 
     <div toggle-repeat-code="inner">
         <h1>Page Heading 1</h1>
@@ -14,8 +27,15 @@
         <h4>Page Heading 4</h4>
         <h5>Page Heading 5</h5>
     </div>
-</section>
+    <ul>
+        <li>When creating sub-headings for content, use headings that are smaller than the original heading.</li>
+        <li>Limit the use of the &lt;h1&gt; element to one per page positioned towards the top of the page.</li>
+        <li>Best practice would limit the use of different sizes, (not counting the &lt;h1&gt; element) to three per
+        page.</li>
+        <li>Having many sizes of headings can be visually turbulent and detract from their usefulness.</li>
 
+    </ul>
+</section>
 
 <section>
     <h4>.ias-header</h4>
@@ -26,17 +46,22 @@
 </section>
 
 <section>
-    <h4>w/ .ias-header-sub-title</h4>
+    <h4>.ias-header with Subtitle and Content</h4>
 
     <div class="ias-header" toggle-repeat-code>
         <h2>Header Title</h2>
         <h5>Sub Title</h5>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda error ipsum neque odio quis
+                reprehenderit sequi. Accusantium atque, delectus earum, eius fugiat id iure nostrum obcaecati, quisquam
+                quod sed vero.
+            </p>
+        </div>
     </div>
 </section>
 
-
 <section>
-    <h4>w/ .ias-icon-button</h4>
+    <h4>With .ias-icon-button</h4>
 
     <div class="ias-header" toggle-repeat-code>
         <h2>Header Title</h2>
@@ -47,7 +72,7 @@
 </section>
 
 <section>
-    <h4>w/ .ias-fill</h4>
+    <h4>With .ias-fill</h4>
 
     <div class="ias-header" toggle-repeat-code>
         <h2>Header Title</h2>
@@ -66,7 +91,7 @@
 </section>
 
 <section>
-    <h4>w/ .ias-search</h4>
+    <h4>With .ias-search</h4>
 
     <div class="ias-header" toggle-repeat-code>
         <h2>Header Title</h2>
@@ -90,3 +115,36 @@
         </button>
     </div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Use header elements to create different sections of a page.</li>
+        <li>Do not use header's larger than a section's header within the section content. To readers, it visually
+            creates a new section of content.</li>
+        <li>Limit the use of the &lt;h1&gt; element to one per page, if possible.</li>
+        <li>Try to limit the use of headings to three different sizes per page, (excluding the &lt;h1&gt; element)
+            if possible.</li>
+        <li>Make use of headers as they are primarily used by readers to navigate to desired content of a page.</li>
+    </ul>
+<h3>.ias-header Specifics</h3>
+    <ul>
+        <li>.ias-header class handles the organization of the Title, subtitle, and nested elements.</li>
+        <li>Header title and nested elements (search/icon buttons) are top level elements, followed by the subtitle
+            below, and content below that.</li>
+        <li>.ias-fill within a span is used for spacing the closing icon-button.</li>
+    </ul>
+
+<h3>Nesting</h3>
+<h5>Nesting Headers in other Elements</h5>
+<p class="ias-page-instructions">
+    Headers are primarily used within elements such as pages, panels, and dialogs; but, they can be nested in many
+    different places.  Headers may also be nested as subsections of other headers to reflect the organization of
+    the content. Doing so can help with the accessibility of screen readers.
+</p>
+<h5>Nestable components</h5>
+<ul>
+    <li>Buttons .ias-button</li>
+    <li>Icon Buttons .ias-button-icon</li>
+    <li>Search Boxes .ias-input-container .ias-search</li>
+</ul>
