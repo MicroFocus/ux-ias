@@ -13,6 +13,6 @@
   }
 
   &.ias-avatar{
-    @include square($icon-size-avatar)
+    @include square($icon-size-avatar);
   }
 }
