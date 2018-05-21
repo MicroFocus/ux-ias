@@ -19,17 +19,20 @@
 <p class="ias-page-instructions">
 
 </p>
-<section id="form-fields" style="margin-bottom: 100px;">
+<section id="form-fields" style="margin-bottom: 120px;">
 
 	<section>
 		<h5>Input</h5>
-
 		<input type="text" name="username" autocomplete="off" toggle-repeat-code/>
 	</section>
 
 	<section>
-		<h5>Input with a Placeholder</h5>
+		<h5>Disabled Input</h5>
+		<input type="text" name="username" autocomplete="off" disabled toggle-repeat-code/>
+	</section>
 
+	<section>
+		<h5>Input with a Placeholder</h5>
 		<div toggle-repeat-code="inner">
 			<input type="text" placeholder="Username" name="username" autocomplete="off"/>
 			<input type="password" placeholder="Password" name="password"/>
@@ -38,7 +41,6 @@
 
 	<section>
 		<h5>Input with a Label</h5>
-
 		<div toggle-repeat-code="inner">
 			<label>
 				Username <input type="text" name="username" autocomplete="off"/>
@@ -77,7 +79,6 @@
     </p>
 	<section>
 		<h5>.ias-input-container with an Input</h5>
-
 		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<input type="text" placeholder="Username" name="username" autocomplete="off"/>
@@ -98,7 +99,6 @@
 
 	<section>
 		<h5>.ias-input-container with a label</h5>
-
 		<div toggle-repeat-code="inner">
 			<div class="ias-input-container">
 				<label for="username">Username</label>
@@ -109,6 +109,9 @@
 				<input type="password" name="password" id="password"/>
 			</div>
 		</div>
+        <ul>
+            <li>Label elements within an ias-input-container are block level elements</li>
+        </ul>
 	</section>
 
     <section>
@@ -124,7 +127,8 @@
             </div>
         </div>
         <ul>
-            <li>Label elements within an ias-input-container are block level elements</li>
+            <li>Use the .ias-inline class with an input container to have elements appear in-line rather than block.
+            </li>
         </ul>
     </section>
 
@@ -231,3 +235,33 @@
 		</div>
 	</section>
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Used to both request and receive desired data from a user, as well as provide instruction for that input.
+        </li>
+        <li>Provide instruction for input through the use of placeholder text, or hints.</li>
+        <li>The use of .ias-input-container is used to help create a consistent styling within a product.</li>
+        <li>When using an .ias-search remember to sanitize the inputs given to protect against malicious code.</li>
+        <li>Also debounce when using .ias-autocomplete to improve performance</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nesting Inputs in Other Components</h5>
+        <p>
+            Inputs are used to gather input from a user and can be applied to many different components. Whenever a user
+            needs to input information into a page or form, an input can be used. Be careful to not include too many
+            inputs and overwhelm a user. Ask for the minimum amount of information necessary to make the form effective.
+            Doing so will increase the usability of an input form.
+        </p>
+    <h5>Nestable Components</h5>
+        <ul>
+            <li>.ias-icon</li>
+            <li>.ias-button</li>
+        </ul>
+
+<h3>Responsive Display</h3>
+    <p>
+        Form fields are responsive and will grow or shrink relative to the overall size of the display.
+    </p>

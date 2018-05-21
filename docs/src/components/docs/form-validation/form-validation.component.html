@@ -1,5 +1,17 @@
 <h1>Form Validation</h1>
 
+<h2>General</h2>
+    <p class="ias-page-instructions">
+        Validation provides a means to ensure the user is inputting usable data into a form. Form validation can be
+        expressed to a user initially by denoting required inputs with the required symbol; or, after a user enters
+        invalid information into the form through warnings and invalid states.
+    </p>
+<h2>Purpose</h2>
+    <p class="ias-page-instructions">
+        Provide a method for verifying user input is desired and usable information.
+    </p>
+<h2>Examples</h2>
+
 <section>
     <h3>Pristine input field</h3>
     <p>Pristine input fields are fields which have not been interacted with. A pristine field that is in an invalid
@@ -19,6 +31,12 @@
 
 <section>
     <h3>Required input field</h3>
+    <p>The required field element should be applied to all required input fields. This element is meant to be used in
+        regular or complex forms that have three or more input fields. Not all forms will need to use the require field
+        notification. For example, a sign in page often includes a form with username and password input fields. These
+        inputs are understood to be required to sign in, but usually don't include a required mark.</p>
+    <p>A "required" note is not necessary at the bottom of the form since the require asterisk is widely used and
+        understood</p>
 
     <div toggle-repeat-code="inner">
         <div class="ias-input-container">
@@ -35,13 +53,6 @@
             <input type="text" placeholder="Required input placeholder *" required/>
         </div>
     </div>
-
-    <p>The required field element should be applied to all required input fields. This element is meant to be used in
-        regular or complex forms that have three or more input fields. Not all forms will need to use the require field
-        notification. For example, a sign in page often includes a form with username and password input fields. These
-        inputs are understood to be required to sign in, but usually don't include a required mark.</p>
-    <p>A "required" note is not necessary at the bottom of the form since the require asterisk is widely used and
-        understood</p>
 </section>
 
 <section>
@@ -202,3 +213,20 @@
     </div>
 
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Use validation as a means of communicating incorrect or missing inputs to the user.</li>
+        <li>Pristine fields are invalid when loading the page, but don't display an invalid state until interacted with
+            by the user.</li>
+        <li>The required symbol should be used when you have three or more input options.</li>
+        <li>Limit the use of input fields to only what is necessary for completing the form. Do not overload the user
+            with input fields.</li>
+        <li>Asynchronous validation provides real-time feedback to the user as validation occurs.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <p>
+        Form validation
+    </p>

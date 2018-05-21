@@ -18,22 +18,23 @@
 <h2>Examples</h2>
 
 <section>
-    <h4>Heading Sizes (h1-h5)</h4>
-
+    <h4>Header Levels (h2-h5)</h4>
     <div toggle-repeat-code="inner">
-        <h1>Page Heading 1</h1>
         <h2>Page Heading 2</h2>
         <h3>Page Heading 3</h3>
         <h4>Page Heading 4</h4>
         <h5>Page Heading 5</h5>
     </div>
     <ul>
-        <li>When creating sub-headings for content, use headings that are smaller than the original heading.</li>
-        <li>Limit the use of the &lt;h1&gt; element to one per page positioned towards the top of the page.</li>
-        <li>Best practice would limit the use of different sizes, (not counting the &lt;h1&gt; element) to three per
-        page.</li>
+        <li>When creating sub-headings for content, use smaller headings than the section heading.</li>
+        <li>&lt;h1&gt; elements should not be used in the regular structure of a page as it screams out compared to regular
+            sized content.</li>
+        <li>&lt;h2&gt; elements are the main headings used on pages of content.</li>
+        <li>In the special case an &lt;h1&gt; element is used, try to limit that large of a size to one element of a
+            page. </li>
+        <li>Best practice would limit the use of different heading sizes, (not counting the &lt;h1&gt; element) to three per
+            page.</li>
         <li>Having many sizes of headings can be visually turbulent and detract from their usefulness.</li>
-
     </ul>
 </section>
 
@@ -47,10 +48,11 @@
 
 <section>
     <h4>.ias-header with Subtitle and Content</h4>
-
-    <div class="ias-header" toggle-repeat-code>
-        <h2>Header Title</h2>
-        <h5>Sub Title</h5>
+    <div toggle-repeat-code="inner">
+        <div class="ias-header">
+            <h2>Header Title</h2>
+            <h5>Sub Title</h5>
+        </div>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda error ipsum neque odio quis
                 reprehenderit sequi. Accusantium atque, delectus earum, eius fugiat id iure nostrum obcaecati, quisquam
@@ -120,11 +122,10 @@
 <h3>Common Patterns</h3>
     <ul>
         <li>Use header elements to create different sections of a page.</li>
-        <li>Do not use header's larger than a section's header within the section content. To readers, it visually
+        <li>Do not use headers larger than a section's header within the section content. To readers, it visually
             creates a new section of content.</li>
-        <li>Limit the use of the &lt;h1&gt; element to one per page, if possible.</li>
-        <li>Try to limit the use of headings to three different sizes per page, (excluding the &lt;h1&gt; element)
-            if possible.</li>
+        <li>Limit the use of the &lt;h1&gt; element to special instances, as it draws too much attention from content.</li>
+        <li>Try to limit the use of headings to three different sizes per page.</li>
         <li>Make use of headers as they are primarily used by readers to navigate to desired content of a page.</li>
     </ul>
 <h3>.ias-header Specifics</h3>
