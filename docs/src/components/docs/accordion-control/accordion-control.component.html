@@ -4,15 +4,15 @@
 
 <h2>General</h2>
 <p class="ias-page-instructions">
-    A container for information that makes use of a short descriptive title bar to define what information is held
-    inside. Information can be shown or hidden by the user from the arrow icon in title bar. This element offers the
-    user the ability to navigate large amounts of content with ease.
+    A container for information that makes use of a short descriptive title bar to define the information held
+    inside. The user can expand or collapse this information by clicking anywhere within the title bar. A properly
+    implemented accordion component offers the user the ability to navigate large amounts of content with ease.
 </p>
 
 <h2>Purpose</h2>
 <p class="ias-page-instructions">
-    To hide information behind a descriptive title that informs the user what content is held inside. Proper use of the
-    accordion control will save screen space and result in a clean user interface.
+    To hide information behind a descriptive title that informs the user what content is held inside. Thereby saving
+    screen space and resulting in a clean user interface.
 </p>
 
 <h2>Examples</h2>
@@ -59,7 +59,8 @@
     </div>
     <ul>
         <li>An opened accordion simply displays its content to the user.</li>
-        <li>The arrow icon changes from pointing down to pointing up, indicating a user can hide the displayed content.
+        <li>The arrow icon changes from pointing down to pointing up, indicating a user can collapse the displayed
+            content.
         </li>
     </ul>
 </section>
@@ -83,8 +84,8 @@
         </div>
     </div>
     <ul>
-        <li>Icons can be added next to the title element to notify the user of important events within the content
-        section.</li>
+        <li>Icons can be added next to the title element to notify the user of important events or necessary actions
+            within the content section.</li>
         <li>For example, events could be missing required items or indicating a completed section.</li>
     </ul>
 </section>
@@ -131,12 +132,15 @@
         </div>
     </div>
     <ul>
-        <li>A "Close All" link is displayed at the top right of the accordion group when at least one accordion is open.
+        <li>A "Close All" link is an optional action that may be added to an accordion group.
         </li>
-        <li>"Close All" does as the name implies, allowing the user to quickly collapse a group of accordions.</li>
-        <li>An optional feature is the "Open All" link.</li>
-        <li>If used, "Open All" is displayed only when all accordions are closed, otherwise a "Close All" link is
+        <li>Likewise, an "Open All" link may also be added similarly to the "Close All" link.</li>
+        <li>The "Close All" link does as the name implies, allowing the user to quickly collapse a group of
+            accordions.</li>
+        <li>The "Open All" is displayed only when all accordions are closed, otherwise a "Close All" link is
             displayed.</li>
+        <li>Groups can be implemented so either multiple accordion sections may be open at once, or be limited
+            to only allowing one open accordion.</li>
     </ul>
 </section>
 
@@ -144,10 +148,11 @@
 
 <h3>Common Patterns</h3>
     <ul>
-        <li>Each accordion uses a title bar that has a descriptive title and an action icon that allows for hiding and
-        showing the accordion's content.</li>
-        <li>The content section can implement a number of elements, from dialogue to input fields.</li>
+        <li>Each accordion has a descriptive title bar and an action icon to indicate the accordion can be collapsed or
+            expanded.</li>
+        <li>The content section can implement a number of elements, from comment to form fields.</li>
         <li>Think of each accordion as a vertical tab that organizes information in a readable way.</li>
+        <li>Accordion groups can be implemented to allow only a single accordion open at a time, or more than one.</li>
     </ul>
 
 <h3>Nestable Components</h3>
@@ -160,7 +165,6 @@
 <h5>Title Bar</h5>
 <ul>
     <li>ias.header (descriptive title)</li>
-    <li>ias.icon (accordion control toggle)</li>
-    <li>The ias.icon can also be used to add another icon for notifying the user or allowing interaction.</li>
+    <li>ias.icon (accordion control toggle, content notifications)</li>
 </ul>
 
