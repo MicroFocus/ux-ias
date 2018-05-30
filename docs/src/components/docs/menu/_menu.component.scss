@@ -1,5 +1,16 @@
 menu-documentation {
   .ias-menu {
+    display: inline-block;
     position: static;
+  }
+
+  .ias-menu-content {
+    position: static;
+  }
+}
+comment-documentation{
+  .ias-menu {
+    display: inline-block;
+    position: relative;
   }
 }
