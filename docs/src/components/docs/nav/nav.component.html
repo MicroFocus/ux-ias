@@ -1,5 +1,18 @@
-<h2 class="ias-page-title">Nav</h2>
-<p class="ias-page-instructions">The nav bar is a wrapper that takes up the width of the page and helps the user navigate between the different parts; of the site.</p>
+<h1 class="ias-page-title">Nav</h1>
+
+<h2>General</h2>
+<p class="ias-page-instructions">
+    The Nav Bar is a constantly present component that stretches across the width of a page and is fixed to the top.
+    Nav Bars have nested components such as buttons and links that allow for easy navigation between sections of an
+    application or site. Notifications, inputs, and menus are also common elements found in Nav Bars
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    To provide users with a constant form of navigation within an application or site.
+</p>
+
+<h2>Examples</h2>
 
 <section>
     <div class="ias-nav" toggle-repeat-code>
@@ -54,3 +67,41 @@
         </button>
     </div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Nav Bars are fixed to the top of a page as a constant companion to users.</li>
+        <li>Buttons and links are used within Nav bars to provide navigation between pages of an application or site.
+        </li>
+        <li>Setting the selected Nav Bar element to active with .ias-active indicates where a user is inside an
+            application.
+        </li>
+        <li>Nav Bars can also make use of menus, allowing the user to access more specific options or settings.</li>
+        <li>The Nav Bar can provide a centralized location for notifications such as the alerts.</li>
+        <li>Nav Bar notifications should be used sparingly to keep the Nav Bar clean and not distract users' focus from
+            the page content.
+        </li>
+    </ul>
+
+<h3>Nesting</h3>
+<h5>Nestable Components</h5>
+    <ul>
+        <li>Form Fields (Input)</li>
+        <li>Icon Buttons (.ias-icon .ias-icon-button)</li>
+        <li>Links (&lt;a&gt;)</li>
+        <li>Spans (Use .ias-fill to create middle spacing)</li>
+    </ul>
+<h5>Nesting Nav Bars in Other Components</h5>
+<p class="ias-page-instructions">
+    Nav Bars will primarily be a component fixed to the top of a page just below the App Bar. Because of this, they are
+    present throughout an application and likely won't need to be nested.
+</p>
+
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    A Nav Bar will grow and shrink to the width of a page. If there are many links and buttons, consider writing logic
+    to place them in a drop down menu if the width of the Nav Bar is not wide enough to accommodate each element. If
+    text is present within a span, much like the header example, it will be shorted to make space for buttons and links
+    that may overlap it.
+</p>
