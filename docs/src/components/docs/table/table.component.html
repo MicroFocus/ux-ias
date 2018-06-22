@@ -1,43 +1,44 @@
-<h1>Table</h1>
+<h1 class="ias-page-title">Table</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Tables are lists in which the individual items have common elements with each other. The rows of a table
+    represent each item of the list and its different elements. Item elements are divided into columns with
+    descriptive headings that describe each column of information.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Visually organize related items of information within a single component.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Default</h3>
 
     <table class="ias-table" toggle-repeat-code>
         <thead>
         <tr>
-            <th></th>
             <th>Name</th>
             <th>Title</th>
+            <th>Phone</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td>
-                <button class="ias-button ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-search_thick"></i>
-                </button>
-            </td>
             <td><a ui-sref="app.component.table">Jonathan Smithsonian</a></td>
             <td>Asst. to the UX Director</td>
+            <td>(801) 867-5309</td>
         </tr>
         <tr>
-            <td>
-                <button class="ias-button ias-icon-button" type="button" disabled="disabled">
-                    <i class="ias-icon ias-icon-cancel_thick"></i>
-                </button>
-            </td>
             <td><a ui-sref="app.component.table">Camelot Rinkus</a></td>
             <td>The Valiant</td>
+            <td>(801) 877-5500</td>
         </tr>
         <tr>
-            <td>
-                <button class="ias-button ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-search_thick"></i>
-                </button>
-            </td>
             <td><a ui-sref="app.component.table">Christian Pledger</a></td>
             <td>Destroyer of Worlds</td>
+            <td>(801) 540-9221</td>
         </tr>
         </tbody>
     </table>
@@ -86,7 +87,7 @@
         <thead>
         <tr>
             <th class="ias-sortable ias-sorted">Name <i class="ias-icon ias-icon-flow_goto_prev_thin"></i></th>
-            <th class="ias-sortable">Title</th>
+            <th>Title</th>
         </tr>
         </thead>
         <tbody>
@@ -150,9 +151,6 @@
             <td class="ias-align-end">$10.21</td>
             <td class="ias-actions">
                 <button class="ias-button ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-search_thick"></i>
-                </button>
-                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
                 <button class="ias-button ias-icon-button" type="button">
@@ -165,9 +163,6 @@
             <td class="ias-align-end">$1000.21</td>
             <td class="ias-actions">
                 <button class="ias-button ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-search_thick"></i>
-                </button>
-                <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
                 <button class="ias-button ias-icon-button" type="button">
@@ -179,9 +174,6 @@
             <td><a ui-sref="app.component.table">Christian Pledger</a></td>
             <td class="ias-align-end">$100.21</td>
             <td class="ias-actions">
-                <button class="ias-button ias-icon-button" type="button">
-                    <i class="ias-icon ias-icon-search_thick"></i>
-                </button>
                 <button class="ias-button ias-icon-button" type="button">
                     <i class="ias-icon ias-icon-close_thick"></i>
                 </button>
@@ -269,3 +261,40 @@
        </tbody>
     </table>
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Columns should have column headings that describe the information found in the column.</li>
+        <li>The most recognizable element of a row should be placed in the first column as this is where readers will
+            start scanning.</li>
+        <li>Icons can be added the first column to help identify important rows of information.</li>
+        <li>Columns can be made sortable by adding .ias-sortable and will sort information in ascending or descending
+            order when clicked.</li>
+        <li>.ias-align-end right aligns text within the table element and is often used for numerical values.</li>
+        <li>Action icon-buttons can be added to rows to allow for more options to edit row data.</li>
+        <li>Checkboxes allow users to select multiple rows of data at once. A checkbox in the header signifies a
+            "select all" checkbox.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+    <ul>
+        <li>Icons .ias-icon</li>
+        <li>Icon Buttons .ias-icon-button</li>
+        <li>Inputs (Checkboxes)</li>
+        <li>Links &lt;a&gt;</li>
+    </ul>
+
+    <h5>Nesting Tables in Other Components</h5>
+    <p class="ias-page-instructions">
+        Tables are a component used to organize information in an visually recognizable format and can be implemented in
+        many places throughout an application. A component with a moderately sized amount of information could make use
+        of a table to organize that information.
+    </p>
+
+<h3>Responsive Displays</h3>
+    <p class="ias-page-instructions">
+        As the display width decreases a table will also reduce its width. If the text exceeds the width of the table
+        cell containing it, it will be wrapped to a new line and the cell will increase its height.
+    </p>
