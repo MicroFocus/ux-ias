@@ -1,7 +1,17 @@
-<h2 class="ias-page-title">Status Messages</h2>
-<p class="ias-page-instructions">Status messages notify the user with either a general message or a status update.
-    They notify errors, warnings or if the status is OK. </p>
+<h1 class="ias-page-title">Status Messages</h1>
+<h2>General</h2>
+    <p class="ias-page-instructions">
+        Status messages allow an application to notify users. These notifications are delivered through general messages
+        with descriptions, specific status messages with icons or inline messages using only an icon and descriptive
+        title. Specific status messages notify users of errors, warnings, or indicate when a status is okay.
+    </p>
 
+<h2>Purpose</h2>
+    <p class="ias-page-instructions">
+        Notify users using general messages or a status update.
+    </p>
+
+<h2>Examples</h2>
 <section>
     <h3>Default</h3>
     <div class="ias-status-message" toggle-repeat-code>
@@ -14,7 +24,7 @@
 </section>
 
 <section>
-    <h3>w/ .ias-icon</h3>
+    <h3>With .ias-icon</h3>
     <div class="ias-status-message" toggle-repeat-code>
         <div class="ias-status-message-title">
             <i class="ias-icon ias-icon-message_error_thick ias-error"></i>
@@ -28,7 +38,41 @@
 </section>
 
 <section>
-    <h3>.ias-icon.ias-error</h3>
+    <h3>With a Close .ias-icon-button</h3>
+    <div class="ias-status-message" toggle-repeat-code>
+        <div class="ias-status-message-title">
+            <i class="ias-icon ias-icon-message_error_thick ias-error"></i>
+            <span>General Status with Icon</span>
+            <span class="ias-fill"></span>
+            <button class="ias-button ias-icon-button ias-status-cancel-button" title="Close">
+                <i class="ias-icon ias-icon-close_thick"></i>
+            </button>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h3>.ias-icon Inline Status Message</h3>
+    <div toggle-repeat-code="inner">
+        <div class="ias-status-message-title">
+            <i class="ias-icon ias-icon-message_error_thick ias-error"></i>
+            <span>App connector needs more information.</span>
+        </div>
+    </div>
+    <div toggle-repeat-code="inner">
+        <div class="ias-status-message-title">
+            <i class="ias-icon ias-icon-status_ok_thick ias-ok"></i>
+            <span>Connector information submitted successfully.</span>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>.ias-icon .ias-error</h3>
     <div class="ias-status-message">
         <div class="ias-status-message-title">
             <i class="ias-icon ias-icon-status_error_thick ias-error"></i>
@@ -42,7 +86,7 @@
 </section>
 
 <section>
-    <h3>.ias-icon.ias-warn</h3>
+    <h3>.ias-icon .ias-warn</h3>
     <div class="ias-status-message">
         <div class="ias-status-message-title">
             <i class="ias-icon ias-icon-status_warn_thick ias-warn"></i>
@@ -56,7 +100,7 @@
 </section>
 
 <section>
-    <h3>.ias-icon.ias-ok</h3>
+    <h3>.ias-icon .ias-ok</h3>
     <div class="ias-status-message">
         <div class="ias-status-message-title">
             <i class="ias-icon ias-icon-status_ok_thick ias-ok"></i>
@@ -69,4 +113,51 @@
     </div>
 </section>
 
+<section>
+    <h3>.ias-icon .ias-info</h3>
+    <div class="ias-status-message">
+        <div class="ias-status-message-title">
+            <i class="ias-icon ias-icon-status_info_thick ias-info"></i>
+            <span>Information Status Message</span>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </p>
+    </div>
+</section>
 
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Status messages appear throughout applications and are used to notify users concerning the application.</li>
+        <li>Short messages can make use of the inline status format.</li>
+        <li>Place inline status messages near the elements they are concerned with to create a visual pairing.</li>
+        <li>Inline status messages should make use of icons to clarify they are a status message and not a heading.
+        </li>
+        <li>Status messages requiring a description should make use of the panel format.</li>
+        <li>Status messages with a description will often have an icon, header, and the message.</li>
+        <li>A close button can be added to a panel format message requiring the user to acknowledge the message before
+            excusing it.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+        <ul>
+            <li>Icons .ias-icon</li>
+            <li>Icon Buttons .ias-icon-button</li>
+            <li>Paragraphs &lt;p&gt;</li>
+            <li>Spans &lt;span&gt;</li>
+        </ul>
+    <h5>Nesting Status Message in Other Components</h5>
+        <p class="ias-page-instructions">
+            Status messages are a prominent component used throughout applications to notify users. If it is
+            useful to have a status message, whether it's a general or an inline status message, they can be nested and
+            placed where they are needed.
+        </p>
+
+<h3>Responsive Displays</h3>
+    <p class="ias-page-instructions">
+        General status messages with a panel background are responsive to the display they appear in. As the width of
+        the display becomes smaller, the panel and message will adjust to the new width.
+    </p>
