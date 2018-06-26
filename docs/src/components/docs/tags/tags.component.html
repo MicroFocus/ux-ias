@@ -1,5 +1,18 @@
-<h2 class="ias-page-title">Tags</h2>
-<p class="ias-page-instructions">Tags represent lists of strings or other objects.</p>
+<h1 class="ias-page-title">Tags</h1>
+
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Tags are representations of strings and other objects associated with an item. Tags can act as keywords for an
+    object to help identify its elements; or, as search filters to help users locate specific items within an
+    application. Icon buttons can be nested in a tag to increase the tag's functionality.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Show an association between the information of a tag and the component it is tied to.
+</p>
+
+<h2>Examples</h2>
 <div class="ias-tags">
     <h3>Text Only</h3>
 
@@ -18,7 +31,7 @@
 
 
 <div class="ias-tags">
-    <h3>Text w/ Action</h3>
+    <h3>Text with Actions</h3>
 
     <div toggle-repeat-code="inner">
         <div class="ias-tag" tabindex="0">
@@ -35,7 +48,7 @@
 
 
 <div class="ias-tags">
-    <h3>Text w/ Action and Icon</h3>
+    <h3>Text with Actions and Icon</h3>
 
     <div toggle-repeat-code="inner">
         <div class="ias-tag" tabindex="0">
@@ -53,3 +66,40 @@
         </div>
     </div>
 </div>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Tags can be used to visually represent applied filters to a search input.</li>
+        <li>Search filter tags include a close icon button that allows the user to remove the filter through the tag.
+        </li>
+        <li>If a tag is a click-able component, then it is not a good candidate to have a nested icon-button.</li>
+        <li>Click-able components should not have other click-able components nested within them as much as possible.
+        </li>
+        <li>Limit nested icon buttons to only one per tag.</li>
+        <li>Tags can represent keywords to show what elements the associated product or page has.</li>
+        <li>People tied to a product or email can also be displayed with tags.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+        <ul>
+            <li>Icons .ias-icon</li>
+            <li>Icon Buttons .ias-icon-button</li>
+            <li>Spans &lt;span&gt;</li>
+        </ul>
+
+    <h5>Nesting Tags in Other Components</h5>
+    <p class="ias-page-instructions">
+        Tags are a prevalent component used throughout applications. They can be found tied to search inputs as filters,
+        within email messages as recipients, at the bottom of a product page as item identifiers and many other places.
+        Nest tags within components that will benefit from having a visual representation of keywords available to the
+        user.
+    </p>
+
+<h3>Responsive Displays</h3>
+    <p class="ias-page-instructions">
+        As display width becomes smaller tags will begin to row wrap to fit more comfortably on the screen. If the
+        screen width is smaller than the tag then the tag will decrease its width down to a minimum width. When a screen
+        reduces a tag's width, the text inside is also reduced and ellipses are added to the end of the text.
+    </p>
