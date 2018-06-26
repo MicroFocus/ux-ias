@@ -1,11 +1,28 @@
-<h1>Tiles</h1>
+<h1 class="ias-page-title">Tiles</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Tiles are a navigation component that allow a user to access pages, applications, and other data within a product.
+    At minimum, a tile should possess a recognizable avatar or icon image. Tiles may also be given titles, descriptions,
+    and a favorite icon depending on the size of the tile.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    A navigational component that can be grouped and has recognizable elements.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>.ias-tiny</h3>
 
     <div toggle-repeat-code="inner">
         <div class="ias-tile ias-tiny" tabindex="0">
-            <div class="ias-avatar" style="background-image:url(images/appmarks/mark_02.png)">
+            <div class="ias-avatar"
+                 style="background-image:url(images/appmarks/mark_02.png)">
+            </div>
+            <div class="ias-actions">
+                <i class="ias-icon ias-icon-favorite_fill"></i>
             </div>
         </div>
         <div class="ias-tile ias-tiny" tabindex="0">
@@ -34,9 +51,6 @@
             <div class="ias-tile-content">
                 <h3>Search</h3>
             </div>
-            <div class="ias-actions">
-                <i class="ias-icon ias-icon-favorite_fill"></i>
-            </div>
         </div>
     </div>
 </section>
@@ -62,9 +76,6 @@
             <div class="ias-tile-content">
                 <h3>Search</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
-            </div>
-            <div class="ias-actions">
-                <i class="ias-icon ias-icon-favorite_fill"></i>
             </div>
         </div>
     </div>
@@ -92,9 +103,31 @@
                 <h3>Search</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus. Morbi ex tellus, condimentum a commodo sed, sagittis non</p>
             </div>
-            <div class="ias-actions">
-                <i class="ias-icon ias-icon-favorite_fill"></i>
-            </div>
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Common Patterns</h3>
+    <ul>
+        <li>Every tile will contain at least an avatar or icon image.</li>
+        <li>Tiny Tiles will only have the avatar and icon image.</li>
+        <li>Small Tiles add a title to the tile</li>
+        <li>Medium Tiles will have a title as well as a brief description.</li>
+        <li>Large Tiles increase the size of the icon and avatar images, but still contain the title and description of
+            the medium variation.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+    <ul>
+        <li>Avatars .ias-avatar</li>
+        <li>Headings &lt;h3&gt;</li>
+        <li>Icons .ias-icon</li>
+        <li>Paragraphs &lt;p&gt;</li>
+    </ul>
+
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    Horizontally grouped tiles such as in the .ias-tiny example will row wrap as screen width decreases.
+</p>
