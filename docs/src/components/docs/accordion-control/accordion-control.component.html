@@ -4,15 +4,14 @@
 
 <h2>General</h2>
 <p class="ias-page-instructions">
-    A container for information that makes use of a short descriptive title bar to define the information held
-    inside. The user can expand or collapse this information by clicking anywhere within the title bar. A properly
-    implemented accordion component offers the user the ability to navigate large amounts of content with ease.
+    The Accordion Control is a container for information that uses a short descriptive title bar to describe the
+    information inside. The user can expand or collapse this information by clicking anywhere within the title bar. A
+    properly implemented accordion component offers the user the ability to navigate large amounts of content with ease.
 </p>
 
 <h2>Purpose</h2>
 <p class="ias-page-instructions">
-    To hide information behind a descriptive title that informs the user what content is held inside. Thereby saving
-    screen space and resulting in a clean user interface.
+    To save screen space by hiding and showing information held behind a descriptive title bar.
 </p>
 
 <h2>Examples</h2>
@@ -31,12 +30,6 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>The title bar is the only element that is displayed in this state</li>
-        <li>Title bar text should be short and descriptive to inform the user what content is held inside when closed.
-        </li>
-        <li>Arrow icon points down to indicate the accordion can be expanded to display the content stored inside.</li>
-    </ul>
 </section>
 
 <section>
@@ -57,12 +50,6 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>An opened accordion simply displays its content to the user.</li>
-        <li>The arrow icon changes from pointing down to pointing up, indicating a user can collapse the displayed
-            content.
-        </li>
-    </ul>
 </section>
 
 <section>
@@ -83,11 +70,6 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>Icons can be added next to the title element to notify the user of important events or necessary actions
-            within the content section.</li>
-        <li>For example, events could be missing required items or indicating a completed section.</li>
-    </ul>
 </section>
 
 <section>
@@ -131,40 +113,43 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>A "Close All" link is an optional action that may be added to an accordion group.
-        </li>
-        <li>Likewise, an "Open All" link may also be added similarly to the "Close All" link.</li>
-        <li>The "Close All" link does as the name implies, allowing the user to quickly collapse a group of
-            accordions.</li>
-        <li>The "Open All" is displayed only when all accordions are closed, otherwise a "Close All" link is
-            displayed.</li>
-        <li>Groups can be implemented so either multiple accordion sections may be open at once, or be limited
-            to only allowing one open accordion.</li>
-    </ul>
 </section>
 
 <h2>Appearance</h2>
 
-<h3>Common Patterns</h3>
-    <ul>
-        <li>Each accordion has a descriptive title bar and an action icon to indicate the accordion can be collapsed or
-            expanded.</li>
-        <li>The content section can implement a number of elements, from comment to form fields.</li>
-        <li>Think of each accordion as a vertical tab that organizes information in a readable way.</li>
-        <li>Accordion groups can be implemented to allow only a single accordion open at a time, or more than one.</li>
-    </ul>
+<h3>Accordion Control Specifics</h3>
+    <h5>Implementation</h5>
+        <ul>
+            <li>Each accordion has a descriptive title bar and an action icon to indicate the accordion can be collapsed or
+                expanded.</li>
+            <li>The content section is a container that can implement nearly any component necessary for the application.
+            </li>
+            <li>Accordion groups can use "Close All" and "Open All" actions to control all accordions of the group at once.
+            </li>
+            <li>The "Open All" action should be used only if all accordions are currently closed, otherwise the "Close All"
+                should be displayed.</li>
+            <li>Accordion groups can be implemented to allow only a single accordion open at a time, or more than one.</li>
+        </ul>
+
+    <h5>Common Patterns</h5>
+        <ul>
+            <li>Adding icons next to the .ias-heading element to show important events or necessary actions in a content
+                section.</li>
+            <li>Accordions are similar to a vertical tab that organizes information in a space saving and readable way.</li>
+        </ul>
 
 <h3>Nestable Components</h3>
-<h5>Content Section</h5>
-<p class="ias-page-instructions">
-    Accordions can make use of a large number of nestable components within their content section.  Input fields,
-    dialogue boxes, lists, or any element that is necessary for accomplishing the goal of the accordion can likely be
-    used.
-</p>
-<h5>Title Bar</h5>
-<ul>
-    <li>ias.header (descriptive title)</li>
-    <li>ias.icon (accordion control toggle, content notifications)</li>
-</ul>
+    <h5>Content Section</h5>
+    <p class="ias-page-instructions">
+        Accordions can make use of a large number of nestable components within their content section.  Input fields,
+        dialogue boxes, lists, or any element that is necessary for accomplishing the goal of the accordion can likely be
+        used.
+    </p>
+
+    <h5>Title Bar</h5>
+    <ul>
+        <li>ias.header</li>
+        <li>ias.icon</li>
+        <li>&lt;span&gt; with .ias-fill for spacing</li>
+    </ul>
 

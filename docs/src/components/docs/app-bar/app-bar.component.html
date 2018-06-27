@@ -4,15 +4,15 @@
 
 <h2>General</h2>
 <p class="ias-page-instructions">
-    The application bar is the first element of an application page that establishes our UX branding. The default
+    The App Bar is the first component of an page that establishes the Micro Focus UX branding. The default
     example below details the attributes that define it. Consistent implementation of all the attributes will help in
     establishing the Micro Focus UX brand image.
 </p>
 
 <h2>Purpose</h2>
 <p class="ias-page-instructions">
-    The App Bar is used to consistently provide information about product naming, branding, user settings/actions, and
-    managing user state throughout the application.
+    Provide consistent information about product naming, branding, user settings/actions, and managing user state
+    throughout the application.
 </p>
 
 <h2>Examples</h2>
@@ -27,17 +27,6 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
-    <h5>App Bar Specifics</h5>
-    <ul>
-        <li>Use an edge-to-edge implementation that doesn't offer space or margins on the top or sides.</li>
-        <li>Default color background is a solid implementation of the primary Micro Focus blue, (#0073e7).</li>
-        <li>Minimum height is 45px while the maximum height is 100px.</li>
-        <li>When present, the user account actions menu appears on the right hand side.</li>
-        <li>Title and user menu are vertically center-aligned.</li>
-        <li>A logo or branding image inside the app bar has an edge-to-edge design</li>
-        <li>This example includes the standard Micro Focus security family logo design (AM - Access Manager).</li>
-    </ul>
-
 </section>
 
 <h3>App Bar without Branding or Logo Image</h3>
@@ -47,9 +36,6 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
-    <ul>
-        <li>When the app bar has no logo or branding image the height is set to the minimum of 45px.</li>
-    </ul>
 </section>
 
 <h3>App Bar with an Image Larger than Maximum Height</h3>
@@ -63,11 +49,6 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
-    <ul>
-        <li>The airplane image above is a 200 x 200 pixel image. It is proportionally sized to the app bar max-height.
-        </li>
-        <li>This example makes use of a transitional color gradient.</li>
-    </ul>
 </section>
 
 <h3>App Bar using a Logo Image</h3>
@@ -81,13 +62,6 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
-    <ul>
-        <li>The BrandName logo is a 200 x 50 pixel image, but has a transparent background.</li>
-        <li>If a margin is desired for the logo, it can be added within the image file.</li>
-        <li>The image includes spacing, which adds a nice margin between the logo and the app bar border.</li>
-        <li>The image inside the app bar is still edge-to-edge.</li>
-        <li>The image is proportionally sized to the max-height.</li>
-    </ul>
 </section>
 
 <h3>App Bar with Image Smaller than Minimum Height</h3>
@@ -101,14 +75,37 @@
         <span class="ias-fill"></span>
         <button type="button" class="ias-button ias-menu-toggle" style="color: #1f1f1f"><span>Jonathan Smithsonian</span><i class="ias-icon ias-icon-down_thick"></i></button>
     </div>
-    <ul>
-        <li>When a logo or brand image is less than 45px height, it will be vertically centered.</li>
-    </ul>
 </section>
 
 <h2>Appearance</h2>
 
-<h3>Common patterns</h3>
+
+
+<h3>App Bar Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Use an edge-to-edge implementation that doesn't offer space or margins on the top or sides.</li>
+        <li>Default color background is a solid implementation of the primary Micro Focus blue, (#0073e7).</li>
+        <li>App Bars can make use of a transitional color gradient as seen in the "Larger than Max Height" example above.
+        </li>
+    </ul>
+
+    <h5>Sizing</h5>
+    <ul>
+        <li>Minimum height is 45px while the maximum height is 100px.</li>
+        <li>An App Bar without a logo will be set to 45px, while one with an image larger than the max height will be set to
+            100px.</li>
+        <li>An App bar with a logo height less than 45px will be centered vertically within the App Bar.</li>
+    </ul>
+
+    <h5>App Bar Elements</h5>
+    <ul>
+        <li>When present, the user account actions menu appears on the right hand side.</li>
+        <li>Title and user menu are vertically center-aligned.</li>
+        <li>A logo or branding image inside the app bar has an edge-to-edge design</li>
+    </ul>
+
+    <h5>Common patterns</h5>
     <ul>
         <li>Always use an edge-to-edge implementation at the application scope. Do not nest the app bar within other
             elements.</li>
@@ -119,16 +116,15 @@
         <li>A notification icon may be implemented next to the user account settings to notify the user,
             (using .ias-icon-button>i.ias-icon-bell_thick).</li>
     </ul>
-
 <h3>Nestable components</h3>
 <p class="ias-page-instructions">Specific information for each nestable component can be found in their
     individual sections.</p>
     <ul>
-        <li>img (used for branding)</li>
-        <li>.ias-header</li>
-        <li>.ias-button</li>
-        <li>.ias-menu</li>
-        <li>span[.ias-fill]</li>
+        <li>Buttons .ias-button</li>
+        <li>Headings .ias-header</li>
+        <li>Images &lt;img&gt;</li>
+        <li>Menus .ias-menu</li>
+        <li>Spans &lt;span&gt;</li>
     </ul>
 
 <h3>Responsive Displays</h3>

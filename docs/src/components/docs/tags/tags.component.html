@@ -68,15 +68,19 @@
 </div>
 
 <h2>Appearance</h2>
-<h3>Common Patterns</h3>
+<h3>Tag Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>A tag that is click-able should not have a nested icon-button.</li>
+        <li>Click-able components should never have other click-able components nested within them.</li>
+        <li>Limit nested icon buttons to only one per tag.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
     <ul>
         <li>Tags can be used to visually represent applied filters to a search input.</li>
         <li>Search filter tags include a close icon button that allows the user to remove the filter through the tag.
         </li>
-        <li>If a tag is a click-able component, then it is not a good candidate to have a nested icon-button.</li>
-        <li>Click-able components should not have other click-able components nested within them as much as possible.
-        </li>
-        <li>Limit nested icon buttons to only one per tag.</li>
         <li>Tags can represent keywords to show what elements the associated product or page has.</li>
         <li>People tied to a product or email can also be displayed with tags.</li>
     </ul>

@@ -2,14 +2,14 @@
 
 <h2>General</h2>
 <p class="ias-page-instructions">
-    Comments allow for communication to take place within a product. This communication can be between a number of
-    parties, such as: End users, technical support staff, and the system itself. Comments should at a minimum
-    have the defining elements of an avatar image, name, timestamp, available actions, and the message itself.
+    Comments allow for communication to take place within a product. This communication can be between users, technical
+    support staff, and the system itself. Comments should have the defining elements of an avatar image, user name,
+    timestamp, available actions, and the message itself.
 </p>
 
 <h2>Purpose</h2>
 <p class="ias-page-instructions">
-    An element used to allow communication between users or elements of a product.
+    A component that allows for communication between users as well as the product.
 </p>
 
 <h2>Examples</h2>
@@ -38,14 +38,6 @@
         </div>
     </div>
     <h5>Specifics</h5>
-    <ul>
-        <li>Each comment consists of an avatar image, name, timestamp, available actions and the message itself.</li>
-        <li>Use .ias-avatar to set the avatar image to the default size of 40px square.</li>
-        <li>Author and timestamp depicted with .ias-author, and .ias-date respectively within the comment content area.
-        </li>
-        <li>Available actions are placed after the timestamp when not in a defined area to create an association with
-            the title portion of the comment.</li>
-    </ul>
 </section>
 
 <section>
@@ -88,15 +80,6 @@
                 <p>System has been restored.</p>
             </div>
         </div>
-
-    <ul>
-        <li>Menu icon is placed after the timestamp when not in a defined area to create an association with
-        the title portion of the comment.</li>
-        <li>Active menus will overlay content.</li>
-        <li>Add ias-avatar to the icon class declaration when using an icon as an avatar to set the size to 40px.</li>
-        <li>A padding-bottom was added to the active menu section for the sake of separation between the two examples.
-        </li>
-    </ul>
 </section>
 
 <section>
@@ -163,33 +146,28 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li>A comment thread is an example of a defined area.</li>
-        <li>Available actions can be right-aligned when used in a defined area.</li>
-        <li>Use a horizontal line as a divider for comments written on different dates.</li>
-    </ul>
 </section>
 
 <h2>Appearance</h2>
 
-<h3>Common Patterns</h3>
-<ul>
-    <li>Comments should have an avatar image that is 40px by 40px.</li>
-    <li>Always depict an author and a timestamp that is left-aligned at the top of the comment area.</li>
-    <li>Action icons or a menu icon give options to the user, and if not in a defined area are placed after the title
-        elements to create association.</li>
-    <li>When there are more than three icon buttons for available actions, it's more appropriate to use them in a menu
-        instead of individual buttons.</li>
-    <li>Active menus for available actions will hover over the rest of the element when active.</li>
-</ul>
+<h3>Comment Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Each comment has an avatar image, user name, timestamp, available actions and the message itself.</li>
+        <li>Always depict an author and a timestamp left-aligned at the top of the comment area.</li>
+        <li>Action and menu icons give options to the user, when not in a defined area place these next to the title.</li>
+        <li>A menu icon button should be used when more than three action icons exist.</li>
+        <li>Open menus will overlay other content when active.</li>
+        <li>A thread of comments represent a defined area, and can have the menu buttons aligned on the right.</li>
+    </ul>
 
 <h3>Nestable Components</h3>
 <ul>
-    <li>Images .img (As the avatar image)</li>
-    <li>Icons .ias-icons (As system avatar image)</li>
-    <li>Icon Buttons .ias-icon-button (available action)</li>
-    <li>Buttons .ias-button (Send button)</li>
-    <li>Text Entry (textarea and .ias-comment-content)</li>
+    <li>Buttons .ias-button</li>
+    <li>Icons .ias-icons</li>
+    <li>Icon Buttons .ias-icon-button</li>
+    <li>Images .img (using .ias-avatar)</li>
+    <li>Text Entry textarea with .ias-comment-content</li>
 </ul>
 
 <h3>Responsive Displays</h3>

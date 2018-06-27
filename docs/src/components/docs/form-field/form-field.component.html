@@ -2,10 +2,10 @@
 
 <h2>General</h2>
 <p class="ias-page-instructions">
-    Form fields are used to both request desired information from a user as well as be a place to receive that input.
-    When requesting an input from a user, make sure it is clear what is being requested. This can be gleaned
-    from the context of the input field, but more often it will be from an input label or placeholder.  If the input
-    format needs to be specific, create a visible hint that expresses the format to the user through a placeholder.
+    Form fields are used to both request desired information from a user as well as receive that input. When requesting
+	an input from a user, make sure it is clear what is being requested. This can be gleaned from the context of the
+    input field, but more often it will be from an input label or placeholder.  If the input format needs to be
+    specific, create a visible hint that expresses the format to the user through a placeholder.
 </p>
 
 <h2>Purpose</h2>
@@ -75,7 +75,7 @@
 
 <h3>Input Container Class</h3>
     <p class="ias-page-instructions">
-        The input container class is used to help with the styling of input elements.
+
     </p>
 	<section>
 		<h5>.ias-input-container with an Input</h5>
@@ -109,9 +109,6 @@
 				<input type="password" name="password" id="password"/>
 			</div>
 		</div>
-        <ul>
-            <li>Label elements within an ias-input-container are block level elements</li>
-        </ul>
 	</section>
 
     <section>
@@ -126,10 +123,6 @@
                 <input type="password" name="password" id="password-2"/>
             </div>
         </div>
-        <ul>
-            <li>Use the .ias-inline class with an input container to have elements appear in-line rather than block.
-            </li>
-        </ul>
     </section>
 
 	<section>
@@ -207,18 +200,12 @@
 			<i class="ias-icon ias-icon-search_thick"></i>
 			<button class="ias-button ias-icon-button"><i class="ias-icon ias-icon-close_thick"></i></button>
 		</div>
-        <ul>
-           <li>When using a search input, remember to sanitize the input given to safeguard against malicious code.</li>
-        </ul>
 	</section>
 
 	<section>
 		<h3>.ias-autocomplete</h3>
 
 		<div class="ias-autocomplete ias-open" toggle-repeat-code>
-            <ul>
-                <li>When using the autocomplete functionality, remember to debounce the input to help with performance.</li>
-            </ul>
 			<div class="ias-search">
 				<input type="text" placeholder="Search"/>
 				<i class="ias-icon ias-icon-search_thick"></i>
@@ -237,29 +224,36 @@
 </section>
 
 <h2>Appearance</h2>
-<h3>Common Patterns</h3>
+<h3>Comment Specifics</h3>
+    <h5>Implementation</h5>
     <ul>
-        <li>Used to both request and receive desired data from a user, as well as provide instruction for that input.
-        </li>
-        <li>Provide instruction for input through the use of placeholder text, or hints.</li>
-        <li>The use of .ias-input-container is used to help create a consistent styling within a product.</li>
+        <li>The .ias-input-container class is used to help create a consistent styling for form fields.</li>
+        <li>Label elements within an .ias-input-container are block level elements, but .ias-inline can be added for an
+            inline variation.</li>
         <li>When using an .ias-search remember to sanitize the inputs given to protect against malicious code.</li>
-        <li>Also debounce when using .ias-autocomplete to improve performance</li>
+        <li>Also debounce when using .ias-autocomplete to improve performance.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Form fields are used to both request and receive desired data from a user.</li>
+        <li>Labels, placeholders and hints can provide limited instruction for a desired input.</li>
+        <li>Do not overwhelm a user with too many inputs, ask for the minimum amount of information necessary to make
+            the form effective.</li>
     </ul>
 
 <h3>Nesting</h3>
-    <h5>Nesting Inputs in Other Components</h5>
-        <p>
-            Inputs are used to gather input from a user and can be applied to many different components. Whenever a user
-            needs to input information into a page or form, an input can be used. Be careful to not include too many
-            inputs and overwhelm a user. Ask for the minimum amount of information necessary to make the form effective.
-            Doing so will increase the usability of an input form.
-        </p>
     <h5>Nestable Components</h5>
         <ul>
-            <li>.ias-icon</li>
-            <li>.ias-button</li>
+            <li>Icons .ias-icon</li>
+            <li>Icon Buttons .ias-icon-button</li>
         </ul>
+
+    <h5>Nesting Inputs in Other Components</h5>
+    <p>
+        Inputs are used to gather input from a user and can be applied to many different components. Whenever a user
+        needs to input information into a page or form, an input can be used.
+    </p>
 
 <h3>Responsive Display</h3>
     <p>

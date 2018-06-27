@@ -214,12 +214,18 @@
 </section>
 
 <h2>Appearance</h2>
-<h3>Common Patterns</h3>
+<h3>Form Validation Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>The required symbol should be used when you have three or more input options.</li>
+        <li>Pristine fields are invalid when loading the page, but wont display an invalid state until interacted with
+            by the user.</li>
+
+    </ul>
+
+    <h5>Common Patterns</h5>
     <ul>
         <li>Use validation as a means of communicating incorrect or missing inputs to the user.</li>
-        <li>Pristine fields are invalid when loading the page, but don't display an invalid state until interacted with
-            by the user.</li>
-        <li>The required symbol should be used when you have three or more input options.</li>
         <li>Limit the use of input fields to only what is necessary for completing the form. Do not overload the user
             with input fields.</li>
         <li>Asynchronous validation provides real-time feedback to the user as validation occurs.</li>
