@@ -8,11 +8,6 @@
   min-height: $app-bar-height-small;
   padding-right: $app-bar-padding;
   overflow: hidden;
-  
-  //&.ias-linear-gradient {
-  //background: $app-bar-bg-gradient;
-  //  //background-color: #0073e7; //primary microfocus color;
-  //}
 
   > .ias-avatar {
     border-radius: 0;
@@ -20,11 +15,6 @@
     > img {
       display: block;
       max-height: $app-bar-height-small;
-      
-      &.micro-logo {
-        max-height: $app-bar-height-microfocus;
-      }
-      
     }
   }
 
