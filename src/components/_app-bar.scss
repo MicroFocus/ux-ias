@@ -1,7 +1,6 @@
 .ias-app-bar {
   align-items: center;
-  background: $app-bar-bg-fallback;
-  background: $app-bar-bg;
+  background-color: $app-bar-bg;
   color: $app-bar-text-color;
   display: flex;
   flex-flow: row nowrap;
@@ -10,9 +9,10 @@
   padding-right: $app-bar-padding;
   overflow: hidden;
   
-  &.micro-bg-color {
-    background: #0073e7; //primary microfocus color;
-  }
+  //&.ias-linear-gradient {
+  //background: $app-bar-bg-gradient;
+  //  //background-color: #0073e7; //primary microfocus color;
+  //}
 
   > .ias-avatar {
     border-radius: 0;
@@ -83,10 +83,13 @@
 
 [dir="rtl"] {
   .ias-app-bar {
-    background: $app-bar-bg-rtl;
+    background: $app-bar-bg;
     padding-left: $app-bar-padding;
     padding-right: 0;
 
+    &.ias-linear-gradient {
+      background: $app-bar-bg-gradient-rtl
+    }
     > .ias-heading {
       margin-left: 0;
       margin-right: $app-bar-padding;

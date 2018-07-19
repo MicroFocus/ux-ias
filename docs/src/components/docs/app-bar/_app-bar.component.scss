@@ -1,0 +1,17 @@
+app-bar-documentation {
+  .ias-app-bar {
+    &.ias-linear-gradient {
+      background: linear-gradient(to right, #01a9e7, #007cd0);
+    }
+  }
+}
+
+[dir="rtl"] {
+  app-bar-documentation {
+    .ias-app-bar {
+      &.ias-linear-gradient {
+        background: linear-gradient(to left, #01a9e7, #007cd0);
+      }
+    }
+  }
+}

@@ -63,10 +63,7 @@ $accordion-link-margin-bottom: 2px;
 $accordion-margin-bottom: $body-spacing-medium;
 
 $app-bar-action-color: rgba(0,0,0,.2);
-$app-bar-bg-microfocus: $color-primary-2;
-$app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
-$app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
+$app-bar-bg: #0073e7;
 $app-bar-button-padding: 5px;
 $app-bar-button-spacing: $spacing;
 $app-bar-font-size: $font-size-small;
