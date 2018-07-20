@@ -1,0 +1,25 @@
+colors-documentation {
+  .colors-section {
+    display: flex;
+    .color-div {
+      flex-direction: row;
+    }
+    .colors-column-right {
+      margin-left: 5px;
+    }
+  }
+}
+
+[dir='rtl'] {
+  colors-documentation {
+    .colors-section {
+      display: flex;
+      .color-div {
+        flex-direction: row-reverse;
+      }
+      .colors-column-right {
+        margin-right: 5px;
+      }
+    }
+  }
+}
