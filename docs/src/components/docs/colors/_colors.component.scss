@@ -1,11 +1,14 @@
 colors-documentation {
   .colors-section {
     display: flex;
+    flex-flow: row wrap;
+
     .color-div {
-      flex-direction: row;
+      min-width: 450px;
+      margin: 5px 5px;
     }
     .colors-column-right {
-      margin-left: 5px;
+      margin-left: 2px;
     }
   }
 }
