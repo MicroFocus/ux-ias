@@ -11,6 +11,10 @@
     flex: none;
   }
 
+  > i {
+    font-size: $icon-size-avatar;
+  }
+
   > i,
   > .ias-avatar {
     margin-right: $comment-avatar-margin;

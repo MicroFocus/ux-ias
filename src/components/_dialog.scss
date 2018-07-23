@@ -12,7 +12,7 @@
     @extend .ias-border-1;
 
     background: #fff;
-	left: 0;
+    left: 0;
     margin: 0 $dialog-padding;
     max-height: 100%;
     max-width: 100%;
@@ -32,14 +32,14 @@
       top: $body-spacing-small;
     }
 
-	> .ias-dialog-label {
-	  color: $dialog-label-color;
-	  font-size: $font-size;
-	  margin-bottom: $spacing;
-	  padding-right: $content-padding;
-	  text-transform: $title-text-transform;
-	  white-space: nowrap;
-	}
+    > .ias-dialog-label {
+      color: $dialog-label-color;
+      font-size: $font-size;
+      margin-bottom: $spacing;
+      padding-right: $content-padding;
+      text-transform: $title-text-transform;
+      white-space: nowrap;
+    }
 
     > .ias-dialog-title {
       @extend .ias-heading;
@@ -69,7 +69,7 @@
 [dir="rtl"] {
   .ias-dialog {
     .ias-dialog-container {
-//      @extend .ias-panel;
+      //      @extend .ias-panel;
 
       > .ias-dialog-cancel-button {
         position: absolute;

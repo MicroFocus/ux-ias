@@ -11,8 +11,4 @@
   &.ias-large {
     @include square($icon-size-large);
   }
-
-  &.ias-avatar{
-    @include square($icon-size-avatar);
-  }
 }
