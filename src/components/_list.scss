@@ -6,7 +6,7 @@
 
   > li,
   > .ias-list-item {
-	border-radius: $border-radius-small;
+	  border-radius: $border-radius-small;
     box-sizing: content-box;
     display: flex;
     flex-flow: row nowrap;
@@ -73,7 +73,7 @@
       > .ias-avatar {
         &:first-child {
           margin-left: $spacing;
-          margin-right: initial;
+          margin-right: 0;
         }
       }
     }

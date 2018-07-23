@@ -72,10 +72,13 @@
       //      @extend .ias-panel;
 
       > .ias-dialog-cancel-button {
-        position: absolute;
         left: $body-spacing-small;
         right: auto;
-        top: $body-spacing-small;
+      }
+
+      > .ias-dialog-label {
+        padding-left: $content-padding;
+        padding-right: 0;
       }
     }
   }

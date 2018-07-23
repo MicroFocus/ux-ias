@@ -41,15 +41,8 @@
 
     > .ias-button {
       + .ias-button {
-        margin-left: initial;
+        margin-left: 0;
         margin-right: $header-icon-spacing;
-      }
-    }
-
-    > .ias-input-container {
-      + .ias-button {
-        margin-left: initial;
-        margin-right: $header-search-margin;
       }
     }
   }
@@ -58,7 +51,7 @@
 @media (min-width: 768px) {
   .ias-header {
     > .ias-input-container {
-      order: initial;
+      order: 0;
       width: auto;
 
       + .ias-button {
@@ -71,7 +64,7 @@
     .ias-header {
       > .ias-input-container {
         + .ias-button {
-          margin-left: initial;
+          margin-left: 0;
           margin-right: $header-search-margin;
         }
       }

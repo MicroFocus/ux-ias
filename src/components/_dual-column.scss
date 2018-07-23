@@ -91,9 +91,6 @@
 
 [dir="rtl"] {
   .ias-bucket {
-    display: inline-block;
-    vertical-align: top;
-
     &:not(:last-of-type) {
       margin-left: $target-margin-right;
       margin-right: 0;

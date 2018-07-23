@@ -68,13 +68,13 @@
   display: none;
 
   &.ias-open {
-    display: initial;
+    display: block;
   }
 }
 
 [dir="rtl"] {
   .ias-tab {
     margin-left: $tabset-tab-margin;
-    margin-right: initial;
+    margin-right: 0;
   }
 }

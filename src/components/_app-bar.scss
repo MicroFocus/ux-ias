@@ -27,7 +27,7 @@
     /* Add height and line-height for align-items bug in IE11 */
     height: $app-bar-height-small;
     line-height: $app-bar-height-small;
-    margin-left: 15px;
+    margin-left: $app-bar-padding;
   }
 
   > span:not(.ias-fill) {
@@ -87,12 +87,6 @@
       margin-right: $app-bar-padding;
     }
 
-    > button,
-    > .ias-button {
-      margin-left: 0;
-      margin-right: $app-bar-button-spacing;
-    }
-
     > span:not(.ias-fill) {
       @include single-line;
       margin-left: 0;
@@ -101,6 +95,12 @@
       &:not(:last-child) {
         margin-left: $app-bar-text-button-spacing;
       }
+    }
+
+    > button,
+    > .ias-button {
+      margin-left: 0;
+      margin-right: $app-bar-button-spacing;
     }
   }
 }
@@ -122,12 +122,12 @@
 
   [dir="rtl"] {
     .ias-app-bar {
-      padding-left: $app-bar-padding-large;
+      padding-left: $app-bar-padding;
       padding-right: 0;
 
       > .ias-heading {
         margin-left: 0;
-        margin-right: $app-bar-padding-large;
+        margin-right: $app-bar-padding-normal;
       }
     }
   }
