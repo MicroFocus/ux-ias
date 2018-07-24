@@ -1,5 +1,19 @@
-<h1>Tabs</h1>
+<h1 class="ias-page-title">Tabs</h1>
 
+<h2>General</h2>
+    <p class="ias-page-instructions">
+        A tab set is a navigational component that exists within a page and hides or displays content specific to each
+		tab.  Tab sets are usually tied to a container that displays the information associated with individual tabs.
+        Clicking a tab will set it as activate and display its information in the associated container. Tabs work much
+        like a horizontal accordion control, however it can only have one active element at a time.
+    </p>
+
+<h2>Purpose</h2>
+    <p class="ias-page-instructions">
+        A navigational component used to hide or display content of a page.
+    </p>
+
+<h2>Examples</h2>
 <section>
 	<h3>Default</h3>
 	<div class="ias-tabset" toggle-repeat-code>
@@ -32,3 +46,37 @@
 		</button>
 	</div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Tab Specifics</h3>
+    <h5>Implementations</h5>
+    <ul>
+        <li>A selected tab will have the class .ias-active.</li>
+        <li>Disabled tabs will have the class .ias-disabled, resulting in the greyed out, un-selectable tab.</li>
+        <li>Tab sets can include links and icon buttons to add more functionality.</li>
+    </ul>
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Tab sets show and hide content within a page, allowing users to navigate separate sets of information.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+    <ul>
+        <li>Icon Buttons .ias-icon-button</li>
+        <li>Links &lt;a&gt;</li>
+    </ul>
+
+    <h5>Nesting Tabs in Other Components</h5>
+    <p class="ias-page-instructions">
+        Tabs are a navigational component and can be nested within a page where navigation of different sets of data
+        would be useful. Tabs navigational capabilities are restricted to a single page and the content of that page.
+    </p>
+
+<h3>Responsive Displays</h3>
+    <p class="ias-page-instructions">
+        As the display width becomes smaller, tabs reduce their width and the text within until reaching a minimum
+        width. Text reduced in this way reduces the displayed text and append ellipses at the end. Links and icons will
+        remain on the right side of the tab set as much as possible. If a tab set's minimum width, (all tabs are reduce
+        to minimum size) is larger than the display width they will begin to be cut off.
+    </p>

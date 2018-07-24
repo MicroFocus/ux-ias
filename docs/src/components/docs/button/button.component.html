@@ -1,21 +1,30 @@
-<h1>Button</h1>
+<h1 class="ias-page-title">Button</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+	Buttons are a component that universally communicate the ability for a user to interact with an application.
+	A button's purpose can be expressed through text, color, or a general icon that's meaning is widely understood.
+	Buttons are often grouped together with other buttons whose purposes relate to each other.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+	Buttons are used to provide action, navigation, and closure elements to a page.
+</p>
+
+<h2>Examples</h2>
 <section>
-	<h3>Default Usage</h3>
+	<h3>Text Button</h3>
 
 	<div toggle-repeat-code="inner">
 		<button type="button" class="ias-button">Button</button>
 		<div class="ias-button" tabindex="0">CSS Class</div>
 		<a class="ias-button" ui-sref="app.component.button">Anchor</a>
 	</div>
-
-	<p>
-		Use the .ias-button class on a button, div, or anchor.
-	</p>
 </section>
 
 <section>
-	<h3>Disabled Button</h3>
+	<h3>Disabled Text Button</h3>
 
 	<div toggle-repeat-code="inner">
 		<button type="button" class="ias-button" disabled>Button</button>
@@ -24,38 +33,32 @@
 </section>
 
 <section>
-	<h3>Special Button</h3>
+	<h3>Special Text Button</h3>
 	<div toggle-repeat-code="inner">
 		<button type="button" class="ias-button ias-cta">Button</button>
 		<button type="button" class="ias-button ias-cta" disabled="">Disabled Button</button>
 	</div>
-
-	<ul>
-		<li>Special button is used to emphasize an action within the context of a page</li>
-		<li>Only use one special button per page</li>
-		<li>.ias-cta</li>
-	</ul>
 </section>
 
 <section>
 	<h3>Icon Button</h3>
-
-	<button class="ias-button ias-icon-button" type="button" repeat-as-code prism-insert-id="code-01">
-		<i class="ias-icon ias-icon-check_thick"></i>
-	</button>
-	<button class="ias-button ias-icon-button" type="button">
-		<i class="ias-icon ias-icon-close_thick"></i>
-	</button>
-	<button class="ias-button ias-icon-button" type="button" disabled="">
-		<i class="ias-icon ias-icon-new_thick"></i>
-	</button>
-	<toggleable-code id="code-01"></toggleable-code>
+    <div toggle-repeat-code="inner">
+        <button class="ias-button ias-icon-button" type="button" title="Check">
+            <i class="ias-icon ias-icon-check_thick"></i>
+        </button>
+        <button class="ias-button ias-icon-button" type="button" title="Close">
+            <i class="ias-icon ias-icon-close_thick"></i>
+        </button>
+        <button class="ias-button ias-icon-button" type="button" disabled="">
+            <i class="ias-icon ias-icon-new_thick"></i>
+        </button>
+    </div>
 </section>
 
 <section>
 	<h3>Special Icon Button</h3>
 	<div toggle-repeat-code="inner">
-		<button class="ias-button ias-icon-button ias-cta" type="button">
+		<button class="ias-button ias-icon-button ias-cta" type="button" title="Check">
 			<i class="ias-icon ias-icon-check_thick"></i>
 		</button>
 		<button class="ias-button ias-icon-button ias-cta" type="button" disabled="">
@@ -79,7 +82,6 @@
 	</div>
 </section>
 
-
 <section>
 	<h3>Selected Icon Button</h3>
 
@@ -94,106 +96,64 @@
 			<i class="ias-icon ias-icon-orgchart_thin"></i>
 		</button>
 	</div>
-
-	<p>
-		This shows one button that is disabled. We are unable to toggle to the table view because we are
-		already in that state. The other available buttons are views that we can navigate to.
-	</p>
 </section>
 
-<h3>Purpose</h3>
-<p>Action, navigation, and closure element on a page.</p>
+<h2>Appearance</h2>
+<h3>Button Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Disabled buttons will appear as opaque and will not have a hover effect.</li>
+        <li>Special buttons emphasize an action within the context of a page; limit the use of special buttons to one
+            per page.</li>
+        <li>Icon buttons will appear as only the icon until they are hovered over by the user.</li>
+        <li>Each icon button should have a short title attribute to explain the button upon hovering.</li>
+        <li>Icons nested within text buttons but should be the exception, doing so is primarily done to display state.
+        </li>
+        <li>Grouped icon buttons can display a selected button. The selected icon will be highlighted and disabled to
+            signal it is the present state.</li>
+    </ul>
 
-<h3>.ias-button</h3>
-<p>What can it apply to?</p>
+    <h5>Sizing</h5>
+    <ul>
+        <li>Buttons have a minimum width of 70px.</li>
+        <li>Buttons will grow to fit the size of button text.</li>
+        <li>Buttons will not adjust their width as screen size becomes smaller.</li>
+    </ul>
 
-<h3>.ias-button.ias-cta</h3>
+    <h5>States</h5>
+    <ul>
+        <li>Hover: Highlights the button and changes the cursor to indicate the button can be clicked. Displays a title
+            attribute if it is an icon button.</li>
+        <li>Disabled: Button becomes opaque in color and hovering does not change its appearance. Indicates an unusable
+            button.</li>
+        <li>Focus: The button has been selected through tab support. Creates a outline around the button.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Buttons convey interactivity to a user with action, navigation, or closure elements.</li>
+        <li>Buttons may effect progression by being inactive until other conditions are met.</li>
+        <li>Associated buttons should be grouped together, such as back and next navigation or available page views.</li>
+
+    </ul>
+
+<h3>Nesting</h3>
+
+<h5>Nestable Components</h5>
 <ul>
-	<li>Usage scenario</li>
-	<li>Limitations</li>
-</ul>
-
-<h3>Icons</h3>
-<p>Nesting icons in buttons (not .ias-icon-button) should be used sparingly. Use of icons in buttons should be
-	the exception. They should not be used on the left of text in a button. They can be used on the right side
-	of text in a button to display state. If an icon is used alone you should use .ias-icon-button instead.</p>
-
-<h3>Icon Button</h3>
-
-<h5>Icon/Action assignments</h5>
-
-<table>
-	<tr>
-		<th>Icon</th>
-		<th>Primary Action</th>
-		<th>Other Actions</th>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-	</tr>
-</table>
-
-<h5>Use Cases</h5>
-<ul>
-	<li>Perform an action</li>
-	<li>Configuration</li>
-	<li>Use when space is limited or simplicity is desired</li>
-	<li>Menu overflow (hamburger or vertical dots)</li>
-	<li>List item primary and secondary actions</li>
-</ul>
-
-<h5>Dimensions</h5>
-<ul>
-	<li>25x25 pixels is the standard size</li>
-	<li>28x28 pixels is the size when used in the page title component</li>
-</ul>
-
-<h5>Accessibility</h5>
-<p>Always include a [title] attribute.</p>
-
-<h3>Tab support</h3>
-
-<h3>Nestable components</h3>
-<ul>
-	<li>.ias-icon-button</li>
 	<li>.ias-icon</li>
-	<li>a</li>
+	<li>anchors &lt;a&gt;</li>
 </ul>
 
-<h3>Nesting buttons in other components</h3>
+<h5>Nesting Buttons in other Components</h5>
+<p class="ias-page-instructions">
+	Buttons can be nested into most other elements. If an elements goal can be accomplished by nesting a button inside,
+    it's likely that it can be done. The documentation will detail instances where buttons are implemented in other
+    components.
+</p>
+    <ul>
+        <li>Buttons should never be nested within other buttons.</li>
+    </ul>
 
-<h3>Order</h3>
-<p>Primary to secondary -> Left to Right</p>
 
-<h3>Alignment</h3>
-<p>Left aligned</p>
 
-<h3>States</h3>
-<ul>
-	<li>hover</li>
-	<li>focus</li>
-	<li>disabled</li>
-</ul>
-
-<h3>Colors</h3>
-
-<h3>Dimensions</h3>
-<ul>
-	<li>min width</li>
-	<li>max width</li>
-</ul>
-
-<h3>Grouping</h3>
-<p>Add margin-right</p>

@@ -146,29 +146,46 @@ label {
 }
 
 [dir="rtl"] {
+  input,
+  select,
+  textarea {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+
   label {
+    padding-left: 5px;
+    padding-right: 0;
+
     &:not(:first-of-type) {
-      margin-left: initial;
+      margin-left: 0;
       margin-right: $spacing;
     }
 
     > input,
     > select,
     > textarea {
-      margin-left: initial;
+      margin-left: 0;
       margin-right: $input-inline-label-padding;
     }
   }
 
   .ias-search {
     > .ias-icon {
-      left: initial;
+      left: auto;
       right: $search-box-icon-padding;
     }
 
     > .ias-icon-button {
       left: $search-box-icon-padding;
-      right: initial;
+      right: auto;
+    }
+  }
+
+  .ias-autocomplete {
+    .ias-results {
+      margin-left: auto;
+      margin-right: 0;
     }
   }
 }

@@ -107,7 +107,11 @@
       margin: $datepicker-actions-text-margin;
       outline: none;
       vertical-align: middle;
+      &:hover {
+        color: $datepicker-cell-color-hover;
+      }
     }
+
   }
 
   .ias-icon {

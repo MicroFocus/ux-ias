@@ -1,11 +1,20 @@
-<h2 class="ias-page-title">
+<h1 class="ias-page-title">
     Accordion Control
-</h2>
+</h1>
 
+<h2>General</h2>
 <p class="ias-page-instructions">
-    Accordion controls allow the user to switch between hiding and showing a large amount of content.
+    The Accordion Control is a container for information that uses a short descriptive title bar to describe the
+    information inside. The user can expand or collapse this information by clicking anywhere within the title bar. A
+    properly implemented accordion component offers the user the ability to navigate large amounts of content with ease.
 </p>
 
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    To save screen space by hiding and showing information held behind a descriptive title bar.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Closed</h3>
 
@@ -65,9 +74,6 @@
 
 <section>
     <h3>Group</h3>
-    <p>
-        Optional feature: "Open All" is displayed when all accordions are closed, otherwise "Close All" is displayed.
-    </p>
 
     <div class="ias-accordion-group" toggle-repeat-code>
         <div class="ias-accordion-link">
@@ -108,3 +114,43 @@
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Accordion Control Specifics</h3>
+    <h5>Implementation</h5>
+        <ul>
+            <li>Each accordion has a descriptive title bar and an action icon to indicate the accordion can be collapsed or
+                expanded.</li>
+            <li>The content section is a container that can implement nearly any component necessary for the application.
+            </li>
+            <li>Accordion groups can optionally use "Close All" and "Open All" actions to control all accordions within a
+                group.
+            </li>
+            <li>The "Open All" action should be used only if all accordions are currently closed, otherwise the "Close All"
+                should be displayed.</li>
+            <li>Accordion groups can be implemented to allow only a single accordion open at a time, or more than one.</li>
+        </ul>
+
+    <h5>Common Patterns</h5>
+        <ul>
+            <li>Adding icons next to the .ias-heading element to show important events or necessary actions in a content
+                section.</li>
+            <li>Accordions are similar to a vertical tab that organizes information in a space saving and readable way.</li>
+        </ul>
+
+<h3>Nestable Components</h3>
+    <h5>Content Section</h5>
+    <p class="ias-page-instructions">
+        Accordions can make use of a large number of nestable components within their content section.  Input fields,
+        dialogue boxes, lists, or any element that is necessary for accomplishing the goal of the accordion can likely be
+        used.
+    </p>
+
+    <h5>Title Bar</h5>
+    <ul>
+        <li>ias.header</li>
+        <li>ias.icon</li>
+        <li>&lt;span&gt; with .ias-fill for spacing</li>
+    </ul>
+

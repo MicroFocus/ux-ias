@@ -1,13 +1,28 @@
-<h2 class="ias-page-title">Comment</h2>
+<h1 class="ias-page-title">Comment</h1>
+
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Comments allow for communication to take place within a product. This communication can be between users, technical
+    support staff, and the system itself. Comments should have the defining elements of an avatar image, user name,
+    timestamp, available actions, and the message itself.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    A component that allows for communication between users as well as the product.
+</p>
+
+<h2>Examples</h2>
 
 <section>
-    <h3>Comment w/ Icon Actions</h3>
+    <h3>Comment with Icon Actions</h3>
 
     <div class="ias-comment" toggle-repeat-code>
-        <i class="ias-icon ias-icon-comment_sys_thin"></i>
+
+        <div class="ias-avatar" style="background-image:url(images/appmarks/mark_02.png)"></div>
         <div class="ias-comment-content">
             <div>
-                <span class="ias-author">System</span>
+                <span class="ias-author">Jonathan Smithsonian</span>
                 <span class="ias-date">10:38 AM MDT</span>
                 <button class="ias-button ias-icon-button" type="button" title="Reply">
                     <i class="ias-icon ias-icon-comment_thick"></i>
@@ -19,30 +34,54 @@
                     <i class="ias-icon ias-icon-delete_thin"></i>
                 </button>
             </div>
-            <p>System crashed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo sapien et erat auctor mollis.</p>
         </div>
     </div>
+    <h5>Specifics</h5>
 </section>
 
 <section>
-    <h3>Comment w/ Menu Actions</h3>
+    <h3>Comment with Menu Actions</h3>
 
+    <h5>Comment with Menu Activated</h5>
     <div class="section-with-menus" toggle-repeat-code="inner">
         <div class="ias-comment">
-            <div class="ias-avatar" style="background-image:url(images/appmarks/mark_02.png)"></div>
+            <i class="ias-icon ias-icon-comment_sys_thin"></i>
             <div class="ias-comment-content">
                 <div>
                     <span class="ias-author">System</span>
                     <span class="ias-date">10:45 AM MDT</span>
+                    <button class="ias-button ias-icon-button ias-selected" type="button" title="Show Menu">
+                        <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
+                    </button>
+                    <div class="ias-menu ias-open">
+                        <div class="ias-menu-content">
+                            <button type="button" class="ias-button">Reply</button>
+                            <button type="button" class="ias-button">Edit</button>
+                            <button type="button" class="ias-button">Delete</button>
+                        </div>
+                    </div>
                 </div>
-                <p>System is back up and running.</p>
+                <p>System has been restored.</p>
             </div>
-
-            <button class="ias-button ias-icon-button" type="button" title="Show Menu">
-                <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
-            </button>
         </div>
     </div>
+
+
+    <h5>Comment with Inactive Menu</h5>
+        <div class="ias-comment" toggle-repeat-code>
+            <i class="ias-icon ias-icon-comment_sys_thin"></i>
+            <div class="ias-comment-content">
+                <div>
+                    <span class="ias-author">System</span>
+                    <span class="ias-date">10:45 AM MDT</span>
+                    <button class="ias-button ias-icon-button" type="button" title="Show Menu">
+                        <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
+                    </button>
+                </div>
+                <p>System has been restored.</p>
+            </div>
+        </div>
 </section>
 
 <section>
@@ -110,3 +149,32 @@
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Comment Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Each comment has an avatar image, user name, timestamp, available actions and the message itself.</li>
+        <li>Always depict an author and a timestamp left-aligned at the top of the comment area.</li>
+        <li>Action and menu icons give options to the user, when not in a defined area place these next to the title.</li>
+        <li>A menu icon button should be used when more than three action icons exist.</li>
+        <li>Open menus will overlay other content when active.</li>
+        <li>A thread of comments represent a defined area, and can have the menu buttons aligned on the right.</li>
+    </ul>
+
+<h3>Nestable Components</h3>
+<ul>
+    <li>Buttons .ias-button</li>
+    <li>Icons .ias-icons</li>
+    <li>Icon Buttons .ias-icon-button</li>
+    <li>Images .img (using .ias-avatar)</li>
+    <li>Text Entry textarea with .ias-comment-content</li>
+</ul>
+
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    Comments will adapt to the size of the screen in which they are in.  When that screen size is decreased a comment
+    will become decrease as well, wrapping text as needed.  Comments will define margins on the sides to give them space
+    from the edge of the screen.
+</p>
