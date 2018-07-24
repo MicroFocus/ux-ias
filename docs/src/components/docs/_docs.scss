@@ -1,10 +1,13 @@
 @import 'accordion-control/accordion-control.component';
+@import 'app-bar/_app-bar.component.scss';
+@import 'colors/colors.component';
 @import 'comment/comment.component';
 @import 'datepicker/_datepicker.component';
 @import 'dialog/dialog.component';
 @import 'dual-column/dual-column.component';
 @import 'form-field/form-field.component';
 @import 'form-validation/form-validation.component';
+@import 'header/_header.component';
 @import 'icon/icon.component';
 @import 'menu/menu.component';
 @import 'multi-valued-input/multi-valued-input.component';

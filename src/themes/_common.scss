@@ -63,10 +63,7 @@ $accordion-link-margin-bottom: 2px;
 $accordion-margin-bottom: $body-spacing-medium;
 
 $app-bar-action-color: rgba(0,0,0,.2);
-$app-bar-bg-microfocus: $color-primary-2;
-$app-bar-bg-fallback: $color-primary-2;
-$app-bar-bg: linear-gradient(to right, $color-primary-4, $color-primary-2);
-$app-bar-bg-rtl: linear-gradient(to left, $color-primary-4, $color-primary-2);
+$app-bar-bg: #0073e7;
 $app-bar-button-padding: 5px;
 $app-bar-button-spacing: $spacing;
 $app-bar-font-size: $font-size-small;
@@ -90,7 +87,7 @@ $button-cta-bg-color: $color-primary-2;
 $button-cta-text-color: $color-gray-7;
 $button-font-size: $font-size;
 $button-inline-icon-padding: 7px;
-$button-min-width: 42px;
+$button-min-width: 70px;
 $button-padding: .45em .75em;
 $button-padding-with-icon: .2em .75em;
 $button-text-color: $text-color;
@@ -131,14 +128,13 @@ $dialog-label-color: $color-gray-4;
 $dialog-padding: 20px;
 
 $header-margin-bottom: 15px;
-$header-max-width: 750px;
 $header-icon-spacing: 5px;
 $header-search-margin: 15px;
 $header-title-spacing: 15px;
 
 $heading-line-height: 1.2em;
 
-$heading-1-font-weight: bold;
+$heading-1-font-weight: normal;
 $heading-1-margin: 1rem 0 1rem;
 $heading-1-text-size: 2em;
 
@@ -162,6 +158,7 @@ $heading-5-margin: 5px 0 5px;
 $heading-5-text-color: $color-gray-4;
 $heading-5-text-size: 1rem;
 
+$icon-size-avatar: 40px;
 $icon-size-small: 25px;
 $icon-size-medium: 50px;
 $icon-size-large: 75px;
@@ -241,6 +238,7 @@ $side-nav-text-color: inherit;
 $side-nav-width: 240px;
 
 $status-color-error: $color-accent-4;
+$status-color-info: $color-primary-3;
 $status-color-ok: $color-accent-5;
 $status-color-warn: $color-accent-3;
 
@@ -283,7 +281,7 @@ $tag-border-radius: $border-radius;
 $tag-font-size: 12px;
 $tag-icon-size: 17px;
 $tag-margin: 5px;
-$tag-padding: 8px;
+$tag-padding: 5px;
 
 $target-border-color: $color-gray-4;
 $target-border-radius: $border-radius-small;
@@ -306,8 +304,8 @@ $target-margin-right: 40px;
 $target-padding: $body-spacing-small;
 $target-width: 300px;
 
-$tile-bg-color: $color-gray-7;
-$tile-border-color: $color-primary-4;
+$tile-bg-color: $color-gray-6;
+$tile-bg-color-hover: $color-gray-7;
 $tile-border-width: 1px;
 $tile-description-font-size: 12px;
 $tile-description-line-height: 15px;

@@ -1,5 +1,17 @@
-<h2 class="ias-page-title">Lists</h2>
+<h1 class="ias-page-title">Lists</h1>
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Lists provide a way of visually grouping related information. Items within a list may also be paired with other
+    elements, such as icons and avatars, to differentiate similar information or show the current state of a
+    list item.
+</p>
 
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    To visually group related information together as well as describe the state of its elements.
+</p>
+
+<h2>Examples</h2>
 <h3>Default</h3>
 <section>
     <ul class="ias-list" toggle-repeat-code>
@@ -105,21 +117,17 @@
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Jonathan Smithsonian</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0" class="ias-offset">
             <span>Camelot Rinkus</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Christian Pledger</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Becky Babbitt</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
     </ul>
 </section>
@@ -132,21 +140,42 @@
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Jonathan Smithsonian</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0" class="ias-offset">
             <span>Camelot Rinkus</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Christian Pledger</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
         <li tabindex="0">
             <i class="ias-icon ias-icon-check_thick"></i>
             <span>Becky Babbitt</span>
-            <i class="ias-icon ias-icon-search_thick"></i>
         </li>
     </ul>
 </section>
+
+<h2>Appearance</h2>
+<h3>List Specifics</h3>
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Use lists to group related information together in a visually meaningful way.</li>
+        <li>Icons and avatars can help differentiate list items from each other.</li>
+        <li>Lists with icons and avatars are lists, not tables. Icons and avatars are nested within &lt;li&gt; elements.</li>
+        <li>Use .ias-offset to create a uniform alignment for items without added elements in lists that do.</li>
+    </ul>
+<h3>Nesting</h3>
+<h5>Nesting Lists in Other Components</h5>
+    <p class="ias-page-instructions">
+        Lists are nested in many different elements. Nested lists can primarily be found in menus, tables, and panels.
+        However this is not the limit of their scope, as lists can be nested into most elements that make use of text.
+    </p>
+<h5>Nestable Components</h5>
+<p class="ias-page-instructions">
+    Nesting icons within lists is often done to show the state of the list item associated with the icon.
+</p>
+    <ul>
+        <li>Avatar images (.ias-avatar)</li>
+        <li>Icons (.ias-icon)</li>
+        <li>Icon Buttons (.ias-button .ias-icon-button)</li>
+    </ul>

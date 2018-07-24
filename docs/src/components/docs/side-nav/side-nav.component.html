@@ -1,26 +1,42 @@
-<h2 class="ias-page-title">Side Navs</h2>
+<h1 class="ias-page-title">Side Navs</h1>
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Side Navs work much like Nav Bars but are fixed to the side of a page instead of the top. Side Navs are used to
+    provide users with a form of navigation within an application. They can be made to be toggleable, allowing a user to
+    hide or show the Side Nav's content. Side Navs can make use of headings to separate listed items, as well as
+    implement avatars to make list items more expressive.
+</p>
 
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    To provide users a toggleable navigation menu fixed to the side of a page.
+</p>
+
+<h2>Examples</h2>
+<h3>Default Side-Nav</h3>
 <section toggle-repeat-code="inner">
     <demo-content></demo-content>
     <div class="ias-side-nav ias-open">
         <div class="ias-scrim"></div>
         <div class="ias-side-nav-content">
             <div class="ias-side-nav-body">
-                <button type="button">View My Devices</button>
-                <button type="button">Help Me...(end-user)</button>
-                <button type="button">Request impersonate session...(HelpDesk)</button>
-                <button type="button">Button 4</button>
-                <button type="button">An Interesting Link</button>
-                <button type="button">Button 6</button>
-                <button type="button">Button 7</button>
-                <button type="button">IDM Prototype</button>
-                <button type="button">Add Users</button>
-                <button type="button">Button 13</button>
+                <button type="button">Home</button>
+                <button type="button">About</button>
+                <button type="button">Products</button>
+                <button type="button">Future Projects</button>
+                <button type="button">Resources</button>
+                <button type="button">Partners</button>
+                <button type="button">Downloads</button>
+                <button type="button">Contact Us</button>
+                <button type="button">Settings</button>
+                <button type="button">Help</button>
+                <button type="button">Logout</button>
             </div>
         </div>
     </div>
 </section>
 
+<h3>Side-Nav with Headings</h3>
 <section toggle-repeat-code="inner">
     <demo-content></demo-content>
     <div class="ias-side-nav ias-open">
@@ -28,22 +44,25 @@
         <div class="ias-side-nav-content">
             <div class="ias-side-nav-body">
                 <h3 class="ias-side-nav-header">First Section</h3>
-                <button type="button">View My Devices</button>
-                <button type="button">Help Me...(end-user)</button>
-                <button type="button">Request impersonate session...(HelpDesk)</button>
+                <button type="button">Home</button>
+                <button type="button">About</button>
+                <button type="button">Products</button>
+                <button type="button">Future Projects</button>
+                <button type="button">Resources</button>
+                <button type="button">Partners</button>
+                <button type="button">Downloads</button>
 
                 <h3 class="ias-side-nav-header">Second Section</h3>
-                <button type="button">Button 4</button>
-                <button type="button">An Interesting Link</button>
-                <button type="button">Button 6</button>
-                <button type="button">Button 7</button>
-                <button type="button">Request Support</button>
-                <button type="button">Button 9</button>
+                <button type="button">Contact Us</button>
+                <button type="button">Settings</button>
+                <button type="button">Help</button>
+                <button type="button">Logout</button>
             </div>
         </div>
     </div>
 </section>
 
+<h3>Side-Nav with Avatars</h3>
 <section toggle-repeat-code="inner">
     <demo-content></demo-content>
     <div class="ias-side-nav ias-open">
@@ -92,3 +111,44 @@
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Side Nav Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Side Navs are fixed to the side of a page and allow another form of navigation to the user.</li>
+        <li>When a hidden Side Nav is toggled open, a dialog glass appears over the other page content to bring focus to
+            the list of contents.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Side Navs can be made toggleable to either hide or show their content.</li>
+        <li>A smaller display would benefit from having a toggleable Side Nav, allowing more room for page content.</li>
+        <li>Side Navs can make use of section headings to separate content into meaningful sections to a user.</li>
+        <li>Avatar images can also be used within a Side Nav to give recognizable images and logos to listed items.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+    <ul>
+        <li>Buttons</li>
+        <li>Divs (Creates sections for avatar images)</li>
+        <li>Headers (Separate sections of Side Nav with descriptive header)</li>
+        <li>List items &lt;li&gt;</li>
+        <li>Spans</li>
+    </ul>
+
+    <h5>Nesting Side Navs in Other Components</h5>
+    <p class="ias-page-instructions">
+        Side Navs are a constant element that is fixed to the side of a page and is available throughout an
+        application. Because of this, it is not likely a Side Nav would be nested within another element. In these
+        situations, nesting a menu instead of a Side Nav will likely be more appropriate.
+    </p>
+
+<h3>Responsive Display</h3>
+    <p class="ias-page-instructions">
+        Side Navs should be toggleable depending on the width of the current display. Larger displays will allow for a
+        Side Nav to be open and fixed to the side of the window. As display width decreases, a Side Nav will become
+        toggleable to allow more space for page content.
+    </p>

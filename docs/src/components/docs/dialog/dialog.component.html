@@ -1,23 +1,22 @@
-<h1>Dialog</h1>
-<h3>Purpose</h3>
-<p>A conversation with the user. Make sure the user can give a response, even if they defer the response by closing the dialog.</p>
+<h1 class="ias-page-title">Dialog</h1>
 
-<h3>Use case</h3>
-<ul>
-    <li>View and edit object details</li>
-    <li>Confirm object deletion</li>
-    <li>Simple forms (1 or 2 inputs)</li>
-</ul>
-<h3>Specifications</h3>
-<ul>
-    <li>Dialog glass covers all other UI elements when dialog is displayed.</li>
-    <li>Close button is always an available option.</li>
-    <li>Dialog is moveable so the user can read (through the glass) context underneath.</li>
-</ul>
-       
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Dialogs allow for a system to overtly call the attention of the user away from the page to its content. A dialog's
+    content is always something a developer would like the user to do or know. Dialogs are tied to the current page to
+    keep information available to users as they interact with the component. Some usage examples could be a warning
+    message, instructions, or input fields necessary for progression.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Call the attention of the user to important information or request necessary actions.
+</p>
+
+<h2>Examples</h2>
+<h3>Simple</h3>
 <section class="component-dialog" toggle-repeat-code>
-	<h3>Simple</h3>
-
+    <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
 	<div class="ias-dialog">
 		<div class="ias-dialog-container">
 			<!--<div class="ias-dialog-title">Dialog title</div>-->
@@ -35,18 +34,20 @@
 	</div>
 </section>
 
+<h3>Dialog with .ias-actions and .ias-dialog-label</h3>
 <section class="component-dialog" toggle-repeat-code>
-	<h3>w/ .ias-dialog-title</h3>
+    <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
 
 	<div class="ias-dialog">
 		<div class="ias-dialog-container">
-			<div class="ias-dialog-label">Dialog title</div>
-			<div class="ias-dialog-content">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
-					Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
-					Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
-				</p>
+            <div class="ias-dialog-label">Dialog Label</div>
+            <div class="ias-dialog-content">
+                <div class="ias-actions">
+                    <input name="username" placeholder="New Password" type="text" autocomplete="off">
+                    <input name="username" placeholder="Confirm Password" type="text" autocomplete="off">
+                </div>
+                <button class="ias-button ias-cta">Change</button>
+                <button class="ias-button">Cancel</button>
 			</div>
 			<button class="ias-button ias-icon-button ias-dialog-cancel-button">
 				<i class="ias-icon ias-icon-close_thick"></i>
@@ -55,22 +56,20 @@
 	</div>
 </section>
 
+<h3>Dialog with .ias-dialog-title</h3>
 <section class="component-dialog" toggle-repeat-code>
-	<h3>w/ .ias-actions</h3>
+    <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
 
 	<div class="ias-dialog">
 		<div class="ias-dialog-container">
-			<div class="ias-dialog-label">Dialog title</div>
+			<div class="ias-dialog-title">Dialog Title</div>
 			<div class="ias-dialog-content">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim nisl nec risus cursus cursus.
 					Morbi ex tellus, condimentum a commodo sed, sagittis non massa. Praesent eleifend a orci et lobortis.
 					Integer vel auctor felis. Donec dignissim nulla lectus, eget porta ipsum finibus eget. Aenean non leo
 				</p>
-			</div>
-			<div class="ias-actions">
-				<button class="ias-button">OK</button>
-				<button class="ias-button">Cancel</button>
+
 			</div>
 			<button class="ias-button ias-icon-button ias-dialog-cancel-button">
 				<i class="ias-icon ias-icon-close_thick"></i>
@@ -78,28 +77,61 @@
 		</div>
 	</div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Dialog Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>A close icon button should always be an available option for closing a dialog.</li>
+        <li>Dialog content should initially be placed near the center of the page slightly offset above the middle.</li>
+    </ul>
+
+    <h5>Dialog Glass</h5>
+    <ul>
+        <li>A transparent grey background that covers the original page to help accentuate the dialog content.</li>
+        <li>A dialog can be moved around in the window by the title element to see the content beneath the dialog glass.
+        </li>
+        <li>Moving a dialog causes the dialog to become transparent, allow a user to easily read content beneath.</li>
+        <li>Closing a dialog should be done by clicking the exit icon button. Optionally a dialog can be made to close
+            by clicking the dialog glass.</li>
+        <li>The dialog glass will absorb mouse events when present unless it's made to close the dialog.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Dialogs communicate with the user by greying out the page and highlighting dialog box content.</li>
+        <li>Limit the amount of content within the dialog to not overload the component with information.</li>
+        <li>Dialogs are often used for verifying an action, gathering inputs, or editing an objects data.</li>
+
+    </ul>
 
 <h3>Nesting</h3>
-<p>Never nested, always fixed to the window</p>
 
-<h3>Tab support</h3>
-<p>Everything else is disabled. Tab support should begin with content and end with 'X'</p>
+    <h5>Nestable Components</h5>
+    <p class="ias-page-instructions">
+        Dialogs can nest nearly any component to help convey the message to a user or get necessary
+        information. The list below are likely to be common components, but are not exhaustive.
+    </p>
+    <ul>
+        <li>Buttons ias-button</li>
+        <li>Icon Buttons ias-icon-button</li>
+        <li>Inputs &lt;input&gt;</li>
+        <li>Paragraphs &lt;p&gt;</li>
 
-<h3>Small Displays</h3>
+    </ul>
 
-<h3>Dimensions</h3>
-<ul>
-    <li>min width</li>
-    <li>max width</li>
-</ul>
+    <h5>Nesting Dialogues in Other Components</h5>
+    <p class="ias-page-instructions">
+        Dialogs should NEVER be nested into other elements. Dialogs are fixed to the window and grey out all other
+        elements.
+    </p>
 
-<h3>Button Order</h3>
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    As a screen is scaled down the dialog glass and dialog content will also be scaled down as well. The content of a
+    dialog will begin to row wrap its content to accommodate for the reduced dialog width.
+</p>
 
-<h3>Glass</h3>
-<ul>
-    <li>Close on click</li>
-    <li>Absorb mouse events</li>
-</ul>
 
-<h3>Positioning</h3>
-<p>Not exactly middle. Should be slightly above middle (golden ratio)</p>
+
+

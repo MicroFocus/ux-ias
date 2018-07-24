@@ -3,6 +3,7 @@
   border: 1px solid $status-message-border-color;
   border-radius: $border-radius;
   box-sizing: border-box;
+
   margin: $status-message-margin 0;
   max-width: $status-message-max-width;
   padding: $status-message-padding;
@@ -16,19 +17,18 @@
 }
 
 .ias-error { color: $status-color-error; }
-.ias-warn { color: $status-color-warn; }
+.ias-info { color: $status-color-info; }
 .ias-ok { color: $status-color-ok; }
+.ias-warn { color: $status-color-warn; }
 
 .ias-status-message-title {
+  align-items: center;
   color: $status-message-text-color;
+  display: flex;
+  flex-flow: row nowrap;
   font-weight: bold;
 
-  span,
-  .ias-icon {
-    vertical-align: middle;
-  }
-
-  .ias-icon {
+  > .ias-icon {
     margin-right: $status-message-icon-margin;
   }
 }

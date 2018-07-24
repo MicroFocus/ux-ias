@@ -1,6 +1,18 @@
 <h1>Links</h1>
-<p>Navigation</p>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Links are components used to aid in user navigation. They allow users to jump between different pages, sections of
+    the same page, outside URLs, and access files and emails. When creating links, make link text short and descriptive
+    to the action of the link.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    A means of navigation within a page.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Default Usage</h3>
 
@@ -11,7 +23,7 @@
 </section>
 
 <section>
-    <h3>Usage (block)</h3>
+    <h3>Usage (Block)</h3>
 
     <div toggle-repeat-code="inner">
         <div><a ui-sref="app.component.link">New York</a></div>
@@ -20,7 +32,7 @@
 </section>
 
 <section>
-    <h3>In text</h3>
+    <h3>In Text</h3>
 
     <div toggle-repeat-code="inner">
         <p>This is a <a ui-sref="app.component.link">link</a> in the middle of a paragraph</p>
@@ -40,9 +52,29 @@
     <a ui-sref="app.component.link" class="ias-link-no-highlight" toggle-repeat-code>De-emphasized</a>
 </section>
 
+<h2>Appearance</h2>
+<h3>Link Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Keep link text short, concise, and descriptive to the action or location the link will take you.</li>
+        <li>If a longer description is necessary, include that description as a title attribute within the link.</li>
+    </ul>
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Links are generally styled in a different color than content text and users use this characteristic to
+            find them quickly.</li>
+        <li>Links are inline elements by default, nest links with or within a block element to create the block usage.
+        </li>
+    </ul>
+<h3>Nesting</h3>
+<p class="ias-page-instructions">
+    Links themselves are elements that are most often nested within other elements. If it would make sense to have a
+    element work as a link, a link can likely be nested.
+</p>
 
 
-<!--<section>
+
+<!-- <section>
 	<h3>Supported Uses </h3>
 	<a class="ias-button" ui-sref="app.component.link" toggle-repeat-code>Button</a>
 	<div class="ias-tile ias-medium" tabindex="0" toggle-repeat-code>
@@ -62,4 +94,4 @@
 		<a class="ias-active" ui-sref="app.component.nav">Nav Link 1</a>
 		<a ui-sref="app.component.link">Nav Link 2</a>
 	</div>
-</section>-->
+</section> -->

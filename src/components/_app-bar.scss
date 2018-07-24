@@ -1,7 +1,6 @@
 .ias-app-bar {
   align-items: center;
-  background: $app-bar-bg-fallback;
-  background: $app-bar-bg;
+  background-color: $app-bar-bg;
   color: $app-bar-text-color;
   display: flex;
   flex-flow: row nowrap;
@@ -9,10 +8,6 @@
   min-height: $app-bar-height-small;
   padding-right: $app-bar-padding;
   overflow: hidden;
-  
-  &.micro-bg-color {
-    background: #0073e7; //primary microfocus color;
-  }
 
   > .ias-avatar {
     border-radius: 0;
@@ -20,11 +15,11 @@
     > img {
       display: block;
       max-height: $app-bar-height-small;
-      
+
       &.micro-logo {
         max-height: $app-bar-height-microfocus;
       }
-      
+
     }
   }
 
@@ -83,7 +78,7 @@
 
 [dir="rtl"] {
   .ias-app-bar {
-    background: $app-bar-bg-rtl;
+    background-color: $app-bar-bg;
     padding-left: $app-bar-padding;
     padding-right: 0;
 

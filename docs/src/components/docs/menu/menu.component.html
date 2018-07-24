@@ -1,4 +1,17 @@
-<h2 class="ias-page-title">Menus</h2>
+<h1 class="ias-page-title">Menus</h1>
+
+<h2>General</h2>
+<p class="ias-page-instructions">
+    Menus are a toggleable component that provide the user with navigation, actions, options and information. Content
+    within a menu larger than three elements could benefit from grouping elements in logical sections.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    A list of actionable items that can be shown or hidden with a toggle.
+</p>
+
+<h2>Examples</h2>
 
 <section>
     <h3>.ias-menu-toggle</h3>
@@ -16,7 +29,13 @@
 
     <div toggle-repeat-code="inner">
         <button class="ias-button ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-hamburger_menu_thick"></i>
+        </button>
+        <button class="ias-button ias-icon-button" type="button">
             <i class="ias-icon ias-icon-new_thick"></i>
+        </button>
+        <button class="ias-button ias-icon-button" type="button">
+            <i class="ias-icon ias-icon-circle_horz_menu_fill"></i>
         </button>
     </div>
 </section>
@@ -30,6 +49,24 @@
                 <button type="button" class="ias-button">Button 1</button>
                 <button type="button" class="ias-button">Button 2</button>
                 <button type="button" class="ias-button">Button 3</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Menu with Grouped Elements</h3>
+
+    <div toggle-repeat-code="inner">
+        <div class="ias-menu ias-open">
+            <div class="ias-menu-content">
+                <button type="button" class="ias-button">New</button>
+                <button type="button" class="ias-button">Open</button>
+                <button type="button" class="ias-button">Save</button>
+                <div class="ias-row ias-border-bottom">
+                    <button type="button" class="ias-button">Print</button>
+                </div>
+                <button type="button" class="ias-button">Exit</button>
             </div>
         </div>
     </div>
@@ -100,7 +137,7 @@
 </section>
 
 <section>
-    <h3>w/ .ias-list</h3>
+    <h3>With .ias-list</h3>
 
     <div toggle-repeat-code="inner">
         <div class="ias-menu ias-open">
@@ -147,3 +184,36 @@
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+<h3>Menu Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Menus overlay other page content when toggled to an open state.</li>
+        <li>A complex menu is a combination different menus within a single menu.</li>
+        <li>When creating a menu with more than three items, consider grouping related elements together and adding a
+            dividing line between sections.</li>
+        <li>Menus can use headings to describe separate sections of elements.</li>
+        <li>Menus can be used to display information to the user, however large amounts of information is not
+            appropriate.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>Menus provide a cohesive list of items that can be used to navigate a product.</li>
+        <li>Menus can provide actions within a page, such as creating new comments, changing a display type, etc.</li>
+    </ul>
+
+<h3>Nesting</h3>
+<h5>Nesting Menus in Other Components</h5>
+    <p class="ias-page-instructions">
+        Menus are paired with a menu toggle button. When a menu toggle button is nested into another
+        component, such as the Nav Bar or comments, the menu associated with the toggle will also been nested.
+    </p>
+<h5>Nestable Components</h5>
+    <ul>
+        <li>Buttons .ias-button</li>
+        <li>Lists .ias-list</li>
+        <li>Avatars .ias-avatar</li>
+        <li>Headings .ias-menu-header, .ias-menu-footer, .ias-list-header</li>
+    </ul>

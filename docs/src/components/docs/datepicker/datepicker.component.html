@@ -1,7 +1,18 @@
-<h2 class="ias-page-title">Datepicker</h2>
-<p class="ias-page-instructions">The datepicker is tied to a standard form input field. It opens an interactive calendar
-    in small overlay.</p>
+<h1 class="ias-page-title">Datepicker</h1>
 
+<h2>General</h2>
+<p class="ias-page-instructions">
+    A datepicker is an interactive calendar overlay that allows for user to easily input a desired date. Datepickers
+    are tied to a standard input field that takes input from the interactive calendar. A user can click into a
+    similar month picker by clicking the month/ year in the datepicker title bar.
+</p>
+
+<h2>Purpose</h2>
+<p class="ias-page-instructions">
+    Allow a user to choose a date from a familiar calendar representation.
+</p>
+
+<h2>Examples</h2>
 <section>
     <h3>Closed Datepicker</h3>
 
@@ -17,7 +28,6 @@
         <i class="ias-icon ias-icon-date_thick"></i>
     </button>
 </section>
-
 
 <section>
     <h3>Open Datepicker</h3>
@@ -99,6 +109,7 @@
         </div>
     </div>
 
+    <h3>Opened Month Picker</h3>
     <div toggle-repeat-code="inner">
         <button class="ias-button ias-icon-button" type="button">
             <i class="ias-icon ias-icon-date_thick"></i>
@@ -138,3 +149,42 @@
         </div>
     </div>
 </section>
+
+<h2>Appearance</h2>
+
+<h3>Datepicker Specifics</h3>
+    <h5>Implementation</h5>
+    <ul>
+        <li>Datepickers are displayed in a familiar calendar layout with interactive dates and changeable months.</li>
+        <li>Hovering over calendar elements will highlight those elements to communicate interactivity to the user.</li>
+        <li>Dates outside of the range of the current month should be greyed-out with the class .ias-soften.</li>
+        <li>A month picker can be opened by clicking the month and year in the title of a datepicker.</li>
+        <li>A month picker allows for the user to choose a month in a given year, and change the year with arrow icons.</li>
+        <li>Clicking a month within a month picker steps back to that month and year in the datepicker.</li>
+    </ul>
+
+    <h5>Common Patterns</h5>
+    <ul>
+        <li>If it is necessary to choose a distant date, consider using a input field with a format hint instead.</li>
+    </ul>
+
+<h3>Nesting</h3>
+    <h5>Nestable Components</h5>
+    <ul>
+        <li>Icon Button .ias-icon-button</li>
+        <li>Spans &lt;span&gt;</li>
+        <li>Tables</li>
+        <li>Text Icon Button .ias-icon-text-button</li>
+    </ul>
+
+    <h5>Nesting Datepickers in Other Components</h5>
+    <p class="ias-page-instructions">
+        Date pickers are a special form of an input field and can be nested wherever you would find an input field. Date
+        pickers will overlay content when opened.
+    </p>
+
+<h3>Responsive Displays</h3>
+<p class="ias-page-instructions">
+    Date pickers are not responsive to changing screen width. If a screens width is less than the width of the calendar
+    the calendar will be cut off.
+</p>

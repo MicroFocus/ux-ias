@@ -50,10 +50,6 @@
     p {
       color: $dialog-content-color;
     }
-
-    .ias-icon {
-      color: $dialog-content-color;
-    }
   }
 }
 
@@ -69,14 +65,12 @@
 [dir="rtl"] {
   .ias-dialog {
     .ias-dialog-container {
+      //      @extend .ias-panel;
+
       > .ias-dialog-cancel-button {
         left: $body-spacing-small;
         right: auto;
-      }
-
-      > .ias-dialog-label {
-        padding-left: $content-padding;
-        padding-right: 0;
+        top: $body-spacing-small;
       }
     }
   }
