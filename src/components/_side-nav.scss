@@ -95,6 +95,9 @@
       background-color: $side-nav-bg-color-hover;
       color: inherit;
     }
+    &:hover {
+      text-decoration: none;
+    }
     &.ias-active {
       background-color: $side-nav-bg-color-hover;
       color: inherit;
