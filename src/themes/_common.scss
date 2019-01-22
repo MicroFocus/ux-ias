@@ -7,8 +7,8 @@ $font-size-xsmall: 11px;
 $font-size-small: 13px;
 $font-size-base: 15px;
 $font-size-medium: 18px;
-$font-size-large: 21px;
-$font-size-xlarge: 24px;
+$font-size-large: 22px;
+$font-size-xlarge: 26px;
 
 // TYPOGRAPHY
 $font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -17,8 +17,8 @@ $font-weight: 400;
 $font-weight-medium: 500;
 
 $heading-text-color: inherit;
-$heading-font-size: $font-size-xlarge;
-$heading-font-weight: normal;
+$heading-font-size: $font-size-large;
+$heading-font-weight: $font-weight;
 $heading-letter-spacing: 1px;
 
 $text-color: $color-gray-1;
@@ -223,8 +223,8 @@ $panel-footer-margin-top: 15px;
 $panel-footer-padding-top: 5px;
 $panel-footer-border-color: #dae1e1;
 
-$search-box-icon-padding: 5px;
-$search-box-icon-size: 25px;
+$search-box-icon-padding: 8px;
+$search-box-icon-size: 20px;
 $search-box-max-width: 300px;
 
 $side-nav-header-font-size: $list-header-font-size;
