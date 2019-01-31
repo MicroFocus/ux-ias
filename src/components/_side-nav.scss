@@ -81,6 +81,7 @@
     @include single-line;
     background-color: transparent;
     border: none;
+    border-radius: $border-radius;
     box-sizing: border-box;
     color: inherit;
     display: block;
@@ -94,6 +95,9 @@
     &:hover:not([disabled]) {
       background-color: $side-nav-bg-color-hover;
       color: inherit;
+    }
+    &:hover {
+      text-decoration: none;
     }
     &.ias-active {
       background-color: $side-nav-bg-color-hover;
