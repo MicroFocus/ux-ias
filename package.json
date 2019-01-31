@@ -9,7 +9,7 @@
   "engineStrict": true,
   "scripts": {
     "prepublish": "gulp clean && gulp build:production",
-    "build": "npm run prepublish",
+    "build": "npm run prepublish & npm run build:docs",
     "build:docs": "gulp --cwd docs build:production",
     "update-gh-pages": "push-dir --dir=dist --branch=gh-pages"
   },
