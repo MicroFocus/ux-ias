@@ -8,7 +8,10 @@
   },
   "engineStrict": true,
   "scripts": {
-    "prepublish": "gulp clean && gulp build:production"
+    "prepublish": "gulp clean && gulp build:production",
+    "build": "npm run prepublish & npm run build:docs",
+    "build:docs": "gulp --cwd docs build:production",
+    "update-gh-pages": "push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
     "type": "git",
@@ -36,6 +39,7 @@
     "gulp-sourcemaps": "1.9.1",
     "gulp-watch": "4.3.11",
     "ng-gulp": "jedwardhawkins/ng-gulp#v0.7.2",
-    "ng-prism": "joswhite/ng-prism#v1.3.3"
+    "ng-prism": "joswhite/ng-prism#v1.3.3",
+    "push-dir": "^0.4.1"
   }
 }
