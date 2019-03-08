@@ -36,3 +36,7 @@ a local server which hosts the application.
 - `gulp build:production` Build project without watching for changes or starting server
 - `gulp serve:production` Start local server
 - `gulp clean` Remove build output directory
+
+# Publishing ux-ias
+
+

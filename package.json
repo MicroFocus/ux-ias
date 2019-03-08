@@ -1,6 +1,6 @@
 {
   "name": "@microfocus/ux-ias",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-rc.1",
   "description": "UX library for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
@@ -8,8 +8,8 @@
   },
   "engineStrict": true,
   "scripts": {
-    "prepublish": "gulp clean && gulp build:production",
-    "build": "npm run prepublish & npm run build:docs",
+    "prepublishOnly": "gulp clean && gulp build:production",
+    "build": "npm run prepublishOnly & npm run build:docs",
     "build:docs": "gulp --cwd docs build:production",
     "update-gh-pages": "push-dir --dir=dist --branch=gh-pages"
   },
@@ -21,7 +21,7 @@
   "license": "MIT",
   "bugs": "https://github.com/microfocus/ux-ias/issues",
   "devDependencies": {
-    "@microfocus/ias-icons": "1.0.0-alpha",
+    "@microfocus/ias-icons": "1.0.0-rc",
     "@types/angular": "1.5.8",
     "@types/angular-mocks": "1.5.8",
     "@types/angular-ui-router": "1.1.36",
