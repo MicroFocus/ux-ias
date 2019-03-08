@@ -1,33 +1,10 @@
 .ias-dialog {
-  position: absolute;
+  .ias-dialog-container {
+    position: absolute;
+  }
 }
 
 .component-dialog {
   position: relative;
   height: 300px;
-}
-
-.ias-dialog-container {
-  max-width: 750px;
-}
-
-.ias-dialog .ias-dialog-container {
-  border: none;
-}
-.ias-actions > input {
-  margin-top: 10px;
-}
-
-.ias-dialog-content > button {
-  margin-top: 15px;
-  margin-right: 5px;
-}
-[dir='rtl'] {
-  .toggle-show > .show-code {
-    text-align: left;
-  }
-  .ias-dialog-content > button {
-    margin-right: 0;
-    margin-left: 5px;
-  }
 }
