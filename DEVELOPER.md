@@ -39,4 +39,13 @@ a local server which hosts the application.
 
 # Publishing ux-ias
 
+Before publishing, it is best for you to have a fork of ux-ias on your Github account. You will also want
+to create a Travis-CI account.
+1. Make sure you have a fork of ux-ias.
+
+2. Push changes to master branch of your fork.
+
+3. Make sure
+3. Wait for Travis-CI to build 
+2. 
 
