@@ -3,7 +3,7 @@ node_js:
   - "8"
 before_script:
   - npm install -g gulp-cli
-before_deploy: gulp build:production && gulp --cwd docs build:production
+before_deploy: gulp build:production && gulp --cwd docs build:production && ls dist
 branches:
   only:
     - master
