@@ -1,17 +1,14 @@
 language: node_js
 node_js:
-  - "node"
-  - "6"
+  - "8"
 before_script:
   - npm install -g gulp-cli
-before_deploy: gulp --cwd docs build:production
+before_deploy: gulp build:production && gulp --cwd docs build:production
 branches:
   only:
     - master
     - development
-cache:
-  directories:
-    - "node_modules"
+cache: npm
 deploy:
   provider: pages
   skip_cleanup: true

@@ -15,9 +15,10 @@
 
 <h2>Examples</h2>
 <h3>Simple</h3>
-<section class="component-dialog" toggle-repeat-code>
+<section class="component-dialog">
     <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
-	<div class="ias-dialog">
+
+	<div class="ias-dialog" repeat-as-code prism-insert-id="code-01">
 		<div class="ias-dialog-container">
 			<!--<div class="ias-dialog-title">Dialog title</div>-->
 			<div class="ias-dialog-content">
@@ -33,21 +34,26 @@
 		</div>
 	</div>
 </section>
+<toggleable-code id="code-01"></toggleable-code>
 
 <h3>Dialog with .ias-actions and .ias-dialog-label</h3>
-<section class="component-dialog" toggle-repeat-code>
+<section class="component-dialog">
     <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
 
-	<div class="ias-dialog">
+	<div class="ias-dialog" repeat-as-code prism-insert-id="code-02">
 		<div class="ias-dialog-container">
             <div class="ias-dialog-label">Dialog Label</div>
             <div class="ias-dialog-content">
-                <div class="ias-actions">
+                <div class="ias-input-container">
                     <input name="username" placeholder="New Password" type="text" autocomplete="off">
-                    <input name="username" placeholder="Confirm Password" type="text" autocomplete="off">
                 </div>
-                <button class="ias-button ias-cta">Change</button>
-                <button class="ias-button">Cancel</button>
+                <div class="ias-input-container">
+                    <input name="password" placeholder="Confirm Password" type="text" autocomplete="off">
+                </div>
+                <div class="ias-actions">
+                    <button class="ias-button ias-cta">Change</button>
+                    <button class="ias-button">Cancel</button>
+                </div>
 			</div>
 			<button class="ias-button ias-icon-button ias-dialog-cancel-button">
 				<i class="ias-icon ias-icon-close_thick"></i>
@@ -55,12 +61,13 @@
 		</div>
 	</div>
 </section>
+<toggleable-code id="code-02"></toggleable-code>
 
 <h3>Dialog with .ias-dialog-title</h3>
-<section class="component-dialog" toggle-repeat-code>
+<section class="component-dialog">
     <h3>The dialog glass (grey background cover) is transparent to see content underneath.</h3>
 
-	<div class="ias-dialog">
+	<div class="ias-dialog" repeat-as-code prism-insert-id="code-03">
 		<div class="ias-dialog-container">
 			<div class="ias-dialog-title">Dialog Title</div>
 			<div class="ias-dialog-content">
@@ -77,6 +84,7 @@
 		</div>
 	</div>
 </section>
+<toggleable-code id="code-03"></toggleable-code>
 
 <h2>Appearance</h2>
 <h3>Dialog Specifics</h3>
