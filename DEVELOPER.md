@@ -62,8 +62,8 @@ environmental variables for your Travis-CI ux-ias build (see https://docs.travis
    6.0.0 or above.** Check that the files listed in the output of this command are the same files you intend to publish.
 
 6. If the changes made are significant, you may wish to test what you are about to publish in another environment.
-   Run `npm pack` and extract the resulting zip archive into the node_modules/ux-ias folder of another project. Test
-   the project to make sure it handles ux-ias properly.
+   Run `npm pack` and then `npm install path/to/tarball.tgz` to install the resulting tarball into another project.
+   Test the project to make sure it handles ux-ias properly.
 
 7. After logging in to npm using `npm login` (no arguments), publish to NPM using `npm publish --access public`.
    (If you get the error "404 Not found" you may need to set the package to Read/Write access -
