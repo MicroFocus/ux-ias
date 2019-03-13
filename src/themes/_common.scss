@@ -17,7 +17,7 @@ $font-weight: 400;
 $font-weight-medium: 500;
 
 $heading-text-color: inherit;
-$heading-font-size: 20px;
+$heading-font-size: $font-size-large;
 $heading-font-weight: $font-weight;
 $heading-letter-spacing: 1px;
 
@@ -67,6 +67,7 @@ $app-bar-bg: #0073e7;
 $app-bar-button-padding: 5px;
 $app-bar-button-spacing: $spacing;
 $app-bar-font-size: $font-size-small;
+$app-bar-heading-font-size: 20px;
 $app-bar-height-small: 45px;
 $app-bar-height-microfocus: 50px;
 $app-bar-height-large: 100px;

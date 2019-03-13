@@ -25,6 +25,7 @@
 
   > .ias-heading {
     /* Add height and line-height for align-items bug in IE11 */
+    font-size: $app-bar-heading-font-size;
     height: $app-bar-height-small;
     line-height: $app-bar-height-small;
     margin-left: $app-bar-padding;
