@@ -17,10 +17,10 @@
     max-height: 100%;
     max-width: 100%;
     padding: $dialog-padding;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
 
     > .ias-actions {
       margin-top: $dialog-padding;
@@ -38,7 +38,6 @@
       margin-bottom: $spacing;
       padding-right: $content-padding;
       text-transform: $title-text-transform;
-      white-space: nowrap;
     }
 
     > .ias-dialog-title {

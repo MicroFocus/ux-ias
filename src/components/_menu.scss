@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
 
   &.ias-open {
     display: inline-block;
@@ -40,6 +41,7 @@
     color: inherit;
     display: block;
     text-align: inherit;
+    white-space: normal;
     width: 100%;
 
     &:not([disabled]):not(.ias-disabled) {
