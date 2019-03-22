@@ -2,7 +2,7 @@
   background-color: $dialog-scrim-color;
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
@@ -16,38 +16,42 @@
     margin: 0 $dialog-padding;
     max-height: 100%;
     max-width: 100%;
-    padding: $dialog-padding;
-    position: fixed;
+    overflow-y: auto;
+    position: absolute;
     right: 0;
     top: 40%;
     transform: translateY(-40%);
 
-    > .ias-actions {
-      margin-top: $dialog-padding;
-    }
+    .ias-dialog-content {
+      padding: $dialog-padding;
 
-    > .ias-dialog-cancel-button {
-      position: absolute;
-      right: $body-spacing-small;
-      top: $body-spacing-small;
-    }
+      .ias-actions {
+        margin-top: $dialog-padding;
+      }
 
-    > .ias-dialog-label {
-      color: $dialog-label-color;
-      font-size: $font-size;
-      margin-bottom: $spacing;
-      padding-right: $content-padding;
-      text-transform: $title-text-transform;
-    }
+      .ias-dialog-cancel-button {
+        position: absolute;
+        right: $body-spacing-small;
+        top: $body-spacing-small;
+      }
 
-    > .ias-dialog-title {
-      @extend .ias-heading;
+      .ias-dialog-label {
+        color: $dialog-label-color;
+        font-size: $font-size;
+        margin-bottom: $spacing;
+        padding-right: $content-padding;
+        text-transform: $title-text-transform;
+      }
 
-      margin-bottom: $dialog-padding;
-    }
+      .ias-dialog-title {
+        @extend .ias-heading;
 
-    p {
-      color: $dialog-content-color;
+        margin-bottom: $dialog-padding;
+      }
+
+      p {
+        color: $dialog-content-color;
+      }
     }
   }
 }
@@ -64,12 +68,11 @@
 [dir="rtl"] {
   .ias-dialog {
     .ias-dialog-container {
-      //      @extend .ias-panel;
-
-      > .ias-dialog-cancel-button {
-        left: $body-spacing-small;
-        right: auto;
-        top: $body-spacing-small;
+      .ias-dialog-content {
+        .ias-dialog-cancel-button {
+          left: $body-spacing-small;
+          right: auto;
+        }
       }
     }
   }
