@@ -25,7 +25,7 @@
     .ias-dialog-content {
       padding: $dialog-padding;
 
-      .ias-actions {
+      > .ias-actions {
         margin-top: $dialog-padding;
       }
 
