@@ -46,7 +46,7 @@ environmental variables for your Travis-CI ux-ias build (see https://docs.travis
 1. Build and test changes locally.
 
 2. Increment the version number of ux-ias in the package.json file. You can do this using
-   "npm --no-git-tag-version version" if desired. Push the changes to your fork of the repository.
+   `npm --no-git-tag-version version x.x.x` if desired. Push the changes to your fork of the repository.
 
 3. Build using Travis-CI on your fork of the repository. If you haven't already, enable the build by turning on the
    slider for your fork of ux-ias on your Travis-CI account. Then builds should start automatically. You can also

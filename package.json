@@ -1,6 +1,6 @@
 {
   "name": "@microfocus/ux-ias",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "UX library for Micro Focus Identity, Access, and Security products",
   "engines": {
     "node": ">=6.2",
