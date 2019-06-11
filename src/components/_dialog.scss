@@ -60,7 +60,8 @@
   .ias-dialog {
     .ias-dialog-container {
       margin: 0 auto;
-      max-width: 375px;
+      max-width: none;
+      width: 415px;     // Use width so "margin: 0 auto" will display properly on parent element in IE11
     }
   }
 }
